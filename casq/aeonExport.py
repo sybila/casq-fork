@@ -54,15 +54,16 @@ class booleanFormulaBuilder():
         else:
             self.reactant = "({current} & {vid})".format(
                 vid=vid, current=self.reactant
-        )
+            )
 
     def addInhibitor(self, vid):
         """If any inhibitor is active, the reaction is stopped."""
         if self.reactant == "_":
             self.reactant = "!" + vid
-        self.reactant = "(!{vid} & {current})".format(
-            vid=vid, current=self.reactant
-        )
+        else:
+            self.reactant = "(!{vid} & {current})".format(
+                vid=vid, current=self.reactant
+            )
 
     def addTransition(self):
         """AddTransition."""
@@ -74,14 +75,17 @@ class booleanFormulaBuilder():
         If at least one catalyst is active, the reaction can proceed.
         This is achieved in BMA with a min function
         """
+        if len(vidList) == 0:
+            raise RuntimeError("Empty list of catalyzers.")
+
         base = "_"
         for vid in vidList:
             if base == "_":
                 base = vid
             else:
                 base = "({vid} | {base})".format(vid=vid, base=base)
-        if base == "_":
-            self.modifier = self.modifier
+        if self.modifier == "_":
+            self.modifier = base
         else:
             self.modifier = "({base} & {current}))".format(
                 base=base, current=self.modifier
@@ -89,12 +93,21 @@ class booleanFormulaBuilder():
 
     def addAnd(self, vidList):
         """All listed elements are required for firing."""
+        if len(vidList) == 0:
+            raise RuntimeError("Empty list of required elements.")
+
         base = "_"
         for vid in vidList:
-            base = "({vid} & {base})".format(vid=vid, base=base)
-        self.modifier = "({base} & {current})".format(
-            base=base, current=self.modifier
-        )
+            if base == "_":
+                base = vid
+            else:
+                base = "({vid} & {base})".format(vid=vid, base=base)
+        if self.modifier == "_":
+            self.modifier = base
+        else:
+            self.modifier = "({base} & {current})".format(
+                base=base, current=self.modifier
+            )
 
     def finishTransition(self):
         """Add a single transition formula to the current state.
@@ -103,9 +116,13 @@ class booleanFormulaBuilder():
         The catalyst-modifiers default to 1, the transition defaults to 1
         Resets the transition formula to 1.
         """
-
+        if self.modifier == "_" and self.reactant == "_":
+            # TODO: This should probably be a warning/error?
+            function = "true"
         if self.modifier == "_":
             function = self.reactant
+        elif self.reactant == "_":
+            function = self.modifier
         else:
             function = "({transition} & {current}))".format(
                 transition=self.reactant, current=self.modifier
