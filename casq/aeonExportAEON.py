@@ -1,4 +1,4 @@
-"""Convert CellDesigner models to .aeon format. (now only changes formula formal)
+"""Convert CellDesigner models to .aeon format. (now only changes formula format)
 
 Copyright (C) 2021 b.hall@ucl.ac.uk
 
@@ -50,19 +50,19 @@ class booleanFormulaBuilder():
         A reaction may only take place if all reactants/activators are present.
         """
         if self.reactant == "_":
-            self.reactant = vid
+            self.reactant = cleanName(vid)
         else:
             self.reactant = "({current} & {vid})".format(
-                vid=vid, current=self.reactant
+                vid=cleanName(vid), current=self.reactant
             )
 
     def addInhibitor(self, vid):
         """If any inhibitor is active, the reaction is stopped."""
         if self.reactant == "_":
-            self.reactant = "!" + vid
+            self.reactant = "!" + cleanName(vid)
         else:
             self.reactant = "(!{vid} & {current})".format(
-                vid=vid, current=self.reactant
+                vid=cleanName(vid), current=self.reactant
             )
 
     def addTransition(self):
@@ -81,9 +81,9 @@ class booleanFormulaBuilder():
         base = "_"
         for vid in vidList:
             if base == "_":
-                base = vid
+                base = cleanName(vid)
             else:
-                base = "({vid} | {base})".format(vid=vid, base=base)
+                base = "({vid} | {base})".format(vid=cleanName(vid), base=base)
         if self.modifier == "_":
             self.modifier = base
         else:
@@ -99,9 +99,9 @@ class booleanFormulaBuilder():
         base = "_"
         for vid in vidList:
             if base == "_":
-                base = vid
+                base = cleanName(vid)
             else:
-                base = "({vid} & {base})".format(vid=vid, base=base)
+                base = "({vid} & {base})".format(vid=cleanName(vid), base=base)
         if self.modifier == "_":
             self.modifier = base
         else:
@@ -180,12 +180,12 @@ class multiStateFormulaBuilder:
 COLOURMAP = {0: "#ff66cc", 1: "#33cc00", 2: "#ff9900", 3: "#9966ff", 4: "#00cccc"}
 
 
-def bma_relationship(source, target, idMap, count, which="Activator"):
+def aeon_relationship(source, target, idMap, count, which="Activator"):
     """Return BMA relationship dict."""
     result = {
-        "ToVariable": idMap[target],
+        "ToVariable": target,
         "Type": which,
-        "FromVariable": idMap[source],
+        "FromVariable": source,
         "Id": next(count),
     }
     return result
@@ -195,6 +195,7 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
     """Return all BMA relationships."""
     relationships = []
     allFormulae = {}
+    out = {}
     for item in info.keys():
         """logger.debug(
             item + ", varid = " + str(idMap[item]) + ", name = " + info[item]["name"]
@@ -228,7 +229,7 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
                         "UNKNOWN_INHIBITION",
                     ):
                         relationships.append(
-                            bma_relationship(
+                            aeon_relationship(
                                 reactant, product, idMap, count, "Inhibitor"
                             )
                         )
@@ -237,7 +238,7 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
                         formula.addInhibitor(inhibitor_name)
                     else:
                         relationships.append(
-                            bma_relationship(reactant, product, idMap, count)
+                            aeon_relationship(reactant, product, idMap, count)
                         )
 
                         activator_name = info[reactant]["name"]
@@ -278,7 +279,7 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
                 if m in idMap:
                     if impact == "UNKNOWN_INHIBITION" or impact == "INHIBITION":
                         relationships.append(
-                            bma_relationship(m, product, idMap, count, "Inhibitor")
+                            aeon_relationship(m, product, idMap, count, "Inhibitor")
                         )
                         inhibitor_name = info[m]["name"]
                         formula.addInhibitor(inhibitor_name)
@@ -288,7 +289,7 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
                         logger.debug(item + "\tFound impact:" + impact)
                         catalysts.append(idMap[m])
                         catalysts_names.append(info[m]["name"])
-                        relationships.append(bma_relationship(m, product, idMap, count))
+                        relationships.append(aeon_relationship(m, product, idMap, count))
                 else:
                     pass
             """
@@ -303,8 +304,12 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
             if len(finalCat) > 0:
                 formula.addCatalysis(finalCat_names)
             formula.finishTransition()
-        allFormulae[item] = formula.function()
-    return (relationships, allFormulae)
+        formula_prev = formula.function()
+
+        out[item] = {'Formula': formula_prev, 'Relationships': relationships}
+        relationships = []
+
+    return out
 
 
 def translateGreek(name):
@@ -330,24 +335,25 @@ def cleanName(name):
     return result
 
 
-def bma_model_variable(vid, infoVariable, formulaDict, v, granularity, inputLevel):
+def aeon_model_variable(var, var_d, info):
     """Return BMA model variable as a dict."""
-    if v in formulaDict:
-        formula = formulaDict[v]
-    else:
-        # Assume that nodes with no incoming edges are active
-        if inputLevel is None:
-            formula = str(granularity)
-        else:
-            formula = str(inputLevel)
-    result = {
-        "Name": cleanName(infoVariable["name"]),
-        "Id": vid,
-        "RangeFrom": 0,
-        "RangeTo": granularity,
-        "Formula": formula,
-    }
-    return result
+
+    position = "#postion:{name}:{position_x},{position_y}\n".format(name = cleanName(info[var]['name']),
+                                                                  position_x = float(info[var]["x"]),
+                                                                  position_y = float(info[var]["y"]))
+    formula = "${name}:{formula}\n".format(name = cleanName(info[var]['name']), formula = var_d['Formula'])
+
+    #print(cleanName(var_d['Formula']))
+    relationships = ""
+    for relationship in var_d['Relationships']:
+        type = "->" if relationship['Type'] == "Activator" else "-|"
+        relationship_str = "{from_v} {type} {to_v}\n".format(
+            from_v = cleanName(info[relationship['FromVariable']]['name']),
+            type = type,
+            to_v = cleanName(info[relationship['ToVariable']]['name']))
+        relationships += relationship_str
+
+    return position + formula + relationships
 
 
 def bma_layout_variable(vid, infoVariable, fill=None, description=""):
@@ -369,7 +375,7 @@ def bma_layout_variable(vid, infoVariable, fill=None, description=""):
     return result
 
 
-def write_aeon(
+def write_aeon_2(
     filename: str,
     info,
     granularity=1,
@@ -402,17 +408,20 @@ def write_aeon(
     """
 
     idGenerator = itertools.count(1)
+
+
+
     idMap = {k: next(idGenerator) for k in info.keys()}
 
-    rm, aeon_formula = get_relationships(
+    relationships_d = get_relationships(
         info, idMap, idGenerator, granularity, ignoreSelfLoops
     )
 
     """logger.debug(formula)"""
 
-    vm = [
-        bma_model_variable(idMap[v], info[v], aeon_formula, v, granularity, inputLevel)
-        for v in info.keys()
+    variables_model_str = [
+        aeon_model_variable(variable, relationships_d[variable], info)
+        for variable in relationships_d.keys()
     ]
     vl = [
         bma_layout_variable(
@@ -424,11 +433,23 @@ def write_aeon(
         for v in info.keys()
     ]
 
-    model = {"Name": "CaSQ-BMA", "Variables": vm, "Relationships": rm}
-    layout = {"Variables": vl, "Containers": [], "Description": ""}
-    ltl = {"states": [], "operations": []}
-    universe = {"Model": model, "Layout": layout, "ltl": ltl}
+    name = "#name:\n"
+    description = "#description:\n"
 
-    json_object = json.dumps(universe, indent=4)
+    with open(filename, "w", encoding='utf-8') as outfile:
+        outfile.write(name)
+        outfile.write(description)
+        for var in variables_model_str:
+            outfile.write(var)
+
+
+
+    """
+   
     with open(filename, "w") as outfile:
-        outfile.write(json_object)
+        outfile.write("#name:" + name)
+        outfile.write("#description:" + description)
+        outfile.write("#position:" + position)
+        outfile.write(formula)
+        outfile.write(relationships)
+    """
