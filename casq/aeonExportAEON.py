@@ -18,6 +18,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import itertools
 import json
+import re
 
 from loguru import logger
 
@@ -87,7 +88,7 @@ class booleanFormulaBuilder():
         if self.modifier == "_":
             self.modifier = base
         else:
-            self.modifier = "({base} & {current}))".format(
+            self.modifier = "({base} & {current})".format(
                 base=base, current=self.modifier
         )
 
@@ -124,7 +125,7 @@ class booleanFormulaBuilder():
         elif self.reactant == "_":
             function = self.modifier
         else:
-            function = "({transition} & {current}))".format(
+            function = "({transition} & {current})".format(
                 transition=self.reactant, current=self.modifier
         )
 
@@ -332,13 +333,16 @@ def cleanName(name):
     """Remove punctuation and replace Greek letters."""
     noPunctuation = depunctuate(name)
     result = translateGreek(noPunctuation)
+    # TODO: This can generate the same name for variables that only differ in
+    # non-alphanumeric characters. We should probably fix that in the future.
+    result = re.sub('[^0-9a-zA-Z_]', '_', result)
     return result
 
 
 def aeon_model_variable(var, var_d, info):
     """Return BMA model variable as a dict."""
 
-    position = "#postion:{name}:{position_x},{position_y}\n".format(name = cleanName(info[var]['name']),
+    position = "#position:{name}:{position_x},{position_y}\n".format(name = cleanName(info[var]['name']),
                                                                   position_x = float(info[var]["x"]),
                                                                   position_y = float(info[var]["y"]))
     formula = "${name}:{formula}\n".format(name = cleanName(info[var]['name']), formula = var_d['Formula'])
