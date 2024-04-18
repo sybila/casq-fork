@@ -1,3 +1,5 @@
+import itertools
+
 from CaSQ.bmaExport import write_bma
 from CaSQ.aeonExportJSON import write_aeon
 from CaSQ.aeonExportAEON import write_aeon_2
@@ -12,3 +14,9 @@ with open("test/map_mastcell.xml", "r", encoding="utf-8") as f:
     write_bma("mapkX.json", info)
     write_aeon("mapkXaeon.json", info)
     write_aeon_2("mapk.aeon", info)
+
+    count = 0
+    a = itertools.count()
+    for i in range(0,4):
+        count = next(a)
+    print(count)
