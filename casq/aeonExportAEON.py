@@ -92,6 +92,30 @@ class booleanFormulaBuilder():
                 base=base, current=self.modifier
         )
 
+    def add_unknown_function(self, cat_list):
+        """..."""
+        if len(cat_list) == 0:
+            raise RuntimeError("Empty list of catalyzers.")
+
+        clean_cat_list = [cleanName(cat) for cat in cat_list]
+
+        cat_list_str = "_"
+        for cat in clean_cat_list:
+            if cat_list_str == "_":
+                cat_list_str = cat
+            else:
+                cat_list_str = "{cat_list_str}, {cat}".format(cat=cat, cat_list_str=cat_list_str)
+
+        fun_name = "fun_x_y"
+        unknown_fun_str = "{fun_name}({cat_list_str})".format(fun_name=fun_name, cat_list_str=cat_list_str)
+
+        if self.modifier == "_":
+            self.modifier = unknown_fun_str
+        else:
+            self.modifier = "({current} & {unknown_fun_str})".format(
+                current=self.modifier, unknown_fun_str=unknown_fun_str
+            )
+
     def addAnd(self, vidList):
         """All listed elements are required for firing."""
         if len(vidList) == 0:
@@ -303,7 +327,7 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
 
             finalCat_names = [name for name in catalysts_names if name not in ignoreList_names]
             if len(finalCat) > 0:
-                formula.addCatalysis(finalCat_names)
+                formula.add_unknown_function(finalCat_names)
             formula.finishTransition()
         formula_prev = formula.function()
 
