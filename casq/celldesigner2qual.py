@@ -23,7 +23,7 @@ from typing import List
 
 from loguru import logger  # type: ignore
 
-from . import bmaExport, version
+from . import bmaExport, aeonExportAEON, version
 from .readCD import read_celldesigner
 from .simplify import simplify_model
 from .write import write_csv, write_qual
@@ -134,6 +134,12 @@ def main(argv: List[str] = None):
         help="CellDesigner File",
     )
     parser.add_argument(
+        "-a",
+        "--aeon",
+        action="store_true",
+        help="Output to AEON format",
+    )
+    parser.add_argument(
         "-b",
         "--bma",
         action="store_true",
@@ -176,6 +182,10 @@ def main(argv: List[str] = None):
         args.outfile = os.path.splitext(args.infile.name)[0] + ".sbml"
     if args.bma:
         bmaExport.write_bma(
+            args.outfile, info, args.granularity, args.input, False, args.colourConstant
+        )
+    if args.aeon:
+        aeonExportAEON.write_aeon(
             args.outfile, info, args.granularity, args.input, False, args.colourConstant
         )
     else:

@@ -23,7 +23,7 @@ import re
 from loguru import logger
 
 
-class booleanFormulaBuilder():
+class BooleanFormulaBuilder:
     """Builds a formula for a boolean network encoded in .aeon format.
 
     The formula is a max applied to a series of reactions (transitions),
@@ -45,46 +45,46 @@ class booleanFormulaBuilder():
         """Return self.previous."""
         return self.previous
 
-    def addActivator(self, vid):
+    def add_activator(self, vid):
         """Update transition to add an activator.
 
         A reaction may only take place if all reactants/activators are present.
         """
         if self.reactant == "_":
-            self.reactant = cleanName(vid)
+            self.reactant = clean_name(vid)
         else:
             self.reactant = "({current} & {vid})".format(
-                vid=cleanName(vid), current=self.reactant
+                vid=clean_name(vid), current=self.reactant
             )
 
-    def addInhibitor(self, vid):
+    def add_inhibitor(self, vid):
         """If any inhibitor is active, the reaction is stopped."""
         if self.reactant == "_":
-            self.reactant = "!" + cleanName(vid)
+            self.reactant = "!" + clean_name(vid)
         else:
             self.reactant = "(!{vid} & {current})".format(
-                vid=cleanName(vid), current=self.reactant
+                vid=clean_name(vid), current=self.reactant
             )
 
-    def addTransition(self):
+    def add_transition(self):
         """AddTransition."""
         self.reactant = "_"
 
-    def addCatalysis(self, vidList):
+    def add_catalysis(self, cat_list):
         """All non-reactants, non-inhibitors in casq are treated as catalysts.
 
         If at least one catalyst is active, the reaction can proceed.
         This is achieved in BMA with a min function
         """
-        if len(vidList) == 0:
+        if len(cat_list) == 0:
             raise RuntimeError("Empty list of catalyzers.")
 
         base = "_"
-        for vid in vidList:
+        for vid in cat_list:
             if base == "_":
-                base = cleanName(vid)
+                base = clean_name(vid)
             else:
-                base = "({vid} | {base})".format(vid=cleanName(vid), base=base)
+                base = "({vid} | {base})".format(vid=clean_name(vid), base=base)
         if self.modifier == "_":
             self.modifier = base
         else:
@@ -92,12 +92,12 @@ class booleanFormulaBuilder():
                 base=base, current=self.modifier
         )
 
-    def add_unknown_function(self, cat_list):
+    def add_unknown_function(self, cat_list, target, tran_id):
         """..."""
         if len(cat_list) == 0:
             raise RuntimeError("Empty list of catalyzers.")
 
-        clean_cat_list = [cleanName(cat) for cat in cat_list]
+        clean_cat_list = [clean_name(cat) for cat in cat_list]
 
         cat_list_str = "_"
         for cat in clean_cat_list:
@@ -106,7 +106,7 @@ class booleanFormulaBuilder():
             else:
                 cat_list_str = "{cat_list_str}, {cat}".format(cat=cat, cat_list_str=cat_list_str)
 
-        fun_name = "fun_x_y"
+        fun_name = "cat_{target}_{tran_id}".format(target=target, tran_id=tran_id)
         unknown_fun_str = "{fun_name}({cat_list_str})".format(fun_name=fun_name, cat_list_str=cat_list_str)
 
         if self.modifier == "_":
@@ -116,17 +116,17 @@ class booleanFormulaBuilder():
                 current=self.modifier, unknown_fun_str=unknown_fun_str
             )
 
-    def addAnd(self, vidList):
+    def add_and(self, cat_list):
         """All listed elements are required for firing."""
-        if len(vidList) == 0:
+        if len(cat_list) == 0:
             raise RuntimeError("Empty list of required elements.")
 
         base = "_"
-        for vid in vidList:
+        for vid in cat_list:
             if base == "_":
-                base = cleanName(vid)
+                base = clean_name(vid)
             else:
-                base = "({vid} & {base})".format(vid=cleanName(vid), base=base)
+                base = "({vid} & {base})".format(vid=clean_name(vid), base=base)
         if self.modifier == "_":
             self.modifier = base
         else:
@@ -134,7 +134,7 @@ class booleanFormulaBuilder():
                 base=base, current=self.modifier
             )
 
-    def finishTransition(self):
+    def finish_transition(self):
         """Add a single transition formula to the current state.
 
         The final formula is the min of the transition and the catalyst-modifiers
@@ -161,7 +161,7 @@ class booleanFormulaBuilder():
         self.modifier = "_"
 
 
-class multiStateFormulaBuilder:
+class MultiStateFormulaBuilder:
     """Builds a multistate formula.
 
     This is more simple as BMA defaults to avg(pos)-avg(neg).
@@ -175,27 +175,27 @@ class multiStateFormulaBuilder:
         """Return self.value."""
         return self.value
 
-    def addActivator(self, vid):
+    def add_activator(self, vid):
         """Do nothing."""
         pass
 
-    def addInhibitor(self, vid):
+    def add_inhibitor(self, vid):
         """Do nothing."""
         pass
 
-    def addAnd(self, vid):
+    def add_and(self, vid):
         """Do nothing."""
         pass
 
-    def addCatalysis(self, vidList):
+    def add_catalysis(self, vid_list):
         """Do nothing."""
         pass
 
-    def addTransition(self):
+    def add_transition(self):
         """Do nothing."""
         pass
 
-    def finishTransition(self):
+    def finish_transition(self):
         """Do nothing."""
         pass
 
@@ -205,7 +205,7 @@ class multiStateFormulaBuilder:
 COLOURMAP = {0: "#ff66cc", 1: "#33cc00", 2: "#ff9900", 3: "#9966ff", 4: "#00cccc"}
 
 
-def aeon_relationship(source, target, idMap, count, which="Activator"):
+def aeon_relationship(source, target, idMap, count, which):
     """Return BMA relationship dict."""
     result = {
         "ToVariable": target,
@@ -218,6 +218,7 @@ def aeon_relationship(source, target, idMap, count, which="Activator"):
 
 def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
     """Return all BMA relationships."""
+    transition_id = itertools.count()
     relationships = []
     allFormulae = {}
     out = {}
@@ -236,12 +237,14 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
         else:
             formula = multiStateFormulaBuilder()
         """
-        formula = booleanFormulaBuilder()
+        formula = BooleanFormulaBuilder()
 
         # variables may be missing from the "simplified" model.
         # Test for variable in the ID map before appending
         for transition in info[item]["transitions"]:
-            formula.addTransition()
+            tran_id = next(transition_id)
+
+            formula.add_transition()
             logger.debug(item + "\tReactants:\t" + str(transition[1]))
             # reactant
             for reactant in transition[1]:
@@ -255,24 +258,24 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
                     ):
                         relationships.append(
                             aeon_relationship(
-                                reactant, product, idMap, count, "Inhibitor"
+                                reactant, product, idMap, count, transition.type
                             )
                         )
 
                         inhibitor_name = info[reactant]["name"]
-                        formula.addInhibitor(inhibitor_name)
+                        formula.add_inhibitor(inhibitor_name)
                     else:
                         relationships.append(
-                            aeon_relationship(reactant, product, idMap, count)
+                            aeon_relationship(reactant, product, idMap, count, transition.type)
                         )
 
                         activator_name = info[reactant]["name"]
-                        formula.addActivator(activator_name)
+                        formula.add_activator(activator_name)
                 else:
                     pass
             # now modifiers
             if len(transition[2]) == 0:
-                formula.finishTransition()
+                formula.finish_transition()
                 continue
             modifiers = transition[2]
             # catalysts are a special case
@@ -281,13 +284,14 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
             inhibitors = []
             inhibitors_names = []
             # List of variables that should be omitted from formulae due to other function
-            ignoreList = []
-            ignoreList_names = []
+            ignore_list = []
+            ignore_list_names = []
             # everything else
             logger.debug(str(modifiers))
             for impact, m in modifiers:
                 if ignoreSelfLoops and m == product:
                     continue
+                """
                 if impact == "BOOLEAN_LOGIC_GATE_AND":
                     logger.debug("Found an AND gate")
                     # indicates that the listed vars will be anded
@@ -300,21 +304,21 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
                         print(type(info))
                         if jtem in info:
                             ignoreList_names.append(info[jtem]["name"])
-
+                """
                 if m in idMap:
                     if impact == "UNKNOWN_INHIBITION" or impact == "INHIBITION":
                         relationships.append(
-                            aeon_relationship(m, product, idMap, count, "Inhibitor")
+                            aeon_relationship(m, product, idMap, count, impact)
                         )
                         inhibitor_name = info[m]["name"]
-                        formula.addInhibitor(inhibitor_name)
+                        formula.add_inhibitor(inhibitor_name)
                         inhibitors.append(idMap[m])
                     else:
                         # treat all other modifiers as catalysts (casq approach)
                         logger.debug(item + "\tFound impact:" + impact)
                         catalysts.append(idMap[m])
                         catalysts_names.append(info[m]["name"])
-                        relationships.append(aeon_relationship(m, product, idMap, count))
+                        relationships.append(aeon_relationship(m, product, idMap, count, impact))
                 else:
                     pass
             """
@@ -323,12 +327,13 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
             logger.debug(item + "\tIgnoreList\t" + str(ignoreList))
             """
             # filter catalysts for items to be ignored
-            finalCat = [item for item in catalysts if item not in ignoreList]
+            final_cat = [item for item in catalysts if item not in ignore_list]
 
-            finalCat_names = [name for name in catalysts_names if name not in ignoreList_names]
-            if len(finalCat) > 0:
-                formula.add_unknown_function(finalCat_names)
-            formula.finishTransition()
+            final_cat_names = [name for name in catalysts_names if name not in ignore_list_names]
+            if len(final_cat) > 0:
+
+                formula.add_unknown_function(final_cat_names, info[item]["name"], tran_id)
+            formula.finish_transition()
         formula_prev = formula.function()
 
         out[item] = {'Formula': formula_prev, 'Relationships': relationships}
@@ -337,7 +342,7 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
     return out
 
 
-def translateGreek(name):
+def translate_greek(name):
     """Translate Greek to Latin alphabet."""
     greek_alphabet = "ΑαΒβΓγΔδΕεΖζΗηΘθΙιΚκΛλΜμΝνΞξΟοΠπΡρΣσςΤτΥυΦφΧχΨψΩω"
     latin_alphabet = "AaBbGgDdEeZzHhJjIiKkLlMmNnXxOoPpRrSssTtUuFfQqYyWw"
@@ -347,16 +352,16 @@ def translateGreek(name):
 
 def depunctuate(name):
     """Replace punctuation by underscores."""
-    badChars = " ,-()+:/\\'[]><"
+    bad_chars = " ,-()+:/\\'[]><"
     alternatives = "______________"
-    cleanup = str.maketrans(badChars, alternatives)
+    cleanup = str.maketrans(bad_chars, alternatives)
     return name.translate(cleanup)
 
 
-def cleanName(name):
+def clean_name(name):
     """Remove punctuation and replace Greek letters."""
-    noPunctuation = depunctuate(name)
-    result = translateGreek(noPunctuation)
+    no_punctuation = depunctuate(name)
+    result = translate_greek(no_punctuation)
     # TODO: This can generate the same name for variables that only differ in
     # non-alphanumeric characters. We should probably fix that in the future.
     result = re.sub('[^0-9a-zA-Z_]', '_', result)
@@ -366,33 +371,44 @@ def cleanName(name):
 def aeon_model_variable(var, var_d, info):
     """Return BMA model variable as a dict."""
 
-    position = "#position:{name}:{position_x},{position_y}\n".format(name = cleanName(info[var]['name']),
-                                                                  position_x = float(info[var]["x"]),
-                                                                  position_y = float(info[var]["y"]))
-    formula = "${name}:{formula}\n".format(name = cleanName(info[var]['name']), formula = var_d['Formula'])
+    position = "#position:{name}:{position_x},{position_y}\n".format(name=clean_name(info[var]['name']),
+                                                                     position_x=float(info[var]["x"]),
+                                                                     position_y=float(info[var]["y"]))
+    formula = "${name}:{formula}\n".format(name=clean_name(info[var]['name']), formula=var_d['Formula'])
 
-    #print(cleanName(var_d['Formula']))
     relationships = ""
+
     for relationship in var_d['Relationships']:
-        type = "->" if relationship['Type'] == "Activator" else "-|"
-        relationship_str = "{from_v} {type} {to_v}\n".format(
-            from_v = cleanName(info[relationship['FromVariable']]['name']),
-            type = type,
-            to_v = cleanName(info[relationship['ToVariable']]['name']))
+
+        if relationship['Type'].find('UNKNOWN_', 0) is not -1:
+            if relationship in ["UNKNOWN_INHIBITION", "UNKNOWN_NEGATIVE_INFLUENCE"]:
+                rec_type = "-|?"
+            else:
+                rec_type = "->?"
+
+        else:
+            rec_type = "-|" if relationship['Type'] in ["INHIBITION", "NEGATIVE_INFLUENCE"] else "->"
+
+        #  TODO: delete (x)
+        relationship_str = "{from_v} {type}({x}) {to_v}\n".format(
+            x=relationship['Type'],
+            from_v=clean_name(info[relationship['FromVariable']]['name']),
+            type=rec_type,
+            to_v=clean_name(info[relationship['ToVariable']]['name']))
         relationships += relationship_str
 
     return position + formula + relationships
 
 
-def bma_layout_variable(vid, infoVariable, fill=None, description=""):
+def bma_layout_variable(vid, info_variable, fill=None, description=""):
     """Return BMA layout variable as a dict."""
     result = {
         "Id": vid,
-        "Name": cleanName(infoVariable["name"]),
+        "Name": clean_name(info_variable["name"]),
         "Type": "Constant",
         "ContainerId": 0,
-        "PositionX": float(infoVariable["x"]),
-        "PositionY": float(infoVariable["y"]),
+        "PositionX": float(info_variable["x"]),
+        "PositionY": float(info_variable["y"]),
         "CellY": 0,
         "CellX": 0,
         "Angle": 0,
@@ -403,7 +419,7 @@ def bma_layout_variable(vid, infoVariable, fill=None, description=""):
     return result
 
 
-def write_aeon_2(
+def write_aeon(
     filename: str,
     info,
     granularity=1,
@@ -435,14 +451,12 @@ def write_aeon_2(
             compartmentColour[compList[i][0]] = COLOURMAP.get(0)
     """
 
-    idGenerator = itertools.count(1)
+    id_generator = itertools.count(1)
 
-
-
-    idMap = {k: next(idGenerator) for k in info.keys()}
+    id_map = {k: next(id_generator) for k in info.keys()}
 
     relationships_d = get_relationships(
-        info, idMap, idGenerator, granularity, ignoreSelfLoops
+        info, id_map, id_generator, granularity, ignoreSelfLoops
     )
 
     """logger.debug(formula)"""
@@ -453,7 +467,7 @@ def write_aeon_2(
     ]
     vl = [
         bma_layout_variable(
-            idMap[v],
+            id_map[v],
             info[v],
             #compartmentColour[info[v]["compartment"]],
             info[v]["compartment"],
