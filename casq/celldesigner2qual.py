@@ -179,7 +179,12 @@ def main(argv: List[str] = None):
     info, width, height = read_celldesigner(args.infile)
     simplify_model(info, args.upstream, args.downstream, args.names)
     if args.infile != sys.stdin and args.outfile == sys.stdout:
-        args.outfile = os.path.splitext(args.infile.name)[0] + ".sbml"
+        if args.bma:
+            args.outfile = os.path.splitext(args.infile.name)[0] + ".bma.json"
+        elif args.aeon:
+            args.outfile = os.path.splitext(args.infile.name)[0] + ".aeon"
+        else:
+            args.outfile = os.path.splitext(args.infile.name)[0] + ".sbml"
     if args.bma:
         bmaExport.write_bma(
             args.outfile, info, args.granularity, args.input, False, args.colourConstant
