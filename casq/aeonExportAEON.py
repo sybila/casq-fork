@@ -374,14 +374,21 @@ def aeon_model_variable(var, var_d, info):
     position = "#position:{name}:{position_x},{position_y}\n".format(name=clean_name(info[var]['name']),
                                                                      position_x=float(info[var]["x"]),
                                                                      position_y=float(info[var]["y"]))
-    formula = "${name}:{formula}\n".format(name=clean_name(info[var]['name']), formula=var_d['Formula'])
+    
+    # If there are no transitions or the function is empty, this variable is an "input"
+    # and has an empty update function.
+    formula = var_d['Formula']
+    if formula != "_" and formula != "":
+        formula = "${name}:{formula}\n".format(name=clean_name(info[var]['name']), formula=formula)
+    else:
+        formula = ""
 
     relationships = ""
 
     for relationship in var_d['Relationships']:
 
         if relationship['Type'].find('UNKNOWN_', 0) is not -1:
-            if relationship in ["UNKNOWN_INHIBITION", "UNKNOWN_NEGATIVE_INFLUENCE"]:
+            if relationship['Type'] in ["UNKNOWN_INHIBITION", "UNKNOWN_NEGATIVE_INFLUENCE"]:                
                 rec_type = "-|?"
             else:
                 rec_type = "->?"
@@ -389,12 +396,13 @@ def aeon_model_variable(var, var_d, info):
         else:
             rec_type = "-|" if relationship['Type'] in ["INHIBITION", "NEGATIVE_INFLUENCE"] else "->"
 
-        #  TODO: delete (x)
-        relationship_str = "{from_v} {type}({x}) {to_v}\n".format(
+        #  TODO: delete (x)        
+        relationship_str = "# Type: {x}\n{from_v} {type} {to_v}\n".format(
             x=relationship['Type'],
             from_v=clean_name(info[relationship['FromVariable']]['name']),
             type=rec_type,
             to_v=clean_name(info[relationship['ToVariable']]['name']))
+
         relationships += relationship_str
 
     return position + formula + relationships
