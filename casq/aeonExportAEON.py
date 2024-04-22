@@ -106,7 +106,7 @@ class BooleanFormulaBuilder:
             else:
                 cat_list_str = "{cat_list_str}, {cat}".format(cat=cat, cat_list_str=cat_list_str)
 
-        fun_name = "cat_{target}_{tran_id}".format(target=target, tran_id=tran_id)
+        fun_name = "cat_{target}_{tran_id}".format(target=clean_name(target), tran_id=tran_id)
         unknown_fun_str = "{fun_name}({cat_list_str})".format(fun_name=fun_name, cat_list_str=cat_list_str)
 
         if self.modifier == "_":
