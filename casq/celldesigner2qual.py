@@ -23,10 +23,10 @@ from typing import List
 
 from loguru import logger  # type: ignore
 
-from . import bmaExport, aeonExportAEON, version
-from .readCD import read_celldesigner
-from .simplify import simplify_model
-from .write import write_csv, write_qual
+from casq import bmaExport, aeonExportAEON, version
+from casq.readCD import read_celldesigner
+from casq.simplify import simplify_model
+from casq.write import write_csv, write_qual
 
 
 def map_to_model(map_filename: str, model_filename: str, bma=False):

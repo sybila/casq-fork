@@ -205,32 +205,77 @@ class MultiStateFormulaBuilder:
 COLOURMAP = {0: "#ff66cc", 1: "#33cc00", 2: "#ff9900", 3: "#9966ff", 4: "#00cccc"}
 
 
-def aeon_relationship(source, target, idMap, count, which):
-    """Return BMA relationship dict."""
-    result = {
-        "ToVariable": target,
-        "Type": which,
-        "FromVariable": source,
-        "Id": next(count),
+def aeon_relationship(source, target, idMap, count, relationship_type):
+    """Return AEON relationship dict."""
+
+    #  default is activation, known
+    relationship = {
+        "from_variable": source,
+        "to_variable": target,
+        "type": "activation",
+        "unknown": False,
+        "type_str": relationship_type,
+        # "Id": next(count),
     }
-    return result
+
+    if relationship_type.find('UNKNOWN_', 0) != -1:
+        relationship['unknown'] = True
+
+        if relationship_type in ["UNKNOWN_INHIBITION", "UNKNOWN_NEGATIVE_INFLUENCE"]:
+            relationship['type'] = "inhibition"
+
+    if relationship_type in ["INHIBITION", "NEGATIVE_INFLUENCE"]:
+        relationship['type'] = "inhibition"
+
+    print(relationship)
+    return relationship
+
+
+def add_relationship(relationships, relationship):
+    """Add unique relationship, fuse relationships with identity in "from" and "to" variables."""
+
+    new_dic = relationships
+
+    for item in new_dic:
+        if (item["from_variable"] == relationship["from_variable"] and
+                item["to_variable"] == relationship["to_variable"]):
+
+            if (item["type"] != relationship["type"] or
+                    item["unknown"] != relationship["unknown"]):
+
+                if item["unknown"] and relationship["unknown"]:
+                    item["unknown"] = True
+                else:
+                    item["unknown"] = False
+
+                #  monotonicity
+                if (item["type"] != relationship["type"] or
+                        relationship["type"] == "non_monotonic"):
+                    item["type"] = "non_monotonic"
+
+            return new_dic
+
+    new_dic.append(relationship)
+    return new_dic
 
 
 def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
-    """Return all BMA relationships."""
+    """Return all AEON relationships."""
+
     transition_id = itertools.count()
     relationships = []
     allFormulae = {}
-    out = {}
-    for item in info.keys():
+    variables = {}
+    for item_vid in info.keys():
+
         """logger.debug(
             item + ", varid = " + str(idMap[item]) + ", name = " + info[item]["name"]
         )"""
         # skip if there are no transitions
-        if len(info[item]["transitions"]) == 0:
-            logger.debug(item + "-No transitions")
+        if len(info[item_vid]["transitions"]) == 0:
+            logger.debug(item_vid + "-No transitions")
             continue
-        product = item
+        product_name = info[item_vid]['clean_name']
         """
         if granularity == 1:
             formula = booleanFormulaBuilder()
@@ -241,38 +286,32 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
 
         # variables may be missing from the "simplified" model.
         # Test for variable in the ID map before appending
-        for transition in info[item]["transitions"]:
+        for transition in info[item_vid]["transitions"]:
             tran_id = next(transition_id)
 
             formula.add_transition()
-            logger.debug(item + "\tReactants:\t" + str(transition[1]))
+            logger.debug(item_vid + "\tReactants:\t" + str(transition[1]))
             # reactant
-            for reactant in transition[1]:
-                if ignoreSelfLoops and reactant == product:
+            for reactant_vid in transition[1]:
+                if ignoreSelfLoops and reactant_vid == item_vid:
                     continue
-                if reactant in idMap:
+                if reactant_vid in idMap:
+                    reactant_name = info[reactant_vid]["clean_name"]
+
                     if transition.type in (
                         "INHIBITION",
                         "NEGATIVE_INFLUENCE",
                         "UNKNOWN_INHIBITION",
                     ):
-                        relationships.append(
-                            aeon_relationship(
-                                reactant, product, idMap, count, transition.type
-                            )
-                        )
-
-                        inhibitor_name = info[reactant]["name"]
-                        formula.add_inhibitor(inhibitor_name)
+                        formula.add_inhibitor(reactant_name)
                     else:
-                        relationships.append(
-                            aeon_relationship(reactant, product, idMap, count, transition.type)
-                        )
+                        formula.add_activator(reactant_name)
 
-                        activator_name = info[reactant]["name"]
-                        formula.add_activator(activator_name)
+                    relationship = aeon_relationship(reactant_name, product_name, idMap, count, transition.type)
+                    relationships = add_relationship(relationships, relationship)
                 else:
                     pass
+
             # now modifiers
             if len(transition[2]) == 0:
                 formula.finish_transition()
@@ -288,8 +327,9 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
             ignore_list_names = []
             # everything else
             logger.debug(str(modifiers))
-            for impact, m in modifiers:
-                if ignoreSelfLoops and m == product:
+
+            for impact, modifier_vid in modifiers:
+                if ignoreSelfLoops and modifier_vid == item_vid:
                     continue
                 """
                 if impact == "BOOLEAN_LOGIC_GATE_AND":
@@ -305,20 +345,21 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
                         if jtem in info:
                             ignoreList_names.append(info[jtem]["name"])
                 """
-                if m in idMap:
+                if modifier_vid in idMap:
+                    modifier_name = info[modifier_vid]["clean_name"]
+
                     if impact == "UNKNOWN_INHIBITION" or impact == "INHIBITION":
-                        relationships.append(
-                            aeon_relationship(m, product, idMap, count, impact)
-                        )
-                        inhibitor_name = info[m]["name"]
-                        formula.add_inhibitor(inhibitor_name)
-                        inhibitors.append(idMap[m])
+                        formula.add_inhibitor(modifier_name)
+                        inhibitors.append(idMap[modifier_vid])
+
                     else:
                         # treat all other modifiers as catalysts (casq approach)
-                        logger.debug(item + "\tFound impact:" + impact)
-                        catalysts.append(idMap[m])
-                        catalysts_names.append(info[m]["name"])
-                        relationships.append(aeon_relationship(m, product, idMap, count, impact))
+                        logger.debug(item_vid + "\tFound impact:" + impact)
+                        catalysts.append(idMap[modifier_vid])
+                        catalysts_names.append(modifier_name)
+
+                    relationship = aeon_relationship(modifier_name, product_name, idMap, count, impact)
+                    relationships = add_relationship(relationships, relationship)
                 else:
                     pass
             """
@@ -330,16 +371,18 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
             final_cat = [item for item in catalysts if item not in ignore_list]
 
             final_cat_names = [name for name in catalysts_names if name not in ignore_list_names]
-            if len(final_cat) > 0:
 
-                formula.add_unknown_function(final_cat_names, info[item]["name"], tran_id)
+            if len(final_cat) > 0:
+                formula.add_unknown_function(final_cat_names, product_name, tran_id)
+
             formula.finish_transition()
+
         formula_prev = formula.function()
 
-        out[item] = {'Formula': formula_prev, 'Relationships': relationships}
+        variables[item_vid] = {'Formula': formula_prev, 'Relationships': relationships}
         relationships = []
 
-    return out
+    return variables
 
 
 def translate_greek(name):
@@ -369,9 +412,9 @@ def clean_name(name):
 
 
 def aeon_model_variable(var, var_d, info):
-    """Return BMA model variable as a dict."""
+    """Return AEON model variable as a string."""
 
-    position = "#position:{name}:{position_x},{position_y}\n".format(name=clean_name(info[var]['name']),
+    position = "#position:{name}:{position_x},{position_y}\n".format(name=(info[var]['clean_name']),
                                                                      position_x=float(info[var]["x"]),
                                                                      position_y=float(info[var]["y"]))
     
@@ -379,29 +422,29 @@ def aeon_model_variable(var, var_d, info):
     # and has an empty update function.
     formula = var_d['Formula']
     if formula != "_" and formula != "":
-        formula = "${name}:{formula}\n".format(name=clean_name(info[var]['name']), formula=formula)
+        formula = "${name}:{formula}\n".format(name=info[var]['clean_name'], formula=formula)
     else:
         formula = ""
 
     relationships = ""
 
     for relationship in var_d['Relationships']:
+        rec_type = "-"
+        if relationship['type'] == "activation":
+            rec_type += ">"
+        elif relationship['type'] == "inhibition":
+            rec_type += "|"
+        else:  # "non-monotonic"
+            rec_type += "?"
 
-        if relationship['Type'].find('UNKNOWN_', 0) is not -1:
-            if relationship['Type'] in ["UNKNOWN_INHIBITION", "UNKNOWN_NEGATIVE_INFLUENCE"]:                
-                rec_type = "-|?"
-            else:
-                rec_type = "->?"
+        if relationship['unknown']:
+            rec_type += "?"
 
-        else:
-            rec_type = "-|" if relationship['Type'] in ["INHIBITION", "NEGATIVE_INFLUENCE"] else "->"
-
-        #  TODO: delete (x)        
-        relationship_str = "# Type: {x}\n{from_v} {type} {to_v}\n".format(
-            x=relationship['Type'],
-            from_v=clean_name(info[relationship['FromVariable']]['name']),
+        relationship_str = "# Type: {type_str}\n{from_v} {type} {to_v}\n".format(
+            type_str=relationship['type_str'],
+            from_v=clean_name(relationship['from_variable']),
             type=rec_type,
-            to_v=clean_name(info[relationship['ToVariable']]['name']))
+            to_v=clean_name(relationship['to_variable']))
 
         relationships += relationship_str
 
@@ -425,6 +468,25 @@ def bma_layout_variable(vid, info_variable, fill=None, description=""):
     if fill is not None:
         result["Fill"] = fill
     return result
+
+
+def clean_names(info):
+    clean_names_dic = {}
+
+    for vid in info.keys():
+        name = info[vid]['name']
+        c_name = clean_name(name)
+
+        if c_name not in clean_names_dic:
+            clean_names_dic[c_name] = {name: c_name}
+            info[vid]['clean_name'] = c_name
+
+        else: # c_name in
+            if name in clean_names_dic[c_name]:
+                info[vid]['clean_name'] = clean_names_dic[c_name][name]
+            else:
+                clean_names_dic[c_name][name] = c_name + "_v" + str(len(clean_names_dic[c_name]) + 1)
+                info[vid]['clean_name'] = clean_names_dic[c_name][name]
 
 
 def write_aeon(
@@ -463,15 +525,18 @@ def write_aeon(
 
     id_map = {k: next(id_generator) for k in info.keys()}
 
-    relationships_d = get_relationships(
+    # add clean variables' names into info object
+    clean_names(info)
+
+    relationships_dic = get_relationships(
         info, id_map, id_generator, granularity, ignoreSelfLoops
     )
 
     """logger.debug(formula)"""
 
     variables_model_str = [
-        aeon_model_variable(variable, relationships_d[variable], info)
-        for variable in relationships_d.keys()
+        aeon_model_variable(variable, relationships_dic[variable], info)
+        for variable in relationships_dic.keys()
     ]
     vl = [
         bma_layout_variable(
@@ -492,6 +557,7 @@ def write_aeon(
         for var in variables_model_str:
             outfile.write(var)
 
+    print(info)
 
 
     """
