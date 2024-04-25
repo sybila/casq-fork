@@ -439,8 +439,8 @@ def aeon_model_variable(var, var_d, info):
 
         if relationship['unknown']:
             rec_type += "?"
-
-        relationship_str = "# Type: {type_str}\n{from_v} {type} {to_v}\n".format(
+        # relationship_str = "# Type: {type_str}\n{from_v} {type} {to_v}\n".format
+        relationship_str = "{from_v} {type} {to_v}\n".format(
             type_str=relationship['type_str'],
             from_v=clean_name(relationship['from_variable']),
             type=rec_type,
@@ -552,8 +552,8 @@ def write_aeon(
     description = "#description:\n"
 
     with open(filename, "w", encoding='utf-8') as outfile:
-        outfile.write(name)
-        outfile.write(description)
+        # outfile.write(name)
+        # outfile.write(description)
         for var in variables_model_str:
             outfile.write(var)
 
