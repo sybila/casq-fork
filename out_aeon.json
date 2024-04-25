@@ -1,0 +1,227 @@
+{
+    "Model": {
+        "Name": "CaSQ-BMA",
+        "Variables": [
+            {
+                "Name": "s1",
+                "Id": 1,
+                "RangeFrom": 0,
+                "RangeTo": 1,
+                "Formula": "1"
+            },
+            {
+                "Name": "s2",
+                "Id": 2,
+                "RangeFrom": 0,
+                "RangeTo": 1,
+                "Formula": "(s1 & s3))"
+            },
+            {
+                "Name": "s3",
+                "Id": 3,
+                "RangeFrom": 0,
+                "RangeTo": 1,
+                "Formula": "1"
+            },
+            {
+                "Name": "s4",
+                "Id": 4,
+                "RangeFrom": 0,
+                "RangeTo": 1,
+                "Formula": "(!s5 & s1)"
+            },
+            {
+                "Name": "s5",
+                "Id": 5,
+                "RangeFrom": 0,
+                "RangeTo": 1,
+                "Formula": "1"
+            },
+            {
+                "Name": "s6",
+                "Id": 6,
+                "RangeFrom": 0,
+                "RangeTo": 1,
+                "Formula": "(s4 & s2))"
+            },
+            {
+                "Name": "s7",
+                "Id": 7,
+                "RangeFrom": 0,
+                "RangeTo": 1,
+                "Formula": "(!s8 & s2)"
+            },
+            {
+                "Name": "s8",
+                "Id": 8,
+                "RangeFrom": 0,
+                "RangeTo": 1,
+                "Formula": "1"
+            }
+        ],
+        "Relationships": [
+            {
+                "ToVariable": 2,
+                "Type": "Activator",
+                "FromVariable": 1,
+                "Id": 9
+            },
+            {
+                "ToVariable": 2,
+                "Type": "Activator",
+                "FromVariable": 3,
+                "Id": 10
+            },
+            {
+                "ToVariable": 4,
+                "Type": "Activator",
+                "FromVariable": 1,
+                "Id": 11
+            },
+            {
+                "ToVariable": 4,
+                "Type": "Inhibitor",
+                "FromVariable": 5,
+                "Id": 12
+            },
+            {
+                "ToVariable": 6,
+                "Type": "Activator",
+                "FromVariable": 4,
+                "Id": 13
+            },
+            {
+                "ToVariable": 6,
+                "Type": "Activator",
+                "FromVariable": 2,
+                "Id": 14
+            },
+            {
+                "ToVariable": 7,
+                "Type": "Activator",
+                "FromVariable": 2,
+                "Id": 15
+            },
+            {
+                "ToVariable": 7,
+                "Type": "Inhibitor",
+                "FromVariable": 8,
+                "Id": 16
+            }
+        ]
+    },
+    "Layout": {
+        "Variables": [
+            {
+                "Id": 1,
+                "Name": "s1",
+                "Type": "Constant",
+                "ContainerId": 0,
+                "PositionX": 146.0,
+                "PositionY": 150.0,
+                "CellY": 0,
+                "CellX": 0,
+                "Angle": 0,
+                "Description": "",
+                "Fill": "default_compartment"
+            },
+            {
+                "Id": 2,
+                "Name": "s2",
+                "Type": "Constant",
+                "ContainerId": 0,
+                "PositionX": 343.0,
+                "PositionY": 150.0,
+                "CellY": 0,
+                "CellX": 0,
+                "Angle": 0,
+                "Description": "",
+                "Fill": "default_compartment"
+            },
+            {
+                "Id": 3,
+                "Name": "s3",
+                "Type": "Constant",
+                "ContainerId": 0,
+                "PositionX": 244.0,
+                "PositionY": 42.0,
+                "CellY": 0,
+                "CellX": 0,
+                "Angle": 0,
+                "Description": "",
+                "Fill": "default_compartment"
+            },
+            {
+                "Id": 4,
+                "Name": "s4",
+                "Type": "Constant",
+                "ContainerId": 0,
+                "PositionX": 147.0,
+                "PositionY": 282.0,
+                "CellY": 0,
+                "CellX": 0,
+                "Angle": 0,
+                "Description": "",
+                "Fill": "default_compartment"
+            },
+            {
+                "Id": 5,
+                "Name": "s5",
+                "Type": "Constant",
+                "ContainerId": 0,
+                "PositionX": 36.0,
+                "PositionY": 216.0,
+                "CellY": 0,
+                "CellX": 0,
+                "Angle": 0,
+                "Description": "",
+                "Fill": "default_compartment"
+            },
+            {
+                "Id": 6,
+                "Name": "s6",
+                "Type": "Constant",
+                "ContainerId": 0,
+                "PositionX": 346.0,
+                "PositionY": 282.0,
+                "CellY": 0,
+                "CellX": 0,
+                "Angle": 0,
+                "Description": "",
+                "Fill": "default_compartment"
+            },
+            {
+                "Id": 7,
+                "Name": "s7",
+                "Type": "Constant",
+                "ContainerId": 0,
+                "PositionX": 485.0,
+                "PositionY": 150.0,
+                "CellY": 0,
+                "CellX": 0,
+                "Angle": 0,
+                "Description": "",
+                "Fill": "default_compartment"
+            },
+            {
+                "Id": 8,
+                "Name": "s8",
+                "Type": "Constant",
+                "ContainerId": 0,
+                "PositionX": 414.0,
+                "PositionY": 39.0,
+                "CellY": 0,
+                "CellX": 0,
+                "Angle": 0,
+                "Description": "",
+                "Fill": "default_compartment"
+            }
+        ],
+        "Containers": [],
+        "Description": ""
+    },
+    "ltl": {
+        "states": [],
+        "operations": []
+    }
+}

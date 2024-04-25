@@ -1,0 +1,1879 @@
+#position:FRIZZLED_LRP1_5_6_WNT_complex:3165.0,747.0
+$FRIZZLED_LRP1_5_6_WNT_complex:!SFRP5
+SFRP5 -| FRIZZLED_LRP1_5_6_WNT_complex
+#position:PARVG_ILK_complex:1939.0,1467.0
+$PARVG_ILK_complex:(PARVG & ILK)
+PARVG -> PARVG_ILK_complex
+ILK -> PARVG_ILK_complex
+#position:NFKB_N_complex:4150.0,4007.0
+$NFKB_N_complex:NFKB_complex
+NFKB_complex -> NFKB_N_complex
+#position:RANK_RANKL_complex:4245.0,740.0
+$RANK_RANKL_complex:RANKL
+RANKL -> RANK_RANKL_complex
+#position:TAB1_TAB2_complex:5950.0,1802.0
+#position:IRAK1_IRAK4_complex:4540.0,2297.0
+$IRAK1_IRAK4_complex:((IRAK1_phosphorylated & IRAK4) & cat_IRAK1_IRAK4_complex_5(TIRAP_MYD88_complex))
+IRAK1_phosphorylated -> IRAK1_IRAK4_complex
+IRAK4 -> IRAK1_IRAK4_complex
+TIRAP_MYD88_complex -> IRAK1_IRAK4_complex
+#position:STAT1_STAT2_complex:5875.0,3152.0
+$STAT1_STAT2_complex:(STAT2 & STAT1_phosphorylated)
+STAT2 -> STAT1_STAT2_complex
+STAT1_phosphorylated -> STAT1_STAT2_complex
+#position:TGFB1_TGFBR1_complex:1185.0,747.0
+$TGFB1_TGFBR1_complex:TGFB1
+TGFB1 -> TGFB1_TGFBR1_complex
+#position:IL1B_IL1R1_complex:5545.0,747.0
+$IL1B_IL1R1_complex:(IL1B_Extracellular_space_Space & IL1R1)
+IL1B_Extracellular_space_Space -> IL1B_IL1R1_complex
+IL1R1 -> IL1B_IL1R1_complex
+#position:IKK_complex:3870.0,3336.75
+$IKK_complex:(!TRAF3IP2_phosphorylated & cat_IKK_complex_9(TAB1_TAB2_TAK1_complex, MAP3K14_phosphorylated, AKT2_phosphorylated, MAP4K4_phosphorylated, PRRT2, MAP3K7_phosphorylated))
+TAB1_TAB2_TAK1_complex -> IKK_complex
+MAP3K14_phosphorylated -> IKK_complex
+AKT2_phosphorylated -> IKK_complex
+MAP4K4_phosphorylated -> IKK_complex
+PRRT2 -> IKK_complex
+MAP3K7_phosphorylated -> IKK_complex
+TRAF3IP2_phosphorylated -| IKK_complex
+#position:FYN_CD3E_complex:2845.0,747.0
+$FYN_CD3E_complex:(FYN & cat_FYN_CD3E_complex_10(SH2D1A))
+FYN -> FYN_CD3E_complex
+SH2D1A -> FYN_CD3E_complex
+#position:TAB1_TAB2_TAK1_complex:5545.0,2102.0
+$TAB1_TAB2_TAK1_complex:cat_TAB1_TAB2_TAK1_complex_11(RIPK1_TRAF6_complex, MAP4K1, TRAF2_TRAF5_complex, TRAF6_phosphorylated)
+RIPK1_TRAF6_complex -> TAB1_TAB2_TAK1_complex
+MAP4K1 -> TAB1_TAB2_TAK1_complex
+TRAF2_TRAF5_complex -> TAB1_TAB2_TAK1_complex
+TRAF6_phosphorylated -> TAB1_TAB2_TAK1_complex
+#position:VEGFC_MET_complex:969.0,747.0
+$VEGFC_MET_complex:VEGFC
+VEGFC -> VEGFC_MET_complex
+#position:TBK1_IKBKE_complex:3420.0,3167.0
+$TBK1_IKBKE_complex:cat_TBK1_IKBKE_complex_13(TRAF3)
+TRAF3 -> TBK1_IKBKE_complex
+#position:IL17A_IL17RA_complex:5305.0,740.0
+$IL17A_IL17RA_complex:IL17A_Extracellular_space_Space
+IL17A_Extracellular_space_Space -> IL17A_IL17RA_complex
+#position:IL18_IL18R_complex:4787.0,739.0
+$IL18_IL18R_complex:IL18
+IL18 -> IL18_IL18R_complex
+#position:TRAF2_TRAF5_complex:6020.0,1037.0
+$TRAF2_TRAF5_complex:cat_TRAF2_TRAF5_complex_16(TRADD_phosphorylated)
+TRADD_phosphorylated -> TRAF2_TRAF5_complex
+#position:IL1A_IL1R1_complex:5845.0,747.0
+$IL1A_IL1R1_complex:(IL1A & IL1R1)
+IL1A -> IL1A_IL1R1_complex
+IL1R1 -> IL1A_IL1R1_complex
+#position:NCF_CYBB_CYBA_complex:6365.0,2712.0
+$NCF_CYBB_CYBA_complex:cat_NCF_CYBB_CYBA_complex_18(RAC1_2, ca2__ion_Cytoplasm)
+RAC1_2 -> NCF_CYBB_CYBA_complex
+ca2__ion_Cytoplasm ->? NCF_CYBB_CYBA_complex
+#position:FN1_ITGAV_complex:4022.0,741.0
+$FN1_ITGAV_complex:FN1_Extracellular_space_Space
+FN1_Extracellular_space_Space -> FN1_ITGAV_complex
+#position:DOCK2_CRKL_complex:560.0,1482.0
+$DOCK2_CRKL_complex:(DOCK2 & CRKL_phosphorylated)
+DOCK2 -> DOCK2_CRKL_complex
+CRKL_phosphorylated -> DOCK2_CRKL_complex
+#position:CCNB1_CDC2_complex_Cytoplasm:4250.0,1758.5
+$CCNB1_CDC2_complex_Cytoplasm:(CCNB1_CDC2_complex_Cytoplasm_1 & cat_CCNB1_CDC2_complex_Cytoplasm_21(CCNH_CDK7_complex))
+CCNB1_CDC2_complex_Cytoplasm_1 -> CCNB1_CDC2_complex_Cytoplasm
+CCNH_CDK7_complex -> CCNB1_CDC2_complex_Cytoplasm
+#position:TICAM1_TICAM2_complex:2770.0,985.5
+$TICAM1_TICAM2_complex:cat_TICAM1_TICAM2_complex_22(LY96_TLR2_4_complex)
+LY96_TLR2_4_complex -> TICAM1_TICAM2_complex
+#position:PIK3AP1_PIK3R5_complex:625.0,1077.0
+$PIK3AP1_PIK3R5_complex:(PIK3AP1 & PIK3R5_phosphorylated)
+PIK3AP1 -> PIK3AP1_PIK3R5_complex
+PIK3R5_phosphorylated -> PIK3AP1_PIK3R5_complex
+#position:ICAM_ITGB2_ITGAL_complex:3737.5,742.0
+$ICAM_ITGB2_ITGAL_complex:(ITGAL_ITGB2_ICAM2_3_complex & ICAM1_Extracellular_space_Space)
+ITGAL_ITGB2_ICAM2_3_complex -> ICAM_ITGB2_ITGAL_complex
+ICAM1_Extracellular_space_Space -> ICAM_ITGB2_ITGAL_complex
+#position:LBP_CD14_complex:2245.0,747.0
+$LBP_CD14_complex:LBP
+LBP -> LBP_CD14_complex
+#position:KLRK1_HCST_MICB_complex:1885.0,744.0
+$KLRK1_HCST_MICB_complex:(HCST_KLRK1_complex & MICB)
+HCST_KLRK1_complex -> KLRK1_HCST_MICB_complex
+MICB -> KLRK1_HCST_MICB_complex
+#position:LY96_TLR2_4_complex:2525.0,747.0
+$LY96_TLR2_4_complex:(LY96 & cat_LY96_TLR2_4_complex_27(LBP_CD14_complex))
+LY96 -> LY96_TLR2_4_complex
+LBP_CD14_complex -> LY96_TLR2_4_complex
+#position:PDIA3_HLA_A_B2M_complex:6491.0,2952.0
+$PDIA3_HLA_A_B2M_complex:TAP1_2
+TAP1_2 -> PDIA3_HLA_A_B2M_complex
+#position:ISGF3_complex:6547.5,4029.5
+$ISGF3_complex:(STAT1_STAT2_complex & IRF9)
+STAT1_STAT2_complex -> ISGF3_complex
+IRF9 -> ISGF3_complex
+#position:CCNB1_CDC2_complex_Cytoplasm_1:3920.0,1757.0
+$CCNB1_CDC2_complex_Cytoplasm_1:(CCNB1_CDC2_complex_Cytoplasm & cat_CCNB1_CDC2_complex_Cytoplasm_1_30(CDC25B_C))
+CCNB1_CDC2_complex_Cytoplasm -> CCNB1_CDC2_complex_Cytoplasm_1
+CDC25B_C -> CCNB1_CDC2_complex_Cytoplasm_1
+#position:TIRAP_MYD88_complex:3300.0,1465.5
+$TIRAP_MYD88_complex:((MYD88 & TIRAP) & cat_TIRAP_MYD88_complex_31(LY96_TLR2_4_complex))
+MYD88 -> TIRAP_MYD88_complex
+TIRAP -> TIRAP_MYD88_complex
+LY96_TLR2_4_complex -> TIRAP_MYD88_complex
+#position:NFKB_complex:4205.0,3152.0
+$NFKB_complex:(!COMMD1 & IKBA_NFKB1_RELA_complex)
+IKBA_NFKB1_RELA_complex -> NFKB_complex
+COMMD1 -| NFKB_complex
+#position:IFNA1_B1_IFNAR1_R2_complex:6945.0,747.0
+$IFNA1_B1_IFNAR1_R2_complex:IFNA1_B1
+IFNA1_B1 -> IFNA1_B1_IFNAR1_R2_complex
+#position:FGF1_FGFR1_complex:60.0,742.0
+$FGF1_FGFR1_complex:FGF1
+FGF1 -> FGF1_FGFR1_complex
+#position:IL6_IL6R_complex:4597.0,742.0
+$IL6_IL6R_complex:IL6_Extracellular_space_Space
+IL6_Extracellular_space_Space -> IL6_IL6R_complex
+#position:HCST_KLRK1_complex:1725.0,747.0
+$HCST_KLRK1_complex:HCST
+HCST -> HCST_KLRK1_complex
+#position:TNF_TNFRSF1A_B_complex:6005.0,747.0
+$TNF_TNFRSF1A_B_complex:TNF_Extracellular_space_Space
+TNF_Extracellular_space_Space -> TNF_TNFRSF1A_B_complex
+#position:CCNH_CDK7_complex:3840.5,2921.0
+#position:IL6_IL6ST_complex:4477.0,743.0
+$IL6_IL6ST_complex:IL6_Extracellular_space_Space
+IL6_Extracellular_space_Space -> IL6_IL6ST_complex
+#position:EGF_EGFR_complex:785.0,747.0
+$EGF_EGFR_complex:EGF
+EGF -> EGF_EGFR_complex
+#position:SHP2_GRB2_complex:2100.0,1232.0
+$SHP2_GRB2_complex:(PTPN11_phosphorylated & GRB2)
+PTPN11_phosphorylated -> SHP2_GRB2_complex
+GRB2 -> SHP2_GRB2_complex
+#position:WNT_FRIZZLED_complex:3292.5,737.5
+$WNT_FRIZZLED_complex:WNT5A
+WNT5A -> WNT_FRIZZLED_complex
+#position:CXCL12_CXCR4_complex:6585.0,741.0
+$CXCL12_CXCR4_complex:CXCL12
+CXCL12 -> CXCL12_CXCR4_complex
+#position:RIPK1_TRAF6_complex:5660.0,1329.5
+$RIPK1_TRAF6_complex:((RIPK1 & TRAF6) & cat_RIPK1_TRAF6_complex_44(TICAM1_TICAM2_complex))
+RIPK1 -> RIPK1_TRAF6_complex
+TRAF6 -> RIPK1_TRAF6_complex
+TICAM1_TICAM2_complex -> RIPK1_TRAF6_complex
+#position:MTORC1_complex_Cytoplasm_1:1530.0,2282.0
+$MTORC1_complex_Cytoplasm_1:(MTORC1_complex_Cytoplasm & cat_MTORC1_complex_Cytoplasm_1_45(AKT2_phosphorylated))
+MTORC1_complex_Cytoplasm -> MTORC1_complex_Cytoplasm_1
+AKT2_phosphorylated -> MTORC1_complex_Cytoplasm_1
+#position:IGF1_IGF1R_complex:285.0,747.0
+$IGF1_IGF1R_complex:IGF1
+IGF1 -> IGF1_IGF1R_complex
+#position:CXCL16_CXCR6_complex:6464.0,742.0
+$CXCL16_CXCR6_complex:CXCL16
+CXCL16 -> CXCL16_CXCR6_complex
+#position:GRB2_BLNK_complex:2184.5,996.0
+$GRB2_BLNK_complex:(GRB2 & BLNK)
+GRB2 -> GRB2_BLNK_complex
+BLNK -> GRB2_BLNK_complex
+#position:FAS_FASL_complex:5164.0,739.0
+$FAS_FASL_complex:FASLG
+FASLG -> FAS_FASL_complex
+#position:PDGFA_PDGFRA_complex:545.0,747.0
+$PDGFA_PDGFRA_complex:PDGFA
+PDGFA -> PDGFA_PDGFRA_complex
+#position:ITGAL_ITGB2_ICAM2_3_complex:3608.0,736.0
+#position:TAB1_TAB2_TRAF6_complex:6385.0,1837.0
+$TAB1_TAB2_TRAF6_complex:((TAB1_TAB2_complex & TRAF6_phosphorylated) & cat_TAB1_TAB2_TRAF6_complex_52(IRAK1_phosphorylated, IRAK4))
+TAB1_TAB2_complex -> TAB1_TAB2_TRAF6_complex
+TRAF6_phosphorylated -> TAB1_TAB2_TRAF6_complex
+IRAK1_phosphorylated -> TAB1_TAB2_TRAF6_complex
+IRAK4 -> TAB1_TAB2_TRAF6_complex
+#position:ca2_slash_CALM_complex:3940.0,2307.0
+$ca2_slash_CALM_complex:(ca2__ion_Cytoplasm & CALM1)
+ca2__ion_Cytoplasm -> ca2_slash_CALM_complex
+CALM1 -> ca2_slash_CALM_complex
+#position:PTPN6_CD72_complex:1505.0,747.0
+$PTPN6_CD72_complex:PTPN6
+PTPN6 -> PTPN6_CD72_complex
+#position:VDAC_Ca2__complex:7444.0,2180.0
+$VDAC_Ca2__complex:ca2__ion_Cytoplasm
+ca2__ion_Cytoplasm -> VDAC_Ca2__complex
+#position:SERCA_Ca2__complex:6563.0,3160.0
+$SERCA_Ca2__complex:(!M_pep_c_simple_molecule & (!M_g6p_c_simple_molecule & ca2__ion_Cytoplasm))
+ca2__ion_Cytoplasm -> SERCA_Ca2__complex
+M_g6p_c_simple_molecule -| SERCA_Ca2__complex
+M_pep_c_simple_molecule -| SERCA_Ca2__complex
+#position:IP3R_Ca2__complex:6826.0,3160.0
+$IP3R_Ca2__complex:ca2__ion_Endoplasmic_space_Reticulum
+ca2__ion_Endoplasmic_space_Reticulum -> IP3R_Ca2__complex
+#position:Apoptosome_complex:8990.75,2783.0
+$Apoptosome_complex:((CYCS & APAF1) & CASP9)
+CYCS -> Apoptosome_complex
+APAF1 -> Apoptosome_complex
+CASP9 -> Apoptosome_complex
+#position:HOMODIMER_space_STAT3:5231.0,4069.0
+$HOMODIMER_space_STAT3:(!SIN3A & STAT3_phosphorylated_Cytoplasm)
+STAT3_phosphorylated_Cytoplasm -> HOMODIMER_space_STAT3
+SIN3A -| HOMODIMER_space_STAT3
+#position:ICAM1_Secreted_space_Molecules:4657.0,5581.0
+$ICAM1_Secreted_space_Molecules:cat_ICAM1_Secreted_space_Molecules_60(NFKB_N_complex)
+NFKB_N_complex -> ICAM1_Secreted_space_Molecules
+#position:SMAD7:1510.0,2052.0
+$SMAD7:cat_SMAD7_61(TGFB1_TGFBR1_complex)
+TGFB1_TGFBR1_complex -> SMAD7
+#position:BSG:3862.0,3840.0
+$BSG:BSG_rna
+BSG_rna -> BSG
+#position:MIR34A_rna:6530.0,4222.0
+#position:MIR203A_rna:5455.0,4222.0
+#position:IFNA1_B1:6830.0,612.0
+$IFNA1_B1:IFNB1_rna
+IFNB1_rna -> IFNA1_B1
+#position:RPS6KB1_phosphorylated:710.0,2347.0
+$RPS6KB1_phosphorylated:cat_RPS6KB1_phosphorylated_66(AKT2_phosphorylated, MTORC1_complex_Cytoplasm_1)
+AKT2_phosphorylated -> RPS6KB1_phosphorylated
+MTORC1_complex_Cytoplasm_1 -> RPS6KB1_phosphorylated
+#position:IRAK4_rna:3855.0,4807.0
+$IRAK4_rna:!MIR10a_rna
+MIR10a_rna -| IRAK4_rna
+#position:DUSP2_rna:5318.5,5119.0
+#position:MMP1_rna:4875.0,5107.0
+$MMP1_rna:(!MIR155_rna & cat_MMP1_rna_69(ETS1_phosphorylated, HEX1_Cytoplasm_active, HIF1))
+MIR155_rna -| MMP1_rna
+ETS1_phosphorylated -> MMP1_rna
+HEX1_Cytoplasm_active -> MMP1_rna
+HIF1 -> MMP1_rna
+#position:PERP_rna:394.0,4760.5
+$PERP_rna:cat_PERP_rna_70(TP53_phosphorylated_Nucleus)
+TP53_phosphorylated_Nucleus -> PERP_rna
+#position:PLA2G2A_phosphorylated:6750.0,2437.0
+$PLA2G2A_phosphorylated:cat_PLA2G2A_phosphorylated_71(MAPK1_phosphorylated, GNAI3)
+MAPK1_phosphorylated -> PLA2G2A_phosphorylated
+GNAI3 -> PLA2G2A_phosphorylated
+#position:PRKACG:4030.0,1552.0
+$PRKACG:cat_PRKACG_72(active_cAMP_simple_molecule)
+active_cAMP_simple_molecule -> PRKACG
+#position:MMP9:5034.0,5780.0
+$MMP9:MMP9_rna
+MMP9_rna -> MMP9
+#position:BRAF_phosphorylated:3155.0,1500.5
+$BRAF_phosphorylated:cat_BRAF_phosphorylated_74(PRRT2, NRAS)
+PRRT2 -> BRAF_phosphorylated
+NRAS -> BRAF_phosphorylated
+#position:CXCL9:3557.0,5577.0
+$CXCL9:cat_CXCL9_75(IRF3_phosphorylated, HOMODIMER_space_STAT1)
+IRF3_phosphorylated -> CXCL9
+HOMODIMER_space_STAT1 -> CXCL9
+#position:MIR451A_rna:2255.0,4233.0
+#position:RPS6KA1_phosphorylated:3710.0,3007.0
+$RPS6KA1_phosphorylated:cat_RPS6KA1_phosphorylated_77(MAPK1_phosphorylated, MAPK7)
+MAPK1_phosphorylated -> RPS6KA1_phosphorylated
+MAPK7 -> RPS6KA1_phosphorylated
+#position:MAP3K5:3790.0,2422.0
+$MAP3K5:cat_MAP3K5_78(TRAF2, RAC1_2, DAXX)
+TRAF2 -> MAP3K5
+RAC1_2 -> MAP3K5
+DAXX -> MAP3K5
+#position:ILK:1770.0,1552.0
+$ILK:cat_ILK_79(PI3_4_5_P__3_simple_molecule)
+PI3_4_5_P__3_simple_molecule -> ILK
+#position:ZAP70_phosphorylated:1910.0,1237.0
+$ZAP70_phosphorylated:(ZAP70 & cat_ZAP70_phosphorylated_80(TYROBP_phosphorylated))
+ZAP70 -> ZAP70_phosphorylated
+TYROBP_phosphorylated -> ZAP70_phosphorylated
+#position:CXCL10:3398.0,5768.0
+$CXCL10:cat_CXCL10_81(IRF3_phosphorylated, HOMODIMER_space_STAT1)
+IRF3_phosphorylated -> CXCL10
+HOMODIMER_space_STAT1 -> CXCL10
+#position:IL33_rna:6665.0,4627.0
+$IL33_rna:cat_IL33_rna_82(HIF1)
+HIF1 -> IL33_rna
+#position:CXCL11:3141.0,5797.0
+$CXCL11:cat_CXCL11_83(IRF3_phosphorylated, HOMODIMER_space_STAT1)
+IRF3_phosphorylated -> CXCL11
+HOMODIMER_space_STAT1 -> CXCL11
+#position:LCK:6876.5,1311.5
+$LCK:(!NECTIN3_PTPRC_NECTIN1_complex & LCK_phosphorylated)
+LCK_phosphorylated -> LCK
+NECTIN3_PTPRC_NECTIN1_complex -| LCK
+#position:MAP2K2_phosphorylated:2160.0,1761.75
+$MAP2K2_phosphorylated:cat_MAP2K2_phosphorylated_85(RAF1_phosphorylated, MAP3K8_phosphorylated, PRKCD, BRAF_phosphorylated)
+RAF1_phosphorylated -> MAP2K2_phosphorylated
+MAP3K8_phosphorylated -> MAP2K2_phosphorylated
+PRKCD -> MAP2K2_phosphorylated
+BRAF_phosphorylated -> MAP2K2_phosphorylated
+#position:BCL2_phosphorylated:2518.5,2931.75
+$BCL2_phosphorylated:cat_BCL2_phosphorylated_86(MAPK1_phosphorylated)
+MAPK1_phosphorylated -> BCL2_phosphorylated
+#position:FADD:4486.5,1300.5
+$FADD:cat_FADD_87(TIRAP_MYD88_complex, CASP8AP2, FAS_FASL_complex, TRAF2_TRAF5_complex)
+TIRAP_MYD88_complex -> FADD
+CASP8AP2 -> FADD
+FAS_FASL_complex -> FADD
+TRAF2_TRAF5_complex -> FADD
+#position:MMP3_rna:4621.0,4723.0
+$MMP3_rna:(!MIR155_rna & cat_MMP3_rna_88(HEX1_Cytoplasm_active, HIF1))
+MIR155_rna -| MMP3_rna
+HEX1_Cytoplasm_active -> MMP3_rna
+HIF1 -> MMP3_rna
+#position:NFKBIA_rna:6340.5,5299.0
+$NFKBIA_rna:cat_NFKBIA_rna_89(CREB1_phosphorylated, JUN_phosphorylated, NFKB_N_complex)
+CREB1_phosphorylated -> NFKBIA_rna
+JUN_phosphorylated -> NFKBIA_rna
+NFKB_N_complex -> NFKBIA_rna
+#position:HLA_DRB1_rna:5655.0,5314.5
+#position:CPNE3_rna:2195.0,4972.0
+$CPNE3_rna:!MIR451A_rna
+MIR451A_rna -| CPNE3_rna
+#position:MIR10a_rna:3991.5,4219.25
+$MIR10a_rna:!YY1
+YY1 -| MIR10a_rna
+#position:IRF7:2371.0,5723.0
+$IRF7:cat_IRF7_93(ISGF3_complex)
+ISGF3_complex -> IRF7
+#position:BSG_rna:6865.0,4957.0
+#position:CXCL2:4531.0,5772.0
+$CXCL2:cat_CXCL2_95(NFKB_N_complex)
+NFKB_N_complex -> CXCL2
+#position:YY1_rna:5820.5,4849.0
+#position:IL7_rna:6745.0,4927.0
+#position:IRF8_Cytoplasm:3270.0,3712.0
+#position:IFNA1_rna:3915.0,4612.0
+$IFNA1_rna:cat_IFNA1_rna_99(IRF7_phosphorylated)
+IRF7_phosphorylated -> IFNA1_rna
+#position:CASP3_phosphorylated:4801.0,1754.5
+$CASP3_phosphorylated:cat_CASP3_phosphorylated_100(CASP8_phosphorylated, Apoptosome_complex)
+CASP8_phosphorylated -> CASP3_phosphorylated
+Apoptosome_complex -> CASP3_phosphorylated
+#position:IL17F_rna:6960.0,4122.0
+$IL17F_rna:cat_IL17F_rna_101(STAT3_phosphorylated_Nucleus)
+STAT3_phosphorylated_Nucleus -> IL17F_rna
+#position:YAP1_phosphorylated:1222.5,2168.75
+$YAP1_phosphorylated:cat_YAP1_phosphorylated_102(AKT2_phosphorylated)
+AKT2_phosphorylated -> YAP1_phosphorylated
+#position:IRF9:5130.0,2872.0
+#position:FOXO1_phosphorylated:820.0,4077.0
+$FOXO1_phosphorylated:!AKT2_phosphorylated
+AKT2_phosphorylated -| FOXO1_phosphorylated
+#position:STAT3_phosphorylated_Cytoplasm:5315.0,3547.0
+$STAT3_phosphorylated_Cytoplasm:(!ZC3H12A & cat_STAT3_phosphorylated_Cytoplasm_105(JAK1, TYK2_phosphorylated, AKT2_phosphorylated))
+ZC3H12A -| STAT3_phosphorylated_Cytoplasm
+JAK1 -> STAT3_phosphorylated_Cytoplasm
+TYK2_phosphorylated -> STAT3_phosphorylated_Cytoplasm
+AKT2_phosphorylated -> STAT3_phosphorylated_Cytoplasm
+#position:ELK1_phosphorylated:4230.0,3787.0
+$ELK1_phosphorylated:cat_ELK1_phosphorylated_106(MAPK8_phosphorylated, MAPK1_phosphorylated)
+MAPK8_phosphorylated -> ELK1_phosphorylated
+MAPK1_phosphorylated -> ELK1_phosphorylated
+#position:IL1RN_rna:6538.5,5149.0
+#position:cGAS_rna:1675.0,4837.0
+#position:IL35:6540.0,3763.0
+$IL35:IL35_rna
+IL35_rna -> IL35
+#position:STMN1_phosphorylated:3190.0,3442.0
+$STMN1_phosphorylated:cat_STMN1_phosphorylated_110(MAPK1_phosphorylated)
+MAPK1_phosphorylated -> STMN1_phosphorylated
+#position:RHOQ:1474.0,2756.25
+$RHOQ:cat_RHOQ_111(CRKL_phosphorylated)
+CRKL_phosphorylated -> RHOQ
+#position:SERPINE1_rna:785.0,5017.0
+$SERPINE1_rna:cat_SERPINE1_rna_112(TP53_phosphorylated_Nucleus)
+TP53_phosphorylated_Nucleus -> SERPINE1_rna
+#position:CASP8_phosphorylated:4950.0,1492.0
+$CASP8_phosphorylated:(!CFLAR & cat_CASP8_phosphorylated_113(FADD))
+FADD -> CASP8_phosphorylated
+CFLAR -| CASP8_phosphorylated
+#position:ZAP70:1430.0,1237.0
+$ZAP70:(!PTPN6_CD72_complex & ZAP70_phosphorylated)
+ZAP70_phosphorylated -> ZAP70
+PTPN6_CD72_complex -| ZAP70
+#position:IL12A_rna:1870.0,4597.0
+$IL12A_rna:cat_IL12A_rna_115(JUN_phosphorylated)
+JUN_phosphorylated -> IL12A_rna
+#position:TP53_phosphorylated_Nucleus:611.0,4041.0
+$TP53_phosphorylated_Nucleus:(!H19_rna & TP53_phosphorylated_Cytoplasm)
+TP53_phosphorylated_Cytoplasm -> TP53_phosphorylated_Nucleus
+H19_rna -| TP53_phosphorylated_Nucleus
+#position:IL26_rna:7081.0,5306.5
+#position:Angiogenesis_phenotype:1363.0,6049.0
+$Angiogenesis_phenotype:((!THBS1_rna & !SERPINE1_rna) & cat_Angiogenesis_phenotype_118(CXCL8, PGI_Secreted_space_Molecules, VEGFA_Secreted_space_Molecules, SDF_1))
+SERPINE1_rna -| Angiogenesis_phenotype
+THBS1_rna -| Angiogenesis_phenotype
+CXCL8 -> Angiogenesis_phenotype
+PGI_Secreted_space_Molecules -> Angiogenesis_phenotype
+VEGFA_Secreted_space_Molecules -> Angiogenesis_phenotype
+SDF_1 -> Angiogenesis_phenotype
+#position:MIR346_rna:6830.0,4222.0
+#position:TRAF2:6164.5,973.0
+$TRAF2:cat_TRAF2_120(IL1A_IL1R1_complex)
+IL1A_IL1R1_complex -> TRAF2
+#position:MAP2K4_phosphorylated:2390.0,1843.0
+$MAP2K4_phosphorylated:cat_MAP2K4_phosphorylated_121(MAP3K1_phosphorylated, RAC1_2)
+MAP3K1_phosphorylated -> MAP2K4_phosphorylated
+RAC1_2 -> MAP2K4_phosphorylated
+#position:RHOA:2565.0,2630.5
+$RHOA:(!ARHGAP35_phosphorylated & cat_RHOA_122(ARHGDIB, ARHGEF1, VAV1_2_phosphorylated, PRKCH, ARHGEF2))
+ARHGDIB -> RHOA
+ARHGEF1 -> RHOA
+VAV1_2_phosphorylated -> RHOA
+PRKCH -> RHOA
+ARHGAP35_phosphorylated -| RHOA
+ARHGEF2 -> RHOA
+#position:BCL2L11_rna:9070.5,4442.75
+$BCL2L11_rna:cat_BCL2L11_rna_123(FOXO1_phosphorylated, FOXO3)
+FOXO1_phosphorylated -> BCL2L11_rna
+FOXO3 -> BCL2L11_rna
+#position:CALCINEURIN:4257.5,2530.25
+$CALCINEURIN:cat_CALCINEURIN_124(ca2_slash_CALM_complex, CAMK2A)
+ca2_slash_CALM_complex -> CALCINEURIN
+CAMK2A -> CALCINEURIN
+#position:CCL2:4210.0,5753.0
+$CCL2:cat_CCL2_125(NFKB_N_complex)
+NFKB_N_complex -> CCL2
+#position:MDM2_rna:434.0,5195.5
+$MDM2_rna:cat_MDM2_rna_126(TP53_phosphorylated_Nucleus)
+TP53_phosphorylated_Nucleus -> MDM2_rna
+#position:THBS1_rna:715.0,5302.0
+$THBS1_rna:cat_THBS1_rna_127(TP53_phosphorylated_Nucleus)
+TP53_phosphorylated_Nucleus -> THBS1_rna
+#position:VAV1_2:1563.0,1143.0
+$VAV1_2:((!PTPN6_CD72_complex & VAV1_2_phosphorylated) & cat_VAV1_2_128(TXK))
+VAV1_2_phosphorylated -> VAV1_2
+PTPN6_CD72_complex -| VAV1_2
+TXK -> VAV1_2
+#position:PTGS2_rna:5598.5,4864.0
+$PTGS2_rna:cat_PTGS2_rna_129(NFAT5_phosphorylated)
+NFAT5_phosphorylated -> PTGS2_rna
+#position:NFKB1:3523.0,2770.75
+$NFKB1:(NFKB1_MAP3K8_complex & cat_NFKB1_130(AKT2_phosphorylated, IKK_complex))
+NFKB1_MAP3K8_complex -> NFKB1
+AKT2_phosphorylated -> NFKB1
+IKK_complex -> NFKB1
+#position:GNAI3:6718.5,937.75
+$GNAI3:cat_GNAI3_131(CXCL16_CXCR6_complex, CXCL12_CXCR4_complex)
+CXCL16_CXCR6_complex -> GNAI3
+CXCL12_CXCR4_complex -> GNAI3
+#position:RB1_phosphorylated:1510.0,3457.0
+$RB1_phosphorylated:(!MDM2_phosphorylated & cat_RB1_phosphorylated_132(CCNB1_CDC2_complex_Cytoplasm))
+CCNB1_CDC2_complex_Cytoplasm -> RB1_phosphorylated
+MDM2_phosphorylated -| RB1_phosphorylated
+#position:TYK2_phosphorylated:6490.0,1062.0
+$TYK2_phosphorylated:cat_TYK2_phosphorylated_133(IFNA1_B1_IFNAR1_R2_complex)
+IFNA1_B1_IFNAR1_R2_complex -> TYK2_phosphorylated
+#position:MYL6_9:330.0,3187.0
+$MYL6_9:cat_MYL6_9_134(ca2_slash_CALM_complex)
+ca2_slash_CALM_complex -> MYL6_9
+#position:ETS1_phosphorylated:3570.0,3727.0
+$ETS1_phosphorylated:cat_ETS1_phosphorylated_135(MAPK1_phosphorylated)
+MAPK1_phosphorylated -> ETS1_phosphorylated
+#position:NOD2:4610.0,2092.0
+$NOD2:cat_NOD2_136(MDP_simple_molecule)
+MDP_simple_molecule ->? NOD2
+#position:NFATC1_Secreted_space_Molecules:2680.0,5750.0
+$NFATC1_Secreted_space_Molecules:(!IRF8_Nucleus & cat_NFATC1_Secreted_space_Molecules_137(JUN_phosphorylated, FOS, NFATC1_Nucleus))
+JUN_phosphorylated -> NFATC1_Secreted_space_Molecules
+FOS -> NFATC1_Secreted_space_Molecules
+NFATC1_Nucleus -> NFATC1_Secreted_space_Molecules
+IRF8_Nucleus -| NFATC1_Secreted_space_Molecules
+#position:ADCY7:3689.0,928.5
+$ADCY7:!GNAI3
+GNAI3 -| ADCY7
+#position:HSPA5:6439.0,3087.0
+$HSPA5:GRP78_rna
+GRP78_rna -> HSPA5
+#position:SYK:5450.0,1482.0
+$SYK:cat_SYK_140(ITAM)
+ITAM -> SYK
+#position:IL18:4850.0,605.0
+$IL18:IL18_rna
+IL18_rna -> IL18
+#position:DKK1:5608.0,5593.0
+$DKK1:cat_DKK1_142(TCF_LEF, CTNNB1)
+TCF_LEF -> DKK1
+CTNNB1 -> DKK1
+#position:PYGB_phosphorylated:5490.0,2422.0
+$PYGB_phosphorylated:cat_PYGB_phosphorylated_143(CALM1_3_phosphorylated, PHKA2_phosphorylated)
+CALM1_3_phosphorylated -> PYGB_phosphorylated
+PHKA2_phosphorylated -> PYGB_phosphorylated
+#position:FYN:3845.5,875.5
+$FYN:(FYN_CD3E_complex & cat_FYN_144(NECTIN3_PTPRC_NECTIN1_complex))
+FYN_CD3E_complex -> FYN
+NECTIN3_PTPRC_NECTIN1_complex -> FYN
+#position:CTSK_rna:3175.0,4672.0
+$CTSK_rna:cat_CTSK_rna_145(JUN_phosphorylated, FOS, NFKB_N_complex)
+JUN_phosphorylated -> CTSK_rna
+FOS -> CTSK_rna
+NFKB_N_complex -> CTSK_rna
+#position:GRP78_rna:2075.0,4807.0
+#position:PDE3A_phosphorylated:3970.0,1147.0
+$PDE3A_phosphorylated:cat_PDE3A_phosphorylated_147(AKT2_phosphorylated)
+AKT2_phosphorylated -> PDE3A_phosphorylated
+#position:MAP3K7_phosphorylated:6270.0,1327.0
+$MAP3K7_phosphorylated:cat_MAP3K7_phosphorylated_148(TAB1_TAB2_TRAF6_complex, CAMK2A)
+TAB1_TAB2_TRAF6_complex -> MAP3K7_phosphorylated
+CAMK2A -> MAP3K7_phosphorylated
+#position:TP53_phosphorylated_Cytoplasm:610.0,3826.0
+$TP53_phosphorylated_Cytoplasm:!MDM2_phosphorylated
+MDM2_phosphorylated -| TP53_phosphorylated_Cytoplasm
+#position:RUNX1:131.5,4094.0
+$RUNX1:cat_RUNX1_150(MAPK1_phosphorylated, CCNB1_CDC2_complex_Cytoplasm)
+MAPK1_phosphorylated -> RUNX1
+CCNB1_CDC2_complex_Cytoplasm -> RUNX1
+#position:MIR192_rna:1495.0,4232.0
+#position:MAP2K6_phosphorylated:2869.0,2104.0
+$MAP2K6_phosphorylated:cat_MAP2K6_phosphorylated_152(TAB1_TAB2_TAK1_complex, MAP3K1_phosphorylated, MAP3K5, RAC1_2, MAP3K7_phosphorylated)
+TAB1_TAB2_TAK1_complex -> MAP2K6_phosphorylated
+MAP3K1_phosphorylated -> MAP2K6_phosphorylated
+MAP3K5 -> MAP2K6_phosphorylated
+RAC1_2 -> MAP2K6_phosphorylated
+MAP3K7_phosphorylated -> MAP2K6_phosphorylated
+#position:IL26:6919.0,3804.0
+$IL26:IL26_rna
+IL26_rna -> IL26
+#position:SOCS3_rna:2695.0,4957.0
+$SOCS3_rna:cat_SOCS3_rna_154(STAT3_phosphorylated_Nucleus)
+STAT3_phosphorylated_Nucleus -> SOCS3_rna
+#position:RAF1_phosphorylated:646.0,1796.5
+$RAF1_phosphorylated:cat_RAF1_phosphorylated_155(DOCK2_CRKL_complex, YWHAQ, PRKCH, RAP1B_phosphorylated)
+DOCK2_CRKL_complex -> RAF1_phosphorylated
+YWHAQ -> RAF1_phosphorylated
+PRKCH -> RAF1_phosphorylated
+RAP1B_phosphorylated -> RAF1_phosphorylated
+#position:IRF8_Nucleus:3270.0,4062.0
+$IRF8_Nucleus:IRF8_Cytoplasm
+IRF8_Cytoplasm -> IRF8_Nucleus
+#position:RASGRP3:370.0,1539.0
+$RASGRP3:cat_RASGRP3_157(SOS1)
+SOS1 -> RASGRP3
+#position:LTBP1:1363.0,470.0
+$LTBP1:!COMP
+COMP -| LTBP1
+#position:ADAMTS4:3224.0,5588.0
+$ADAMTS4:cat_ADAMTS4_159(NFKB_N_complex)
+NFKB_N_complex -> ADAMTS4
+#position:IL35_rna:6830.0,5212.0
+#position:YWHAQ_rna:1365.0,4987.0
+$YWHAQ_rna:cat_YWHAQ_rna_161(FOXO1_phosphorylated)
+FOXO1_phosphorylated -> YWHAQ_rna
+#position:MYD88:3011.5,1005.5
+$MYD88:cat_MYD88_162(TLR5, IL1A_IL1R1_complex, IL1B_IL1R1_complex)
+TLR5 -> MYD88
+IL1A_IL1R1_complex -> MYD88
+IL1B_IL1R1_complex -> MYD88
+#position:FASL_rna:885.0,4897.0
+$FASL_rna:cat_FASL_rna_163(FOXO1_phosphorylated)
+FOXO1_phosphorylated -> FASL_rna
+#position:CSF2_rna:5255.0,4882.0
+$CSF2_rna:cat_CSF2_rna_164(FOS, NFAT5_phosphorylated, JUN_phosphorylated)
+FOS -> CSF2_rna
+NFAT5_phosphorylated -> CSF2_rna
+JUN_phosphorylated -> CSF2_rna
+#position:Matrix_space_Degradation_phenotype:3591.0,6083.0
+$Matrix_space_Degradation_phenotype:cat_Matrix_space_Degradation_phenotype_165(MMP3, ADAMTS4, MMP1, MMP9, MMP13)
+MMP3 -> Matrix_space_Degradation_phenotype
+ADAMTS4 -> Matrix_space_Degradation_phenotype
+MMP1 -> Matrix_space_Degradation_phenotype
+MMP9 -> Matrix_space_Degradation_phenotype
+MMP13 -> Matrix_space_Degradation_phenotype
+#position:Cell_space_Chemotaxis_Recruitment_Infiltration_phenotype:4235.0,6062.5
+$Cell_space_Chemotaxis_Recruitment_Infiltration_phenotype:cat_Cell_space_Chemotaxis_Recruitment_Infiltration_phenotype_166(CXCL1, ICAM1_Secreted_space_Molecules, FN1_Secreted_space_Molecules, CXCL11, CXCL2, CXCL10, TNF_Secreted_space_Molecules, RHOA, CCL2, CXCL8, CXCL3, CCL5, CXCL9, M_Lac_L_e_simple_molecule, PGI_Secreted_space_Molecules, IL6_Secreted_space_Molecules, IL15, SDF_1)
+CXCL1 -> Cell_space_Chemotaxis_Recruitment_Infiltration_phenotype
+ICAM1_Secreted_space_Molecules -> Cell_space_Chemotaxis_Recruitment_Infiltration_phenotype
+FN1_Secreted_space_Molecules -> Cell_space_Chemotaxis_Recruitment_Infiltration_phenotype
+CXCL11 -> Cell_space_Chemotaxis_Recruitment_Infiltration_phenotype
+CXCL2 -> Cell_space_Chemotaxis_Recruitment_Infiltration_phenotype
+CXCL10 -> Cell_space_Chemotaxis_Recruitment_Infiltration_phenotype
+TNF_Secreted_space_Molecules -> Cell_space_Chemotaxis_Recruitment_Infiltration_phenotype
+RHOA -> Cell_space_Chemotaxis_Recruitment_Infiltration_phenotype
+CCL2 -> Cell_space_Chemotaxis_Recruitment_Infiltration_phenotype
+CXCL8 -> Cell_space_Chemotaxis_Recruitment_Infiltration_phenotype
+CXCL3 -> Cell_space_Chemotaxis_Recruitment_Infiltration_phenotype
+CCL5 -> Cell_space_Chemotaxis_Recruitment_Infiltration_phenotype
+CXCL9 -> Cell_space_Chemotaxis_Recruitment_Infiltration_phenotype
+M_Lac_L_e_simple_molecule -> Cell_space_Chemotaxis_Recruitment_Infiltration_phenotype
+PGI_Secreted_space_Molecules -> Cell_space_Chemotaxis_Recruitment_Infiltration_phenotype
+IL6_Secreted_space_Molecules -> Cell_space_Chemotaxis_Recruitment_Infiltration_phenotype
+IL15 -> Cell_space_Chemotaxis_Recruitment_Infiltration_phenotype
+SDF_1 -> Cell_space_Chemotaxis_Recruitment_Infiltration_phenotype
+#position:DVL1_phosphorylated:4170.0,952.0
+$DVL1_phosphorylated:cat_DVL1_phosphorylated_167(WNT_FRIZZLED_complex, FRIZZLED_LRP1_5_6_WNT_complex)
+WNT_FRIZZLED_complex -> DVL1_phosphorylated
+FRIZZLED_LRP1_5_6_WNT_complex -> DVL1_phosphorylated
+#position:CCL5:4067.0,5754.0
+$CCL5:cat_CCL5_168(NFKB_N_complex, IRF5_Nucleus)
+NFKB_N_complex -> CCL5
+IRF5_Nucleus -> CCL5
+#position:Cell_space_growth_Survival_Proliferation_phenotype:468.0,5999.0
+$Cell_space_growth_Survival_Proliferation_phenotype:cat_Cell_space_growth_Survival_Proliferation_phenotype_169(CREB1_phosphorylated, ADAMTS9_rna, TNF_Secreted_space_Molecules, p38MAPK_phosphorylated, RPS6KB1_phosphorylated, BCL2_phosphorylated, BCL2L1_rna, YWHAQ_rna, NFKB_N_complex, IL17A_Secreted_space_Molecules, M_Lac_L_e_simple_molecule, BCL_2_Mitochondrion__outter_mb__active)
+CREB1_phosphorylated -> Cell_space_growth_Survival_Proliferation_phenotype
+ADAMTS9_rna -> Cell_space_growth_Survival_Proliferation_phenotype
+TNF_Secreted_space_Molecules -> Cell_space_growth_Survival_Proliferation_phenotype
+p38MAPK_phosphorylated -> Cell_space_growth_Survival_Proliferation_phenotype
+RPS6KB1_phosphorylated -> Cell_space_growth_Survival_Proliferation_phenotype
+BCL2_phosphorylated -> Cell_space_growth_Survival_Proliferation_phenotype
+BCL2L1_rna -> Cell_space_growth_Survival_Proliferation_phenotype
+YWHAQ_rna -> Cell_space_growth_Survival_Proliferation_phenotype
+NFKB_N_complex -> Cell_space_growth_Survival_Proliferation_phenotype
+IL17A_Secreted_space_Molecules -> Cell_space_growth_Survival_Proliferation_phenotype
+M_Lac_L_e_simple_molecule -> Cell_space_growth_Survival_Proliferation_phenotype
+BCL_2_Mitochondrion__outter_mb__active -> Cell_space_growth_Survival_Proliferation_phenotype
+#position:ZFP36_rna:6100.5,5295.0
+#position:VAV1_2_phosphorylated:1783.0,1143.0
+$VAV1_2_phosphorylated:(VAV1_2 & cat_VAV1_2_phosphorylated_171(LCP2_phosphorylated, ICAM_ITGB2_ITGAL_complex, CD19))
+VAV1_2 -> VAV1_2_phosphorylated
+LCP2_phosphorylated -> VAV1_2_phosphorylated
+ICAM_ITGB2_ITGAL_complex -> VAV1_2_phosphorylated
+CD19 -> VAV1_2_phosphorylated
+#position:CSK:4850.0,1222.0
+$CSK:cat_CSK_172(ICAM_ITGB2_ITGAL_complex, FN1_ITGAV_complex)
+ICAM_ITGB2_ITGAL_complex -> CSK
+FN1_ITGAV_complex -> CSK
+#position:p38MAPK_rna:1700.0,5067.0
+$p38MAPK_rna:!MIR451A_rna
+MIR451A_rna -| p38MAPK_rna
+#position:PHKA2:4350.0,2767.0
+$PHKA2:(!PP1R3B & PHKA2_phosphorylated)
+PHKA2_phosphorylated -> PHKA2
+PP1R3B -| PHKA2
+#position:TNF_Secreted_space_Molecules:5365.0,5571.0
+$TNF_Secreted_space_Molecules:(!MIR451A_rna & cat_TNF_Secreted_space_Molecules_175(NFKB_N_complex, JUN_phosphorylated, NFAT5_phosphorylated))
+NFKB_N_complex -> TNF_Secreted_space_Molecules
+JUN_phosphorylated -> TNF_Secreted_space_Molecules
+NFAT5_phosphorylated -> TNF_Secreted_space_Molecules
+MIR451A_rna -| TNF_Secreted_space_Molecules
+#position:BTK_rna:6178.5,5089.0
+#position:BTRC_rna:3627.0,4855.0
+$BTRC_rna:!MIR10a_rna
+MIR10a_rna -| BTRC_rna
+#position:MDM2:927.5,3040.75
+$MDM2:MDM2_rna
+MDM2_rna -> MDM2
+#position:TNFRSF10A_rna:895.0,5197.0
+$TNFRSF10A_rna:cat_TNFRSF10A_rna_179(TP53_phosphorylated_Nucleus)
+TP53_phosphorylated_Nucleus -> TNFRSF10A_rna
+#position:STAT3_phosphorylated_Nucleus:2620.0,4083.0
+$STAT3_phosphorylated_Nucleus:(STAT3_phosphorylated_Cytoplasm & cat_STAT3_phosphorylated_Nucleus_180(IL6_Cytoplasm))
+STAT3_phosphorylated_Cytoplasm -> STAT3_phosphorylated_Nucleus
+IL6_Cytoplasm -> STAT3_phosphorylated_Nucleus
+#position:CCNA2:2110.0,3067.0
+$CCNA2:!CDKN1A
+CDKN1A -| CCNA2
+#position:IRF5_Nucleus:5878.0,4088.0
+$IRF5_Nucleus:cat_IRF5_Nucleus_182(TRAF6_phosphorylated)
+TRAF6_phosphorylated -> IRF5_Nucleus
+#position:IRF7_phosphorylated:3691.0,4062.0
+$IRF7_phosphorylated:cat_IRF7_phosphorylated_183(TBK1_IKBKE_complex)
+TBK1_IKBKE_complex -> IRF7_phosphorylated
+#position:NRAS:430.0,1447.0
+$NRAS:cat_NRAS_184(SOS1, RASGRP3, GNAI3, SRC_phosphorylated)
+SOS1 -> NRAS
+RASGRP3 -> NRAS
+GNAI3 -> NRAS
+SRC_phosphorylated -> NRAS
+#position:CCND2:2110.0,2842.0
+$CCND2:(!CDKN1A & cat_CCND2_185(MAPK8_phosphorylated))
+CDKN1A -| CCND2
+MAPK8_phosphorylated ->? CCND2
+#position:CAV1_rna:1515.0,4512.0
+$CAV1_rna:!MIR192_rna
+MIR192_rna -| CAV1_rna
+#position:SOCS3:4670.0,1042.0
+$SOCS3:SOCS3_rna
+SOCS3_rna -> SOCS3
+#position:BCL2L1_rna:4275.0,4552.0
+$BCL2L1_rna:(cat_BCL2L1_rna_189(NFKB_N_complex, BCL2L1_gene) | cat_BCL2L1_rna_188(NFKB_N_complex, BCL2L1_gene))
+NFKB_N_complex -> BCL2L1_rna
+BCL2L1_gene -> BCL2L1_rna
+#position:AKT2_rna:1225.0,4552.0
+$AKT2_rna:!MIR650_rna
+MIR650_rna -| AKT2_rna
+#position:RAPGEF1:3970.0,1312.0
+$RAPGEF1:cat_RAPGEF1_191(CRKL_phosphorylated)
+CRKL_phosphorylated -> RAPGEF1
+#position:IL7_Secreted_space_Molecules:6785.0,5710.0
+$IL7_Secreted_space_Molecules:IL7_rna
+IL7_rna -> IL7_Secreted_space_Molecules
+#position:ITAM:5290.0,1152.0
+$ITAM:cat_ITAM_193(OSCAR)
+OSCAR -> ITAM
+#position:FN1_Secreted_space_Molecules:4905.0,5782.0
+$FN1_Secreted_space_Molecules:(TCF_LEF & CTNNB1)
+TCF_LEF -> FN1_Secreted_space_Molecules
+CTNNB1 -> FN1_Secreted_space_Molecules
+#position:PIK3R5_phosphorylated:388.0,1150.5
+$PIK3R5_phosphorylated:(!LCK & cat_PIK3R5_phosphorylated_195(GAB1, CSK, EGF_EGFR_complex, FGF1_FGFR1_complex, GNB1, KLRK1_HCST_MICB_complex, JAK3, RAC1_2, ZAP70_phosphorylated, CD19, NRAS, CD28, PDGFA_PDGFRA_complex, GAB2_phosphorylated, GNAI3, TRAF2, JAK1))
+GAB1 -> PIK3R5_phosphorylated
+CSK -> PIK3R5_phosphorylated
+EGF_EGFR_complex -> PIK3R5_phosphorylated
+FGF1_FGFR1_complex -> PIK3R5_phosphorylated
+GNB1 -> PIK3R5_phosphorylated
+KLRK1_HCST_MICB_complex -> PIK3R5_phosphorylated
+JAK3 -> PIK3R5_phosphorylated
+RAC1_2 -> PIK3R5_phosphorylated
+ZAP70_phosphorylated -> PIK3R5_phosphorylated
+CD19 -> PIK3R5_phosphorylated
+NRAS -> PIK3R5_phosphorylated
+CD28 -> PIK3R5_phosphorylated
+PDGFA_PDGFRA_complex -> PIK3R5_phosphorylated
+GAB2_phosphorylated -> PIK3R5_phosphorylated
+GNAI3 -> PIK3R5_phosphorylated
+LCK -| PIK3R5_phosphorylated
+TRAF2 -> PIK3R5_phosphorylated
+JAK1 -> PIK3R5_phosphorylated
+#position:RAB5A:2230.0,3402.0
+$RAB5A:RAB5A_rna
+RAB5A_rna -> RAB5A
+#position:IQGAP2:2830.0,1477.0
+$IQGAP2:cat_IQGAP2_197(RAC1_2)
+RAC1_2 -> IQGAP2
+#position:MIR146A_rna:4595.0,4252.0
+#position:PI3_4_5_P__3_simple_molecule:1125.0,1363.0
+$PI3_4_5_P__3_simple_molecule:((!PTEN & PI4_5_P__2_simple_molecule) & cat_PI3_4_5_P__3_simple_molecule_199(PIK3R5_phosphorylated))
+PI4_5_P__2_simple_molecule -> PI3_4_5_P__3_simple_molecule
+PIK3R5_phosphorylated -> PI3_4_5_P__3_simple_molecule
+PTEN -| PI3_4_5_P__3_simple_molecule
+#position:PADI4_rna:6315.0,5032.0
+#position:JUN_phosphorylated:2314.0,4064.0
+$JUN_phosphorylated:cat_JUN_phosphorylated_201(MAPK8_phosphorylated, MAPK14_phosphorylated, MAPK1_phosphorylated, MAPK9)
+MAPK8_phosphorylated -> JUN_phosphorylated
+MAPK14_phosphorylated -> JUN_phosphorylated
+MAPK1_phosphorylated -> JUN_phosphorylated
+MAPK9 -> JUN_phosphorylated
+#position:PLCB2:6610.0,1151.0
+$PLCB2:cat_PLCB2_202(GNB1, GNAI3)
+GNB1 -> PLCB2
+GNAI3 -> PLCB2
+#position:STAT1_phosphorylated:5862.5,3541.0
+$STAT1_phosphorylated:(!PTPN11_phosphorylated & cat_STAT1_phosphorylated_203(JAK3, JAK2_phosphorylated))
+JAK3 -> STAT1_phosphorylated
+PTPN11_phosphorylated -| STAT1_phosphorylated
+JAK2_phosphorylated -> STAT1_phosphorylated
+#position:IRAK1_phosphorylated:4770.0,1312.0
+$IRAK1_phosphorylated:cat_IRAK1_phosphorylated_204(MYD88)
+MYD88 -> IRAK1_phosphorylated
+#position:TRADD_phosphorylated:6080.0,912.0
+$TRADD_phosphorylated:cat_TRADD_phosphorylated_205(TNF_TNFRSF1A_B_complex)
+TNF_TNFRSF1A_B_complex -> TRADD_phosphorylated
+#position:IL34_rna:7075.0,4822.0
+#position:STAT2:6110.0,3382.0
+#position:ARHGEF2:3420.0,1237.0
+#position:IRF3_phosphorylated:3446.0,4056.0
+$IRF3_phosphorylated:cat_IRF3_phosphorylated_209(TBK1_IKBKE_complex)
+TBK1_IKBKE_complex -> IRF3_phosphorylated
+#position:MAP3K1_phosphorylated:3210.0,1807.0
+$MAP3K1_phosphorylated:cat_MAP3K1_phosphorylated_210(MAP4K4_phosphorylated, RAC1_2)
+MAP4K4_phosphorylated -> MAP3K1_phosphorylated
+RAC1_2 -> MAP3K1_phosphorylated
+#position:CTNND1_phosphorylated:1310.0,1147.0
+$CTNND1_phosphorylated:(!VEGFC_MET_complex & CTNND1)
+CTNND1 -> CTNND1_phosphorylated
+VEGFC_MET_complex -| CTNND1_phosphorylated
+#position:HOMODIMER_space_STAT1:4341.0,4113.0
+$HOMODIMER_space_STAT1:STAT1_phosphorylated
+STAT1_phosphorylated -> HOMODIMER_space_STAT1
+#position:RAP1B_phosphorylated:3750.0,1807.0
+$RAP1B_phosphorylated:cat_RAP1B_phosphorylated_213(PRKACG, RAPGEF1)
+PRKACG -> RAP1B_phosphorylated
+RAPGEF1 -> RAP1B_phosphorylated
+#position:MAPK9:3130.0,2321.0
+$MAPK9:cat_MAPK9_214(MAP2K7_phosphorylated, MAP2K4_phosphorylated)
+MAP2K7_phosphorylated -> MAPK9
+MAP2K4_phosphorylated -> MAPK9
+#position:PDE4B:6789.5,2549.0
+$PDE4B:PDE4B_rna
+PDE4B_rna -> PDE4B
+#position:ADAMTS9_rna:4310.0,4822.0
+$ADAMTS9_rna:(!MIR338_5P_rna & cat_ADAMTS9_rna_216(NFKB_N_complex))
+NFKB_N_complex -> ADAMTS9_rna
+MIR338_5P_rna -| ADAMTS9_rna
+#position:Inflammation_phenotype:2123.0,5949.0
+$Inflammation_phenotype:cat_Inflammation_phenotype_217(IFNB1_rna, CXCL8, IRF1, IFNA1_rna, CXCL9, IRF5_Secreted_space_Molecules, IL6_Secreted_space_Molecules, TNF_Secreted_space_Molecules, CXCL10, IL17A_Secreted_space_Molecules, CXCL11, NFKB_N_complex, IL1B_Secreted_space_Molecules, IRF7, IL15, CCL5, IL7_Secreted_space_Molecules, IL33)
+IFNB1_rna -> Inflammation_phenotype
+CXCL8 -> Inflammation_phenotype
+IRF1 -> Inflammation_phenotype
+IFNA1_rna -> Inflammation_phenotype
+CXCL9 -> Inflammation_phenotype
+IRF5_Secreted_space_Molecules -> Inflammation_phenotype
+IL6_Secreted_space_Molecules -> Inflammation_phenotype
+TNF_Secreted_space_Molecules -> Inflammation_phenotype
+CXCL10 -> Inflammation_phenotype
+IL17A_Secreted_space_Molecules -> Inflammation_phenotype
+CXCL11 -> Inflammation_phenotype
+NFKB_N_complex -> Inflammation_phenotype
+IL1B_Secreted_space_Molecules -> Inflammation_phenotype
+IRF7 -> Inflammation_phenotype
+IL15 -> Inflammation_phenotype
+CCL5 -> Inflammation_phenotype
+IL7_Secreted_space_Molecules -> Inflammation_phenotype
+IL33 -> Inflammation_phenotype
+#position:SOS1:432.0,1250.0
+$SOS1:cat_SOS1_218(EGF_EGFR_complex, FGF1_FGFR1_complex, SHP2_GRB2_complex)
+EGF_EGFR_complex -> SOS1
+FGF1_FGFR1_complex -> SOS1
+SHP2_GRB2_complex -> SOS1
+#position:MIR155_rna:2018.0,4337.0
+$MIR155_rna:!DYNLRB1
+DYNLRB1 -| MIR155_rna
+#position:CXCL1:4461.0,5586.0
+$CXCL1:cat_CXCL1_220(NFKB_N_complex)
+NFKB_N_complex -> CXCL1
+#position:NFKBIA_phosphorylated:4190.0,3052.0
+$NFKBIA_phosphorylated:(!COMMD1 & IKBA_NFKB1_RELA_complex)
+IKBA_NFKB1_RELA_complex -> NFKBIA_phosphorylated
+COMMD1 -| NFKBIA_phosphorylated
+#position:CD86_rna:3374.5,4824.5
+$CD86_rna:cat_CD86_rna_222(IRF3_phosphorylated)
+IRF3_phosphorylated -> CD86_rna
+#position:TNFRSF10B_rna:335.0,4972.0
+$TNFRSF10B_rna:cat_TNFRSF10B_rna_223(TP53_phosphorylated_Nucleus)
+TP53_phosphorylated_Nucleus -> TNFRSF10B_rna
+#position:IL6_Cytoplasm:6076.0,3801.5
+$IL6_Cytoplasm:(!ZC3H12A & IL6_rna)
+IL6_rna -> IL6_Cytoplasm
+ZC3H12A -| IL6_Cytoplasm
+#position:PHKA2_phosphorylated:4790.0,2767.0
+$PHKA2_phosphorylated:(PHKA2 & cat_PHKA2_phosphorylated_225(CALM1_3_phosphorylated))
+PHKA2 -> PHKA2_phosphorylated
+CALM1_3_phosphorylated -> PHKA2_phosphorylated
+#position:ARHGAP35_phosphorylated:4868.0,1687.25
+$ARHGAP35_phosphorylated:cat_ARHGAP35_phosphorylated_226(CSK)
+CSK -> ARHGAP35_phosphorylated
+#position:LCP2_phosphorylated:409.0,1936.0
+$LCP2_phosphorylated:(LCP2 & cat_LCP2_phosphorylated_227(ZAP70_phosphorylated))
+LCP2 -> LCP2_phosphorylated
+ZAP70_phosphorylated -> LCP2_phosphorylated
+#position:cGAS:1160.0,3305.5
+$cGAS:cGAS_rna
+cGAS_rna -> cGAS
+#position:RPS6KA5:2650.0,3577.0
+#position:MAPK1_empty:2803.5,2165.0
+$MAPK1_empty:(!DUSP4 & MAPK1_phosphorylated)
+MAPK1_phosphorylated -> MAPK1_empty
+DUSP4 -| MAPK1_empty
+#position:MAP3K8_phosphorylated:3562.5,2587.75
+$MAP3K8_phosphorylated:(NFKB1_MAP3K8_complex & cat_MAP3K8_phosphorylated_231(AKT2_phosphorylated, IKK_complex))
+NFKB1_MAP3K8_complex -> MAP3K8_phosphorylated
+AKT2_phosphorylated -> MAP3K8_phosphorylated
+IKK_complex -> MAP3K8_phosphorylated
+#position:IL1B_Secreted_space_Molecules:2943.0,5564.0
+$IL1B_Secreted_space_Molecules:(IL1B_Cytoplasm & cat_IL1B_Secreted_space_Molecules_232(PGK_Cytoplasm_active))
+IL1B_Cytoplasm -> IL1B_Secreted_space_Molecules
+PGK_Cytoplasm_active -> IL1B_Secreted_space_Molecules
+#position:CASP9:4750.0,1867.0
+$CASP9:cat_CASP9_233(BAX_Mitochondrion__outter_mb__active)
+BAX_Mitochondrion__outter_mb__active -> CASP9
+#position:IL21_rna:7085.0,5137.0
+#position:MAP3K14_phosphorylated:3910.0,2197.0
+$MAP3K14_phosphorylated:cat_MAP3K14_phosphorylated_235(TAB1_TAB2_TAK1_complex, MAP3K7_phosphorylated)
+TAB1_TAB2_TAK1_complex -> MAP3K14_phosphorylated
+MAP3K7_phosphorylated -> MAP3K14_phosphorylated
+#position:BCL2A1_rna:4275.0,5077.0
+$BCL2A1_rna:cat_BCL2A1_rna_236(NFKB_N_complex)
+NFKB_N_complex -> BCL2A1_rna
+#position:CCND1_rna:2175.0,4477.0
+$CCND1_rna:cat_CCND1_rna_237(JUN_phosphorylated)
+JUN_phosphorylated -> CCND1_rna
+#position:MAPK1_phosphorylated:3327.0,2165.0
+$MAPK1_phosphorylated:(MAPK1_empty & cat_MAPK1_phosphorylated_238(MAP2K1_phosphorylated, PRKACG, MAP2K2_phosphorylated, cGAS, TRAF2))
+MAPK1_empty -> MAPK1_phosphorylated
+MAP2K1_phosphorylated -> MAPK1_phosphorylated
+PRKACG -> MAPK1_phosphorylated
+MAP2K2_phosphorylated -> MAPK1_phosphorylated
+cGAS -> MAPK1_phosphorylated
+TRAF2 -> MAPK1_phosphorylated
+#position:PTK2B_phosphorylated:4529.5,971.75
+$PTK2B_phosphorylated:cat_PTK2B_phosphorylated_239(CSK, ICAM_ITGB2_ITGAL_complex)
+CSK -> PTK2B_phosphorylated
+ICAM_ITGB2_ITGAL_complex -> PTK2B_phosphorylated
+#position:ZC3H12A:4677.5,2635.25
+$ZC3H12A:ZC3H12A_rna
+ZC3H12A_rna -> ZC3H12A
+#position:RAB5A_rna:2375.0,5047.0
+$RAB5A_rna:!MIR451A_rna
+MIR451A_rna -| RAB5A_rna
+#position:JUNB_rna:2535.0,4612.0
+#position:BAX_rna:8613.0,4262.0
+$BAX_rna:cat_BAX_rna_243(TP53_phosphorylated_Nucleus, TP73_phosphorylated)
+TP53_phosphorylated_Nucleus -> BAX_rna
+TP73_phosphorylated -> BAX_rna
+#position:YY1:5550.0,4057.0
+$YY1:YY1_rna
+YY1_rna -> YY1
+#position:CXCL3:4658.0,5741.0
+$CXCL3:cat_CXCL3_245(NFKB_N_complex)
+NFKB_N_complex -> CXCL3
+#position:MAX_phosphorylated:3400.0,3530.5
+$MAX_phosphorylated:cat_MAX_phosphorylated_246(MAPK14_phosphorylated)
+MAPK14_phosphorylated -> MAX_phosphorylated
+#position:MAPK3_phosphorylated:2177.0,2435.5
+$MAPK3_phosphorylated:cat_MAPK3_phosphorylated_247(cGAS, TRAF2, MAP2K1_phosphorylated)
+cGAS -> MAPK3_phosphorylated
+TRAF2 -> MAPK3_phosphorylated
+MAP2K1_phosphorylated -> MAPK3_phosphorylated
+#position:DAXX:1512.5,940.0
+$DAXX:cat_DAXX_248(TGFB1_TGFBR1_complex)
+TGFB1_TGFBR1_complex -> DAXX
+#position:PIP4K2B:2330.0,1447.0
+$PIP4K2B:cat_PIP4K2B_249(RAC1_2)
+RAC1_2 -> PIP4K2B
+#position:ca2__ion_Cytoplasm:4090.0,1057.0
+$ca2__ion_Cytoplasm:(IP3R_Ca2__complex & cat_ca2__ion_Cytoplasm_250(TRAF6_phosphorylated, PLCG1, DVL1_phosphorylated, HEX1_Cytoplasm_active))
+IP3R_Ca2__complex -> ca2__ion_Cytoplasm
+TRAF6_phosphorylated -> ca2__ion_Cytoplasm
+PLCG1 -> ca2__ion_Cytoplasm
+DVL1_phosphorylated -> ca2__ion_Cytoplasm
+HEX1_Cytoplasm_active -> ca2__ion_Cytoplasm
+#position:IL1B_rna:2775.0,4807.0
+$IL1B_rna:cat_IL1B_rna_251(JUN_phosphorylated, NFKB_N_complex, HIF1)
+JUN_phosphorylated -> IL1B_rna
+NFKB_N_complex -> IL1B_rna
+HIF1 -> IL1B_rna
+#position:MIR221_rna:2575.0,4282.0
+#position:actived_H__2__O__2_simple_molecule:6170.0,3472.0
+$actived_H__2__O__2_simple_molecule:(H__2__O__2_simple_molecule & cat_actived_H__2__O__2_simple_molecule_253(NCF_CYBB_CYBA_complex))
+H__2__O__2_simple_molecule -> actived_H__2__O__2_simple_molecule
+NCF_CYBB_CYBA_complex -> actived_H__2__O__2_simple_molecule
+#position:IRAK1_rna:5095.0,4507.0
+$IRAK1_rna:!MIR146A_rna
+MIR146A_rna -| IRAK1_rna
+#position:p38MAPK_phosphorylated:2410.0,3187.0
+$p38MAPK_phosphorylated:(!RAB5A & cat_p38MAPK_phosphorylated_255(MAP2K3_phosphorylated, MAP2K4_phosphorylated, MAP2K6_phosphorylated))
+MAP2K3_phosphorylated -> p38MAPK_phosphorylated
+MAP2K4_phosphorylated -> p38MAPK_phosphorylated
+MAP2K6_phosphorylated -> p38MAPK_phosphorylated
+RAB5A -| p38MAPK_phosphorylated
+#position:NLK_phosphorylated:6296.5,3428.25
+$NLK_phosphorylated:cat_NLK_phosphorylated_256(MAP3K7_phosphorylated)
+MAP3K7_phosphorylated -> NLK_phosphorylated
+#position:MDM2_phosphorylated:739.0,3042.0
+$MDM2_phosphorylated:(MDM2 & cat_MDM2_phosphorylated_257(TP53_phosphorylated_Cytoplasm, AKT2_phosphorylated))
+MDM2 -> MDM2_phosphorylated
+TP53_phosphorylated_Cytoplasm -> MDM2_phosphorylated
+AKT2_phosphorylated -> MDM2_phosphorylated
+#position:MIR338_5P_rna:4035.0,4312.0
+#position:CREB1_phosphorylated:2852.0,4072.0
+$CREB1_phosphorylated:cat_CREB1_phosphorylated_259(RPS6KA5, MAPKAPK2_phosphorylated, RPS6KA1_phosphorylated)
+RPS6KA5 -> CREB1_phosphorylated
+MAPKAPK2_phosphorylated -> CREB1_phosphorylated
+RPS6KA1_phosphorylated -> CREB1_phosphorylated
+#position:TICAM1:2787.0,1297.0
+$TICAM1:(!SARM1 & cat_TICAM1_260(TICAM2))
+SARM1 -| TICAM1
+TICAM2 -> TICAM1
+#position:PPP3CB:5551.5,3343.25
+$PPP3CB:cat_PPP3CB_261(CALM1_3_phosphorylated)
+CALM1_3_phosphorylated -> PPP3CB
+#position:SHC2_phosphorylated:970.0,1237.0
+$SHC2_phosphorylated:cat_SHC2_phosphorylated_262(PDGFA_PDGFRA_complex, EGF_EGFR_complex, ZAP70_phosphorylated, CSK, FYN_CD3E_complex)
+PDGFA_PDGFRA_complex -> SHC2_phosphorylated
+EGF_EGFR_complex -> SHC2_phosphorylated
+ZAP70_phosphorylated -> SHC2_phosphorylated
+CSK -> SHC2_phosphorylated
+FYN_CD3E_complex -> SHC2_phosphorylated
+#position:FLIP_rna:3955.0,4957.0
+$FLIP_rna:cat_FLIP_rna_263(NFKB_N_complex)
+NFKB_N_complex -> FLIP_rna
+#position:MAPK8_phosphorylated:1910.0,1822.0
+$MAPK8_phosphorylated:(MAPK3_complex & cat_MAPK8_phosphorylated_264(MAP2K4_phosphorylated, MAP3K5, RAC1_2, RAP1B_phosphorylated, MAP2K7_phosphorylated))
+MAPK3_complex -> MAPK8_phosphorylated
+MAP2K4_phosphorylated -> MAPK8_phosphorylated
+MAP3K5 -> MAPK8_phosphorylated
+RAC1_2 -> MAPK8_phosphorylated
+RAP1B_phosphorylated -> MAPK8_phosphorylated
+MAP2K7_phosphorylated -> MAPK8_phosphorylated
+#position:PLCG1:5470.0,1587.0
+$PLCG1:cat_PLCG1_265(SYK)
+SYK -> PLCG1
+#position:JUND_phosphorylated:1550.0,3727.0
+$JUND_phosphorylated:cat_JUND_phosphorylated_266(MAPK8_phosphorylated)
+MAPK8_phosphorylated -> JUND_phosphorylated
+#position:TRAF1_rna:5075.0,5272.0
+$TRAF1_rna:cat_TRAF1_rna_267(NFKB_N_complex)
+NFKB_N_complex -> TRAF1_rna
+#position:MAP2K3_phosphorylated:2923.5,1869.5
+$MAP2K3_phosphorylated:cat_MAP2K3_phosphorylated_268(MAP3K1_phosphorylated, MAP3K5, RAC1_2, MAP3K2_3_4, TAB1_TAB2_TAK1_complex)
+MAP3K1_phosphorylated -> MAP2K3_phosphorylated
+MAP3K5 -> MAP2K3_phosphorylated
+RAC1_2 -> MAP2K3_phosphorylated
+MAP3K2_3_4 -> MAP2K3_phosphorylated
+TAB1_TAB2_TAK1_complex -> MAP2K3_phosphorylated
+#position:FOXO3:1561.0,4115.0
+$FOXO3:!AKT2_phosphorylated
+AKT2_phosphorylated -| FOXO3
+#position:active_cAMP_simple_molecule:4230.0,1454.0
+$active_cAMP_simple_molecule:(!PDE3A_phosphorylated & cAMP_simple_molecule)
+cAMP_simple_molecule -> active_cAMP_simple_molecule
+PDE3A_phosphorylated -| active_cAMP_simple_molecule
+#position:PARD3:7079.0,1519.25
+$PARD3:cat_PARD3_271(NECTIN3_PTPRC_NECTIN1_complex)
+NECTIN3_PTPRC_NECTIN1_complex -> PARD3
+#position:TRAF6_phosphorylated:5708.0,1222.0
+$TRAF6_phosphorylated:((!TNFAIP3 & TRAF6) & cat_TRAF6_phosphorylated_272(TRAF3IP2_phosphorylated, IRAK1_IRAK4_complex, RANK_RANKL_complex))
+TRAF6 -> TRAF6_phosphorylated
+TRAF3IP2_phosphorylated -> TRAF6_phosphorylated
+IRAK1_IRAK4_complex -> TRAF6_phosphorylated
+RANK_RANKL_complex -> TRAF6_phosphorylated
+TNFAIP3 -| TRAF6_phosphorylated
+#position:JAK3:7030.0,1087.0
+$JAK3:(!NECTIN3_PTPRC_NECTIN1_complex & cat_JAK3_273(CXCL16_CXCR6_complex, CXCL12_CXCR4_complex))
+CXCL16_CXCR6_complex -> JAK3
+CXCL12_CXCR4_complex -> JAK3
+NECTIN3_PTPRC_NECTIN1_complex -| JAK3
+#position:AKT2:531.5,2275.0
+$AKT2:AKT2_rna
+AKT2_rna -> AKT2
+#position:TSC2_phosphorylated:502.0,2685.5
+$TSC2_phosphorylated:!AKT2_phosphorylated
+AKT2_phosphorylated -| TSC2_phosphorylated
+#position:MIR650_rna:1195.0,4237.0
+#position:CTNNB1:4863.0,4064.0
+$CTNNB1:(CTNNB_CK1A_AXIN_GSK3B_APC_complex & cat_CTNNB1_277(DVL1_phosphorylated))
+CTNNB_CK1A_AXIN_GSK3B_APC_complex -> CTNNB1
+DVL1_phosphorylated -> CTNNB1
+#position:Osteoclastogenesis_phenotype:2746.0,5976.0
+$Osteoclastogenesis_phenotype:cat_Osteoclastogenesis_phenotype_278(IL1B_Secreted_space_Molecules, IL17A_Secreted_space_Molecules, TNFSF11_rna, FOS, IL7_Secreted_space_Molecules, TNF_Secreted_space_Molecules, JUN_phosphorylated, NFATC1_Secreted_space_Molecules)
+IL1B_Secreted_space_Molecules -> Osteoclastogenesis_phenotype
+IL17A_Secreted_space_Molecules -> Osteoclastogenesis_phenotype
+TNFSF11_rna -> Osteoclastogenesis_phenotype
+FOS -> Osteoclastogenesis_phenotype
+IL7_Secreted_space_Molecules -> Osteoclastogenesis_phenotype
+TNF_Secreted_space_Molecules -> Osteoclastogenesis_phenotype
+JUN_phosphorylated -> Osteoclastogenesis_phenotype
+NFATC1_Secreted_space_Molecules -> Osteoclastogenesis_phenotype
+#position:TRAF6_rna:4875.0,4417.0
+$TRAF6_rna:!MIR146A_rna
+MIR146A_rna -| TRAF6_rna
+#position:MEF2C_phosphorylated:3400.0,3604.5
+$MEF2C_phosphorylated:cat_MEF2C_phosphorylated_280(MAPK14_phosphorylated)
+MAPK14_phosphorylated -> MEF2C_phosphorylated
+#position:MAP2K1_phosphorylated:2483.0,2179.5
+$MAP2K1_phosphorylated:cat_MAP2K1_phosphorylated_281(MAP3K8_phosphorylated, RAF1_phosphorylated, PRKCD, BRAF_phosphorylated, MAP3K7_phosphorylated, TAB1_TAB2_TAK1_complex)
+MAP3K8_phosphorylated -> MAP2K1_phosphorylated
+RAF1_phosphorylated -> MAP2K1_phosphorylated
+PRKCD -> MAP2K1_phosphorylated
+BRAF_phosphorylated -> MAP2K1_phosphorylated
+MAP3K7_phosphorylated -> MAP2K1_phosphorylated
+TAB1_TAB2_TAK1_complex -> MAP2K1_phosphorylated
+#position:GSK3B:4650.0,1567.0
+$GSK3B:(CTNNB_CK1A_AXIN_GSK3B_APC_complex & cat_GSK3B_282(DVL1_phosphorylated))
+CTNNB_CK1A_AXIN_GSK3B_APC_complex -> GSK3B
+DVL1_phosphorylated -> GSK3B
+#position:IL17A_Secreted_space_Molecules:7019.0,5648.0
+$IL17A_Secreted_space_Molecules:cat_IL17A_Secreted_space_Molecules_283(STAT3_phosphorylated_Nucleus, HIF1)
+STAT3_phosphorylated_Nucleus -> IL17A_Secreted_space_Molecules
+HIF1 -> IL17A_Secreted_space_Molecules
+#position:MAPKAPK2_phosphorylated:2618.0,2327.25
+$MAPKAPK2_phosphorylated:cat_MAPKAPK2_phosphorylated_284(MAPK14_phosphorylated)
+MAPK14_phosphorylated -> MAPKAPK2_phosphorylated
+#position:PRRT2:4530.0,1147.0
+$PRRT2:cat_PRRT2_285(ca2__ion_Cytoplasm)
+ca2__ion_Cytoplasm -> PRRT2
+#position:IRAK4:3930.0,1252.0
+$IRAK4:cat_IRAK4_286(MYD88)
+MYD88 -> IRAK4
+#position:MMP3:3701.0,5579.0
+$MMP3:MMP3_rna
+MMP3_rna -> MMP3
+#position:JAK1:5147.0,1222.0
+$JAK1:((!PTPN6 & !SOCS3) & cat_JAK1_288(IL6_IL6ST_complex, IFNA1_B1_IFNAR1_R2_complex, IL6_IL6R_complex))
+IL6_IL6ST_complex -> JAK1
+SOCS3 -| JAK1
+PTPN6 -| JAK1
+IFNA1_B1_IFNAR1_R2_complex -> JAK1
+IL6_IL6R_complex -> JAK1
+#position:NFAT5_phosphorylated:5697.0,4053.5
+$NFAT5_phosphorylated:cat_NFAT5_phosphorylated_289(PPP3CB, CALM1_3_phosphorylated, CALCINEURIN)
+PPP3CB -> NFAT5_phosphorylated
+CALM1_3_phosphorylated -> NFAT5_phosphorylated
+CALCINEURIN -> NFAT5_phosphorylated
+#position:CALCR_rna:3735.0,5107.0
+$CALCR_rna:cat_CALCR_rna_290(JUN_phosphorylated, FOS, NFKB_N_complex)
+JUN_phosphorylated -> CALCR_rna
+FOS -> CALCR_rna
+NFKB_N_complex -> CALCR_rna
+#position:MIR124A_rna:5790.0,4222.0
+#position:FOS:6190.0,4027.0
+$FOS:cat_FOS_292(MAPK1_phosphorylated, SRF, MAPK8_phosphorylated, MAPK3_phosphorylated, MAPK9)
+MAPK1_phosphorylated -> FOS
+SRF ->? FOS
+MAPK8_phosphorylated -> FOS
+MAPK3_phosphorylated -> FOS
+MAPK9 -> FOS
+#position:CD80_rna:3517.5,4974.5
+$CD80_rna:cat_CD80_rna_293(IRF3_phosphorylated)
+IRF3_phosphorylated -> CD80_rna
+#position:NRF1:3147.0,4069.0
+#position:ADM_rna:1840.0,5155.5
+#position:IRF1:2562.0,5748.0
+$IRF1:cat_IRF1_296(HOMODIMER_space_STAT1)
+HOMODIMER_space_STAT1 -> IRF1
+#position:TP73_phosphorylated:990.0,4087.0
+#position:PXN:1161.5,1815.75
+$PXN:cat_PXN_298(CRKL_phosphorylated)
+CRKL_phosphorylated -> PXN
+#position:CXCL8:5445.0,5736.0
+$CXCL8:(!MIR346_rna & cat_CXCL8_299(NFAT5_phosphorylated, NFKB_N_complex, IRF5_Nucleus, HEX1_Cytoplasm_active, HIF1))
+NFAT5_phosphorylated -> CXCL8
+NFKB_N_complex -> CXCL8
+IRF5_Nucleus -> CXCL8
+MIR346_rna -| CXCL8
+HEX1_Cytoplasm_active -> CXCL8
+HIF1 -> CXCL8
+#position:ITGB3_rna:2955.0,5062.0
+$ITGB3_rna:cat_ITGB3_rna_300(JUN_phosphorylated, FOS, NFKB_N_complex)
+JUN_phosphorylated -> ITGB3_rna
+FOS -> ITGB3_rna
+NFKB_N_complex -> ITGB3_rna
+#position:TICAM2:2760.0,1231.5
+$TICAM2:cat_TICAM2_301(LY96_TLR2_4_complex)
+LY96_TLR2_4_complex -> TICAM2
+#position:RDX:390.0,3307.0
+$RDX:cat_RDX_302(SLC9A1, RHOA)
+SLC9A1 -> RDX
+RHOA -> RDX
+#position:JAK2_phosphorylated:4570.0,922.0
+$JAK2_phosphorylated:(!PTPN11_phosphorylated & cat_JAK2_phosphorylated_303(IL6_IL6ST_complex, IL6_IL6R_complex))
+IL6_IL6ST_complex -> JAK2_phosphorylated
+IL6_IL6R_complex -> JAK2_phosphorylated
+PTPN11_phosphorylated -| JAK2_phosphorylated
+#position:STAT4_rna:6825.0,4702.0
+$STAT4_rna:cat_STAT4_rna_304(MAPK14_phosphorylated)
+MAPK14_phosphorylated -> STAT4_rna
+#position:TNFAIP3:5350.0,1062.0
+$TNFAIP3:TNFAIP3_rna
+TNFAIP3_rna -> TNFAIP3
+#position:MMP1:3823.0,5756.0
+$MMP1:MMP1_rna
+MMP1_rna -> MMP1
+#position:TGFB1:1210.0,612.0
+$TGFB1:(!LEFTY2 & !LTBP1)
+LTBP1 -| TGFB1
+LEFTY2 -| TGFB1
+#position:IL6_rna:6044.0,4418.0
+$IL6_rna:(!MIR451A_rna & cat_IL6_rna_308(YY1, NFKB_N_complex, FOS, JUN_phosphorylated, HEX1_Cytoplasm_active, HIF1))
+YY1 -> IL6_rna
+NFKB_N_complex -> IL6_rna
+FOS -> IL6_rna
+JUN_phosphorylated -> IL6_rna
+MIR451A_rna -| IL6_rna
+HEX1_Cytoplasm_active -> IL6_rna
+HIF1 -> IL6_rna
+#position:CRKL_phosphorylated:810.0,1552.0
+$CRKL_phosphorylated:cat_CRKL_phosphorylated_309(EGF_EGFR_complex, GAB1)
+EGF_EGFR_complex -> CRKL_phosphorylated
+GAB1 -> CRKL_phosphorylated
+#position:AKT2_phosphorylated:953.0,2275.25
+$AKT2_phosphorylated:((!PP2A & AKT2) & cat_AKT2_phosphorylated_310(ILK, cGAS, PI3_4_5_P__3_simple_molecule))
+AKT2 -> AKT2_phosphorylated
+PP2A -| AKT2_phosphorylated
+ILK -> AKT2_phosphorylated
+cGAS -> AKT2_phosphorylated
+PI3_4_5_P__3_simple_molecule -> AKT2_phosphorylated
+#position:ABL1:3588.0,996.75
+$ABL1:cat_ABL1_311(CRKL_phosphorylated, EPHA4)
+CRKL_phosphorylated -> ABL1
+EPHA4 -> ABL1
+#position:JUNB:1390.0,3832.0
+$JUNB:JUNB_rna
+JUNB_rna -> JUNB
+#position:JUP_rna:235.0,4221.5
+$JUP_rna:cat_JUP_rna_313(RUNX1)
+RUNX1 -> JUP_rna
+#position:MAP2K7_phosphorylated:3447.0,2102.5
+$MAP2K7_phosphorylated:cat_MAP2K7_phosphorylated_314(MAP3K7_phosphorylated, TAB1_TAB2_TAK1_complex)
+MAP3K7_phosphorylated -> MAP2K7_phosphorylated
+TAB1_TAB2_TAK1_complex -> MAP2K7_phosphorylated
+#position:VEGFA_rna:6135.0,4807.0
+$VEGFA_rna:cat_VEGFA_rna_315(HIF1, PGI_Cytoplasm_active)
+HIF1 -> VEGFA_rna
+PGI_Cytoplasm_active -> VEGFA_rna
+#position:IFNB1_rna:3272.5,4569.5
+$IFNB1_rna:(!NRF1 & cat_IFNB1_rna_316(IRF7_phosphorylated))
+IRF7_phosphorylated -> IFNB1_rna
+NRF1 -| IFNB1_rna
+#position:MAP4K4_phosphorylated:2906.0,1682.0
+#position:TRAF3:3161.0,2883.0
+$TRAF3:cat_TRAF3_318(TICAM1)
+TICAM1 -> TRAF3
+#position:IL7_Cytoplasm:7041.0,3801.0
+$IL7_Cytoplasm:IL7_rna
+IL7_rna -> IL7_Cytoplasm
+#position:CCL4_rna:4755.0,4927.0
+$CCL4_rna:cat_CCL4_rna_320(IRF5_Nucleus)
+IRF5_Nucleus -> CCL4_rna
+#position:CAMK2A:4450.0,1222.0
+$CAMK2A:cat_CAMK2A_321(ca2__ion_Cytoplasm)
+ca2__ion_Cytoplasm -> CAMK2A
+#position:NFATC1_Nucleus:3931.0,4058.0
+$NFATC1_Nucleus:(!IRF8_Cytoplasm & cat_NFATC1_Nucleus_322(NFKB_complex, CALCINEURIN))
+NFKB_complex -> NFATC1_Nucleus
+CALCINEURIN -> NFATC1_Nucleus
+IRF8_Cytoplasm -| NFATC1_Nucleus
+#position:IRF5_Secreted_space_Molecules:2147.0,5707.0
+$IRF5_Secreted_space_Molecules:cat_IRF5_Secreted_space_Molecules_323(ISGF3_complex)
+ISGF3_complex -> IRF5_Secreted_space_Molecules
+#position:SRC_phosphorylated:4860.0,882.5
+$SRC_phosphorylated:cat_SRC_phosphorylated_324(IL18_IL18R_complex)
+IL18_IL18R_complex -> SRC_phosphorylated
+#position:IL32_rna:7090.0,4623.0
+#position:TRAF3IP2_phosphorylated:5310.0,952.0
+$TRAF3IP2_phosphorylated:cat_TRAF3IP2_phosphorylated_326(IL17A_IL17RA_complex)
+IL17A_IL17RA_complex -> TRAF3IP2_phosphorylated
+#position:TYROBP_phosphorylated:7103.5,1419.0
+$TYROBP_phosphorylated:cat_TYROBP_phosphorylated_327(LCK_phosphorylated)
+LCK_phosphorylated -> TYROBP_phosphorylated
+#position:TXK:1370.0,1537.0
+#position:IL6_Secreted_space_Molecules:6632.0,5767.0
+$IL6_Secreted_space_Molecules:IL6_rna
+IL6_rna -> IL6_Secreted_space_Molecules
+#position:PTPN22_rna:5879.0,5314.5
+#position:PDE4B_rna:5095.0,4687.0
+#position:CD40_rna:2835.0,4507.0
+$CD40_rna:cat_CD40_rna_332(IRF3_phosphorylated)
+IRF3_phosphorylated -> CD40_rna
+#position:MAP3K7_rna:4435.0,4440.0
+$MAP3K7_rna:!MIR10a_rna
+MIR10a_rna -| MAP3K7_rna
+#position:GRB2:2057.5,970.0
+$GRB2:cat_GRB2_334(SHC2_phosphorylated, EGF_EGFR_complex, FGF1_FGFR1_complex, FYN_CD3E_complex, KLRK1_HCST_MICB_complex, CD28, IGF1_IGF1R_complex)
+SHC2_phosphorylated -> GRB2
+EGF_EGFR_complex -> GRB2
+FGF1_FGFR1_complex -> GRB2
+FYN_CD3E_complex -> GRB2
+KLRK1_HCST_MICB_complex -> GRB2
+CD28 -> GRB2
+IGF1_IGF1R_complex -> GRB2
+#position:Bone_space_Erosion_phenotype:2745.0,6076.0
+$Bone_space_Erosion_phenotype:cat_Bone_space_Erosion_phenotype_335(Osteoclastogenesis_phenotype)
+Osteoclastogenesis_phenotype -> Bone_space_Erosion_phenotype
+#position:MMP13:3960.0,5700.0
+$MMP13:cat_MMP13_336(NFKB_N_complex)
+NFKB_N_complex -> MMP13
+#position:ZC3H12A_rna:5898.5,5104.0
+#position:Apoptosis_phenotype:154.0,6050.0
+$Apoptosis_phenotype:(!CAV1_rna & cat_Apoptosis_phenotype_338(TNFRSF10B_rna, CASP8_phosphorylated, TNFRSF10A_rna, CASP3_phosphorylated))
+TNFRSF10B_rna -> Apoptosis_phenotype
+CAV1_rna -| Apoptosis_phenotype
+CASP8_phosphorylated -> Apoptosis_phenotype
+TNFRSF10A_rna -> Apoptosis_phenotype
+CASP3_phosphorylated -> Apoptosis_phenotype
+#position:TNFSF11_rna:2075.0,5272.0
+$TNFSF11_rna:cat_TNFSF11_rna_339(STAT3_phosphorylated_Nucleus, NFKB_N_complex)
+STAT3_phosphorylated_Nucleus -> TNFSF11_rna
+NFKB_N_complex -> TNFSF11_rna
+#position:LCP2:138.75,1936.75
+$LCP2:(!PTPN11_phosphorylated & LCP2_phosphorylated)
+LCP2_phosphorylated -> LCP2
+PTPN11_phosphorylated -| LCP2
+#position:MAPK14_phosphorylated:2801.5,2536.5
+$MAPK14_phosphorylated:(!MAPK1_phosphorylated & cat_MAPK14_phosphorylated_341(MAP2K6_phosphorylated, MAP2K3_phosphorylated))
+MAP2K6_phosphorylated -> MAPK14_phosphorylated
+MAP2K3_phosphorylated -> MAPK14_phosphorylated
+MAPK1_phosphorylated -|? MAPK14_phosphorylated
+#position:MAP4K1:1590.0,1672.0
+$MAP4K1:cat_MAP4K1_342(TGFB1_TGFBR1_complex)
+TGFB1_TGFBR1_complex -> MAP4K1
+#position:MMP9_rna:4370.0,4942.0
+$MMP9_rna:cat_MMP9_rna_343(NFKB_N_complex, HIF1)
+NFKB_N_complex -> MMP9_rna
+HIF1 -> MMP9_rna
+#position:IL18_rna:6825.0,4492.0
+#position:TNFAIP3_rna:2375.0,5287.0
+$TNFAIP3_rna:cat_TNFAIP3_rna_345(NFKB_N_complex)
+NFKB_N_complex -> TNFAIP3_rna
+#position:CALM1_3:5660.0,2302.0
+$CALM1_3:(!PP1R3B & CALM1_3_phosphorylated)
+CALM1_3_phosphorylated -> CALM1_3
+PP1R3B -| CALM1_3
+#position:GAB2_phosphorylated:3580.0,1060.5
+$GAB2_phosphorylated:cat_GAB2_phosphorylated_347(FYN_CD3E_complex, GRB2)
+FYN_CD3E_complex -> GAB2_phosphorylated
+GRB2 -> GAB2_phosphorylated
+#position:RIPK2:5650.0,1732.0
+$RIPK2:cat_RIPK2_348(NOD2)
+NOD2 -> RIPK2
+#position:DDIT3_phosphorylated:1990.0,3397.0
+$DDIT3_phosphorylated:cat_DDIT3_phosphorylated_349(MAPK14_phosphorylated)
+MAPK14_phosphorylated -> DDIT3_phosphorylated
+#position:TCF_LEF:4600.0,4057.0
+$TCF_LEF:!NLK_phosphorylated
+NLK_phosphorylated -| TCF_LEF
+#position:RAC1_2:2430.0,1147.0
+$RAC1_2:((!PLXNB1 & !RHOA) & cat_RAC1_2_351(NRAS, VAV1_2_phosphorylated, PTK2B_phosphorylated, LY96_TLR2_4_complex, CTNND1, DOCK2_CRKL_complex, DVL1_phosphorylated))
+NRAS -> RAC1_2
+VAV1_2_phosphorylated -> RAC1_2
+PTK2B_phosphorylated -> RAC1_2
+LY96_TLR2_4_complex -> RAC1_2
+RHOA -| RAC1_2
+PLXNB1 -| RAC1_2
+CTNND1 -> RAC1_2
+DOCK2_CRKL_complex -> RAC1_2
+DVL1_phosphorylated -> RAC1_2
+#position:PTPN11_phosphorylated:352.0,1059.25
+$PTPN11_phosphorylated:(!actived_H__2__O__2_simple_molecule & cat_PTPN11_phosphorylated_352(FGF1_FGFR1_complex, GAB2_phosphorylated))
+FGF1_FGFR1_complex -> PTPN11_phosphorylated
+GAB2_phosphorylated -> PTPN11_phosphorylated
+actived_H__2__O__2_simple_molecule -| PTPN11_phosphorylated
+#position:M_Lac_L_e_simple_molecule:7550.382352941177,5706.887254901962
+$M_Lac_L_e_simple_molecule:(M_lac_L_c_simple_molecule & cat_M_Lac_L_e_simple_molecule_353(L_LACt2r))
+M_lac_L_c_simple_molecule -> M_Lac_L_e_simple_molecule
+L_LACt2r -> M_Lac_L_e_simple_molecule
+#position:M_glc_D_c_simple_molecule:7588.367647058823,962.1127450980389
+$M_glc_D_c_simple_molecule:(M_glc_D_e_simple_molecule & cat_M_glc_D_c_simple_molecule_354(GLCt1r))
+M_glc_D_e_simple_molecule -> M_glc_D_c_simple_molecule
+GLCt1r -> M_glc_D_c_simple_molecule
+#position:HEX1_Cytoplasm_active:7477.367647058823,1041.6127450980389
+$HEX1_Cytoplasm_active:HEX1_Cytoplasm
+HEX1_Cytoplasm -> HEX1_Cytoplasm_active
+#position:HEX1_Cytoplasm:7317.617647058823,1041.4656862745096
+$HEX1_Cytoplasm:HEX1_rna
+HEX1_rna -> HEX1_Cytoplasm
+#position:M_g6p_c_simple_molecule:7588.367647058823,1121.1127450980389
+$M_g6p_c_simple_molecule:(M_glc_D_c_simple_molecule & cat_M_g6p_c_simple_molecule_357(HEX1_Cytoplasm_active))
+M_glc_D_c_simple_molecule -> M_g6p_c_simple_molecule
+HEX1_Cytoplasm_active -> M_g6p_c_simple_molecule
+#position:PGI_Cytoplasm:7320.700534759359,1202.8266488413547
+$PGI_Cytoplasm:PGI_rna
+PGI_rna -> PGI_Cytoplasm
+#position:PGI_Cytoplasm_active:7480.367647058823,1202.6127450980389
+$PGI_Cytoplasm_active:PGI_Cytoplasm
+PGI_Cytoplasm -> PGI_Cytoplasm_active
+#position:M_f6p_c_simple_molecule:7589.367647058823,1282.1127450980389
+$M_f6p_c_simple_molecule:(((M_xu5p_D_c_simple_molecule & M_e4p_c_simple_molecule) & cat_M_f6p_c_simple_molecule_363(TKT1_Cytoplasm_active)) | (((M_s7p_c_simple_molecule & M_g3p_c_simple_molecule) & cat_M_f6p_c_simple_molecule_362(TALA)) | (F2_6BP_simple_molecule | ((M_g6p_c_simple_molecule & M_atp_c_simple_molecule) & cat_M_f6p_c_simple_molecule_360(PGI_Cytoplasm_active)))))
+M_g6p_c_simple_molecule -> M_f6p_c_simple_molecule
+M_atp_c_simple_molecule -> M_f6p_c_simple_molecule
+PGI_Cytoplasm_active -> M_f6p_c_simple_molecule
+F2_6BP_simple_molecule -> M_f6p_c_simple_molecule
+M_s7p_c_simple_molecule -> M_f6p_c_simple_molecule
+M_g3p_c_simple_molecule -> M_f6p_c_simple_molecule
+TALA -> M_f6p_c_simple_molecule
+M_xu5p_D_c_simple_molecule -> M_f6p_c_simple_molecule
+M_e4p_c_simple_molecule -> M_f6p_c_simple_molecule
+TKT1_Cytoplasm_active -> M_f6p_c_simple_molecule
+#position:M_fdp_c_simple_molecule:7590.367647058823,1443.1127450980389
+$M_fdp_c_simple_molecule:(M_f6p_c_simple_molecule & M_atp_c_simple_molecule)
+M_f6p_c_simple_molecule -> M_fdp_c_simple_molecule
+M_atp_c_simple_molecule -> M_fdp_c_simple_molecule
+#position:FBA_Cytoplasm_active:7587.367647058823,1510.6127450980389
+$FBA_Cytoplasm_active:FBA_Cytoplasm
+FBA_Cytoplasm -> FBA_Cytoplasm_active
+#position:M_dhap_c_simple_molecule:7435.367647058823,1556.1127450980389
+$M_dhap_c_simple_molecule:((M_g3p_c_simple_molecule & cat_M_dhap_c_simple_molecule_367(TPI)) | (M_fdp_c_simple_molecule & cat_M_dhap_c_simple_molecule_366(FBA_Cytoplasm_active)))
+M_fdp_c_simple_molecule -> M_dhap_c_simple_molecule
+FBA_Cytoplasm_active -> M_dhap_c_simple_molecule
+M_g3p_c_simple_molecule -> M_dhap_c_simple_molecule
+TPI -> M_dhap_c_simple_molecule
+#position:M_g3p_c_simple_molecule:7740.367647058823,1555.1127450980389
+$M_g3p_c_simple_molecule:(((M_f6p_c_simple_molecule & M_e4p_c_simple_molecule) & cat_M_g3p_c_simple_molecule_372(TALA)) | (((M_xu5p_D_c_simple_molecule & M_e4p_c_simple_molecule) & cat_M_g3p_c_simple_molecule_371(TKT1_Cytoplasm_active)) | (((M_xu5p_D_c_simple_molecule & M_r5p_c_simple_molecule) & cat_M_g3p_c_simple_molecule_370(TKT1_Cytoplasm_active)) | ((M_dhap_c_simple_molecule & cat_M_g3p_c_simple_molecule_369(TPI)) | (M_fdp_c_simple_molecule & cat_M_g3p_c_simple_molecule_368(FBA_Cytoplasm_active))))))
+M_fdp_c_simple_molecule -> M_g3p_c_simple_molecule
+FBA_Cytoplasm_active -> M_g3p_c_simple_molecule
+M_dhap_c_simple_molecule -> M_g3p_c_simple_molecule
+TPI -> M_g3p_c_simple_molecule
+M_xu5p_D_c_simple_molecule -> M_g3p_c_simple_molecule
+M_r5p_c_simple_molecule -> M_g3p_c_simple_molecule
+TKT1_Cytoplasm_active -> M_g3p_c_simple_molecule
+M_e4p_c_simple_molecule -> M_g3p_c_simple_molecule
+M_f6p_c_simple_molecule -> M_g3p_c_simple_molecule
+TALA -> M_g3p_c_simple_molecule
+#position:GAPD_Cytoplasm_active:7911.367647058823,1603.6127450980389
+$GAPD_Cytoplasm_active:GAPD_Cytoplasm
+GAPD_Cytoplasm -> GAPD_Cytoplasm_active
+#position:GAPD_Cytoplasm:7789.882352941177,1702.7077677224734
+$GAPD_Cytoplasm:GAPD_rna
+GAPD_rna -> GAPD_Cytoplasm
+#position:M_13dpg_c_simple_molecule:8083.367647058823,1554.1127450980389
+$M_13dpg_c_simple_molecule:((M_g3p_c_simple_molecule & M_nad_c_simple_molecule) & cat_M_13dpg_c_simple_molecule_375(GAPD_Cytoplasm_active))
+M_g3p_c_simple_molecule -> M_13dpg_c_simple_molecule
+M_nad_c_simple_molecule -> M_13dpg_c_simple_molecule
+GAPD_Cytoplasm_active -> M_13dpg_c_simple_molecule
+#position:M_3pg_c_simple_molecule:8082.617647058823,1704.7794117647059
+$M_3pg_c_simple_molecule:((M_13dpg_c_simple_molecule & M_adp_c_simple_molecule) & cat_M_3pg_c_simple_molecule_376(PGK_Cytoplasm_active))
+M_13dpg_c_simple_molecule -> M_3pg_c_simple_molecule
+M_adp_c_simple_molecule -> M_3pg_c_simple_molecule
+PGK_Cytoplasm_active -> M_3pg_c_simple_molecule
+#position:PGK_Cytoplasm_active:8211.617647058823,1610.2794117647059
+$PGK_Cytoplasm_active:PGK_Cytoplasm
+PGK_Cytoplasm -> PGK_Cytoplasm_active
+#position:PGM_Cytoplasm_active:7958.617647058823,1784.2794117647059
+$PGM_Cytoplasm_active:PGM_Cytoplasm
+PGM_Cytoplasm -> PGM_Cytoplasm_active
+#position:M_2pg_c_simple_molecule:8083.617647058823,1843.7794117647059
+$M_2pg_c_simple_molecule:(M_3pg_c_simple_molecule & cat_M_2pg_c_simple_molecule_379(PGM_Cytoplasm_active))
+M_3pg_c_simple_molecule -> M_2pg_c_simple_molecule
+PGM_Cytoplasm_active -> M_2pg_c_simple_molecule
+#position:ENO_Cytoplasm_active:7960.617647058823,1913.2794117647059
+$ENO_Cytoplasm_active:ENO_Cytoplasm
+ENO_Cytoplasm -> ENO_Cytoplasm_active
+#position:PYK_Cytoplasm:7797.39705882353,2052.191176470588
+$PYK_Cytoplasm:PYK_rna
+PYK_rna -> PYK_Cytoplasm
+#position:M_lac_L_c_simple_molecule:7848.132352941177,2121.720588235294
+$M_lac_L_c_simple_molecule:(M_pyr_c_simple_molecule & cat_M_lac_L_c_simple_molecule_382(LDH_L))
+M_pyr_c_simple_molecule -> M_lac_L_c_simple_molecule
+LDH_L -> M_lac_L_c_simple_molecule
+#position:LDH_L:7966.132352941177,2201.720588235294
+$LDH_L:LDH_L_rna
+LDH_L_rna -> LDH_L
+#position:M_pyr_c_simple_molecule:8085.617647058823,2122.779411764706
+$M_pyr_c_simple_molecule:((M_pep_c_simple_molecule & M_adp_c_simple_molecule) & cat_M_pyr_c_simple_molecule_384(PYK_Cytoplasm_active))
+M_pep_c_simple_molecule -> M_pyr_c_simple_molecule
+M_adp_c_simple_molecule -> M_pyr_c_simple_molecule
+PYK_Cytoplasm_active -> M_pyr_c_simple_molecule
+#position:PYK_Cytoplasm_active:7961.617647058823,2052.279411764706
+$PYK_Cytoplasm_active:PYK_Cytoplasm
+PYK_Cytoplasm -> PYK_Cytoplasm_active
+#position:M_pep_c_simple_molecule:8084.25,1982.5
+$M_pep_c_simple_molecule:(M_2pg_c_simple_molecule & cat_M_pep_c_simple_molecule_386(ENO_Cytoplasm_active))
+M_2pg_c_simple_molecule -> M_pep_c_simple_molecule
+ENO_Cytoplasm_active -> M_pep_c_simple_molecule
+#position:M_akg_m_simple_molecule:7905.204906204903,3183.9667207792204
+$M_akg_m_simple_molecule:((M_icit_m_simple_molecule & M_co2_m_simple_molecule) & cat_M_akg_m_simple_molecule_387(ICDHxm))
+M_icit_m_simple_molecule -> M_akg_m_simple_molecule
+M_co2_m_simple_molecule -> M_akg_m_simple_molecule
+ICDHxm -> M_akg_m_simple_molecule
+#position:AKGDm:7698.204906204903,3032.9667207792204
+$AKGDm:cat_AKGDm_388(ca2__ion_Mitochondrion__inner_mb_)
+ca2__ion_Mitochondrion__inner_mb_ -> AKGDm
+#position:ICDHxm:8042.204906204903,2828.9667207792204
+$ICDHxm:cat_ICDHxm_389(ca2__ion_Mitochondrion__inner_mb_)
+ca2__ion_Mitochondrion__inner_mb_ -> ICDHxm
+#position:M_icit_m_simple_molecule:8185.204906204903,2847.9667207792204
+$M_icit_m_simple_molecule:(M_cit_m_simple_molecule & cat_M_icit_m_simple_molecule_390(ACONTm))
+M_cit_m_simple_molecule -> M_icit_m_simple_molecule
+ACONTm -> M_icit_m_simple_molecule
+#position:M_succ_m_simple_molecule:7209.204906204903,3050.9667207792204
+$M_succ_m_simple_molecule:((M_succoa_m_simple_molecule & M_gdp_m_simple_molecule) & cat_M_succ_m_simple_molecule_391(SUCOASm))
+M_succoa_m_simple_molecule -> M_succ_m_simple_molecule
+M_gdp_m_simple_molecule -> M_succ_m_simple_molecule
+SUCOASm -> M_succ_m_simple_molecule
+#position:M_accoa_m_simple_molecule:7659.204906204903,2517.9667207792204
+$M_accoa_m_simple_molecule:(((M_pyr_c_simple_molecule & M_coa_m_simple_molecule) & M_nad_m_simple_molecule) & cat_M_accoa_m_simple_molecule_392(PDHm))
+M_pyr_c_simple_molecule -> M_accoa_m_simple_molecule
+M_coa_m_simple_molecule -> M_accoa_m_simple_molecule
+M_nad_m_simple_molecule -> M_accoa_m_simple_molecule
+PDHm -> M_accoa_m_simple_molecule
+#position:PDHm:7968.204906204903,2363.9667207792204
+$PDHm:(!PDK1_Mitochondrion__inner_mb__active & cat_PDHm_393(ca2__ion_Mitochondrion__inner_mb_))
+PDK1_Mitochondrion__inner_mb__active -| PDHm
+ca2__ion_Mitochondrion__inner_mb_ -> PDHm
+#position:M_fum_m_simple_molecule:7184.204906204903,2846.9667207792204
+$M_fum_m_simple_molecule:M_succ_m_simple_molecule
+M_succ_m_simple_molecule -> M_fum_m_simple_molecule
+#position:PDK1_Mitochondrion__inner_mb__active:7887.449999999999,2474.25
+$PDK1_Mitochondrion__inner_mb__active:PDK1_Mitochondrion__inner_mb_
+PDK1_Mitochondrion__inner_mb_ -> PDK1_Mitochondrion__inner_mb__active
+#position:GLCt1r_rna:7424.0,4455.0
+$GLCt1r_rna:(!TP53_phosphorylated_Nucleus & cat_GLCt1r_rna_396(HIF1))
+HIF1 -> GLCt1r_rna
+TP53_phosphorylated_Nucleus -| GLCt1r_rna
+#position:HEX1_rna:7657.0,4458.0
+$HEX1_rna:(!TP53_phosphorylated_Nucleus & cat_HEX1_rna_397(HIF1))
+HIF1 -> HEX1_rna
+TP53_phosphorylated_Nucleus -| HEX1_rna
+#position:FBA_Cytoplasm:7320.5,1510.0
+$FBA_Cytoplasm:ALDO_rna
+ALDO_rna -> FBA_Cytoplasm
+#position:PGK_Cytoplasm:8369.5,1609.0
+$PGK_Cytoplasm:PGK_rna
+PGK_rna -> PGK_Cytoplasm
+#position:ENO_Cytoplasm:7795.5,1913.0
+$ENO_Cytoplasm:ENO_rna
+ENO_rna -> ENO_Cytoplasm
+#position:F2_6BP_simple_molecule:7866.0,1281.0
+$F2_6BP_simple_molecule:(M_f6p_c_simple_molecule & cat_F2_6BP_simple_molecule_401(PFKFB3_Cytoplasm_active))
+M_f6p_c_simple_molecule -> F2_6BP_simple_molecule
+PFKFB3_Cytoplasm_active -> F2_6BP_simple_molecule
+#position:PFKFB3_Cytoplasm:7862.0,1160.0
+$PFKFB3_Cytoplasm:PFKFB3_rna
+PFKFB3_rna -> PFKFB3_Cytoplasm
+#position:PFKFB3_Cytoplasm_active:7728.571428571429,1189.857142857143
+$PFKFB3_Cytoplasm_active:PFKFB3_Cytoplasm
+PFKFB3_Cytoplasm -> PFKFB3_Cytoplasm_active
+#position:PGK_rna:7912.0,4263.0
+$PGK_rna:cat_PGK_rna_404(HIF1)
+HIF1 -> PGK_rna
+#position:ENO_rna:8148.0,4452.0
+$ENO_rna:cat_ENO_rna_405(HIF1)
+HIF1 -> ENO_rna
+#position:PDK_rna:7417.0,4263.0
+$PDK_rna:(!TP53_phosphorylated_Nucleus & cat_PDK_rna_406(HIF1))
+HIF1 -> PDK_rna
+TP53_phosphorylated_Nucleus -| PDK_rna
+#position:PFKFB3_rna:7912.0,4452.0
+$PFKFB3_rna:(!TP53_phosphorylated_Nucleus & cat_PFKFB3_rna_407(HIF1))
+HIF1 -> PFKFB3_rna
+TP53_phosphorylated_Nucleus -| PFKFB3_rna
+#position:LDH_L_rna:7667.0,4263.0
+$LDH_L_rna:cat_LDH_L_rna_408(HIF1)
+HIF1 -> LDH_L_rna
+#position:THBS1:430.0,3552.0
+$THBS1:THBS1_rna
+THBS1_rna -> THBS1
+#position:VEGFA_Cytoplasm:6585.0,3857.0
+$VEGFA_Cytoplasm:VEGFA_rna
+VEGFA_rna -> VEGFA_Cytoplasm
+#position:HIF1A_rna:7423.0,4652.5
+$HIF1A_rna:cat_HIF1A_rna_411(Hypoxia_phenotype)
+Hypoxia_phenotype -> HIF1A_rna
+#position:IL15:6365.625,5705.625
+#position:VEGFA_Secreted_space_Molecules:5969.875,5596.625
+$VEGFA_Secreted_space_Molecules:(VEGFA_Cytoplasm & cat_VEGFA_Secreted_space_Molecules_413(M_lac_L_c_simple_molecule))
+VEGFA_Cytoplasm -> VEGFA_Secreted_space_Molecules
+M_lac_L_c_simple_molecule -> VEGFA_Secreted_space_Molecules
+#position:PGM_Cytoplasm:7790.0,1783.0
+$PGM_Cytoplasm:PGM_rna
+PGM_rna -> PGM_Cytoplasm
+#position:PDK1_Mitochondrion__inner_mb_:7659.0,2421.461538461538
+$PDK1_Mitochondrion__inner_mb_:PDK_rna
+PDK_rna -> PDK1_Mitochondrion__inner_mb_
+#position:HIF1:7587.333333333333,4023.666666666666
+$HIF1:(!MDM2_phosphorylated & (!TP53_phosphorylated_Nucleus & HIF1A_Cytoplasm_active))
+HIF1A_Cytoplasm_active -> HIF1
+TP53_phosphorylated_Nucleus -| HIF1
+MDM2_phosphorylated -| HIF1
+#position:PGM_rna:7668.0,4650.0
+$PGM_rna:(!TP53_phosphorylated_Nucleus & cat_PGM_rna_417(HIF1))
+HIF1 -> PGM_rna
+TP53_phosphorylated_Nucleus -| PGM_rna
+#position:PYK_rna:7901.0,4648.0
+$PYK_rna:cat_PYK_rna_418(HIF1)
+HIF1 -> PYK_rna
+#position:GAPD_rna:7412.0,4843.0
+$GAPD_rna:cat_GAPD_rna_419(HIF1)
+HIF1 -> GAPD_rna
+#position:PGI_rna:7674.0,4843.0
+$PGI_rna:cat_PGI_rna_420(HIF1)
+HIF1 -> PGI_rna
+#position:ALDO_rna:8153.0,4648.0
+$ALDO_rna:cat_ALDO_rna_421(HIF1)
+HIF1 -> ALDO_rna
+#position:L_LACt2r_rna:7915.0,4843.0
+$L_LACt2r_rna:(!TP53_phosphorylated_Nucleus & cat_L_LACt2r_rna_422(HIF1))
+HIF1 -> L_LACt2r_rna
+TP53_phosphorylated_Nucleus -| L_LACt2r_rna
+#position:H19_rna:415.0,4152.0
+$H19_rna:cat_H19_rna_423(HIF1)
+HIF1 -> H19_rna
+#position:PGI_Secreted_space_Molecules:7212.5,5646.5
+$PGI_Secreted_space_Molecules:(PGI_Cytoplasm_active & cat_PGI_Secreted_space_Molecules_424(HIF1A_Cytoplasm_active))
+PGI_Cytoplasm_active -> PGI_Secreted_space_Molecules
+HIF1A_Cytoplasm_active -> PGI_Secreted_space_Molecules
+#position:IL1B_Cytoplasm:2640.454545454545,3348.363636363636
+$IL1B_Cytoplasm:IL1B_rna
+IL1B_rna -> IL1B_Cytoplasm
+#position:c_Myc:1322.75,4122.25
+$c_Myc:cat_c_Myc_426(MTORC1_complex_Cytoplasm, MAPK3_phosphorylated, MAPK1_phosphorylated)
+MTORC1_complex_Cytoplasm -> c_Myc
+MAPK3_phosphorylated -> c_Myc
+MAPK1_phosphorylated -> c_Myc
+#position:ca2__ion_Mitochondrion__inner_mb_:7448.714285714286,2474.571428571429
+$ca2__ion_Mitochondrion__inner_mb_:VDAC_Ca2__complex
+VDAC_Ca2__complex -> ca2__ion_Mitochondrion__inner_mb_
+#position:PHD2:6779.0,3591.0
+$PHD2:!Hypoxia_phenotype
+Hypoxia_phenotype -| PHD2
+#position:HIF1A_Cytoplasm_active:7589.0,3806.0
+$HIF1A_Cytoplasm_active:(!PHD2 & HIF1A_Cytoplasm)
+HIF1A_Cytoplasm -> HIF1A_Cytoplasm_active
+PHD2 -| HIF1A_Cytoplasm_active
+#position:HIF1A_Cytoplasm:7390.666666666666,3807.6666666666665
+$HIF1A_Cytoplasm:HIF1A_rna
+HIF1A_rna -> HIF1A_Cytoplasm
+#position:Hypoxia_phenotype:7814.0,6001.0
+$Hypoxia_phenotype:cat_Hypoxia_phenotype_431(HIF1A_Cytoplasm_active)
+HIF1A_Cytoplasm_active -> Hypoxia_phenotype
+#position:SDF_1:1941.0,5715.0
+$SDF_1:SDF_1_rna
+SDF_1_rna -> SDF_1
+#position:SDF_1_rna:2649.0,5183.0
+$SDF_1_rna:cat_SDF_1_rna_433(HIF1)
+HIF1 -> SDF_1_rna
+#position:IL33:6490.777777777778,5579.666666666667
+$IL33:IL33_rna
+IL33_rna -> IL33
+#position:M_succoa_m_simple_molecule:7491.204906204903,3183.9667207792204
+$M_succoa_m_simple_molecule:(((M_akg_m_simple_molecule & M_coa_m_simple_molecule) & M_nad_m_simple_molecule) & cat_M_succoa_m_simple_molecule_435(AKGDm))
+M_akg_m_simple_molecule -> M_succoa_m_simple_molecule
+M_coa_m_simple_molecule -> M_succoa_m_simple_molecule
+M_nad_m_simple_molecule -> M_succoa_m_simple_molecule
+AKGDm -> M_succoa_m_simple_molecule
+#position:ca2__ion_Endoplasmic_space_Reticulum:6695.0,3078.0
+$ca2__ion_Endoplasmic_space_Reticulum:SERCA_Ca2__complex
+SERCA_Ca2__complex -> ca2__ion_Endoplasmic_space_Reticulum
+#position:G6PDH2r_Cytoplasm_active:8079.25,1013.6637364998269
+$G6PDH2r_Cytoplasm_active:(!TP53_phosphorylated_Cytoplasm & G6PDH2r_Cytoplasm)
+G6PDH2r_Cytoplasm -> G6PDH2r_Cytoplasm_active
+TP53_phosphorylated_Cytoplasm -| G6PDH2r_Cytoplasm_active
+#position:M_6pgl_c_simple_molecule:8566.565789473685,1121.229525973511
+$M_6pgl_c_simple_molecule:((M_g6p_c_simple_molecule & M_nadp_c_simple_molecule) & cat_M_6pgl_c_simple_molecule_438(G6PDH2r_Cytoplasm_active))
+M_g6p_c_simple_molecule -> M_6pgl_c_simple_molecule
+M_nadp_c_simple_molecule -> M_6pgl_c_simple_molecule
+G6PDH2r_Cytoplasm_active -> M_6pgl_c_simple_molecule
+#position:TKT1_Cytoplasm_active:8720.565789473683,1405.229525973511
+$TKT1_Cytoplasm_active:TKT1_Cytoplasm
+TKT1_Cytoplasm -> TKT1_Cytoplasm_active
+#position:G6PDH2r_rna:8152.0,4843.0
+$G6PDH2r_rna:cat_G6PDH2r_rna_440(HIF1)
+HIF1 -> G6PDH2r_rna
+#position:TKT1_rna:7411.0,5043.0
+$TKT1_rna:cat_TKT1_rna_441(HIF1)
+HIF1 -> TKT1_rna
+#position:G6PDH2r_Cytoplasm:8247.5,1015.0
+$G6PDH2r_Cytoplasm:G6PDH2r_rna
+G6PDH2r_rna -> G6PDH2r_Cytoplasm
+#position:TKT1_Cytoplasm:8565.0,1406.0
+$TKT1_Cytoplasm:TKT1_rna
+TKT1_rna -> TKT1_Cytoplasm
+#position:BAX_Mitochondrion__outter_mb__active:8794.25,2450.5
+$BAX_Mitochondrion__outter_mb__active:((!MCL1 & (!BCL2L1_Mitochondrion__outter_mb__active & (!BCL_2_Mitochondrion__outter_mb__active & BAX_Mitochondrion__outter_mb_))) & cat_BAX_Mitochondrion__outter_mb__active_444(BID, tBID, BCL2L11_Cytoplasm_active))
+BAX_Mitochondrion__outter_mb_ -> BAX_Mitochondrion__outter_mb__active
+BID -> BAX_Mitochondrion__outter_mb__active
+BCL_2_Mitochondrion__outter_mb__active -| BAX_Mitochondrion__outter_mb__active
+tBID -> BAX_Mitochondrion__outter_mb__active
+BCL2L1_Mitochondrion__outter_mb__active -| BAX_Mitochondrion__outter_mb__active
+MCL1 -| BAX_Mitochondrion__outter_mb__active
+BCL2L11_Cytoplasm_active -> BAX_Mitochondrion__outter_mb__active
+#position:BAX_Mitochondrion__outter_mb_:8794.25,2321.5
+$BAX_Mitochondrion__outter_mb_:BAX_rna
+BAX_rna -> BAX_Mitochondrion__outter_mb_
+#position:BAK_Mitochondrion__outter_mb_:8793.25,2780.5
+$BAK_Mitochondrion__outter_mb_:BAK_rna
+BAK_rna -> BAK_Mitochondrion__outter_mb_
+#position:BAK_Mitochondrion__outter_mb__active:8793.25,2663.5
+$BAK_Mitochondrion__outter_mb__active:((!MCL1 & (!BCL2L1_Mitochondrion__outter_mb__active & (!BCL_2_Mitochondrion__outter_mb__active & BAK_Mitochondrion__outter_mb_))) & cat_BAK_Mitochondrion__outter_mb__active_447(BID, tBID))
+BAK_Mitochondrion__outter_mb_ -> BAK_Mitochondrion__outter_mb__active
+BID -> BAK_Mitochondrion__outter_mb__active
+BCL_2_Mitochondrion__outter_mb__active -| BAK_Mitochondrion__outter_mb__active
+tBID -> BAK_Mitochondrion__outter_mb__active
+BCL2L1_Mitochondrion__outter_mb__active -| BAK_Mitochondrion__outter_mb__active
+MCL1 -| BAK_Mitochondrion__outter_mb__active
+#position:CYCS:8901.5,2563.0
+$CYCS:cat_CYCS_448(BAX_Mitochondrion__outter_mb__active, BAK_Mitochondrion__outter_mb__active, PMAIP1_Cytoplasm_active)
+BAX_Mitochondrion__outter_mb__active -> CYCS
+BAK_Mitochondrion__outter_mb__active -> CYCS
+PMAIP1_Cytoplasm_active -> CYCS
+#position:APAF1:9078.75,2562.5
+$APAF1:APAF_1_rna
+APAF_1_rna -> APAF1
+#position:BID:9219.75,2502.5
+$BID:cat_BID_450(CASP8_phosphorylated)
+CASP8_phosphorylated -> BID
+#position:BAK_rna:8835.0,4262.0
+$BAK_rna:cat_BAK_rna_451(TP53_phosphorylated_Nucleus)
+TP53_phosphorylated_Nucleus -> BAK_rna
+#position:APAF_1_rna:9052.0,4262.0
+$APAF_1_rna:cat_APAF_1_rna_452(TP53_phosphorylated_Nucleus)
+TP53_phosphorylated_Nucleus -> APAF_1_rna
+#position:BCL_2_rna:8592.0,4441.0
+#position:BNIP3_rna:8835.0,4443.0
+$BNIP3_rna:cat_BNIP3_rna_454(HIF1)
+HIF1 -> BNIP3_rna
+#position:BCL_2_Mitochondrion__outter_mb__active:8792.0,3022.0
+$BCL_2_Mitochondrion__outter_mb__active:((!PMAIP1_Cytoplasm_active & (!BAD & (!BCL2L11_Cytoplasm_active & BCL_2_Mitochondrion__outter_mb_))) & cat_BCL_2_Mitochondrion__outter_mb__active_455(MAPK1_phosphorylated))
+BCL_2_Mitochondrion__outter_mb_ -> BCL_2_Mitochondrion__outter_mb__active
+BCL2L11_Cytoplasm_active -| BCL_2_Mitochondrion__outter_mb__active
+BAD -| BCL_2_Mitochondrion__outter_mb__active
+MAPK1_phosphorylated -> BCL_2_Mitochondrion__outter_mb__active
+PMAIP1_Cytoplasm_active -| BCL_2_Mitochondrion__outter_mb__active
+#position:BCL_2_Mitochondrion__outter_mb_:8792.5,3138.0
+$BCL_2_Mitochondrion__outter_mb_:BCL_2_rna
+BCL_2_rna -> BCL_2_Mitochondrion__outter_mb_
+#position:BCL2L1_Mitochondrion__outter_mb__active:8792.0,3262.0
+$BCL2L1_Mitochondrion__outter_mb__active:(!PMAIP1_Cytoplasm_active & (!BAD & (!BCL2L11_Cytoplasm_active & BCL2L1_Mitochondrion__outter_mb_)))
+BCL2L1_Mitochondrion__outter_mb_ -> BCL2L1_Mitochondrion__outter_mb__active
+BCL2L11_Cytoplasm_active -| BCL2L1_Mitochondrion__outter_mb__active
+BAD -| BCL2L1_Mitochondrion__outter_mb__active
+PMAIP1_Cytoplasm_active -| BCL2L1_Mitochondrion__outter_mb__active
+#position:BCL2L1_Mitochondrion__outter_mb_:8791.625,3382.920454545455
+$BCL2L1_Mitochondrion__outter_mb_:BCL2L1_rna
+BCL2L1_rna -> BCL2L1_Mitochondrion__outter_mb_
+#position:MCL1:8792.0,3500.0
+$MCL1:cat_MCL1_459(AKT2_phosphorylated)
+AKT2_phosphorylated -> MCL1
+#position:BCL2L11_Cytoplasm_active:9020.0,3042.0
+$BCL2L11_Cytoplasm_active:(!MCL1 & BCL2L11_Cytoplasm)
+BCL2L11_Cytoplasm -> BCL2L11_Cytoplasm_active
+MCL1 -| BCL2L11_Cytoplasm_active
+#position:BCL2L11_Cytoplasm:9020.625,3163.75
+$BCL2L11_Cytoplasm:BCL2L11_rna
+BCL2L11_rna -> BCL2L11_Cytoplasm
+#position:tBID:8661.0,2923.0
+$tBID:BID
+BID -> tBID
+#position:BAD:9200.0,3183.0
+$BAD:(!AKT2_phosphorylated & cat_BAD_463(MAPK8_phosphorylated))
+AKT2_phosphorylated -| BAD
+MAPK8_phosphorylated -> BAD
+#position:M_e4p_c_simple_molecule:9169.565789473683,1614.8611049208794
+$M_e4p_c_simple_molecule:(((M_f6p_c_simple_molecule & M_g3p_c_simple_molecule) & cat_M_e4p_c_simple_molecule_465(TKT1_Cytoplasm_active)) | ((M_s7p_c_simple_molecule & M_g3p_c_simple_molecule) & cat_M_e4p_c_simple_molecule_464(TALA)))
+M_s7p_c_simple_molecule -> M_e4p_c_simple_molecule
+M_g3p_c_simple_molecule -> M_e4p_c_simple_molecule
+TALA -> M_e4p_c_simple_molecule
+M_f6p_c_simple_molecule -> M_e4p_c_simple_molecule
+TKT1_Cytoplasm_active -> M_e4p_c_simple_molecule
+#position:M_s7p_c_simple_molecule:9170.565789473683,1472.0189996577215
+$M_s7p_c_simple_molecule:(((M_f6p_c_simple_molecule & M_e4p_c_simple_molecule) & cat_M_s7p_c_simple_molecule_467(TALA)) | ((M_xu5p_D_c_simple_molecule & M_r5p_c_simple_molecule) & cat_M_s7p_c_simple_molecule_466(TKT1_Cytoplasm_active)))
+M_xu5p_D_c_simple_molecule -> M_s7p_c_simple_molecule
+M_r5p_c_simple_molecule -> M_s7p_c_simple_molecule
+TKT1_Cytoplasm_active -> M_s7p_c_simple_molecule
+M_f6p_c_simple_molecule -> M_s7p_c_simple_molecule
+M_e4p_c_simple_molecule -> M_s7p_c_simple_molecule
+TALA -> M_s7p_c_simple_molecule
+#position:M_r5p_c_simple_molecule:9195.25,1294.9137364998269
+$M_r5p_c_simple_molecule:((M_ru5p_D_c_simple_molecule & cat_M_r5p_c_simple_molecule_469(RPI)) | ((M_g3p_c_simple_molecule & M_s7p_c_simple_molecule) & cat_M_r5p_c_simple_molecule_468(TKT1_Cytoplasm_active)))
+M_g3p_c_simple_molecule -> M_r5p_c_simple_molecule
+M_s7p_c_simple_molecule -> M_r5p_c_simple_molecule
+TKT1_Cytoplasm_active -> M_r5p_c_simple_molecule
+M_ru5p_D_c_simple_molecule -> M_r5p_c_simple_molecule
+RPI -> M_r5p_c_simple_molecule
+#position:M_xu5p_D_c_simple_molecule:9009.565789473685,1294.229525973511
+$M_xu5p_D_c_simple_molecule:((M_ru5p_D_c_simple_molecule & cat_M_xu5p_D_c_simple_molecule_472(RPE)) | (((M_g3p_c_simple_molecule & M_s7p_c_simple_molecule) & cat_M_xu5p_D_c_simple_molecule_471(TKT1_Cytoplasm_active)) | ((M_f6p_c_simple_molecule & M_g3p_c_simple_molecule) & cat_M_xu5p_D_c_simple_molecule_470(TKT1_Cytoplasm_active))))
+M_f6p_c_simple_molecule -> M_xu5p_D_c_simple_molecule
+M_g3p_c_simple_molecule -> M_xu5p_D_c_simple_molecule
+TKT1_Cytoplasm_active -> M_xu5p_D_c_simple_molecule
+M_s7p_c_simple_molecule -> M_xu5p_D_c_simple_molecule
+M_ru5p_D_c_simple_molecule -> M_xu5p_D_c_simple_molecule
+RPE -> M_xu5p_D_c_simple_molecule
+#position:GLCt1r:7385.0,802.0
+$GLCt1r:GLCt1r_rna
+GLCt1r_rna -> GLCt1r
+#position:L_LACt2r:7685.0,5410.0
+$L_LACt2r:L_LACt2r_rna
+L_LACt2r_rna -> L_LACt2r
+#position:M_6pgc_c_simple_molecule:8828.0,1123.5
+$M_6pgc_c_simple_molecule:((M_6pgl_c_simple_molecule & M_h2o_c_simple_molecule) & cat_M_6pgc_c_simple_molecule_475(PGL))
+M_6pgl_c_simple_molecule -> M_6pgc_c_simple_molecule
+M_h2o_c_simple_molecule -> M_6pgc_c_simple_molecule
+PGL -> M_6pgc_c_simple_molecule
+#position:M_ru5p_D_c_simple_molecule:9104.0,1123.5
+$M_ru5p_D_c_simple_molecule:((M_6pgc_c_simple_molecule & M_nadp_c_simple_molecule) & cat_M_ru5p_D_c_simple_molecule_476(GND))
+M_6pgc_c_simple_molecule -> M_ru5p_D_c_simple_molecule
+M_nadp_c_simple_molecule -> M_ru5p_D_c_simple_molecule
+GND -> M_ru5p_D_c_simple_molecule
+#position:M_cit_m_simple_molecule:7894.0,2579.5
+$M_cit_m_simple_molecule:(((M_oaa_m_simple_molecule & M_accoa_m_simple_molecule) & M_h2o_m_simple_molecule) & cat_M_cit_m_simple_molecule_477(CSm))
+M_oaa_m_simple_molecule -> M_cit_m_simple_molecule
+M_accoa_m_simple_molecule -> M_cit_m_simple_molecule
+M_h2o_m_simple_molecule -> M_cit_m_simple_molecule
+CSm -> M_cit_m_simple_molecule
+#position:M_mal_L_m_simple_molecule:7312.0,2654.5
+$M_mal_L_m_simple_molecule:(M_fum_m_simple_molecule & cat_M_mal_L_m_simple_molecule_478(FUMm))
+M_fum_m_simple_molecule -> M_mal_L_m_simple_molecule
+FUMm -> M_mal_L_m_simple_molecule
+#position:M_oaa_m_simple_molecule:7501.0,2579.5
+$M_oaa_m_simple_molecule:((M_mal_L_m_simple_molecule & M_nad_m_simple_molecule) & cat_M_oaa_m_simple_molecule_479(MDHm))
+M_mal_L_m_simple_molecule -> M_oaa_m_simple_molecule
+M_nad_m_simple_molecule -> M_oaa_m_simple_molecule
+MDHm -> M_oaa_m_simple_molecule
+#position:CI_MitoCore:7176.0,3540.0
+$CI_MitoCore:CI_rna
+CI_rna -> CI_MitoCore
+#position:CII_MitoCore:7467.0,3541.0
+$CII_MitoCore:CII_rna
+CII_rna -> CII_MitoCore
+#position:CIII_MitoCore:7763.0,3540.0
+$CIII_MitoCore:CIII_rna
+CIII_rna -> CIII_MitoCore
+#position:CIV_MitoCore:8033.0,3538.0
+$CIV_MitoCore:CIV_rna
+CIV_rna -> CIV_MitoCore
+#position:CV_MitoCore:8314.0,3539.0
+$CV_MitoCore:CV_rna
+CV_rna -> CV_MitoCore
+#position:mir210_rna:8593.0,4704.5
+$mir210_rna:cat_mir210_rna_485(HIF1)
+HIF1 -> mir210_rna
+#position:CI_rna:8837.0,4704.5
+$CI_rna:!mir210_rna
+mir210_rna -| CI_rna
+#position:CII_rna:9087.0,4704.5
+$CII_rna:!mir210_rna
+mir210_rna -| CII_rna
+#position:CIII_rna:8578.0,4923.5
+$CIII_rna:!mir210_rna
+mir210_rna -| CIII_rna
+#position:CV_rna:8833.0,4920.5
+#position:CIV_rna:9079.0,4921.5
+$CIV_rna:!NO_rna
+NO_rna -| CIV_rna
+#position:NO_rna:8586.0,5123.5
+$NO_rna:cat_NO_rna_491(HIF1)
+HIF1 -> NO_rna
+#position:PMAIP1_Cytoplasm:9095.0,3434.0
+$PMAIP1_Cytoplasm:PMAIP1_rna
+PMAIP1_rna -> PMAIP1_Cytoplasm
+#position:PMAIP1_Cytoplasm_active:9098.588235294117,3664.470588235294
+$PMAIP1_Cytoplasm_active:PMAIP1_Cytoplasm
+PMAIP1_Cytoplasm -> PMAIP1_Cytoplasm_active
+#position:PMAIP1_rna:8833.0,5127.5
+$PMAIP1_rna:cat_PMAIP1_rna_494(TP53_phosphorylated_Nucleus)
+TP53_phosphorylated_Nucleus -> PMAIP1_rna
+#position:CFLAR_rna:9074.0,5127.5
+$CFLAR_rna:cat_CFLAR_rna_495(NFKB_N_complex)
+NFKB_N_complex -> CFLAR_rna
+#position:CFLAR:5062.0,1820.0
+$CFLAR:CFLAR_rna
+CFLAR_rna -> CFLAR
+#position:M_atp_c_simple_molecule:8273.0,1372.5
+$M_atp_c_simple_molecule:(((M_pep_c_simple_molecule & M_adp_c_simple_molecule) & cat_M_atp_c_simple_molecule_498(PYK_Cytoplasm_active)) | ((M_13dpg_c_simple_molecule & M_adp_c_simple_molecule) & cat_M_atp_c_simple_molecule_497(PGK_Cytoplasm_active)))
+M_13dpg_c_simple_molecule -> M_atp_c_simple_molecule
+M_adp_c_simple_molecule -> M_atp_c_simple_molecule
+PGK_Cytoplasm_active -> M_atp_c_simple_molecule
+M_pep_c_simple_molecule -> M_atp_c_simple_molecule
+PYK_Cytoplasm_active -> M_atp_c_simple_molecule
+#position:M_adp_c_simple_molecule:8277.0,1444.5
+$M_adp_c_simple_molecule:((M_f6p_c_simple_molecule & M_atp_c_simple_molecule) | ((M_g6p_c_simple_molecule & M_atp_c_simple_molecule) & cat_M_adp_c_simple_molecule_499(PGI_Cytoplasm_active)))
+M_g6p_c_simple_molecule -> M_adp_c_simple_molecule
+M_atp_c_simple_molecule -> M_adp_c_simple_molecule
+PGI_Cytoplasm_active -> M_adp_c_simple_molecule
+M_f6p_c_simple_molecule -> M_adp_c_simple_molecule
+#position:M_nadph_c_simple_molecule:7902.0,929.5
+$M_nadph_c_simple_molecule:((M_6pgc_c_simple_molecule & M_nadp_c_simple_molecule) & cat_M_nadph_c_simple_molecule_501(GND))
+M_6pgc_c_simple_molecule -> M_nadph_c_simple_molecule
+M_nadp_c_simple_molecule -> M_nadph_c_simple_molecule
+GND -> M_nadph_c_simple_molecule
+#position:M_nadh_c_simple_molecule:7592.0,1925.5
+$M_nadh_c_simple_molecule:((M_g3p_c_simple_molecule & M_nad_c_simple_molecule) & cat_M_nadh_c_simple_molecule_502(GAPD_Cytoplasm_active))
+M_g3p_c_simple_molecule -> M_nadh_c_simple_molecule
+M_nad_c_simple_molecule -> M_nadh_c_simple_molecule
+GAPD_Cytoplasm_active -> M_nadh_c_simple_molecule
+#position:M_h2o_c_simple_molecule:8268.0,1943.5
+$M_h2o_c_simple_molecule:(M_2pg_c_simple_molecule & cat_M_h2o_c_simple_molecule_503(ENO_Cytoplasm_active))
+M_2pg_c_simple_molecule -> M_h2o_c_simple_molecule
+ENO_Cytoplasm_active -> M_h2o_c_simple_molecule
+#position:M_h2o_m_simple_molecule:8182.0,2536.5
+$M_h2o_m_simple_molecule:(M_fum_m_simple_molecule & cat_M_h2o_m_simple_molecule_504(FUMm))
+M_fum_m_simple_molecule -> M_h2o_m_simple_molecule
+FUMm -> M_h2o_m_simple_molecule
+#position:M_atp_m_simple_molecule:8183.0,3192.5
+$M_atp_m_simple_molecule:(M_adp_m_simple_molecule & cat_M_atp_m_simple_molecule_505(CV_MitoCore))
+M_adp_m_simple_molecule -> M_atp_m_simple_molecule
+CV_MitoCore -> M_atp_m_simple_molecule
+#position:M_gtp_m_simple_molecule:7161.0,3160.5
+$M_gtp_m_simple_molecule:((M_succoa_m_simple_molecule & M_gdp_m_simple_molecule) & cat_M_gtp_m_simple_molecule_506(SUCOASm))
+M_succoa_m_simple_molecule -> M_gtp_m_simple_molecule
+M_gdp_m_simple_molecule -> M_gtp_m_simple_molecule
+SUCOASm -> M_gtp_m_simple_molecule
+#position:M_coa_m_simple_molecule:7720.0,2759.5
+$M_coa_m_simple_molecule:(((M_oaa_m_simple_molecule & M_accoa_m_simple_molecule) & M_h2o_m_simple_molecule) & cat_M_coa_m_simple_molecule_507(CSm))
+M_oaa_m_simple_molecule -> M_coa_m_simple_molecule
+M_accoa_m_simple_molecule -> M_coa_m_simple_molecule
+M_h2o_m_simple_molecule -> M_coa_m_simple_molecule
+CSm -> M_coa_m_simple_molecule
+#position:M_co2_m_simple_molecule:7522.0,2892.5
+$M_co2_m_simple_molecule:((((M_pyr_c_simple_molecule & M_coa_m_simple_molecule) & M_nad_m_simple_molecule) & cat_M_co2_m_simple_molecule_509(PDHm)) | (((M_akg_m_simple_molecule & M_coa_m_simple_molecule) & M_nad_m_simple_molecule) & cat_M_co2_m_simple_molecule_508(AKGDm)))
+M_akg_m_simple_molecule -> M_co2_m_simple_molecule
+M_coa_m_simple_molecule -> M_co2_m_simple_molecule
+M_nad_m_simple_molecule -> M_co2_m_simple_molecule
+AKGDm -> M_co2_m_simple_molecule
+M_pyr_c_simple_molecule -> M_co2_m_simple_molecule
+PDHm -> M_co2_m_simple_molecule
+#position:M_nadh_m_simple_molecule:7635.0,3401.5
+$M_nadh_m_simple_molecule:(((M_mal_L_m_simple_molecule & M_nad_m_simple_molecule) & cat_M_nadh_m_simple_molecule_512(MDHm)) | ((((M_pyr_c_simple_molecule & M_coa_m_simple_molecule) & M_nad_m_simple_molecule) & cat_M_nadh_m_simple_molecule_511(PDHm)) | (((M_akg_m_simple_molecule & M_coa_m_simple_molecule) & M_nad_m_simple_molecule) & cat_M_nadh_m_simple_molecule_510(AKGDm))))
+M_akg_m_simple_molecule -> M_nadh_m_simple_molecule
+M_coa_m_simple_molecule -> M_nadh_m_simple_molecule
+M_nad_m_simple_molecule -> M_nadh_m_simple_molecule
+AKGDm -> M_nadh_m_simple_molecule
+M_pyr_c_simple_molecule -> M_nadh_m_simple_molecule
+PDHm -> M_nadh_m_simple_molecule
+M_mal_L_m_simple_molecule -> M_nadh_m_simple_molecule
+MDHm -> M_nadh_m_simple_molecule
