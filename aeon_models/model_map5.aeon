@@ -29,6 +29,7 @@ TNFRSF1A_FADD_CASP8_complex -> TNFRSF1A_FADD_complex_neuron
 $TNFRSF1A_FADD_complex_neuron_1:(TNFRSF1A & FADD)
 TNFRSF1A -> TNFRSF1A_FADD_complex_neuron_1
 FADD -> TNFRSF1A_FADD_complex_neuron_1
+#position:CDK5_IL12A_complex:3810.3125,5377.0625
 #position:ITPR_IP3_complex:3064.0625,4047.125
 $ITPR_IP3_complex:((IP3_simple_molecule & ITPR) & cat_ITPR_IP3_complex_7(mutant_PSEN_endoplasmic_reticulum_ER_, KCNIP3_mutant_PSEN_complex))
 IP3_simple_molecule -> ITPR_IP3_complex
@@ -43,6 +44,7 @@ VPS29_VPS35_SNX_VPS26A_complex -> APP_SORL1_VPS29_VPS35_SNX_VPS26A_complex
 $APP_SORL1_complex:(APP_neuron & SORL1)
 APP_neuron -> APP_SORL1_complex
 SORL1 -> APP_SORL1_complex
+#position:NFKBI_NFKB1_RELA_complex_neuron:3620.625,4726.09375
 #position:APP_APBB1_ABL_complex:3467.125,1213.8125
 $APP_APBB1_ABL_complex:(APP_APBB1_complex & ABL)
 APP_APBB1_complex -> APP_APBB1_ABL_complex
@@ -62,10 +64,12 @@ $APBB1_AICD_complex_neuron:((AICD_neuron & APBB1) | APP_APBB1_complex)
 APP_APBB1_complex -> APBB1_AICD_complex_neuron
 AICD_neuron -> APBB1_AICD_complex_neuron
 APBB1 -> APBB1_AICD_complex_neuron
+#position:VPS29_VPS35_SNX_VPS26A_complex:2628.75,1402.4375
 #position:APP_GAPDH_complex:3051.125,1466.125
 $APP_GAPDH_complex:(APP_neuron & GAPDH_neuron)
 APP_neuron -> APP_GAPDH_complex
 GAPDH_neuron -> APP_GAPDH_complex
+#position:APOE_LPL_complex:1870.4137597180816,2180.6562499999995
 #position:Unknown_receptor_Oligomeric_AmyloicB_complex:2391.0,4157.5
 $Unknown_receptor_Oligomeric_AmyloicB_complex:(Unknown_receptor_unknown | (Oligomeric_AmyloidB_default_compartment & Unknown_receptor_unknown))
 Oligomeric_AmyloidB_default_compartment -> Unknown_receptor_Oligomeric_AmyloicB_complex
@@ -93,6 +97,7 @@ cholesterol_simple_molecule_astrocyte -> APOE_cholesterol_complex_astrocyte
 $GRIA_glutamate_complex:(GRIA & glutamate_simple_molecule_default_compartment)
 GRIA -> GRIA_glutamate_complex
 glutamate_simple_molecule_default_compartment -> GRIA_glutamate_complex
+#position:PRIM1_PCLB_APEX1_POLD1_replication_origin_complex:5314.230620140959,880.1718750000005
 #position:PRIM1_PCLB_APEX1_POLD1_complex:5354.09375,1007.5
 $PRIM1_PCLB_APEX1_POLD1_complex:(PRIM1_PCLB_APEX1_POLD1_replication_origin_complex & cat_PRIM1_PCLB_APEX1_POLD1_complex_25(AmyloidB_neuron))
 PRIM1_PCLB_APEX1_POLD1_replication_origin_complex -> PRIM1_PCLB_APEX1_POLD1_complex
@@ -106,6 +111,7 @@ $APAF1_CASP9_complex:(!AKT1_phosphorylated_phosphorylated & (CASP9 & APAF1))
 CASP9 -> APAF1_CASP9_complex
 APAF1 -> APAF1_CASP9_complex
 AKT1_phosphorylated_phosphorylated -| APAF1_CASP9_complex
+#position:NCOR1_RXR_RARA_complex:5667.75,1008.875
 #position:unknown_receptor_sAPPA_complex:2326.125,880.75
 $unknown_receptor_sAPPA_complex:(sAPPA & Unknown_receptor_unknown)
 sAPPA -> unknown_receptor_sAPPA_complex
@@ -113,6 +119,7 @@ Unknown_receptor_unknown -> unknown_receptor_sAPPA_complex
 #position:PRIM_APEX1_POLD1_replication_origin_complex:5328.5,1136.25
 $PRIM_APEX1_POLD1_replication_origin_complex:PRIM1_PCLB_APEX1_POLD1_complex
 PRIM1_PCLB_APEX1_POLD1_complex -> PRIM_APEX1_POLD1_replication_origin_complex
+#position:FZD_LRP5_6_CSNK1A1_complex:4964.785677854368,198.6490546050528
 #position:APPBP1_APP_complex:2772.875,852.25
 $APPBP1_APP_complex:(APPBP1 & APP_neuron)
 APPBP1 -> APPBP1_APP_complex
@@ -129,6 +136,7 @@ Li__ion -> APC_AXIN_GSK3B_CTNNB1_complex_neuron
 LGALS1 -> APC_AXIN_GSK3B_CTNNB1_complex_neuron
 PRKC_phosphorylated -> APC_AXIN_GSK3B_CTNNB1_complex_neuron
 ESR1 -> APC_AXIN_GSK3B_CTNNB1_complex_neuron
+#position:APC_GSK3B_AXIN_complex:4895.125,317.75
 #position:APC_AXIN_GSK3B_CTNNB1_complex_neuron_1:5186.0,526.5625
 $APC_AXIN_GSK3B_CTNNB1_complex_neuron_1:(((!PRKC_phosphorylated & (!AKT1_phosphorylated_phosphorylated & APC_AXIN_GSK3B_CTNNB1_complex_neuron)) & cat_APC_AXIN_GSK3B_CTNNB1_complex_neuron_1_36(AmyloidB_neuron)) | (!PIK3 & (!AKT1_phosphorylated_phosphorylated & (APC_GSK3B_AXIN_complex & CTNNB1_phosphorylated))))
 APC_GSK3B_AXIN_complex -> APC_AXIN_GSK3B_CTNNB1_complex_neuron_1
@@ -138,6 +146,7 @@ PIK3 -|? APC_AXIN_GSK3B_CTNNB1_complex_neuron_1
 APC_AXIN_GSK3B_CTNNB1_complex_neuron -> APC_AXIN_GSK3B_CTNNB1_complex_neuron_1
 AmyloidB_neuron -> APC_AXIN_GSK3B_CTNNB1_complex_neuron_1
 PRKC_phosphorylated -| APC_AXIN_GSK3B_CTNNB1_complex_neuron_1
+#position:gro_LEF1_HDAC_TCF_complex:5625.25,753.40625
 #position:TCF_LEF1_CTNNB1_complex:6231.0,743.0
 $TCF_LEF1_CTNNB1_complex:(CTNNB1_nucleus & gro_LEF1_HDAC_TCF_complex)
 CTNNB1_nucleus -> TCF_LEF1_CTNNB1_complex
@@ -152,6 +161,7 @@ E3_ubiquitin_ligase_complex -> UBE2M_NEDD8_E3_ubiquitin_ligase_complex
 #position:endosome_lysosome_complex:2753.1875,5254.78125
 $endosome_lysosome_complex:LDLR_AmyloiB1_42_APOE_complex
 LDLR_AmyloiB1_42_APOE_complex -> endosome_lysosome_complex
+#position:E3_ubiquitin_ligase_complex:5717.5,2327.3650000000002
 #position:UBE2M_ROC1_UBE2_NEDD8_CUL_SKP1_FBXO_complex:6845.642441860464,2130.7252272727274
 $UBE2M_ROC1_UBE2_NEDD8_CUL_SKP1_FBXO_complex:(UBE2M_ROC1_UBE2_UB_NEDD8_CUL_SKP1_FBXO_complex & cat_UBE2M_ROC1_UBE2_NEDD8_CUL_SKP1_FBXO_complex_41(26S_Proteasome_complex_neuron_1))
 UBE2M_ROC1_UBE2_UB_NEDD8_CUL_SKP1_FBXO_complex -> UBE2M_ROC1_UBE2_NEDD8_CUL_SKP1_FBXO_complex
@@ -176,6 +186,7 @@ Ca2__ion_neuron -> CALM_Ca2__complex_neuron
 $microtubules_complex:(TUB_phosphorylated & cat_microtubules_complex_46(MAPT__neuron))
 TUB_phosphorylated -> microtubules_complex
 MAPT__neuron -> microtubules_complex
+#position:26S_Proteasome_complex_neuron:7026.911490683229,2282.4172077922076
 #position:NOTCH_Delta_complex:7626.375,1529.0
 #position:APBB1_KAT5_SET_AICD_complex:4766.125,1179.75
 $APBB1_KAT5_SET_AICD_complex:((APBB1_AICD_complex_nucleus & KAT5) & SET)
@@ -225,6 +236,7 @@ glutamate_GRIN_Mg2__complex_postsynaptic_density -> glutamate_GRIN_complex_posts
 $glutamate_GRIN_Mg2__complex_postsynaptic_density:(glutamate_simple_molecule_default_compartment & GRIN_Mg2__complex_postsynaptic_density)
 glutamate_simple_molecule_default_compartment -> glutamate_GRIN_Mg2__complex_postsynaptic_density
 GRIN_Mg2__complex_postsynaptic_density -> glutamate_GRIN_Mg2__complex_postsynaptic_density
+#position:GRIN_Mg2__complex_postsynaptic_density:188.875,6463.625
 #position:glutamate_GR_complex:710.625,6459.5
 $glutamate_GR_complex:(glutamate_simple_molecule_default_compartment & GR)
 glutamate_simple_molecule_default_compartment -> glutamate_GR_complex
@@ -275,6 +287,7 @@ EGF -> EGF_EGFR_complex_neuron
 $PRNP_Oligomeric_AmyloidB_complex:(Oligomeric_AmyloidB_default_compartment & PRNP)
 Oligomeric_AmyloidB_default_compartment -> PRNP_Oligomeric_AmyloidB_complex
 PRNP -> PRNP_Oligomeric_AmyloidB_complex
+#position:CTNNB1_GSK3B_mutant_PSEN_complex:4410.9375,3846.8125
 #position:CTNNB1_GSK3B_PRKA_PSEN_complex:4181.125,3841.0
 $CTNNB1_GSK3B_PRKA_PSEN_complex:((APC_AXIN_GSK3B_CTNNB1_complex_neuron_1 & PSEN_endoplasmic_reticulum_ER_) | ((mutant_PSEN_endoplasmic_reticulum_ER_ & APC_AXIN_GSK3B_CTNNB1_complex_neuron_1) & APC_AXIN_GSK3B_CTNNB1_complex_neuron_1))
 mutant_PSEN_endoplasmic_reticulum_ER_ -> CTNNB1_GSK3B_PRKA_PSEN_complex
@@ -368,6 +381,7 @@ insulin_simple_molecule_default_compartment -> Insulin_NMDAR_complex
 #position:FAS_CASP2_complex:2341.875,3010.5
 $FAS_CASP2_complex:CASP2
 CASP2 -> FAS_CASP2_complex
+#position:TNFRSF1A_TRADD_TRAF2_RIP_complex:2377.09375,3681.28125
 #position:DAG_IP3_complex:2456.6875,3952.5
 $DAG_IP3_complex:(CHRN_AmyloidB_complex | (PI_4_5_P2_simple_molecule & cat_DAG_IP3_complex_93(PLCB, PLCG)))
 PI_4_5_P2_simple_molecule -> DAG_IP3_complex
@@ -510,6 +524,7 @@ IL6_default_compartment -> IL6_IL6R_complex
 $PPARG_RXR_unkown_PPARG_ligand_complex:(unknown_PPARG_ligand_unknown & PPARG_RXR_unkown_repressor_complex)
 unknown_PPARG_ligand_unknown -> PPARG_RXR_unkown_PPARG_ligand_complex
 PPARG_RXR_unkown_repressor_complex -> PPARG_RXR_unkown_PPARG_ligand_complex
+#position:PPARG_RXR_unkown_repressor_complex:5055.375,777.5
 #position:NGFR_BDNF_complex:7663.0,5282.5625
 $NGFR_BDNF_complex:(BDNF & NGFR)
 BDNF -> NGFR_BDNF_complex
@@ -577,6 +592,7 @@ CIB1 -> mutant_PSEN_CIB1_complex
 #position:ITAM_complex_neuron:7513.25,3576.252443436201
 $ITAM_complex_neuron:cat_ITAM_complex_neuron_144(TR_LCK_CD4_complex)
 TR_LCK_CD4_complex -> ITAM_complex_neuron
+#position:TR_LCK_CD4_complex:7696.8125,3484.9375
 #position:ITAM_complex_neuron_1:7623.75,3771.252443436201
 $ITAM_complex_neuron_1:(ZAP70_phosphorylated & ITAM_complex_neuron)
 ZAP70_phosphorylated -> ITAM_complex_neuron_1
@@ -634,6 +650,7 @@ RELN -> VLDLR_RELN_complex
 $26S_Proteasome_complex_neuron_1:(26S_Proteasome_complex_neuron & ATP_simple_molecule_neuron)
 26S_Proteasome_complex_neuron -> 26S_Proteasome_complex_neuron_1
 ATP_simple_molecule_neuron -> 26S_Proteasome_complex_neuron_1
+#position:LBP_1_TFCP2_PCBP2_complex:5073.5625,1076.9375
 #position:APBB1_AICD_complex_nucleus:4757.75,1042.375
 $APBB1_AICD_complex_nucleus:APBB1_AICD_complex_neuron
 APBB1_AICD_complex_neuron ->? APBB1_AICD_complex_nucleus
@@ -702,6 +719,7 @@ NFKB1_RELA_complex_neuron -> NFKB1_RELA_complex_nucleus
 #position:TLR2_DAMPs_complex_neuron:2570.0,6794.0
 $TLR2_DAMPs_complex_neuron:DAMPs
 DAMPs -> TLR2_DAMPs_complex_neuron
+#position:GRIN_Mg2__complex_neuron:5414.53125,6775.25
 #position:EGF_EGFR_complex_neuron_1:7663.75,4317.9375
 $EGF_EGFR_complex_neuron_1:(EGF_EGFR_complex_neuron & cat_EGF_EGFR_complex_neuron_1_180(PTP_phosphorylated, SRC))
 EGF_EGFR_complex_neuron -> EGF_EGFR_complex_neuron_1
@@ -725,6 +743,10 @@ AmyloidB1_42_APOE_complex -> LDLR_AmyloiB1_42_APOE_complex
 #position:NPC_cholesterol_complex:2432.0,6676.5
 $NPC_cholesterol_complex:cholesterol_simple_molecule_default_compartment
 cholesterol_simple_molecule_default_compartment -> NPC_cholesterol_complex
+#position:TLR_AmyloidB_complex:1612.0,3780.0
+#position:TLR4_AmyloidB_complex_microglia:1201.0,3772.0
+#position:TLR2_AmyloidB_complex_microglia:1396.0,3778.0
+#position:VLDR_APOE_complex:44.0,4671.0
 #position:RAGE_AmyloidB_complex_microglia:1690.0,4192.0
 $RAGE_AmyloidB_complex_microglia:(RAGE_microglia & AmyloidB_default_compartment)
 RAGE_microglia -> RAGE_AmyloidB_complex_microglia
@@ -732,6 +754,7 @@ AmyloidB_default_compartment -> RAGE_AmyloidB_complex_microglia
 #position:P2X7_ATP_complex:1064.0,5534.0
 $P2X7_ATP_complex:ATP_simple_molecule_default_compartment
 ATP_simple_molecule_default_compartment -> P2X7_ATP_complex
+#position:LRP1_APOE_complex:37.0,4841.0
 #position:RAGE_AGEs_complex:1683.0,4330.0
 $RAGE_AGEs_complex:(AGEs_simple_molecule & RAGE_microglia)
 AGEs_simple_molecule -> RAGE_AGEs_complex
@@ -751,6 +774,8 @@ FPRL1_microglia -> FPRL1_lipoxinA4_complex
 $FPRL1_AmyloidB1_42_complex:(FPRL1_microglia & AmyloidB1_42_microglia)
 FPRL1_microglia -> FPRL1_AmyloidB1_42_complex
 AmyloidB1_42_microglia -> FPRL1_AmyloidB1_42_complex
+#position:TREM1_DAP12_complex:464.0,5511.0
+#position:CD36_AmyloidB_complex:1724.0,4726.0
 #position:SRA1_AmyloidB_complex:1717.0,5056.0
 $SRA1_AmyloidB_complex:AmyloidB_default_compartment
 AmyloidB_default_compartment -> SRA1_AmyloidB_complex
@@ -853,10 +878,16 @@ PKC -| Insulin_IR_complex_neuron_1
 #position:CHRFAM7A_APC_complex:5804.75,236.25
 $CHRFAM7A_APC_complex:APC
 APC -> CHRFAM7A_APC_complex
+#position:G_Secretase_complex_Lipid_raft:7648.0,3078.0
 #position:CAPN:3769.0,5270.5
 $CAPN:(CAPN & cat_CAPN_220(Ca2__ion_neuron))
 CAPN -> CAPN
 Ca2__ion_neuron -> CAPN
+#position:C5B:1969.037610619469,3568.2642857142864
+#position:C6:1970.8490473286997,3600.7983928571384
+#position:C7:1968.096834939318,3631.0162499999988
+#position:C8:1967.176480957019,3665.184821428572
+#position:Unknown_receptor_unknown:2381.75,4349.5
 #position:TP53:4717.68156492952,2147.1015625
 $TP53:(TP53 & cat_TP53_221(PRIM1_PCLB_APEX1_POLD1_complex, NGFR_AmyloidB_complex))
 TP53 -> TP53
@@ -867,6 +898,7 @@ $BAD:((BAD & cat_BAD_223(PPP3)) | (!AKT1_phosphorylated_phosphorylated & BAD))
 BAD -> BAD
 AKT1_phosphorylated_phosphorylated -| BAD
 PPP3 -> BAD
+#position:CALM_neuron:3652.0,4536.0
 #position:C1Q:1519.5,3201.8125
 $C1Q:(C1Q_AmyloidB1_42_C3B_complex & C3A)
 C1Q_AmyloidB1_42_C3B_complex -> C1Q
@@ -934,6 +966,9 @@ AmyloidB1_42_default_compartment_1 -> Senile_plaque_phenotype
 Microglia_Activation_phenotype -> Senile_plaque_phenotype
 AmyloidB_fibril_formation_phenotype -> Senile_plaque_phenotype
 Oligomeric_AmyloidB_default_compartment -> Senile_plaque_phenotype
+#position:SNCA:985.25,2651.203125
+#position:Cu__ion:1736.7569692849843,3175.625
+#position:Fe2__ion:1731.6681201409592,3267.5156250000005
 #position:H2O2_simple_molecule_default_compartment:2004.2262597180816,3252.343749999999
 $H2O2_simple_molecule_default_compartment:(Oligomeric_AmyloidB_default_compartment & cat_H2O2_simple_molecule_default_compartment_247(Cu__ion, Fe2__ion))
 Oligomeric_AmyloidB_default_compartment -> H2O2_simple_molecule_default_compartment
@@ -942,6 +977,7 @@ Fe2__ion -> H2O2_simple_molecule_default_compartment
 #position:IDE_default_compartment:1672.25,1992.5
 $IDE_default_compartment:cat_IDE_default_compartment_248(Zn2__ion)
 Zn2__ion -> IDE_default_compartment
+#position:MME:1672.25,1851.25
 #position:TNFRSF1A:2387.1012597180816,2372.1562499999995
 $TNFRSF1A:(TNFRSF1A & cat_TNFRSF1A_249(Oligomeric_AmyloidB_default_compartment))
 TNFRSF1A ->? TNFRSF1A
@@ -949,6 +985,7 @@ Oligomeric_AmyloidB_default_compartment ->? TNFRSF1A
 #position:CASP8:2629.050629859041,2445.7812499999995
 $CASP8:TNFRSF1A_FADD_CASP8_complex
 TNFRSF1A_FADD_CASP8_complex -> CASP8
+#position:GPCR_homolog_neuron:2379.8512597180816,3205.1562499999995
 #position:PLCB:2723.25,3277.25
 $PLCB:(PLCB & cat_PLCB_251(GPCR_oxidative_stress_complex, GNAQ, GTPase_neuron))
 PLCB -> PLCB
@@ -1081,6 +1118,7 @@ CALM_Ca2__complex_neuron -> NOS_phosphorylated
 CHRFAM7A -|? NOS_phosphorylated
 CHRNA4 -|? NOS_phosphorylated
 Unknown_TF -> NOS_phosphorylated
+#position:L_Arginine_simple_molecule:5198.3125,4169.1875
 #position:NO_simple_molecule_neuron:5371.125,4172.1875
 $NO_simple_molecule_neuron:(NO_simple_molecule_default_compartment | (NO_simple_molecule_default_compartment | (L_Arginine_simple_molecule & cat_NO_simple_molecule_neuron_275(NOS_phosphorylated, activate_microglia_inflammatory_processes_phenotype))))
 L_Arginine_simple_molecule -> NO_simple_molecule_neuron
@@ -1122,14 +1160,17 @@ $Lipid_peroxidation_phenotype:cat_Lipid_peroxidation_phenotype_284(peroxynitrite
 peroxynitrite__ONOO___simple_molecule -> Lipid_peroxidation_phenotype
 Generation_of_reactive_oxygen_species_phenotype -> Lipid_peroxidation_phenotype
 LOO_simple_molecule -> Lipid_peroxidation_phenotype
+#position:PI_4_5_P2_simple_molecule:2932.125,3246.9375
 #position:PIP3_simple_molecule:2932.125,3441.9375
 $PIP3_simple_molecule:((!PTEN & PI_4_5_P2_simple_molecule) & cat_PIP3_simple_molecule_285(PIK3))
 PI_4_5_P2_simple_molecule -> PIP3_simple_molecule
 PIK3 -> PIP3_simple_molecule
 PTEN -| PIP3_simple_molecule
+#position:ITPR:3074.6875,3869.375
 #position:N_terminal_of_mutant_PSEN:3624.0,3865.765625
 $N_terminal_of_mutant_PSEN:mutant_PSEN_endoplasmic_reticulum_ER_
 mutant_PSEN_endoplasmic_reticulum_ER_ -> N_terminal_of_mutant_PSEN
+#position:PSEN_endoplasmic_reticulum_ER_:3360.5,3864.765625
 #position:C_terminal_of_mutant_PSEN:3853.53125,3866.015625
 $C_terminal_of_mutant_PSEN:mutant_PSEN_endoplasmic_reticulum_ER_
 mutant_PSEN_endoplasmic_reticulum_ER_ -> C_terminal_of_mutant_PSEN
@@ -1143,6 +1184,7 @@ mutant_PSEN_endoplasmic_reticulum_ER_ -| ATF6
 #position:ERN1_phosphorylated:4622.4762597180825,4291.968749999999
 $ERN1_phosphorylated:!mutant_PSEN_endoplasmic_reticulum_ER_
 mutant_PSEN_endoplasmic_reticulum_ER_ -| ERN1_phosphorylated
+#position:ATP2A:3172.0,4304.0
 #position:ER_stress_phenotype:3856.75,3989.125
 #position:CASP12:3560.75,3270.25
 $CASP12:cat_CASP12_292(ER_stress_phenotype, Ca2__ion_endoplasmic_reticulum_ER_)
@@ -1163,6 +1205,7 @@ Ca2__ion_neuron ->? MAPK1_3_phosphorylated
 estrogen_simple_molecule_neuron ->? MAPK1_3_phosphorylated
 MAP2K1 -> MAPK1_3_phosphorylated
 MAP2K -> MAPK1_3_phosphorylated
+#position:CASP9:3025.75,2122.5
 #position:CYC_ubiquitinated:5341.0,1531.75
 $CYC_ubiquitinated:(CYC_mitochondria & cat_CYC_ubiquitinated_295(Q_simple_molecule))
 CYC_mitochondria -> CYC_ubiquitinated
@@ -1174,6 +1217,7 @@ BCL2L1 -| CYC_neuron
 BID -> CYC_neuron
 BAX ->? CYC_neuron
 Mitochondrial_dysfunction_phenotype_inner_membrane -> CYC_neuron
+#position:SORL1:2504.7887597180816,1279.2187499999993
 #position:dedifferentiation_phenotype:3992.375,5046.6875
 $dedifferentiation_phenotype:cat_dedifferentiation_phenotype_298(Unknown_TF, NFKB1_RELA_complex_neuron)
 Unknown_TF -> dedifferentiation_phenotype
@@ -1194,6 +1238,7 @@ $activate_microglia_inflammatory_processes_phenotype:cat_activate_microglia_infl
 Microglia_Activation_phenotype -> activate_microglia_inflammatory_processes_phenotype
 AmyloidB1_42_microglia -> activate_microglia_inflammatory_processes_phenotype
 MAC__membrane_attack_complex_complex -> activate_microglia_inflammatory_processes_phenotype
+#position:Growth_Factor:5374.0,4312.75
 #position:CDKN1A:5475.25,4238.25
 $CDKN1A:(CDKN1A & cat_CDKN1A_303(NO_simple_molecule_neuron, Growth_Factor))
 CDKN1A -> CDKN1A
@@ -1323,9 +1368,11 @@ sAPPB_default_compartment -> N_APP_default_compartment
 #position:Axon_pruning__Neuronal_culling_phenotype:2636.6012597180816,1933.093749999999
 $Axon_pruning__Neuronal_culling_phenotype:cat_Axon_pruning__Neuronal_culling_phenotype_346(TNFRSF21_N_APP_complex)
 TNFRSF21_N_APP_complex -> Axon_pruning__Neuronal_culling_phenotype
+#position:PRNP:7673.5,4507.375
 #position:Synaptic_suppression_phenotype:7357.25,4704.9375
 $Synaptic_suppression_phenotype:cat_Synaptic_suppression_phenotype_347(PRNP_Oligomeric_AmyloidB_complex)
 PRNP_Oligomeric_AmyloidB_complex -> Synaptic_suppression_phenotype
+#position:cholesterol_simple_molecule_default_compartment:1954.125,7240.9375
 #position:cholesterol_simple_molecule_neuron:3085.875,6680.1875
 $cholesterol_simple_molecule_neuron:cholesterol_simple_molecule_neuron_1
 cholesterol_simple_molecule_neuron_1 -> cholesterol_simple_molecule_neuron
@@ -1335,14 +1382,18 @@ cholesterol_simple_molecule_default_compartment -> cholesterol_simple_molecule_n
 NPC_cholesterol_complex -> cholesterol_simple_molecule_neuron_1
 APOE_cholesterol_complex_neuron -> cholesterol_simple_molecule_neuron_1
 7_dehydrocholesterol_simple_molecule -> cholesterol_simple_molecule_neuron_1
+#position:GRN:4375.625,1155.625
+#position:acetyl_CoA_simple_molecule_astrocyte:1505.9762597180813,5925.28125
 #position:cholesterol_simple_molecule_astrocyte:1656.9137597180816,5924.46875
 $cholesterol_simple_molecule_astrocyte:(acetyl_CoA_simple_molecule_astrocyte & cat_cholesterol_simple_molecule_astrocyte_352(NR1H_24_OH_Chol_complex))
 acetyl_CoA_simple_molecule_astrocyte -> cholesterol_simple_molecule_astrocyte
 NR1H_24_OH_Chol_complex ->? cholesterol_simple_molecule_astrocyte
+#position:CYP46A1:3210.75,6493.75
 #position:24_OH_Chol_simple_molecule_neuron:3338.3318798590412,6449.65625
 $24_OH_Chol_simple_molecule_neuron:(cholesterol_simple_molecule_neuron_1 & cat_24_OH_Chol_simple_molecule_neuron_353(CYP46A1))
 cholesterol_simple_molecule_neuron_1 -> 24_OH_Chol_simple_molecule_neuron
 CYP46A1 -> 24_OH_Chol_simple_molecule_neuron
+#position:APOE_astrocyte:1729.6637597180816,5842.71875
 #position:ABCA1:1962.8512597180816,5893.593749999999
 $ABCA1:(ABCA1 & cat_ABCA1_354(NR1H_24_OH_Chol_complex))
 ABCA1 -> ABCA1
@@ -1393,6 +1444,7 @@ $Choline_simple_molecule:(acetylcholine_simple_molecule & cat_Choline_simple_mol
 acetylcholine_simple_molecule -> Choline_simple_molecule
 BCHE -> Choline_simple_molecule
 ACHE -> Choline_simple_molecule
+#position:Glucose_simple_molecule:1384.8512597180813,6846.34375
 #position:HK:1377.1012597180816,7040.46875
 $HK:(HK & cat_HK_367(estrogen_simple_molecule_default_compartment))
 HK -> HK
@@ -1406,6 +1458,7 @@ $Glyceraldehyde_P_simple_molecule:(Glucose_simple_molecule & cat_Glyceraldehyde_
 Glucose_simple_molecule -> Glyceraldehyde_P_simple_molecule
 PFK -> Glyceraldehyde_P_simple_molecule
 HK -> Glyceraldehyde_P_simple_molecule
+#position:GAPDH_default_compartment:1593.6012597180816,6918.59375
 #position:1_3_BPG_simple_molecule:1728.3512597180816,6846.34375
 $1_3_BPG_simple_molecule:((Glyceraldehyde_P_simple_molecule & NAD__simple_molecule_default_compartment) & cat_1_3_BPG_simple_molecule_370(GAPDH_default_compartment))
 Glyceraldehyde_P_simple_molecule -> 1_3_BPG_simple_molecule
@@ -1435,6 +1488,8 @@ PDH_rna -> PDH
 $PDH_phosphorylated:(PDH & cat_PDH_phosphorylated_378(PDK))
 PDH -> PDH_phosphorylated
 PDK -> PDH_phosphorylated
+#position:PDP:4751.488129859041,5883.5
+#position:PDK:4754.613129859041,6014.5
 #position:PDH_rna:4609.125,5850.6875
 $PDH_rna:cat_PDH_rna_379(estrogen_simple_molecule_neuron)
 estrogen_simple_molecule_neuron -> PDH_rna
@@ -1460,14 +1515,19 @@ NAD__simple_molecule_neuron -> CO2_simple_molecule
 PDH -> CO2_simple_molecule
 L_Cysteinesulfinate_simple_molecule_neuron -> CO2_simple_molecule
 CSAD -> CO2_simple_molecule
+#position:NAD__simple_molecule_neuron:4393.625,5843.4375
+#position:HSCoA_simple_molecule:4389.625,5885.4375
 #position:succinate_simple_molecule:4483.238129859041,6223.1875
 $succinate_simple_molecule:((acetoacetate_simple_molecule & succinyl_CoA_simple_molecule) & cat_succinate_simple_molecule_385(OXCT1))
 acetoacetate_simple_molecule -> succinate_simple_molecule
 succinyl_CoA_simple_molecule -> succinate_simple_molecule
 OXCT1 -> succinate_simple_molecule
+#position:OXCT1:4516.0,6105.25
+#position:succinyl_CoA_simple_molecule:4385.3125,6073.4375
 #position:acetyl_CoA_simple_molecule_mitochondria:4480.75,1751.1875
 $acetyl_CoA_simple_molecule_mitochondria:acetylcholine_simple_molecule
 acetylcholine_simple_molecule -> acetyl_CoA_simple_molecule_mitochondria
+#position:NADH_simple_molecule_inner_membrane:4743.875,1710.6875
 #position:MT_ND:4611.6875,1590.21875
 $MT_ND:MT_ND
 MT_ND -> MT_ND
@@ -1499,22 +1559,28 @@ Ubiquinol_simple_molecule -> Q_simple_molecule
 UQCR -> Q_simple_molecule
 CYC_mitochondria -> Q_simple_molecule
 Q_simple_molecule -> Q_simple_molecule
+#position:O2_simple_molecule_inner_membrane:5463.0625,1695.40625
 #position:H2O_simple_molecule_inner_membrane:5679.0625,1697.40625
 $H2O_simple_molecule_inner_membrane:((O2_simple_molecule_inner_membrane & Q_simple_molecule) & cat_H2O_simple_molecule_inner_membrane_395(COX))
 O2_simple_molecule_inner_membrane -> H2O_simple_molecule_inner_membrane
 Q_simple_molecule -> H2O_simple_molecule_inner_membrane
 COX -> H2O_simple_molecule_inner_membrane
+#position:CYC_mitochondria:5146.0,1531.75
 #position:ATP:5830.4375,1706.71875
 $ATP:(ATP & cat_ATP_396(estrogen_simple_molecule_inner_membrane))
 ATP -> ATP
 estrogen_simple_molecule_inner_membrane ->? ATP
+#position:ATRA_simple_molecule:5792.125,1141.6875
 #position:G2_phenotype:3009.4375,5480.9375
 $G2_phenotype:cat_G2_phenotype_397(S_phenotype)
 S_phenotype -> G2_phenotype
+#position:CDK1:3200.4375,5565.9375
+#position:C2orf28:3255.9375,5568.4375
 #position:S_phenotype:3184.5625,5651.4375
 $S_phenotype:cat_S_phenotype_398(G1_S_checkpoint_phenotype, G1_phenotype)
 G1_S_checkpoint_phenotype -> S_phenotype
 G1_phenotype -> S_phenotype
+#position:CCNA:3125.0,5388.5
 #position:PSMD9:3018.5,5565.0
 $PSMD9:(PSMD9 & cat_PSMD9_399(TSC))
 PSMD9 -> PSMD9
@@ -1522,6 +1588,9 @@ TSC -> PSMD9
 #position:G1_phenotype:3576.0,5281.0
 $G1_phenotype:cat_G1_phenotype_400(M_phenotype)
 M_phenotype -> G1_phenotype
+#position:CDK4:3437.5625,5695.1875
+#position:CCND:3495.5625,5697.1875
+#position:CDKN2A:3436.5625,5662.1875
 #position:WNT_default_compartment:4996.223177854368,82.2740546050528
 $WNT_default_compartment:(WNT_nucleus | cat_WNT_default_compartment_401(PORC))
 PORC -> WNT_default_compartment
@@ -1550,15 +1619,19 @@ PPP2CA -> CTNNB1_neuron
 #position:APC:5627.9375,309.625
 $APC:APC_AXIN_GSK3B_CTNNB1_complex_neuron
 APC_AXIN_GSK3B_CTNNB1_complex_neuron -> APC
+#position:UBA3:5343.5,2388.25
 #position:NEDD8:5350.6875,2139.375
 $NEDD8:(NEDD8 & cat_NEDD8_411(UBA3_APPBP1_complex))
 NEDD8 -> NEDD8
 UBA3_APPBP1_complex -> NEDD8
+#position:UBE2M:5601.5,2230.5
+#position:unknown:6093.0,2378.25
 #position:UB_neuron:6098.4375,2490.4375
 $UB_neuron:(UB_neuron_1 & cat_UB_neuron_412(26S_Proteasome_complex_neuron_1, USP17L2))
 UB_neuron_1 -> UB_neuron
 26S_Proteasome_complex_neuron_1 -> UB_neuron
 USP17L2 -> UB_neuron
+#position:ATP_simple_molecule_neuron:5990.125,2583.25
 #position:AMP_simple_molecule:6107.25,2581.25
 $AMP_simple_molecule:(UBA1 & ATP_simple_molecule_neuron)
 UBA1 -> AMP_simple_molecule
@@ -1567,6 +1640,8 @@ ATP_simple_molecule_neuron -> AMP_simple_molecule
 $UBA1:(UBA1_UB_complex & UBE2)
 UBA1_UB_complex -> UBA1
 UBE2 -> UBA1
+#position:UBE2:6308.625,2529.6875
+#position:testosterone_simple_molecule:1987.625,3309.1875
 #position:estrogen_simple_molecule_default_compartment:1997.625,3441.1875
 $estrogen_simple_molecule_default_compartment:(testosterone_simple_molecule & cat_estrogen_simple_molecule_default_compartment_415(CYP19A1))
 testosterone_simple_molecule -> estrogen_simple_molecule_default_compartment
@@ -1574,6 +1649,8 @@ CYP19A1 -> estrogen_simple_molecule_default_compartment
 #position:estrogen_simple_molecule_neuron:2895.125,3515.4375
 $estrogen_simple_molecule_neuron:estrogen_simple_molecule_default_compartment
 estrogen_simple_molecule_default_compartment -> estrogen_simple_molecule_neuron
+#position:CYP19A1:2071.0,3370.0
+#position:estrogen_simple_molecule_inner_membrane:5077.0625,1749.90625
 #position:PIK3:3125.5,3077.75
 $PIK3:(PIK3 & cat_PIK3_417(RTK, starvation_condition_phenotype, NTRK1_NGF_complex_neuron_1, RAS, Cu_simple_molecule, estrogen_simple_molecule_neuron, IRS1, IRS2, IRS, JAK2, FYN_neuron))
 PIK3 -> PIK3
@@ -1591,6 +1668,10 @@ FYN_neuron ->? PIK3
 #position:PDK1_phosphorylated:4524.8125,4719.25
 $PDK1_phosphorylated:cat_PDK1_phosphorylated_418(PIP3_simple_molecule)
 PIP3_simple_molecule -> PDK1_phosphorylated
+#position:CDK4_6_:3641.219512195122,5655.047669491527
+#position:CCNB:3178.2926829268295,5387.147798742139
+#position:MPM_2:3127.19512195122,5357.96855345912
+#position:polo_kinase:3133.2926829268295,5417.147798742139
 #position:TUB:4888.0,5273.75
 $TUB:(TUB_phosphorylated & cat_TUB_419(MAPT_phosphorylated_neuron_1, APC_AXIN_GSK3B_CTNNB1_complex_neuron))
 TUB_phosphorylated -> TUB
@@ -1613,6 +1694,7 @@ $ADP_simple_molecule:((GABARAPL2 & ATP_simple_molecule_neuron) | ((ATG12 & ATP_s
 ATP_simple_molecule_neuron -> ADP_simple_molecule
 ATG12 -> ADP_simple_molecule
 GABARAPL2 -> ADP_simple_molecule
+#position:USP17L2:6317.75,2391.75
 #position:UB_neuron_1:6412.4375,2339.1875
 $UB_neuron_1:(UBE2M_ROC1_UBE2_UB_NEDD8_CUL_SKP1_FBXO_complex & cat_UB_neuron_1_426(26S_Proteasome_complex_neuron_1))
 UBE2M_ROC1_UBE2_UB_NEDD8_CUL_SKP1_FBXO_complex -> UB_neuron_1
@@ -1620,6 +1702,7 @@ UBE2M_ROC1_UBE2_UB_NEDD8_CUL_SKP1_FBXO_complex -> UB_neuron_1
 #position:neurodegeneration_phenotype:3462.375,2213.375
 $neurodegeneration_phenotype:cat_neurodegeneration_phenotype_427(Cell_Death_phenotype)
 Cell_Death_phenotype -> neurodegeneration_phenotype
+#position:ADAM17:7993.75,1763.0
 #position:Notch_site2_cleavaged_protein:7575.25,1881.125
 $Notch_site2_cleavaged_protein:(NOTCH_ectodomain_Delta_complex & cat_Notch_site2_cleavaged_protein_428(ADAM17, ADAM10_default_compartment))
 NOTCH_ectodomain_Delta_complex -> Notch_site2_cleavaged_protein
@@ -1641,6 +1724,9 @@ NICD_LAG3_CSHL1_complex -> NICD_nucleus
 INPP5K -> NICD_nucleus
 HDAC -> NICD_nucleus
 NCOR2 -> NICD_nucleus
+#position:NFKB_responsive_genes_gene:4874.875,1152.8125
+#position:SET:4854.875,1117.0625
+#position:KAT5:4722.75,1133.625
 #position:NFKB_responsive_genes_rna:4842.4375,1310.5
 $NFKB_responsive_genes_rna:(((!NICD_LAG3_CSHL1_complex & (!NICD_INPP5K_CSHL1_HAT1_complex & (!NICD_INPP5K_CSHL1_HAT1_HDAC_NCOR2_complex & (!INPP5K_CSHL1_HDAC_NCOR2_complex & NFKB_responsive_genes_gene)))) & cat_NFKB_responsive_genes_rna_436(NICD_CSHL1_LAG3_HAT1_complex)) | (((!glucocorticoid_simple_molecule & NFKB_responsive_genes_gene) & cat_NFKB_responsive_genes_rna_435(APC_AXIN_GSK3B_CTNNB1_complex_neuron_1, NFAT_nucleus, NFKB1_RELA_complex_nucleus)) | (NFKB_responsive_genes_gene & cat_NFKB_responsive_genes_rna_434(APBB1_KAT5_SET_AICD_complex, APBB1_AICD_LBP_1_TFCP2_PCBP2_complex))))
 NFKB_responsive_genes_gene -> NFKB_responsive_genes_rna
@@ -1655,38 +1741,51 @@ NICD_INPP5K_CSHL1_HAT1_HDAC_NCOR2_complex -| NFKB_responsive_genes_rna
 NICD_INPP5K_CSHL1_HAT1_complex -| NFKB_responsive_genes_rna
 NICD_CSHL1_LAG3_HAT1_complex -> NFKB_responsive_genes_rna
 NICD_LAG3_CSHL1_complex -| NFKB_responsive_genes_rna
+#position:PLG:8006.25,219.25
 #position:Plasmin:8005.25,310.5
 $Plasmin:(PLG & cat_Plasmin_437(PLAT))
 PLG -> Plasmin
 PLAT -> Plasmin
+#position:PLAT:8113.5,265.25
+#position:proMMP9:8114.5,466.5
 #position:MMP9:7899.0,465.5
 $MMP9:((!TIMP1 & proMMP9) & cat_MMP9_438(Plasmin))
 proMMP9 -> MMP9
 Plasmin -> MMP9
 TIMP1 -| MMP9
+#position:proNGF:7792.0,237.0
 #position:NGF_default_compartment:7792.0,383.25
 $NGF_default_compartment:(proNGF & cat_NGF_default_compartment_439(Plasmin))
 proNGF -> NGF_default_compartment
 Plasmin -> NGF_default_compartment
+#position:NTRK1:7059.375,239.5
 #position:ACh_simple_molecule:7849.375,597.5625
 $ACh_simple_molecule:ACh_production_phenotype
 ACh_production_phenotype -> ACh_simple_molecule
+#position:NADPH_simple_molecule:1112.0,5738.8125
 #position:NADP__simple_molecule:1305.375,5740.4375
 $NADP__simple_molecule:((5ADHP_simple_molecule_astrocyte & NADPH_simple_molecule) & cat_NADP__simple_molecule_441(THSD1))
 5ADHP_simple_molecule_astrocyte -> NADP__simple_molecule
 NADPH_simple_molecule -> NADP__simple_molecule
 THSD1 -> NADP__simple_molecule
+#position:THSD1:1197.375,5868.0
 #position:NADH_simple_molecule_mitochondria:1152.6875,6089.40625
 $NADH_simple_molecule_mitochondria:(((ALLOP_simple_molecule_mitochondria & NAD__simple_molecule_mitochondria) & cat_NADH_simple_molecule_mitochondria_443(HSD17B10_mitochondria)) | ((NAD__simple_molecule_mitochondria & ALLOP_simple_molecule_mitochondria) & cat_NADH_simple_molecule_mitochondria_442(HSD17B10_mitochondria)))
 NAD__simple_molecule_mitochondria -> NADH_simple_molecule_mitochondria
 ALLOP_simple_molecule_mitochondria -> NADH_simple_molecule_mitochondria
 HSD17B10_mitochondria -> NADH_simple_molecule_mitochondria
+#position:NAD__simple_molecule_mitochondria:1239.4375,6127.40625
+#position:HSD17B10_mitochondria:1191.0,6247.125
 #position:NADH_simple_molecule_mitochondia:933.3125,6759.328125
 $NADH_simple_molecule_mitochondia:((ALLOP_simple_molecule_mitochondia & NAD__simple_molecule_mitochondia) & cat_NADH_simple_molecule_mitochondia_444(HSD17B10_mitochondia))
 ALLOP_simple_molecule_mitochondia -> NADH_simple_molecule_mitochondia
 NAD__simple_molecule_mitochondia -> NADH_simple_molecule_mitochondia
 HSD17B10_mitochondia -> NADH_simple_molecule_mitochondia
+#position:HSD17B10_mitochondia:978.625,6901.796875
+#position:NAD__simple_molecule_mitochondia:1035.0625,6784.328125
 #position:GABA_simple_molecule:1035.875,6415.4375
+#position:GABR:1174.75,6509.75
+#position:AcetoacetylCoA_simple_molecule:5373.0,5985.6875
 #position:HMG_CoA_simple_molecule:5540.625,6005.6875
 $HMG_CoA_simple_molecule:((acetylcholine_simple_molecule & AcetoacetylCoA_simple_molecule) & cat_HMG_CoA_simple_molecule_446(HMGCS))
 acetylcholine_simple_molecule -> HMG_CoA_simple_molecule
@@ -1704,15 +1803,19 @@ HMGCRI -| HMGCR
 $Mevalonate_5_phosphate_simple_molecule:(mevalonic_acid_simple_molecule & cat_Mevalonate_5_phosphate_simple_molecule_449(MVK))
 mevalonic_acid_simple_molecule -> Mevalonate_5_phosphate_simple_molecule
 MVK -> Mevalonate_5_phosphate_simple_molecule
+#position:MVK:5987.78125,6066.75
 #position:Mevalonate_PP_simple_molecule:6442.875,6006.4375
 $Mevalonate_PP_simple_molecule:(Mevalonate_5_phosphate_simple_molecule & cat_Mevalonate_PP_simple_molecule_450(PMVK))
 Mevalonate_5_phosphate_simple_molecule -> Mevalonate_PP_simple_molecule
 PMVK -> Mevalonate_PP_simple_molecule
+#position:PMVK:6308.0,6064.5
 #position:IPP_simple_molecule:6649.8125,6007.25
 $IPP_simple_molecule:(DMAPP_simple_molecule | (Mevalonate_PP_simple_molecule & cat_IPP_simple_molecule_451(MVD)))
 Mevalonate_PP_simple_molecule -> IPP_simple_molecule
 MVD -> IPP_simple_molecule
 DMAPP_simple_molecule -> IPP_simple_molecule
+#position:MVD:6566.90625,6059.5
+#position:IDI:6768.9375,6052.5
 #position:FDPS:6714.75,6122.75
 $FDPS:(!biphosphonate_simple_molecule & FDPS)
 FDPS -> FDPS
@@ -1726,10 +1829,12 @@ $Squalene_simple_molecule:((!zaragozic_acid_simple_molecule & Farnesyl_PP_simple
 Farnesyl_PP_simple_molecule -> Squalene_simple_molecule
 FDFT1 -> Squalene_simple_molecule
 zaragozic_acid_simple_molecule -| Squalene_simple_molecule
+#position:FDFT1:6942.25,6181.71875
 #position:GGPP_simple_molecule:6671.25,6433.1875
 $GGPP_simple_molecule:(Farnesyl_PP_simple_molecule & cat_GGPP_simple_molecule_456(GGPS1))
 Farnesyl_PP_simple_molecule -> GGPP_simple_molecule
 GGPS1 -> GGPP_simple_molecule
+#position:GGPS1:6743.5625,6471.25
 #position:Heme_A_simple_molecule:6592.875,6308.4375
 $Heme_A_simple_molecule:Farnesyl_PP_simple_molecule
 Farnesyl_PP_simple_molecule -> Heme_A_simple_molecule
@@ -1753,6 +1858,7 @@ cholesterol_simple_molecule_neuron_1 -> Bile_acids_simple_molecule
 $SolublePRNP:(PRNP & cat_SolublePRNP_463(ADAM_neuron))
 PRNP -> SolublePRNP
 ADAM_neuron -> SolublePRNP
+#position:ADAM_neuron:7599.8125,4647.0
 #position:N2:7774.4569486404835,4703.237951807229
 $N2:(SolublePRNP & cat_N2_464(ROS_simple_molecule_neuron))
 SolublePRNP -> N2
@@ -1779,6 +1885,9 @@ MSRB2 -> Met_simple_molecule
 $Met_SO_simple_molecule:(Met_sulfide_radical_cation_simple_molecule | Met_simple_molecule)
 Met_simple_molecule -> Met_SO_simple_molecule
 Met_sulfide_radical_cation_simple_molecule -> Met_SO_simple_molecule
+#position:TXN:5727.375,3992.5
+#position:MSRA:5642.25,3990.5
+#position:MSRB2:5558.934532464759,3990.97265625
 #position:Met_sulfide_radical_cation_simple_molecule:5495.386870140959,4067.046875
 $Met_sulfide_radical_cation_simple_molecule:Met_simple_molecule
 Met_simple_molecule -> Met_sulfide_radical_cation_simple_molecule
@@ -1797,6 +1906,8 @@ NGFR_NGF_complex ->? MAPK8_phosphorylated
 NGFR_AmyloidB_complex ->? MAPK8_phosphorylated
 oxidative_stress_phenotype_default_compartment ->? MAPK8_phosphorylated
 RHOA -> MAPK8_phosphorylated
+#position:BF5_1:3674.25,3254.25
+#position:IL11:2547.75,1674.75
 #position:AmyloidB_default_compartment:273.25,2430.25
 $AmyloidB_default_compartment:(AmyloidB_neuron | ((APP_neuron & cat_AmyloidB_default_compartment_475(PRKC_phosphorylated)) | (AmyloidB_neuron & cat_AmyloidB_default_compartment_474(insulin_simple_molecule_neuron))))
 AmyloidB_neuron -> AmyloidB_default_compartment
@@ -1814,6 +1925,8 @@ IGF1_default_compartment -> TTR
 #position:AmyloidB_CSF:274.5625,2559.0000000000005
 $AmyloidB_CSF:AmyloidB_default_compartment
 AmyloidB_default_compartment -> AmyloidB_CSF
+#position:NGFR:7677.5,5198.625
+#position:NGF_default_compartment_1:7967.125,5160.375
 #position:differentiation_phenotype:7497.5625,5123.625
 $differentiation_phenotype:cat_differentiation_phenotype_480(NGFR_NGF_complex, neuronal_stem_cell_phenotype)
 NGFR_NGF_complex -> differentiation_phenotype
@@ -1828,25 +1941,32 @@ AKT1_phosphorylated_phosphorylated -> survival_phenotype
 MAPK_phenotype -> survival_phenotype
 BCL2 -> survival_phenotype
 NFKB1_RELA_complex_neuron -> survival_phenotype
+#position:GTP_simple_molecule_presynaptic_terminal:337.75,5885.5625
 #position:cGMP_simple_molecule_presynaptic_terminal:338.75,6015.6875
 $cGMP_simple_molecule_presynaptic_terminal:(GTP_simple_molecule_presynaptic_terminal & cat_cGMP_simple_molecule_presynaptic_terminal_483(GUCY1_NO_complex_presynaptic_terminal))
 GTP_simple_molecule_presynaptic_terminal -> cGMP_simple_molecule_presynaptic_terminal
 GUCY1_NO_complex_presynaptic_terminal -> cGMP_simple_molecule_presynaptic_terminal
+#position:PDE5A_presynaptic_terminal:239.5,5976.375
 #position:5_GMP_simple_molecule_presynaptic_terminal:199.375,6072.6875
 $5_GMP_simple_molecule_presynaptic_terminal:(cGMP_simple_molecule_presynaptic_terminal & cat_5_GMP_simple_molecule_presynaptic_terminal_484(PDE5A_presynaptic_terminal))
 cGMP_simple_molecule_presynaptic_terminal -> 5_GMP_simple_molecule_presynaptic_terminal
 PDE5A_presynaptic_terminal -> 5_GMP_simple_molecule_presynaptic_terminal
+#position:GR:597.25,6507.25
 #position:glutamate_simple_molecule_default_compartment:296.8125,6393.25
 $glutamate_simple_molecule_default_compartment:cGMP_simple_molecule_presynaptic_terminal
 cGMP_simple_molecule_presynaptic_terminal -> glutamate_simple_molecule_default_compartment
+#position:CALM_postsynaptic_density:489.5625,6666.0
+#position:ADCY10:138.25,6621.375
 #position:cAMP_simple_molecule:381.125,6850.8125
 $cAMP_simple_molecule:(ATP_simple_molecule_postsynaptic_density & cat_cAMP_simple_molecule_486(ADCY10_CALM_Ca2__complex))
 ATP_simple_molecule_postsynaptic_density -> cAMP_simple_molecule
 ADCY10_CALM_Ca2__complex -> cAMP_simple_molecule
+#position:ATP_simple_molecule_postsynaptic_density:382.125,6699.3125
 #position:NOS:441.1875,6723.375
 $NOS:(NOS & cat_NOS_487(CALM_Ca2__complex_postsynaptic_density))
 NOS -> NOS
 CALM_Ca2__complex_postsynaptic_density -> NOS
+#position:L_Arg_simple_molecule:351.79007747318235,6884.0625
 #position:L_Cit_simple_molecule:283.25,6951.457442648592
 $L_Cit_simple_molecule:(L_Arg_simple_molecule & cat_L_Cit_simple_molecule_488(NOS))
 L_Arg_simple_molecule -> L_Cit_simple_molecule
@@ -1866,6 +1986,9 @@ iNOS_astrocyte -> NO_simple_molecule_default_compartment
 #position:NO_simple_molecule_presynaptic_terminal:365.3125,5832.0
 $NO_simple_molecule_presynaptic_terminal:NO_simple_molecule_default_compartment
 NO_simple_molecule_default_compartment -> NO_simple_molecule_presynaptic_terminal
+#position:GUCY1_presynaptic_terminal:419.4375,5850.5
+#position:GUCY1_postsynaptic_density:426.3125,7022.25
+#position:PDE5A_postsynaptic_density:160.8125,7245.0
 #position:5_GMP_simple_molecule_postsynaptic_density:254.3125,7318.0625
 $5_GMP_simple_molecule_postsynaptic_density:(cGMP_simple_molecule_postsynaptic_density & cat_5_GMP_simple_molecule_postsynaptic_density_495(PDE5A_postsynaptic_density))
 cGMP_simple_molecule_postsynaptic_density -> 5_GMP_simple_molecule_postsynaptic_density
@@ -1874,6 +1997,7 @@ PDE5A_postsynaptic_density -> 5_GMP_simple_molecule_postsynaptic_density
 $cGMP_simple_molecule_postsynaptic_density:(GTP_simple_molecule_postsynaptic_density & cat_cGMP_simple_molecule_postsynaptic_density_496(GUCY1_NO_complex_postsynaptic_density))
 GTP_simple_molecule_postsynaptic_density -> cGMP_simple_molecule_postsynaptic_density
 GUCY1_NO_complex_postsynaptic_density -> cGMP_simple_molecule_postsynaptic_density
+#position:GTP_simple_molecule_postsynaptic_density:255.3125,7042.9375
 #position:protein_synthesis_phenotype:358.5,7274.625
 $protein_synthesis_phenotype:cat_protein_synthesis_phenotype_497(cGMP_simple_molecule_postsynaptic_density)
 cGMP_simple_molecule_postsynaptic_density -> protein_synthesis_phenotype
@@ -1884,9 +2008,11 @@ protein_phosphorylation_phenotype -> synaptic_plasticity_phenotype_postsynaptic_
 #position:memory_phenotype:404.75,7426.625
 $memory_phenotype:cat_memory_phenotype_499(synaptic_plasticity_phenotype_postsynaptic_density)
 synaptic_plasticity_phenotype_postsynaptic_density -> memory_phenotype
+#position:PRKG1_postsynaptic_density:475.875,7114.25
 #position:protein_phosphorylation_phenotype:597.75,7353.75
 $protein_phosphorylation_phenotype:cat_protein_phosphorylation_phenotype_500(PRKG1_cGMP_complex)
 PRKG1_cGMP_complex -> protein_phosphorylation_phenotype
+#position:PPARG_neuron:2399.25,5248.375
 #position:BACE1_rna:2879.375,1613.6875
 $BACE1_rna:(!PPARG_RXR_unkown_PPARG_ligand_complex & !PPARG_neuron)
 PPARG_neuron -| BACE1_rna
@@ -1935,6 +2061,7 @@ IL1_rna_neuron -> IL1B_neuron
 IL1B_neuron -> IL1B_neuron
 IL1B_microglia -> IL1B_neuron
 IL1B_astrocyte -> IL1B_neuron
+#position:APP_gene:3185.979166666666,410.3574561403509
 #position:APOE_rna:2795.8987402819184,5105.8125
 $APOE_rna:cat_APOE_rna_517(IL1B_neuron, IL6_neuron)
 IL1B_neuron -> APOE_rna
@@ -1949,6 +2076,7 @@ ACTA1_rna -> ACTA1
 #position:L_Cys_simple_molecule_neuron:7277.125,4100.75
 $L_Cys_simple_molecule_neuron:L_Cystine_simple_molecule
 L_Cystine_simple_molecule -> L_Cys_simple_molecule_neuron
+#position:O2_simple_molecule_neuron:7364.4375,4139.1875
 #position:L_Cysteinesulfinate_simple_molecule_neuron:7238.5,4217.75
 $L_Cysteinesulfinate_simple_molecule_neuron:((L_Cys_simple_molecule_neuron & O2_simple_molecule_neuron) & cat_L_Cysteinesulfinate_simple_molecule_neuron_521(CDO))
 L_Cys_simple_molecule_neuron -> L_Cysteinesulfinate_simple_molecule_neuron
@@ -1978,6 +2106,7 @@ CTH -> thiocysteine_simple_molecule
 $NH3_simple_molecule:(L_Cystine_simple_molecule & cat_NH3_simple_molecule_528(CTH))
 L_Cystine_simple_molecule -> NH3_simple_molecule
 CTH -> NH3_simple_molecule
+#position:R_SH_simple_molecule:7497.9375,4022.9375
 #position:Cys_S_R_simple_molecule:7487.875,3832.9375
 $Cys_S_R_simple_molecule:((L_Cys_simple_molecule_neuron & R_SH_simple_molecule) & cat_Cys_S_R_simple_molecule_529(CBS))
 L_Cys_simple_molecule_neuron -> Cys_S_R_simple_molecule
@@ -1990,6 +2119,12 @@ HS__ion_neuron -> thiosulfate_simple_molecule_neuron
 $sulfite_simple_molecule_neuron:(thiosulfate_simple_molecule_neuron & cat_sulfite_simple_molecule_neuron_531(thiosulfate_thiol_sulfurtransferase_neuron))
 thiosulfate_simple_molecule_neuron -> sulfite_simple_molecule_neuron
 thiosulfate_thiol_sulfurtransferase_neuron -> sulfite_simple_molecule_neuron
+#position:CDO:7415.875,4165.5
+#position:CSAD:7419.5,4255.75
+#position:GOT1:7414.03125,4052.0
+#position:MPST_neuron:7418.484375,3967.6875
+#position:CTH:7083.75,3991.640625
+#position:thiosulfate_thiol_sulfurtransferase_neuron:6971.5,3869.1875
 #position:L_Cys_simple_molecule_mitochondria:6578.75,1564.6875
 $L_Cys_simple_molecule_mitochondria:L_Cys_simple_molecule_neuron
 L_Cys_simple_molecule_neuron -> L_Cys_simple_molecule_mitochondria
@@ -2005,6 +2140,7 @@ R_simple_molecule -> sulfite_simple_molecule_mitochondria
 TST -> sulfite_simple_molecule_mitochondria
 sulfinyl_pyruvate_simple_molecule -> sulfite_simple_molecule_mitochondria
 sulfite_simple_molecule_neuron -> sulfite_simple_molecule_mitochondria
+#position:thiosulfate_thiol_sulfurtransferase_mitochondria:5893.25,1571.875
 #position:3_mercaptopyruvate_simple_molecule_mitochondria:6340.875,1561.6875
 $3_mercaptopyruvate_simple_molecule_mitochondria:(L_Cys_simple_molecule_mitochondria & cat_3_mercaptopyruvate_simple_molecule_mitochondria_538(GOT2))
 L_Cys_simple_molecule_mitochondria -> 3_mercaptopyruvate_simple_molecule_mitochondria
@@ -2015,17 +2151,24 @@ HS__ion_mitochondria -> thiosulfate_simple_molecule_mitochondria
 sulfite_simple_molecule_mitochondria -> thiosulfate_simple_molecule_mitochondria
 3_mercaptopyruvate_simple_molecule_mitochondria -> thiosulfate_simple_molecule_mitochondria
 MPST_mitochondria -> thiosulfate_simple_molecule_mitochondria
+#position:MPST_mitochondria:6374.34375,1732.25
 #position:pyruvate_simple_molecule_mitochondria:6217.5,1637.6875
 $pyruvate_simple_molecule_mitochondria:(sulfinyl_pyruvate_simple_molecule | (((sulfite_simple_molecule_mitochondria & 3_mercaptopyruvate_simple_molecule_mitochondria) & cat_pyruvate_simple_molecule_mitochondria_542(MPST_mitochondria)) | (3_mercaptopyruvate_simple_molecule_mitochondria & cat_pyruvate_simple_molecule_mitochondria_541(MPST_mitochondria))))
 3_mercaptopyruvate_simple_molecule_mitochondria -> pyruvate_simple_molecule_mitochondria
 MPST_mitochondria -> pyruvate_simple_molecule_mitochondria
 sulfite_simple_molecule_mitochondria -> pyruvate_simple_molecule_mitochondria
 sulfinyl_pyruvate_simple_molecule -> pyruvate_simple_molecule_mitochondria
+#position:GOT2:6481.9375,1722.5
+#position:O2_simple_molecule_mitochondria:6045.9375,1888.0
+#position:TST:5939.3828125,1782.0
+#position:SUOX:5924.9375,1932.25
+#position:2GSH_simple_molecule:6024.4375,1764.9375
 #position:GSSG_HS__simple_molecule:6026.75,1817.4375
 $GSSG_HS__simple_molecule:((thiosulfate_simple_molecule_mitochondria & 2GSH_simple_molecule) & cat_GSSG_HS__simple_molecule_544(thiosulfate_thiol_sulfurtransferase_mitochondria))
 thiosulfate_simple_molecule_mitochondria -> GSSG_HS__simple_molecule
 2GSH_simple_molecule -> GSSG_HS__simple_molecule
 thiosulfate_thiol_sulfurtransferase_mitochondria -> GSSG_HS__simple_molecule
+#position:R_simple_molecule:6282.875,1765.1875
 #position:R_S_simple_molecule:6274.3125,1820.5
 $R_S_simple_molecule:((thiosulfate_simple_molecule_mitochondria & R_simple_molecule) & cat_R_S_simple_molecule_545(TST))
 thiosulfate_simple_molecule_mitochondria -> R_S_simple_molecule
@@ -2045,6 +2188,7 @@ $CBS:(CBS & cat_CBS_548(SAM_simple_molecule, CALM_Ca2__complex_neuron))
 CBS -> CBS
 SAM_simple_molecule -> CBS
 CALM_Ca2__complex_neuron -> CBS
+#position:SAM_simple_molecule:6760.6875,4147.4375
 #position:HS__ion_neuron:7294.9375,3882.5
 $HS__ion_neuron:((L_Cys_simple_molecule_neuron & cat_HS__ion_neuron_552(CBS)) | (((L_Cys_simple_molecule_neuron & thiocysteine_simple_molecule) & cat_HS__ion_neuron_551(CTH)) | (((L_Cys_simple_molecule_neuron & R_SH_simple_molecule) & cat_HS__ion_neuron_550(CBS)) | (3_mercaptopyruvate_simple_molecule_neuron & cat_HS__ion_neuron_549(MPST_neuron)))))
 3_mercaptopyruvate_simple_molecule_neuron -> HS__ion_neuron
@@ -2088,6 +2232,7 @@ metal_ligand_Cu_complex -> Cu_simple_molecule
 $SRC:(SRC & cat_SRC_562(Cu_simple_molecule))
 SRC -> SRC
 Cu_simple_molecule -> SRC
+#position:EGF:7794.0,4072.0
 #position:PTP_phosphorylated:3369.25,2983.0
 $PTP_phosphorylated:!Cu_simple_molecule
 Cu_simple_molecule -| PTP_phosphorylated
@@ -2111,6 +2256,7 @@ MMP_rna -> MMP
 $MMP_rna:cat_MMP_rna_568(MAPK1_3_phosphorylated, MAPK8_phosphorylated)
 MAPK1_3_phosphorylated ->? MMP_rna
 MAPK8_phosphorylated ->? MMP_rna
+#position:APP_endoplasmic_reticulum_ER_:4688.5,3923.25
 #position:unknown_unknown_endoplasmic_reticulum_ER_:4620.1875,3928.71875
 $unknown_unknown_endoplasmic_reticulum_ER_:(APP_endoplasmic_reticulum_ER_ & cat_unknown_unknown_endoplasmic_reticulum_ER__569(CTNNB1_GSK3B_mutant_PSEN_complex))
 APP_endoplasmic_reticulum_ER_ -> unknown_unknown_endoplasmic_reticulum_ER_
@@ -2185,15 +2331,21 @@ SMPD2_early_endosome -> SMPD2_Golgi_apparatus
 $SMPD2_trans_Golgi_network__TGN_:(SMPD2_Golgi_apparatus | SMPD2_early_endosome)
 SMPD2_early_endosome -> SMPD2_trans_Golgi_network__TGN_
 SMPD2_Golgi_apparatus -> SMPD2_trans_Golgi_network__TGN_
+#position:folate_simple_molecule:6008.625,5888.4375
+#position:MTHFR:6101.0,5810.25
 #position:5_MTHF_simple_molecule:6203.625,5888.4375
 $5_MTHF_simple_molecule:(folate_simple_molecule & cat_5_MTHF_simple_molecule_597(MTHFR))
 folate_simple_molecule -> 5_MTHF_simple_molecule
 MTHFR -> 5_MTHF_simple_molecule
+#position:homo_Cys_simple_molecule:6252.375,5937.1875
 #position:1_Met_simple_molecule:6431.125,5888.4375
 $1_Met_simple_molecule:((5_MTHF_simple_molecule & homo_Cys_simple_molecule) & cat_1_Met_simple_molecule_598(O_acetylhomoserine_aminocarboxypropyltransferase))
 5_MTHF_simple_molecule -> 1_Met_simple_molecule
 homo_Cys_simple_molecule -> 1_Met_simple_molecule
 O_acetylhomoserine_aminocarboxypropyltransferase -> 1_Met_simple_molecule
+#position:Methylcobalamin_simple_molecule:6459.375,5814.4375
+#position:O_acetylhomoserine_aminocarboxypropyltransferase:6215.5625,5754.5
+#position:MAT1A:6625.25,5811.6875
 #position:SAMe_simple_molecule:6705.75,5887.625
 $SAMe_simple_molecule:(1_Met_simple_molecule & cat_SAMe_simple_molecule_599(Methylcobalamin_simple_molecule, MAT1A))
 1_Met_simple_molecule -> SAMe_simple_molecule
@@ -2214,6 +2366,13 @@ SAMe_simple_molecule -> 5_HT_simple_molecule
 #position:NE_simple_molecule:7204.625,5940.375
 $NE_simple_molecule:DA_simple_molecule
 DA_simple_molecule -> NE_simple_molecule
+#position:Tyr_simple_molecule:6849.375,5938.1875
+#position:Trp_simple_molecule:6854.625,5775.1875
+#position:TPH:7001.53125,5821.75
+#position:TH:7003.625,5871.5
+#position:APP_early_endosome:7185.0,2775.0
+#position:UNC13A:6899.5,2512.25
+#position:NT_unknown:7111.125,2786.6875
 #position:AmyloidB_Blood:261.875,431.30769230769226
 $AmyloidB_Blood:(LRP1_AmyloidB_complex_Blood | APP_blood_brain_barrier__BBB_)
 APP_blood_brain_barrier__BBB_ -> AmyloidB_Blood
@@ -2233,6 +2392,8 @@ AGER_AmyloidB_complex_Blood_1 -> AmyloidB_blood_brain_barrier__BBB_
 #position:CLU_Brain:1416.25,452.0
 $CLU_Brain:AmyloidB_CLU_complex_Brain
 AmyloidB_CLU_complex_Brain -> CLU_Brain
+#position:A2M_Brain:1346.25,781.5
+#position:BACE_blood_brain_barrier__BBB_:402.6875,322.875
 #position:LRP1_blood_brain_barrier__BBB_:406.5625,381.5
 $LRP1_blood_brain_barrier__BBB_:LRP1_AmyloidB_complex_Blood
 LRP1_AmyloidB_complex_Blood -> LRP1_blood_brain_barrier__BBB_
@@ -2244,6 +2405,8 @@ BACE_blood_brain_barrier__BBB_ -> sLRP
 $unknown_unknown_blood_brain_barrier__BBB_:(LRP1_blood_brain_barrier__BBB_ & cat_unknown_unknown_blood_brain_barrier__BBB__613(BACE_blood_brain_barrier__BBB_))
 LRP1_blood_brain_barrier__BBB_ -> unknown_unknown_blood_brain_barrier__BBB_
 BACE_blood_brain_barrier__BBB_ -> unknown_unknown_blood_brain_barrier__BBB_
+#position:APP_blood_brain_barrier__BBB_:404.3125,490.0
+#position:CLU_Blood:201.4375,479.5
 #position:ROS_simple_molecule_neuron:3142.625,6170.9375
 $ROS_simple_molecule_neuron:(ROS_simple_molecule_default_compartment | ROS_simple_molecule_default_compartment)
 ROS_simple_molecule_default_compartment -> ROS_simple_molecule_neuron
@@ -2254,9 +2417,11 @@ AGER_AmyloidB_complex_Blood_1 ->? ROS_simple_molecule_blood_brain_barrier__BBB_
 #position:NFKB1:712.8125,955.375
 $NFKB1:cat_NFKB1_617(ROS_simple_molecule_blood_brain_barrier__BBB_)
 ROS_simple_molecule_blood_brain_barrier__BBB_ -> NFKB1
+#position:APP_Brain:1028.8125,503.75
 #position:AmyloidB_Brain_1:1253.25,308.25
 $AmyloidB_Brain_1:AmyloidB_Brain
 AmyloidB_Brain -> AmyloidB_Brain_1
+#position:TJ:501.5,1403.375
 #position:CAV1:479.75,944.125
 $CAV1:AGER_AmyloidB_CAV1_complex
 AGER_AmyloidB_CAV1_complex -> CAV1
@@ -2285,6 +2450,8 @@ NFKB1 -> VCAM1_rna
 #position:neuronal_development_phenotype:2621.286435389134,438.8242049469965
 $neuronal_development_phenotype:cat_neuronal_development_phenotype_627(PSPHL_APP_APBB1_DAB_ENAH_cytoskelton_complex)
 PSPHL_APP_APBB1_DAB_ENAH_cytoskelton_complex -> neuronal_development_phenotype
+#position:DAB:2602.6758443465496,727.8489399293285
+#position:ENAH:2625.9258443465496,607.8489399293285
 #position:cytoskeleton_phenotype:2759.1758443465496,643.0742049469966
 #position:CSNK1A1:5210.49031007048,291.3125
 $CSNK1A1:((!DKK1_KREMEN2_LRP5_6_complex & (!Oligomeric_AmyloidB_default_compartment_1 & (WNT_default_compartment & FZD_LRP5_6_CSNK1A1_complex))) & cat_CSNK1A1_629(SDC2_default_compartment))
@@ -2296,13 +2463,18 @@ DKK1_KREMEN2_LRP5_6_complex -| CSNK1A1
 #position:LRP5_6_neuron:4797.61531007048,369.1875
 $LRP5_6_neuron:DKK1_KREMEN2_LRP5_6_complex
 DKK1_KREMEN2_LRP5_6_complex -> LRP5_6_neuron
+#position:DKK1:4416.24031007048,131.5625
+#position:KREMEN2:4575.0,233.5
+#position:LRP5_6_neuron_1:4427.75,231.5
 #position:gro:6044.0,880.75
 $gro:(CTNNB1_nucleus & gro_LEF1_HDAC_TCF_complex)
 CTNNB1_nucleus -> gro
 gro_LEF1_HDAC_TCF_complex -> gro
+#position:PPP2CA:5626.75,687.75
 #position:CASP2:2667.875,2892.0
 $CASP2:CASP2
 CASP2 -> CASP2
+#position:oxidative_stress_simple_molecule:1968.4375,3083.9375
 #position:PRKC_phosphorylated:2839.9375,4087.125
 $PRKC_phosphorylated:cat_PRKC_phosphorylated_633(DAG_simple_molecule_neuron_1, WNT_default_compartment, Ca2__ion_neuron, PSEN_neuron, GNB2L1, GPCR, Unknown_receptor_unknown)
 DAG_simple_molecule_neuron_1 -> PRKC_phosphorylated
@@ -2371,6 +2543,7 @@ LDLR_APOE_Lipoprotein_remnant_complex -> Lipoprotein_remnant_simple_molecule_def
 LRP1_APOE_Lipoprotein_remnant_complex -> Lipoprotein_remnant_simple_molecule_default_compartment
 LRP1_APOE_SDC2_Lipoprotein_remnant_complex -> Lipoprotein_remnant_simple_molecule_default_compartment
 APOE_SDC2_Lipoprotein_remnant_complex -> Lipoprotein_remnant_simple_molecule_default_compartment
+#position:PSEN_neuron:2864.75,1694.0
 #position:DNA_fragmentation_phenotype:3485.5,2343.125
 $DNA_fragmentation_phenotype:cat_DNA_fragmentation_phenotype_652(CASP3)
 CASP3 -> DNA_fragmentation_phenotype
@@ -2379,6 +2552,7 @@ $CASP1_neuron:(CASP1_neuron & cat_CASP1_neuron_653(CASP3))
 CASP1_neuron -> CASP1_neuron
 CASP3 -> CASP1_neuron
 #position:oxidative_stress_phenotype_microglia:785.0,3858.9375
+#position:CDC42_phosphorylated:5688.75,2864.75
 #position:JUN_phosphorylated:5878.875,3298.625
 $JUN_phosphorylated:cat_JUN_phosphorylated_655(MAPK8_phosphorylated)
 MAPK8_phosphorylated -> JUN_phosphorylated
@@ -2389,6 +2563,7 @@ MAP3K9_10_11_phosphorylated -> MAP2K4_phosphorylated
 $MAP3K9_10_11_phosphorylated:cat_MAP3K9_10_11_phosphorylated_657(CDC42_phosphorylated, RAC_phosphorylated)
 CDC42_phosphorylated -> MAP3K9_10_11_phosphorylated
 RAC_phosphorylated -> MAP3K9_10_11_phosphorylated
+#position:RAC_phosphorylated:5874.0,2868.0
 #position:HRK:6026.5,3350.75
 $HRK:HRK_rna
 HRK_rna -> HRK
@@ -2412,6 +2587,8 @@ Oligomeric_AmyloidB_default_compartment -> neuronal_cell_death_phenotype
 #position:cognitive_and_behavioral_abnormalities_phenotype:988.125,2370.375
 $cognitive_and_behavioral_abnormalities_phenotype:cat_cognitive_and_behavioral_abnormalities_phenotype_664(Oligomeric_AmyloidB_default_compartment)
 Oligomeric_AmyloidB_default_compartment -> cognitive_and_behavioral_abnormalities_phenotype
+#position:mutant_APP:1912.0,1229.0
+#position:mutant_PSEN_default_compartment:2000.0,1225.75
 #position:ADDLs:1087.75,2936.75
 $ADDLs:AmyloidB1_42_default_compartment
 AmyloidB1_42_default_compartment -> ADDLs
@@ -2432,6 +2609,7 @@ H2O2_simple_molecule_neuron -> F2A_isoprostanes_simple_molecule
 $H2O2_simple_molecule_neuron:(superoxide_anion_simple_molecule_neuron & cat_H2O2_simple_molecule_neuron_669(SOD))
 superoxide_anion_simple_molecule_neuron -> H2O2_simple_molecule_neuron
 SOD -> H2O2_simple_molecule_neuron
+#position:LGALS1:5345.562500000001,462.0
 #position:IKBK_phosphorylated:2803.25,4335.0
 $IKBK_phosphorylated:(!PEBP1 & cat_IKBK_phosphorylated_670(TNF_TNFRSF1A_TRADD_TRAF2_RIP_complex, Stress_phenotype, cytokine_phenotype, bacterial_or_viral_infection_phenotype, ceramide_simple_molecule, PRKC_phosphorylated))
 TNF_TNFRSF1A_TRADD_TRAF2_RIP_complex -> IKBK_phosphorylated
@@ -2451,6 +2629,8 @@ $Mg2__ion:(glutamate_GRIN_Mg2__complex_postsynaptic_density | (glutamate_GRIN_Mg
 glutamate_GRIN_Mg2__complex_neuron -> Mg2__ion
 Oligomeric_AmyloidB_default_compartment ->? Mg2__ion
 glutamate_GRIN_Mg2__complex_postsynaptic_density -> Mg2__ion
+#position:CHRNA4:2430.125,6552.0
+#position:CHRNA:2425.75,6413.625
 #position:JAK2:4340.5,4489.75
 $JAK2:(JAK2 & cat_JAK2_675(Ca2__ion_neuron))
 JAK2 -> JAK2
@@ -2474,6 +2654,12 @@ CTNNB1_phosphorylated -> CTNNB1_ubiquitinated_phosphorylated
 UB_neuron_1 -> CTNNB1_ubiquitinated_phosphorylated
 UBE2M_ROC1_UBE2_UB_NEDD8_CUL_SKP1_FBXO_complex -> CTNNB1_ubiquitinated_phosphorylated
 BTRC -> CTNNB1_ubiquitinated_phosphorylated
+#position:PORC:5745.125,128.9375
+#position:WIF1:4981.17781007048,31.0625
+#position:SFRP:5046.42781007048,33.0625
+#position:SDC2_default_compartment:5313.42781007048,49.3125
+#position:BTRC:6755.5,2481.25
+#position:ROR:5942.5,235.125
 #position:RHOA:6044.125,328.625
 $RHOA:(RHOA & cat_RHOA_680(DVL_phosphorylated))
 RHOA -> RHOA
@@ -2499,17 +2685,22 @@ TCF_LEF1_CTNNB1_complex -> WNT_rna
 #position:WNT_nucleus:6244.1875,1106.4375
 $WNT_nucleus:WNT_rna
 WNT_rna -> WNT_nucleus
+#position:Oligomeric_AmyloidB_default_compartment_1:5400.88468992952,37.25
+#position:CHRM1:2397.25,5407.875
 #position:PPARG_rna:6423.25,1119.0625
 $PPARG_rna:cat_PPARG_rna_687(TCF_LEF1_CTNNB1_complex)
 TCF_LEF1_CTNNB1_complex -> PPARG_rna
+#position:ESR1:4492.4375,834.6875
 #position:CCND1_rna:6330.4375,1118.3124999999998
 $CCND1_rna:cat_CCND1_rna_688(TCF_LEF1_CTNNB1_complex)
 TCF_LEF1_CTNNB1_complex -> CCND1_rna
 #position:ST8SIA1_rna:6325.75,979.1875
 $ST8SIA1_rna:cat_ST8SIA1_rna_689(TCF_LEF1_CTNNB1_complex)
 TCF_LEF1_CTNNB1_complex -> ST8SIA1_rna
+#position:RTK:2407.0,5897.625
 #position:cytokine_phenotype:2046.25,4273.125
 #position:bacterial_or_viral_infection_phenotype:1858.5,4139.25
+#position:glucocorticoid_simple_molecule:4745.5,928.1875
 #position:NF_KB_responsive_phenotype:4554.5625,1089.9375
 $NF_KB_responsive_phenotype:cat_NF_KB_responsive_phenotype_692(NFKB_responsive_genes)
 NFKB_responsive_genes -> NF_KB_responsive_phenotype
@@ -2518,6 +2709,7 @@ $IGF1R:((!PTEN & IGF1R) & cat_IGF1R_693(IGF1_default_compartment))
 IGF1R -> IGF1R
 IGF1_default_compartment -> IGF1R
 PTEN -|? IGF1R
+#position:INSR:6898.5,240.375
 #position:AKT1:6273.75,322.375
 $AKT1:(AKT1 & cat_AKT1_694(IGF1R, INSR))
 AKT1 -> AKT1
@@ -2535,6 +2727,9 @@ VLDLR_APOE_complex -> DAB1
 VLDLR_RELN_complex -> DAB1
 LRP8_APOE_complex -> DAB1
 LRP8_RELN_complex -> DAB1
+#position:VLDLR:7664.875,2197.125
+#position:LRP8:7672.25,2473.125
+#position:RELN:7900.75,2362.5
 #position:cytoaarchitectural_integrity_phenotype:4711.4375,5079.625
 $cytoaarchitectural_integrity_phenotype:cat_cytoaarchitectural_integrity_phenotype_697(MAPT__neuron)
 MAPT__neuron -> cytoaarchitectural_integrity_phenotype
@@ -2545,18 +2740,22 @@ MAPT__neuron -> axonal_transport_phenotype
 $synaptic_plasticity_phenotype_neuron:cat_synaptic_plasticity_phenotype_neuron_699(MAPT__neuron, RARE_target_genes_rna)
 MAPT__neuron -> synaptic_plasticity_phenotype_neuron
 RARE_target_genes_rna -> synaptic_plasticity_phenotype_neuron
+#position:GNB2L1:2777.2500000000005,3994.5
 #position:PKC_response_phenotype:2802.3125,4177.625
 $PKC_response_phenotype:cat_PKC_response_phenotype_700(PRKC_phosphorylated)
 PRKC_phosphorylated -> PKC_response_phenotype
+#position:GPCR:2389.0,3132.125
 #position:MAP2K1:6903.5625,3465.0
 $MAP2K1:((!RAF1_PEBP1_complex & MAP2K1) & cat_MAP2K1_701(RAF1))
 MAP2K1 -> MAP2K1
 RAF1_PEBP1_complex -| MAP2K1
 RAF1 -> MAP2K1
+#position:PEBP1:6918.4375,3288.0
 #position:PEBP1_phosphorylated:7297.6875,3373.625
 $PEBP1_phosphorylated:(RAF1_PEBP1_complex & cat_PEBP1_phosphorylated_702(PRKC_phosphorylated))
 RAF1_PEBP1_complex -> PEBP1_phosphorylated
 PRKC_phosphorylated -> PEBP1_phosphorylated
+#position:ADRBK1:7295.3125,3276.625
 #position:phosphatase:6447.75,5122.75
 $phosphatase:(!MTOR & phosphatase)
 phosphatase -> phosphatase
@@ -2571,6 +2770,9 @@ FKBP8 -| MTOR
 PCSK1 -| MTOR
 TSC -> MTOR
 #position:nutrient_rich_condition_phenotype:6320.3125,4934.125
+#position:ATG17:6790.09375,5369.21875
+#position:ATG11:6791.09375,5425.46875
+#position:ULK1:6789.46875,5315.96875
 #position:ATG13_phosphorylated:6789.46875,5233.09375
 $ATG13_phosphorylated:cat_ATG13_phosphorylated_706(starvation_condition_phenotype, phosphatase)
 starvation_condition_phenotype -> ATG13_phosphorylated
@@ -2593,6 +2795,8 @@ ATG3 -> ATG7
 $ATG10:(ATG12_ATG10_complex & ATG5)
 ATG12_ATG10_complex -> ATG10
 ATG5 -> ATG10
+#position:ATG5:6460.375,5669.28125
+#position:ATG16:6736.5,5669.28125
 #position:preautophagosomal_membrane_phenotype:7342.375,5398.3125
 $preautophagosomal_membrane_phenotype:cat_preautophagosomal_membrane_phenotype_713(ATG12_ATG5_ATG16_complex_neuron_1)
 ATG12_ATG5_ATG16_complex_neuron_1 -> preautophagosomal_membrane_phenotype
@@ -2617,6 +2821,8 @@ $PE_simple_molecule:(PE_GABARAPL2_complex & cat_PE_simple_molecule_718(ATG4, aut
 PE_GABARAPL2_complex -> PE_simple_molecule
 ATG4 -> PE_simple_molecule
 autophagosome_formation_phenotype -> PE_simple_molecule
+#position:ATG4:6572.5,5360.5
+#position:PPARA_ligands_simple_molecule:26.25,5702.1875
 #position:IL6_microglia:472.21875,4312.625
 $IL6_microglia:(((!PPARA_ligands_PPARA_complex & IL6_microglia) & cat_IL6_microglia_720(Microglia_Activation_phenotype, TLR4_AmyloidB_complex_microglia_1)) | IL6_rna)
 IL6_rna -> IL6_microglia
@@ -2634,16 +2840,26 @@ NFKB_responsive_genes_rna -> NFKB_responsive_genes
 $unknown_repressor_unknown:(unknown_PPARG_ligand_unknown & PPARG_RXR_unkown_repressor_complex)
 unknown_PPARG_ligand_unknown -> unknown_repressor_unknown
 PPARG_RXR_unkown_repressor_complex -> unknown_repressor_unknown
+#position:unknown_PPARG_ligand_unknown:4869.828125,811.46875
 #position:increase_NFKBIA_NFKBIB_phenotype:4802.859375,1016.96875
 $increase_NFKBIA_NFKBIB_phenotype:cat_increase_NFKBIA_NFKBIB_phenotype_724(PPARG_RXR_unkown_PPARG_ligand_complex)
 PPARG_RXR_unkown_PPARG_ligand_complex -> increase_NFKBIA_NFKBIB_phenotype
 #position:AmyloidB_clearance_phenotype_nucleus:4911.125,1046.4375
 $AmyloidB_clearance_phenotype_nucleus:cat_AmyloidB_clearance_phenotype_nucleus_725(PPARG_RXR_unkown_PPARG_ligand_complex)
 PPARG_RXR_unkown_PPARG_ligand_complex -> AmyloidB_clearance_phenotype_nucleus
+#position:WNT5A:3239.09375,195.375
 #position:neuronal_stem_cell_phenotype:2836.46875,84.25
+#position:WNT7A:3104.84375,138.0
+#position:WNT3A:3105.71875,45.375
 #position:proliferation_phenotype:2822.59375,184.75
 $proliferation_phenotype:cat_proliferation_phenotype_727(neuronal_stem_cell_phenotype)
 neuronal_stem_cell_phenotype -> proliferation_phenotype
+#position:GSK3B_inhibitors:3227.71875,124.25
+#position:WNT1:3105.46875,91.25
+#position:NTRK2:7662.5,6021.625
+#position:BDNF:7874.15625,5163.905694641904
+#position:NTF3:7872.03125,6130.405694641904
+#position:NTF4:7912.78125,5382.030694641904
 #position:PK:3254.75,3222.75
 $PK:(PK & cat_PK_728(PIP3_simple_molecule))
 PK -> PK
@@ -2663,6 +2879,7 @@ SMPD -> ceramide_simple_molecule
 oxidative_stress_phenotype_neuron ->? ceramide_simple_molecule
 AA_simple_molecule ->? ceramide_simple_molecule
 sphingosine_simple_molecule -> ceramide_simple_molecule
+#position:ceramidase:7271.25,4517.75
 #position:SMPD:7276.25,5033.25
 $SMPD:(SMPD & cat_SMPD_733(NGFR_NGF_complex))
 SMPD -> SMPD
@@ -2684,12 +2901,14 @@ $superoxide_anion_simple_molecule_neuron:(superoxide_anion_simple_molecule_mitoc
 O2_simple_molecule_neuron -> superoxide_anion_simple_molecule_neuron
 superoxide_simple_molecule -> superoxide_anion_simple_molecule_neuron
 superoxide_anion_simple_molecule_mitochondria -> superoxide_anion_simple_molecule_neuron
+#position:SOD:5787.25,4389.25
 #position:hydroxyl_radical_simple_molecule:6069.4375,4305.1875
 $hydroxyl_radical_simple_molecule:H2O2_simple_molecule_neuron
 H2O2_simple_molecule_neuron -> hydroxyl_radical_simple_molecule
 #position:superoxide_simple_molecule:5657.418120140959,4400.453125
 $superoxide_simple_molecule:superoxide_anion_simple_molecule_neuron
 superoxide_anion_simple_molecule_neuron -> superoxide_simple_molecule
+#position:PUFA_simple_molecule:5599.875,4564.375
 #position:LOO_simple_molecule:5942.75,4565.1875
 $LOO_simple_molecule:(LO_simple_molecule & cat_LOO_simple_molecule_742(AmyloidB_fibril, hydroxyl_radical_simple_molecule))
 LO_simple_molecule -> LOO_simple_molecule
@@ -2707,6 +2926,7 @@ Lipid_peroxidation_phenotype -> destruction_of_membranes_phenotype
 #position:aldehydes_phenotype:6478.5,4229.875
 $aldehydes_phenotype:cat_aldehydes_phenotype_746(Lipid_peroxidation_phenotype)
 Lipid_peroxidation_phenotype -> aldehydes_phenotype
+#position:IGF1_default_compartment:6253.5,181.75
 #position:IRS:6280.0,578.0
 $IRS:(IRS & cat_IRS_747(IGF1R))
 IRS -> IRS
@@ -2723,6 +2943,7 @@ IFI44 -| PTEN
 #position:IFI44:4601.0,2175.0
 $IFI44:IFI44
 IFI44 -> IFI44
+#position:HMGCRI:5810.0,6140.0
 #position:DMAPP_simple_molecule:6928.125,6007.4375
 $DMAPP_simple_molecule:(IPP_simple_molecule & cat_DMAPP_simple_molecule_751(IDI))
 IPP_simple_molecule -> DMAPP_simple_molecule
@@ -2730,14 +2951,17 @@ IDI -> DMAPP_simple_molecule
 #position:TRNAU1_rna_don_t_care:5892.625,5918.9375
 $TRNAU1_rna_don_t_care:cat_TRNAU1_rna_don_t_care_752(IPP_simple_molecule)
 IPP_simple_molecule -> TRNAU1_rna_don_t_care
+#position:OSC_inhibitor:7092.9375,6314.6875
 #position:7_dehydrocholesterol_simple_molecule:7468.1875,6259.5625
 $7_dehydrocholesterol_simple_molecule:Lanosterol_simple_molecule
 Lanosterol_simple_molecule -> 7_dehydrocholesterol_simple_molecule
+#position:RAC1:6039.25,6396.0
 #position:GPP_simple_molecule:6633.59375,6255.34375
 $GPP_simple_molecule:((IPP_simple_molecule & DMAPP_simple_molecule) & cat_GPP_simple_molecule_754(FDPS))
 IPP_simple_molecule -> GPP_simple_molecule
 DMAPP_simple_molecule -> GPP_simple_molecule
 FDPS -> GPP_simple_molecule
+#position:CDC42:6038.75,6474.5
 #position:PGGT1B:6086.5,6079.25
 $PGGT1B:(!GGTI & PGGT1B)
 PGGT1B -> PGGT1B
@@ -2754,6 +2978,11 @@ $sAPPA:(APP_neuron & cat_sAPPA_758(ADAM_default_compartment, CASP3))
 APP_neuron -> sAPPA
 ADAM_default_compartment -> sAPPA
 CASP3 ->? sAPPA
+#position:SRI:3028.75,3762.25
+#position:CAPN2:4559.0,3984.875
+#position:ORAI1:2399.25,5357.625
+#position:KCNIP3:4472.25,4014.75
+#position:CIB1:3462.4375,4375.125
 #position:ARL4C:2882.75,2940.25
 $ARL4C:(ARL4C & cat_ARL4C_759(ITAM_complex_neuron_1))
 ARL4C -> ARL4C
@@ -2795,16 +3024,22 @@ HSPA5_rna -> HSPA5
 #position:PSEN_phosphorylated:3202.875,3864.765625
 $PSEN_phosphorylated:PSEN_endoplasmic_reticulum_ER_
 PSEN_endoplasmic_reticulum_ER_ -> PSEN_phosphorylated
+#position:HMGCS:5399.4375,6079.25
+#position:GGTI:6010.75,6161.5
 #position:GDI:7345.375,6635.6875
 $GDI:((!GDF & GDI) | GTPase_GDI_complex)
 GTPase_GDI_complex -> GDI
 GDI -> GDI
 GDF -| GDI
+#position:GDF:7433.5,6685.9375
+#position:GTP_simple_molecule_neuron:7578.125,6632.75
 #position:GDP_simple_molecule:7592.75,6740.75
 $GDP_simple_molecule:((GTPase_neuron_1 & GTP_simple_molecule_neuron) & cat_GDP_simple_molecule_772(GEF))
 GTPase_neuron_1 -> GDP_simple_molecule
 GTP_simple_molecule_neuron -> GDP_simple_molecule
 GEF -> GDP_simple_molecule
+#position:GEF:7572.125,6684.875
+#position:GAP:7187.0,6766.75
 #position:INPP5K:6744.0,1024.25
 $INPP5K:(NICD_INPP5K_CSHL1_HAT1_complex & LAG3)
 NICD_INPP5K_CSHL1_HAT1_complex -> INPP5K
@@ -2813,6 +3048,7 @@ LAG3 -> INPP5K
 $HDAC:(CTNNB1_nucleus & gro_LEF1_HDAC_TCF_complex)
 CTNNB1_nucleus -> HDAC
 gro_LEF1_HDAC_TCF_complex -> HDAC
+#position:NCOR2:6744.0,1122.75
 #position:LAG3:6554.5,1029.0
 $LAG3:(((NICD_LAG3_CSHL1_complex & INPP5K) & HDAC) & NCOR2)
 NICD_LAG3_CSHL1_complex -> LAG3
@@ -2850,6 +3086,7 @@ STK11 -> PRKAA2
 #position:STK11:5195.5,5184.75
 $STK11:STK11
 STK11 -> STK11
+#position:NF1:7311.25,3148.25
 #position:RPS6KA1:3433.5,3222.75
 $RPS6KA1:(RPS6KA1 & cat_RPS6KA1_783(MAPK1_3_phosphorylated))
 RPS6KA1 -> RPS6KA1
@@ -2862,6 +3099,7 @@ $HIF:((!VHL & HIF) & cat_HIF_785(MTOR))
 HIF -> HIF
 VHL -| HIF
 MTOR -> HIF
+#position:VHL:7016.5,4944.0
 #position:VEGFA:6813.375,5133.71875
 $VEGFA:(VEGFA & cat_VEGFA_786(HIF))
 VEGFA -> VEGFA
@@ -2881,10 +3119,14 @@ TF_Fe_complex -> TF_neuron
 $TF_default_compartment:(TF_neuron & cat_TF_default_compartment_790(TFR))
 TF_neuron -> TF_default_compartment
 TFR -> TF_default_compartment
+#position:TFR:3496.024152523547,220.0
+#position:DMRT1:2407.0625,400.375
+#position:SLC40A1:2404.0625,305.125
 #position:Fe_simple_molecule_default_compartment:2212.75,359.6875
 $Fe_simple_molecule_default_compartment:(Fe_simple_molecule_neuron & cat_Fe_simple_molecule_default_compartment_791(SLC40A1))
 Fe_simple_molecule_neuron -> Fe_simple_molecule_default_compartment
 SLC40A1 -> Fe_simple_molecule_default_compartment
+#position:FTH_rna:3572.625,400.4375
 #position:PRKG1_neuron:3850.0,4637.75
 $PRKG1_neuron:(PRKG1_neuron & cat_PRKG1_neuron_792(cGMP_simple_molecule_neuron))
 PRKG1_neuron -> PRKG1_neuron
@@ -2901,6 +3143,7 @@ PRKG1_neuron -> KCN
 $K__ion_neuron:(K__ion_default_compartment & cat_K__ion_neuron_795(Kv3_4))
 K__ion_default_compartment -> K__ion_neuron
 Kv3_4 -> K__ion_neuron
+#position:NTF_simple_molecule:2018.125,6164.6875
 #position:IK_unknown:2547.516795837475,6022.711766759778
 $IK_unknown:(IK_unknown & cat_IK_unknown_796(NTF_RTK_complex))
 IK_unknown -> IK_unknown
@@ -2927,15 +3170,18 @@ AmyloidB_NMDAR_complex -> Na__ion_neuron
 #position:SLC8A:7032.25,6811.5
 $SLC8A:SLC8A
 SLC8A -> SLC8A
+#position:GRIA:7167.0,6814.5
 #position:AmyloidB_fibril:5903.75,4000.5
 $AmyloidB_fibril:AmyloidB_neuron
 AmyloidB_neuron -> AmyloidB_fibril
 #position:depolarization_phenotype:6222.5625,6829.875
 $depolarization_phenotype:cat_depolarization_phenotype_804(ATP1)
 ATP1 -> depolarization_phenotype
+#position:GRI:5125.0,6807.5
 #position:TX_simple_molecule:3007.625,6234.5625
 $TX_simple_molecule:PG_simple_molecule_neuron
 PG_simple_molecule_neuron -> TX_simple_molecule
+#position:ALOX:3397.5,5887.75
 #position:oxyradical_simple_molecule:3285.8125,5849.5625
 $oxyradical_simple_molecule:(AA_simple_molecule & cat_oxyradical_simple_molecule_806(ALOX, PTGS))
 AA_simple_molecule -> oxyradical_simple_molecule
@@ -2950,6 +3196,8 @@ $H2O_simple_molecule_neuron:(H2O2_simple_molecule_neuron & cat_H2O_simple_molecu
 H2O2_simple_molecule_neuron -> H2O_simple_molecule_neuron
 CAT -> H2O_simple_molecule_neuron
 GPX -> H2O_simple_molecule_neuron
+#position:CAT:5916.0,4365.5
+#position:GSR:6279.574370140959,4591.515625
 #position:GSSG_simple_molecule:6399.375,4662.6875
 $GSSG_simple_molecule:(GSH_simple_molecule & cat_GSSG_simple_molecule_809(GPX))
 GSH_simple_molecule -> GSSG_simple_molecule
@@ -2958,6 +3206,7 @@ GPX -> GSSG_simple_molecule
 $GSH_simple_molecule:(GSSG_simple_molecule & cat_GSH_simple_molecule_810(GSR))
 GSSG_simple_molecule -> GSH_simple_molecule
 GSR -> GSH_simple_molecule
+#position:GPX:6523.75,4589.75
 #position:superoxide_anion_simple_molecule_mitochondria:5928.6875,2005.4375
 $superoxide_anion_simple_molecule_mitochondria:Ca2__ion_neuron
 Ca2__ion_neuron -> superoxide_anion_simple_molecule_mitochondria
@@ -2969,6 +3218,10 @@ $LO_simple_molecule:(PUFA_simple_molecule & cat_LO_simple_molecule_813(hydroxyl_
 PUFA_simple_molecule -> LO_simple_molecule
 hydroxyl_radical_simple_molecule -> LO_simple_molecule
 AmyloidB_fibril -> LO_simple_molecule
+#position:APBB1:2622.4375,672.125
+#position:ABL:3373.0625,1224.9375
+#position:MAPK8IP1:2749.2734375,975.6875
+#position:SHC1:3323.25,1636.5
 #position:STXBP1:3761.875,1128.625
 $STXBP1:(STXBP1 & cat_STXBP1_814(APP_APBA1_complex))
 STXBP1 -> STXBP1
@@ -3007,6 +3260,9 @@ BACE_default_compartment -> sAPPB_default_compartment
 CASP3 ->? sAPPB_default_compartment
 mutant_APP -> sAPPB_default_compartment
 mutant_PSEN_default_compartment -> sAPPB_default_compartment
+#position:APOE_Brain:1352.25,664.25
+#position:CHRFAM7A:2427.3125,6484.75
+#position:IGF1_neuron:4739.5,2875.5
 #position:TNF_blood_brain_barrier__BBB_:772.3125,1302.0
 $TNF_blood_brain_barrier__BBB_:(TNF_blood_brain_barrier__BBB_ & cat_TNF_blood_brain_barrier__BBB__822(NFKB1))
 TNF_blood_brain_barrier__BBB_ -> TNF_blood_brain_barrier__BBB_
@@ -3016,6 +3272,8 @@ $TNF_microglia:(Microglia_Activation_phenotype | ((!PPARA_ligands_PPARA_complex 
 TNF_microglia -> TNF_microglia
 Microglia_Activation_phenotype -> TNF_microglia
 PPARA_ligands_PPARA_complex -| TNF_microglia
+#position:APPBP1:2688.0625,671.4375
+#position:FADD:2631.0,2373.0
 #position:PTGS2:2801.75,5480.0
 $PTGS2:(PTGS2 | PTGS2_rna)
 PTGS2_rna -> PTGS2
@@ -3026,6 +3284,8 @@ COX -> COX
 Oligomeric_AmyloidB_neuron -| COX
 estrogen_simple_molecule_inner_membrane -> COX
 Q_simple_molecule -> COX
+#position:GAPDH_neuron:2949.0,1469.0
+#position:5ADHP_simple_molecule_astrocyte:1075.875,5802.1875
 #position:5ADHP_simple_molecule_mitochondria:1086.375,6177.1875
 $5ADHP_simple_molecule_mitochondria:(((ALLOP_simple_molecule_mitochondria & NAD__simple_molecule_mitochondria) & cat_5ADHP_simple_molecule_mitochondria_829(HSD17B10_mitochondria)) | ((NAD__simple_molecule_mitochondria & ALLOP_simple_molecule_mitochondria) & cat_5ADHP_simple_molecule_mitochondria_828(HSD17B10_mitochondria)))
 NAD__simple_molecule_mitochondria -> 5ADHP_simple_molecule_mitochondria
@@ -3036,6 +3296,10 @@ $5ADHP_simple_molecule_mitochondia:((ALLOP_simple_molecule_mitochondia & NAD__si
 ALLOP_simple_molecule_mitochondia -> 5ADHP_simple_molecule_mitochondia
 NAD__simple_molecule_mitochondia -> 5ADHP_simple_molecule_mitochondia
 HSD17B10_mitochondia -> 5ADHP_simple_molecule_mitochondia
+#position:ACHE:5065.75,6255.25
+#position:ADAM10_default_compartment:7920.5,1597.0
+#position:LRP1_sinusoid:446.5,2204.875
+#position:APBA1:2819.25,1169.5
 #position:SDC2_sinusoid:632.25,1594.75
 $SDC2_sinusoid:APOE_SDC2_LIPC_LPL_Lipoprotein_remnant_complex
 APOE_SDC2_LIPC_LPL_Lipoprotein_remnant_complex -> SDC2_sinusoid
@@ -3065,6 +3329,8 @@ THSD1 -> ALLOP_simple_molecule_astrocyte
 #position:ALLOP_simple_molecule_mitochondia:1120.125,6846.9375
 $ALLOP_simple_molecule_mitochondia:ALLOP_simple_molecule_default_compartment
 ALLOP_simple_molecule_default_compartment -> ALLOP_simple_molecule_mitochondia
+#position:BH4_simple_molecule:6905.125,5849.9375
+#position:biphosphonate_simple_molecule:6792.5625,6197.96875
 #position:DAG_simple_molecule_neuron:7083.125,4398.1875
 $DAG_simple_molecule_neuron:ceramide_simple_molecule
 ceramide_simple_molecule -> DAG_simple_molecule_neuron
@@ -3072,6 +3338,10 @@ ceramide_simple_molecule -> DAG_simple_molecule_neuron
 $DAG_simple_molecule_neuron_1:(DAG_IP3_complex & cat_DAG_simple_molecule_neuron_1_841(PLCB))
 DAG_IP3_complex -> DAG_simple_molecule_neuron_1
 PLCB -> DAG_simple_molecule_neuron_1
+#position:FTI_simple_molecule:7117.125,6372.1875
+#position:insulin_simple_molecule_neuron:2677.375,4154.1875
+#position:BCHE:4960.25,6253.25
+#position:zaragozic_acid_simple_molecule:6903.75,6304.4375
 #position:AKT1_phosphorylated_phosphorylated:4908.25,4782.75
 $AKT1_phosphorylated_phosphorylated:(AKT1 & cat_AKT1_phosphorylated_phosphorylated_842(PDK1_phosphorylated, WNT_default_compartment, AmyloidB_neuron, Ca2__ion_neuron, WISP1))
 AKT1 -> AKT1_phosphorylated_phosphorylated
@@ -3093,6 +3363,7 @@ $PLCG:(PLCG & cat_PLCG_845(ARL4C, NTRK1_NGF_complex_neuron_1))
 PLCG -> PLCG
 ARL4C -> PLCG
 NTRK1_NGF_complex_neuron_1 -> PLCG
+#position:HSD17B10_inner_membrane:4862.5,1913.0
 #position:p3:1844.75,1627.5
 $p3:(C83 & cat_p3_846(G_Secretase_complex_neuron))
 C83 -> p3
@@ -3131,10 +3402,12 @@ PS_exposure_phenotype -> Abnormal_cell_function_phenotype
 $C31:(APP_neuron & cat_C31_855(CASP3))
 APP_neuron -> C31
 CASP3 -> C31
+#position:MAPT:4395.0,4934.0
 #position:50kDa_fragment:4130.875,4932.0
 $50kDa_fragment:(MAPT & cat_50kDa_fragment_856(CASP3))
 MAPT -> 50kDa_fragment
 CASP3 -> 50kDa_fragment
+#position:NAD__simple_molecule_default_compartment:1616.375,6758.7734375
 #position:NADH_simple_molecule_default_compartment:1703.875,6919.4375
 $NADH_simple_molecule_default_compartment:((Glyceraldehyde_P_simple_molecule & NAD__simple_molecule_default_compartment) & cat_NADH_simple_molecule_default_compartment_857(GAPDH_default_compartment))
 Glyceraldehyde_P_simple_molecule -> NADH_simple_molecule_default_compartment
@@ -3147,15 +3420,18 @@ Farnesyl_PP_simple_molecule -> Ubiquinone_simple_molecule
 #position:ZAP70_phosphorylated:7637.3125,3996.75
 $ZAP70_phosphorylated:cat_ZAP70_phosphorylated_860(LCK)
 LCK -> ZAP70_phosphorylated
+#position:LCK:7575.4375,3939.0625
 #position:mutant_PSEN_endoplasmic_reticulum_ER_:3503.75,3864.765625
 $mutant_PSEN_endoplasmic_reticulum_ER_:ER_stress_phenotype
 ER_stress_phenotype -> mutant_PSEN_endoplasmic_reticulum_ER_
 #position:inflammatory_response_phenotype:4350.875,1368.25
 $inflammatory_response_phenotype:cat_inflammatory_response_phenotype_862(GRN)
 GRN -> inflammatory_response_phenotype
+#position:PTGS:3332.875,5983.5
 #position:IP3_simple_molecule:2744.625,3961.4375
 $IP3_simple_molecule:DAG_IP3_complex
 DAG_IP3_complex -> IP3_simple_molecule
+#position:chylomicrons_simple_molecule:111.0,1593.5
 #position:unknown_unknown_sinusoid:63.0,1644.5
 $unknown_unknown_sinusoid:chylomicrons_simple_molecule
 chylomicrons_simple_molecule -> unknown_unknown_sinusoid
@@ -3198,6 +3474,8 @@ SCAR_AmyloidB_fibril_complex ->? ROS_simple_molecule_microglia
 unknown_unknown_microglia -> ROS_simple_molecule_microglia
 AmyloidB_microglia -> ROS_simple_molecule_microglia
 #position:ROS_production_phenotype_microglia:87.0,4249.6875
+#position:MMP2:1550.0,1182.0
+#position:MMP3:1645.0,1187.0
 #position:ACh_production_phenotype:7302.0,468.0
 $ACh_production_phenotype:cat_ACh_production_phenotype_878(NTRK1_NGF_complex_neuron)
 NTRK1_NGF_complex_neuron -> ACh_production_phenotype
@@ -3237,6 +3515,7 @@ G1_phenotype -> G1_S_checkpoint_phenotype
 #position:oxidative_stress_phenotype_default_compartment:1698.0,1008.5
 $oxidative_stress_phenotype_default_compartment:cat_oxidative_stress_phenotype_default_compartment_889(AmyloidB_default_compartment)
 AmyloidB_default_compartment -> oxidative_stress_phenotype_default_compartment
+#position:phosphatidylcholine_simple_molecule:7654.0,4912.5
 #position:Eicosanoid_simple_molecule:7398.0,4913.0
 $Eicosanoid_simple_molecule:(AA_simple_molecule & cat_Eicosanoid_simple_molecule_890(COX_, LOX))
 AA_simple_molecule -> Eicosanoid_simple_molecule
@@ -3270,6 +3549,9 @@ ceramide_simple_molecule -> ceramide_1_P_simple_molecule
 #position:Proinflammetion_phenotype:6781.0,4428.0
 $Proinflammetion_phenotype:cat_Proinflammetion_phenotype_896(ceramide_1_P_simple_molecule)
 ceramide_1_P_simple_molecule -> Proinflammetion_phenotype
+#position:PLA2G4A:7587.0,4976.0
+#position:COX_:7409.0,5016.0
+#position:LOX:7508.0,5017.0
 #position:TLR:1519.0,3801.0
 $TLR:(TLR_AmyloidB_complex & AmyloidB_default_compartment)
 TLR_AmyloidB_complex -> TLR
@@ -3282,11 +3564,17 @@ AmyloidB_default_compartment -> TLR2
 $TLR4:(TLR4_AmyloidB_complex_microglia & AmyloidB_default_compartment)
 TLR4_AmyloidB_complex_microglia -> TLR4
 AmyloidB_default_compartment -> TLR4
+#position:oxidase:103.0,5578.0
+#position:iNOS_microglia:357.0,5577.0
+#position:RAGE_microglia:1719.0,4550.0
+#position:not_written_unknown:288.0,5641.5
+#position:O2_simple_molecule_default_compartment:35.0,5641.5
 #position:ROS_simple_molecule_default_compartment:181.0,5642.5
 $ROS_simple_molecule_default_compartment:((O2_simple_molecule_default_compartment & cat_ROS_simple_molecule_default_compartment_901(oxidase_)) | (O2_simple_molecule_default_compartment & cat_ROS_simple_molecule_default_compartment_900(oxidase)))
 O2_simple_molecule_default_compartment -> ROS_simple_molecule_default_compartment
 oxidase -> ROS_simple_molecule_default_compartment
 oxidase_ -> ROS_simple_molecule_default_compartment
+#position:AGEs_simple_molecule:1861.0,4517.5
 #position:IL6_rna:252.0,4756.5
 $IL6_rna:cat_IL6_rna_902(AP1_microglia, NFKB_microglia)
 AP1_microglia -> IL6_rna
@@ -3328,6 +3616,8 @@ TNFA_astrocyte -> activate_microglia_phenotype
 $speck_like_protein:(speck_like_protein & cat_speck_like_protein_911(NALP_AmyloidB_complex))
 speck_like_protein -> speck_like_protein
 NALP_AmyloidB_complex -> speck_like_protein
+#position:COX2:1631.0,4454.0
+#position:NALP:1189.0,3950.0
 #position:AmyloidB_microglia:1192.0,4048.0
 $AmyloidB_microglia:(AmyloidB_default_compartment & cat_AmyloidB_microglia_912(CD36_AmyloidB_complex, SRA1_AmyloidB_complex, SRA2_AmyloidB_complex, TLR9_AmyloidB_complex, CCL2))
 AmyloidB_default_compartment -> AmyloidB_microglia
@@ -3336,6 +3626,8 @@ SRA1_AmyloidB_complex -> AmyloidB_microglia
 SRA2_AmyloidB_complex -> AmyloidB_microglia
 TLR9_AmyloidB_complex -> AmyloidB_microglia
 CCL2 ->? AmyloidB_microglia
+#position:iNOS_astrocyte:982.0,5793.0
+#position:oxidase_:982.0,5899.0
 #position:IL1B_rna_astrocyte:1834.0,6042.5
 $IL1B_rna_astrocyte:cat_IL1B_rna_astrocyte_913(AP1_astrocyte)
 AP1_astrocyte -> IL1B_rna_astrocyte
@@ -3348,6 +3640,8 @@ NFKB_astrocyte -> TNFA_rna_astrocyte
 #position:TNFA_astrocyte:1843.0,6284.0
 $TNFA_astrocyte:TNFA_rna_astrocyte
 TNFA_rna_astrocyte -> TNFA_astrocyte
+#position:AP1_astrocyte:1639.0,5972.0
+#position:NFKB_astrocyte:1639.0,6028.0
 #position:activate_astrocyte_phenotype:1057.0,6013.0
 $activate_astrocyte_phenotype:cat_activate_astrocyte_phenotype_917(IL1B_microglia, TNFA_microglia)
 IL1B_microglia -> activate_astrocyte_phenotype
@@ -3374,9 +3668,16 @@ APP__neuron -> N_APP_neuron
 $TNFA_neuron:(TNFA_astrocyte | TNFA_microglia)
 TNFA_microglia -> TNFA_neuron
 TNFA_astrocyte -> TNFA_neuron
+#position:TLR3:983.0,5957.0
 #position:viral_defence_phenotype:1149.0,5973.0
 $viral_defence_phenotype:cat_viral_defence_phenotype_925(TLR3)
 TLR3 -> viral_defence_phenotype
+#position:RAGE_astrocyte:1399.0,6341.0
+#position:SRB1:1490.0,6340.0
+#position:MARCO:1578.0,6342.0
+#position:NOD1_astrocyte:1412.0,5932.0
+#position:NOD2_astrocyte:1412.0,6000.0
+#position:IL4:33.0,5070.0
 #position:PPARG_ligand:94.0,4977.0
 $PPARG_ligand:(PPARG_ligand & cat_PPARG_ligand_926(IL4_IL4R_complex))
 PPARG_ligand -> PPARG_ligand
@@ -3388,6 +3689,11 @@ FPRL1_microglia -> FPRL1_microglia
 phospholipase_A2 -> FPRL1_microglia
 phospholipase_C -> FPRL1_microglia
 phospholipase_D -> FPRL1_microglia
+#position:lipoxin_A4_simple_molecule:109.0,5352.5
+#position:phospholipase_A2:160.0,5212.0
+#position:phospholipase_C:160.0,5256.0
+#position:phospholipase_D:160.0,5300.0
+#position:unknown_unknown_microglia:149.0,5394.5
 #position:chemotaxis_simple_molecule:151.0,5469.5
 $chemotaxis_simple_molecule:(unknown_unknown_microglia & cat_chemotaxis_simple_molecule_929(FPRL1_lipoxinA4_complex))
 unknown_unknown_microglia -> chemotaxis_simple_molecule
@@ -3400,6 +3706,7 @@ TREM1_DAP12_complex -> phagocytosis_phenotype
 $FPRL1_rna:cat_FPRL1_rna_931(TNF_microglia, INFG)
 TNF_microglia -> FPRL1_rna
 INFG -> FPRL1_rna
+#position:INFG:475.0,5244.0
 #position:cytokines:1318.0,3951.0
 $cytokines:(cytokines & cat_cytokines_932(AmyloidB_microglia))
 cytokines -> cytokines
@@ -3419,15 +3726,18 @@ IRF -> cell_surviving_response_phenotype
 $IRF:(IRF & cat_IRF_936(TLRs))
 IRF -> IRF
 TLRs -> IRF
+#position:TLRs:1730.0,5338.0
 #position:inflammation_phenotype_microglia:1521.0,5354.0
 $inflammation_phenotype_microglia:cat_inflammation_phenotype_microglia_937(TLRs, NLRs, NALP3)
 TLRs -> inflammation_phenotype_microglia
 NLRs -> inflammation_phenotype_microglia
 NALP3 -> inflammation_phenotype_microglia
+#position:NLRs:1533.0,5442.0
 #position:NALP3:1533.0,5237.0
 $NALP3:(NALP3 & cat_NALP3_938(K__ion_microglia))
 NALP3 -> NALP3
 K__ion_microglia -> NALP3
+#position:K__ion_microglia:1634.5,5195.5
 #position:CASP1_microglia:1368.0,5106.0
 $CASP1_microglia:(CASP1_microglia & cat_CASP1_microglia_939(NALP3))
 CASP1_microglia -> CASP1_microglia
@@ -3439,11 +3749,14 @@ CASP1_microglia -> inflammasome
 inflammasome -> inflammasome
 PAMPs -> inflammasome
 DAMPs -> inflammasome
+#position:ASC:1156.0,5255.0
 #position:RIPK2:620.0,4720.0
 $RIPK2:(RIPK2 & cat_RIPK2_942(NOD1_microglia, NOD2_microglia))
 RIPK2 -> RIPK2
 NOD1_microglia -> RIPK2
 NOD2_microglia -> RIPK2
+#position:NOD1_microglia:631.0,4795.0
+#position:NOD2_microglia:748.0,4795.0
 #position:DAMPs:860.0,3631.0
 $DAMPs:(tissue_injured_phenotype | self_drive_danger_signals_phenotype)
 self_drive_danger_signals_phenotype -> DAMPs
@@ -3456,9 +3769,12 @@ tissue_injured_phenotype -> PAMPs
 #position:HSP60:158.0,3600.0
 $HSP60:cat_HSP60_948(tissue_injured_phenotype)
 tissue_injured_phenotype -> HSP60
+#position:unknown_protein_unknown:2389.0,5465.5
 #position:cytokine:617.0,5267.0
 $cytokine:!TREM2_unknown_protein_complex
 TREM2_unknown_protein_complex -| cytokine
+#position:CCL2:1816.0,3913.0
+#position:TLR8:2435.0,4826.0
 #position:neurite_outgrouth_phenotype:3368.0,4749.0
 $neurite_outgrouth_phenotype:cat_neurite_outgrouth_phenotype_950(TLR8)
 TLR8 -> neurite_outgrouth_phenotype
@@ -3494,15 +3810,19 @@ AmyloidB_neuron -> complement_system_phenotype
 $MAC:((some_protein_unknown & some_protein_unknown) & cat_MAC_961(complement_system_phenotype))
 some_protein_unknown -> MAC
 complement_system_phenotype -> MAC
+#position:some_protein_unknown:3010.0,6791.5
 #position:Kv3_4_rna:6108.0,1287.5
 $Kv3_4_rna:cat_Kv3_4_rna_962(AmyloidB_neuron_1)
 AmyloidB_neuron_1 ->? Kv3_4_rna
+#position:AmyloidB_neuron_1:6020.0,1364.0
+#position:IDE_neuron:7676.0,1355.0
 #position:IL1_rna_nucleus:6333.0,1163.5
 $IL1_rna_nucleus:!PPARG_nucleus
 PPARG_nucleus -| IL1_rna_nucleus
 #position:TNF_rna:6329.0,1232.5
 $TNF_rna:!PPARG_nucleus
 PPARG_nucleus -| TNF_rna
+#position:PPARG_nucleus:6122.0,1194.0
 #position:IL1B_rna_nucleus:4600.0,1154.5
 $IL1B_rna_nucleus:cat_IL1B_rna_nucleus_965(some_ions_unknown)
 some_ions_unknown ->? IL1B_rna_nucleus
@@ -3511,9 +3831,14 @@ $inflammation_phenotype_neuron:cat_inflammation_phenotype_neuron_966(NALP1, RAGE
 NALP1 -> inflammation_phenotype_neuron
 RAGE_HMGB1_complex -> inflammation_phenotype_neuron
 RAGE_S100_calgranulin_complex -> inflammation_phenotype_neuron
+#position:S100_calgranulin:3633.0,7033.0
+#position:RAGE_neuron:3270.0,6805.0
+#position:HMGB1_default_compartment:3490.0,7029.0
 #position:LTP_impairment_phenotype:3338.0,6665.0
 $LTP_impairment_phenotype:cat_LTP_impairment_phenotype_967(RAGE_AmyloidB_complex_neuron)
 RAGE_AmyloidB_complex_neuron -> LTP_impairment_phenotype
+#position:FPRL1_neuron:3901.0,6809.0
+#position:humanin:3882.0,7023.0
 #position:DHA_simple_molecule:7165.0,697.5
 $DHA_simple_molecule:cat_DHA_simple_molecule_968(PLA2)
 PLA2 -> DHA_simple_molecule
@@ -3529,6 +3854,10 @@ Epoxidation -> 16_17S_DHA_Epoxide_simple_molecule
 $NPD1_simple_molecule:(16_17S_DHA_Epoxide_simple_molecule & cat_NPD1_simple_molecule_971(Hydrolysis))
 16_17S_DHA_Epoxide_simple_molecule -> NPD1_simple_molecule
 Hydrolysis -> NPD1_simple_molecule
+#position:PLA2:7530.0,728.0
+#position:15_LOX_1:7063.0,630.0
+#position:Epoxidation:7061.0,551.0
+#position:Hydrolysis:7060.0,463.0
 #position:PPARG_:7286.0,414.0
 $PPARG_:NPD1_simple_molecule
 NPD1_simple_molecule -> PPARG_
@@ -3576,6 +3905,8 @@ Ca2__ion_neuron -> CN
 $AMPAR:(AMPAR_ & cat_AMPAR_983(AmyloidB_default_compartment))
 AMPAR_ -> AMPAR
 AmyloidB_default_compartment -> AMPAR
+#position:AMPAR_:7698.0,819.0
+#position:NMDAR_neuron:7703.0,947.0
 #position:NMDAR_neuron_1:7703.0,1017.0
 $NMDAR_neuron_1:(NMDAR_neuron & cat_NMDAR_neuron_1_984(AMPAR))
 NMDAR_neuron -> NMDAR_neuron_1
@@ -3585,10 +3916,18 @@ $NR1_NR2BR:cat_NR1_NR2BR_985(FYN_neuron_1, PSD95, AmyloidB_default_compartment)
 FYN_neuron_1 -> NR1_NR2BR
 PSD95 ->? NR1_NR2BR
 AmyloidB_default_compartment ->? NR1_NR2BR
+#position:FYN_neuron_1:7516.0,1266.0
+#position:PSD95:7519.0,1320.0
+#position:LRP:756.0,58.0
+#position:A2M_default_compartment:1562.0,92.0
 #position:TNFA_default_compartment:1619.0,189.0
 $TNFA_default_compartment:cat_TNFA_default_compartment_986(AB_RAGE_complex, AGE_RAGE_complex)
 AB_RAGE_complex -> TNFA_default_compartment
 AGE_RAGE_complex -> TNFA_default_compartment
+#position:RAGE_default_compartment:1674.0,452.0
+#position:AGE_simple_molecule:1539.0,426.5
+#position:Zn2__ion:1866.5,4017.5
+#position:insulin_simple_molecule_default_compartment:1605.0,153.5
 #position:IRS1:3649.0,3020.0
 $IRS1:(IRS1 & cat_IRS1_987(TNFA_default_compartment))
 IRS1 -> IRS1
@@ -3629,6 +3968,8 @@ Phospho_N_acetylglucosamine_mutase -> GlcNAc1P_simple_molecule
 $UDP_GlcNAc_simple_molecule:(GlcNAc1P_simple_molecule & cat_UDP_GlcNAc_simple_molecule_996(Uridine_di_phospho_N_acetylglucosamine_pyrophosphorylase))
 GlcNAc1P_simple_molecule -> UDP_GlcNAc_simple_molecule
 Uridine_di_phospho_N_acetylglucosamine_pyrophosphorylase -> UDP_GlcNAc_simple_molecule
+#position:GLUT1:4162.0,342.0
+#position:GLUT3:4162.0,421.0
 #position:GLUT:4040.0,339.0
 $GLUT:(GLUT & cat_GLUT_997(PKC))
 GLUT -> GLUT
@@ -3638,6 +3979,11 @@ $PKC:(PKC & cat_PKC_998(PDK1_phosphorylated, Ca2__ion_neuron))
 PKC -> PKC
 PDK1_phosphorylated -> PKC
 Ca2__ion_neuron -> PKC
+#position:Hexokinase:3757.0,294.0
+#position:Phosphoglucose_isomerase:3630.0,434.0
+#position:Glucosamine_6_phosphate_acetyl_transferase:3860.0,900.0
+#position:GFAT:3893.0,393.0
+#position:MAPT__neuron_1:3950.0,692.0
 #position:O_GlcNAcylated_MAPT:3939.0,828.0
 $O_GlcNAcylated_MAPT:((MAPT__neuron_1 & UDP_GlcNAc_simple_molecule) & cat_O_GlcNAcylated_MAPT_999(OGT))
 MAPT__neuron_1 -> O_GlcNAcylated_MAPT
@@ -3648,11 +3994,17 @@ $UDP_simple_molecule:((MAPT__neuron_1 & UDP_GlcNAc_simple_molecule) & cat_UDP_si
 MAPT__neuron_1 -> UDP_simple_molecule
 UDP_GlcNAc_simple_molecule -> UDP_simple_molecule
 OGT -> UDP_simple_molecule
+#position:glutamine_simple_molecule:3920.0,442.5
 #position:glutamate_simple_molecule_neuron:3921.0,506.5
 $glutamate_simple_molecule_neuron:((Fru6P_simple_molecule & glutamine_simple_molecule) & cat_glutamate_simple_molecule_neuron_1001(GFAT))
 Fru6P_simple_molecule -> glutamate_simple_molecule_neuron
 glutamine_simple_molecule -> glutamate_simple_molecule_neuron
 GFAT -> glutamate_simple_molecule_neuron
+#position:Phospho_N_acetylglucosamine_mutase:3889.0,961.0
+#position:Uridine_di_phospho_N_acetylglucosamine_pyrophosphorylase:3797.0,1016.0
+#position:OGT:4007.0,761.0
+#position:Exendin4:4312.0,316.0
+#position:GLP1:4311.0,385.0
 #position:AmyloidB_clearance_phenotype_neuron:4406.0,284.0
 $AmyloidB_clearance_phenotype_neuron:cat_AmyloidB_clearance_phenotype_neuron_1002(Exendin4, GLP1)
 Exendin4 -> AmyloidB_clearance_phenotype_neuron
@@ -3660,6 +4012,8 @@ GLP1 -> AmyloidB_clearance_phenotype_neuron
 #position:AmyloidB_aggregation_phenotype:7648.0,3025.0
 $AmyloidB_aggregation_phenotype:cat_AmyloidB_aggregation_phenotype_1003(AmyloidB1_40_Lipid_raft)
 AmyloidB1_40_Lipid_raft -> AmyloidB_aggregation_phenotype
+#position:APP__Lipid_raft:7659.0,3201.0
+#position:BACE1:7659.0,3254.0
 #position:AmyloidB_production_increase_phenotype:7629.0,2973.0
 $AmyloidB_production_increase_phenotype:cat_AmyloidB_production_increase_phenotype_1004(Lipid_raft__increase_phenotype)
 Lipid_raft__increase_phenotype -> AmyloidB_production_increase_phenotype
@@ -3667,6 +4021,7 @@ Lipid_raft__increase_phenotype -> AmyloidB_production_increase_phenotype
 $Lipid_raft__increase_phenotype:cat_Lipid_raft__increase_phenotype_1005(cholesterol_simple_molecule_neuron_1, sphingolipid_simple_molecule)
 cholesterol_simple_molecule_neuron_1 -> Lipid_raft__increase_phenotype
 sphingolipid_simple_molecule -> Lipid_raft__increase_phenotype
+#position:sphingolipid_simple_molecule:7506.0,2923.5
 #position:C99_Lipid_raft:7782.0,3167.0
 $C99_Lipid_raft:(APP__Lipid_raft & cat_C99_Lipid_raft_1006(BACE1))
 APP__Lipid_raft -> C99_Lipid_raft

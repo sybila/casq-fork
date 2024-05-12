@@ -1,26 +1,9 @@
-#name:
-#description:
-#position:s2:343.0,150.0
-$s2:(s1 & cat_s2_0(s3))
-# Type: STATE_TRANSITION
-s1 -> s2
-# Type: CATALYSIS
-s3 -> s2
-#position:s4:147.0,282.0
-$s4:(!s5 & s1)
-# Type: STATE_TRANSITION
-s1 -> s4
-# Type: INHIBITION
-s5 -| s4
-#position:s6:346.0,282.0
-$s6:(s4 & cat_s6_2(s2))
-# Type: STATE_TRANSITION
-s4 -> s6
-# Type: UNKNOWN_CATALYSIS
-s2 ->? s6
-#position:s7:485.0,150.0
-$s7:(!s8 & s2)
-# Type: STATE_TRANSITION
-s2 -> s7
-# Type: UNKNOWN_INHIBITION
-s8 -|? s7
+#position:p:357.0,160.0
+$p:((!m2 & (!m1 & (!m6 & (!m5 & r)))) & cat_p_0(m1, m2, m3, m4))
+r -> p
+m1 -? p
+m2 -?? p
+m3 -> p
+m4 ->? p
+m5 -| p
+m6 -|? p

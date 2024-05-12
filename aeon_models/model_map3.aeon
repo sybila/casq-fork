@@ -2,6 +2,7 @@
 $NFKB1_RELA_IKB_complex_complex:(NFKB1_RelA_IKB_complex_complex & cat_NFKB1_RELA_IKB_complex_complex_0(IkB_kinase_complex_complex))
 NFKB1_RelA_IKB_complex_complex -> NFKB1_RELA_IKB_complex_complex
 IkB_kinase_complex_complex -> NFKB1_RELA_IKB_complex_complex
+#position:NFKB1_RelA_IKB_complex_complex:281.81975735926244,2455.0625
 #position:IkB_kinase_complex_complex:584.3197573592624,2226.5625
 $IkB_kinase_complex_complex:cat_IkB_kinase_complex_complex_1(MAP3K14_phosphorylated, PKC_delta__phosphorylated)
 MAP3K14_phosphorylated -> IkB_kinase_complex_complex
@@ -76,6 +77,8 @@ mTORC1_complex_complex_CELL_1 -> mTORC1_complex_complex_CELL
 PRAS40 -| mTORC1_complex_complex_CELL
 RHEB_GTP -> mTORC1_complex_complex_CELL
 Rapamycin_drug -| mTORC1_complex_complex_CELL
+#position:mTORC1_complex_complex_CELL_1:6600.9375,1394.9730149432642
+#position:mTORC2_complex_complex:7006.4375,1417.4730149432642
 #position:AKT1_PIP3_complex_CELL_1:7224.3125,1703.0
 $AKT1_PIP3_complex_CELL_1:(AKT1_PIP3_complex_CELL_2 & cat_AKT1_PIP3_complex_CELL_1_25(mTORC2_complex_complex))
 AKT1_PIP3_complex_CELL_2 -> AKT1_PIP3_complex_CELL_1
@@ -84,6 +87,7 @@ mTORC2_complex_complex -> AKT1_PIP3_complex_CELL_1
 $PDK1_PIP3_complex:(PI3_4_5_P3_simple_molecule & PDPK1_phosphorylated_CELL)
 PI3_4_5_P3_simple_molecule -> PDK1_PIP3_complex
 PDPK1_phosphorylated_CELL -> PDK1_PIP3_complex
+#position:4E_BP1_EIF4E_complex_complex:6821.975961538462,2061.4730149432644
 #position:AKT1_PIP3_complex_CELL_2:7225.8125,1535.0
 $AKT1_PIP3_complex_CELL_2:(PI3_4_5_P3_simple_molecule & AKT1)
 PI3_4_5_P3_simple_molecule -> AKT1_PIP3_complex_CELL_2
@@ -116,6 +120,7 @@ PKC -> CCK1R__inactive__complex
 $CCK1R__active__complex:(CCK1R & CCK_sulfated_sulfated_sulfated_default_compartment)
 CCK1R -> CCK1R__active__complex
 CCK_sulfated_sulfated_sulfated_default_compartment -> CCK1R__active__complex
+#position:G_alpha_s_beta_gamma__complex:5590.0,833.0
 #position:G_alpha_S__complex:5940.0,853.0
 $G_alpha_S__complex:((G_alpha_s_beta_gamma__complex & GTP_simple_molecule) & cat_G_alpha_S__complex_35(CCK1R))
 G_alpha_s_beta_gamma__complex -> G_alpha_S__complex
@@ -167,6 +172,7 @@ $G_beta_gamma__complex:((G_Protein_complex_complex & GTP_simple_molecule) & cat_
 G_Protein_complex_complex -> G_beta_gamma__complex
 GTP_simple_molecule -> G_beta_gamma__complex
 CCK1R -> G_beta_gamma__complex
+#position:G_alpha_13_beta_gamma__complex:5062.0,838.0
 #position:FAK1_SRC_p190GEF_complex_complex:919.8333333333333,2018.0
 $FAK1_SRC_p190GEF_complex_complex:(FAK1_SRC_complex_complex & cat_FAK1_SRC_p190GEF_complex_complex_47(p190RhoGEF))
 FAK1_SRC_complex_complex -> FAK1_SRC_p190GEF_complex_complex
@@ -286,6 +292,7 @@ $DAG_simple_molecule:(PI4_5_P_2_simple_molecule & cat_DAG_simple_molecule_75(PLC
 PI4_5_P_2_simple_molecule -> DAG_simple_molecule
 PLC_gamma_1_phosphorylated_phosphorylated_phosphorylated_phosphorylated -> DAG_simple_molecule
 PLC_beta -> DAG_simple_molecule
+#position:GTP_simple_molecule:3238.75,884.1875
 #position:GDP_simple_molecule:3388.75,882.1875
 $GDP_simple_molecule:(((G_alpha_13_beta_gamma__complex & GTP_simple_molecule) & cat_GDP_simple_molecule_82(CCK1R)) | (((G_alpha_s_beta_gamma__complex & GTP_simple_molecule) & cat_GDP_simple_molecule_81(CCK1R)) | (((CDC42_GDP & GTP_simple_molecule) & cat_GDP_simple_molecule_80(CCK2R_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated, HRAS_GTP_complex, GEF)) | (((RAC1_GDP & GTP_simple_molecule) & cat_GDP_simple_molecule_79(GEF, CCK2R_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated, G_alpha_13_complex, G_alpha___q_complex_complex)) | (((RHOA_GDP & GTP_simple_molecule) & cat_GDP_simple_molecule_78(LARG, G_alpha_13_complex, HRAS_GTP_complex)) | (((HRAS_GDP_complex & GTP_simple_molecule) & cat_GDP_simple_molecule_77(p52SHC1_GRB2_SOS1_complex, IRS_1_GRB2_SOS1_complex, PKC_epsilon_)) | ((G_Protein_complex_complex & GTP_simple_molecule) & cat_GDP_simple_molecule_76(CCK1R))))))))
 G_Protein_complex_complex -> GDP_simple_molecule
@@ -313,6 +320,7 @@ Conventional_br__PKC -> PKC_alpha_
 $PLC_gamma_1_phosphorylated_phosphorylated_phosphorylated_phosphorylated:cat_PLC_gamma_1_phosphorylated_phosphorylated_phosphorylated_phosphorylated_84(CCK2R_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated, p60_SRC_phosphorylated)
 CCK2R_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated -> PLC_gamma_1_phosphorylated_phosphorylated_phosphorylated_phosphorylated
 p60_SRC_phosphorylated -> PLC_gamma_1_phosphorylated_phosphorylated_phosphorylated_phosphorylated
+#position:PI4_5_P_2_simple_molecule:3651.358814069309,776.3630072979709
 #position:CCK2R_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated:2967.75,654.1875
 $CCK2R_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated:((CCK2R & G17_sulfated_default_compartment) | (G17_sulfated_default_compartment | (CCK_sulfated_sulfated_sulfated_default_compartment | CCK2R_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated)))
 CCK2R_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated -> CCK2R_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated
@@ -370,14 +378,18 @@ NFKB1_RELA_IKB_complex_complex -> IKB_alpha__phosphorylated_phosphorylated
 RHOA_GTP -> IKB_alpha__phosphorylated_phosphorylated
 PKC_alpha__phosphorylated -| IKB_alpha__phosphorylated_phosphorylated
 PRKD1_phosphorylated_phosphorylated -> IKB_alpha__phosphorylated_phosphorylated
+#position:Signal_br__peptidase:2772.375,69.87980912104217
 #position:Progastrin_br__ER___Golgi:2884.375,115.37980912104217
 $Progastrin_br__ER___Golgi:(Preprogastrin_br__ER & cat_Progastrin_br__ER___Golgi_106(Signal_br__peptidase))
 Preprogastrin_br__ER -> Progastrin_br__ER___Golgi
 Signal_br__peptidase -> Progastrin_br__ER___Golgi
+#position:Preprogastrin_br__ER:2674.375,115.37980912104217
 #position:G34_Gly_sulfated:3286.375,116.375
 $G34_Gly_sulfated:(Progastrin_br__Golgi_sulfated & cat_G34_Gly_sulfated_107(Prohormone_br__convertase))
 Progastrin_br__Golgi_sulfated -> G34_Gly_sulfated
 Prohormone_br__convertase -> G34_Gly_sulfated
+#position:Carboxypeptidase_E:2981.375,68.875
+#position:Prohormone_br__convertase:3187.375,63.625
 #position:G17___Gly_sulfated:2839.875,256.1464873691066
 $G17___Gly_sulfated:(G34_Gly_sulfated & cat_G17___Gly_sulfated_108(Prohormone_br__convertase))
 G34_Gly_sulfated -> G17___Gly_sulfated
@@ -386,6 +398,7 @@ Prohormone_br__convertase -> G17___Gly_sulfated
 $G34_sulfated:(G34_Gly_sulfated & cat_G34_sulfated_109(PAM))
 G34_Gly_sulfated -> G34_sulfated
 PAM -> G34_sulfated
+#position:PAM:3340.875,213.64648736910658
 #position:G17_sulfated_default_compartment:2996.875,394.1464873691066
 $G17_sulfated_default_compartment:(G17_sulfated_default_compartment | ((G17___Gly_sulfated & cat_G17_sulfated_default_compartment_111(PAM)) | (G34_sulfated & cat_G17_sulfated_default_compartment_110(Prohormone_br__convertase))))
 G34_sulfated -> G17_sulfated_default_compartment
@@ -462,7 +475,9 @@ Complex__HBEGF_EGFR__complex -> SHC1_br__EGFR_phosphorylated
 #position:GRB2:273.25,931.4682150980598
 $GRB2:GRB2
 GRB2 -> GRB2
+#position:SOS1:272.0,1082.4682150980598
 #position:FAK1_phosphorylated:1228.0,1840.0
+#position:CRK:1378.5,2412.0
 #position:CAS_phosphorylated_phosphorylated:1532.25,2413.5
 $CAS_phosphorylated_phosphorylated:cat_CAS_phosphorylated_phosphorylated_132(FAK1_SRC_complex_complex)
 FAK1_SRC_complex_complex -> CAS_phosphorylated_phosphorylated
@@ -474,6 +489,7 @@ $RHOA_GDP:(RHOA_GTP & cat_RHOA_GDP_134(GAP, ARHGAP4))
 RHOA_GTP -> RHOA_GDP
 GAP -> RHOA_GDP
 ARHGAP4 -> RHOA_GDP
+#position:GEF:5752.500583058198,1819.414051884898
 #position:LARG:5413.0,1815.0
 $LARG:G_alpha___q_complex_complex
 G_alpha___q_complex_complex -> LARG
@@ -482,6 +498,7 @@ $RAC1_GDP:(RAC1_GTP & cat_RAC1_GDP_136(GAP, RGS2))
 RAC1_GTP -> RAC1_GDP
 GAP -> RAC1_GDP
 RGS2 -> RAC1_GDP
+#position:GAP:5882.500583058198,1644.414051884898
 #position:RAC1_GTP:5832.000583058198,1885.914051884898
 $RAC1_GTP:((RAC1_GDP & GTP_simple_molecule) & cat_RAC1_GTP_137(GEF, CCK2R_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated, G_alpha_13_complex, G_alpha___q_complex_complex))
 RAC1_GDP -> RAC1_GTP
@@ -508,6 +525,7 @@ GTP_simple_molecule -> CDC42_GTP
 CCK2R_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated -> CDC42_GTP
 HRAS_GTP_complex ->? CDC42_GTP
 GEF -> CDC42_GTP
+#position:PAK1:5860.000583058198,2021.914051884898
 #position:ROCK1_phosphorylated_phosphorylated:5655.000583058198,2023.914051884898
 $ROCK1_phosphorylated_phosphorylated:cat_ROCK1_phosphorylated_phosphorylated_141(RHOA_GTP)
 RHOA_GTP -> ROCK1_phosphorylated_phosphorylated
@@ -522,6 +540,7 @@ $Apoptosis_phenotype:cat_Apoptosis_phenotype_144(Caspase_3, FOXO3_phosphorylated
 Caspase_3 -> Apoptosis_phenotype
 FOXO3_phosphorylated_phosphorylated_phosphorylated -> Apoptosis_phenotype
 FOXO1_phosphorylated_phosphorylated_phosphorylated -> Apoptosis_phenotype
+#position:Pro_caspase_3:5598.4375,3025.5
 #position:BAX:5743.4375,2191.5
 #position:BCL2_CELL:5745.9375,2866.0
 $BCL2_CELL:BAD_BCL2_br_heterodimer_complex_Mitochondria
@@ -533,6 +552,7 @@ BCL2_CELL -> BCL2_Mitochondria
 $BAD_phosphorylated_phosphorylated:(BAD_BCL2L1_br_heterodimer_complex_Mitochondria_1 | BAD_BCL2_br_heterodimer_complex_Mitochondria)
 BAD_BCL2_br_heterodimer_complex_Mitochondria -> BAD_phosphorylated_phosphorylated
 BAD_BCL2L1_br_heterodimer_complex_Mitochondria_1 -> BAD_phosphorylated_phosphorylated
+#position:BAD:5945.4375,2195.5
 #position:Migration_phenotype:1276.9375,2917.5
 $Migration_phenotype:cat_Migration_phenotype_150(CAS_CRK_complex_complex, Paxillin_phosphorylated_phosphorylated, FAK1_SRC_complex_complex, JAK2_phosphorylated_phosphorylated_phosphorylated, PI3K_Class_I_complex, STAT3_phosphorylated_phosphorylated_CELL_1, FAK2_SRC_complex_complex_CELL, MMP9_rna, MMP7_rna, PAI1_rna)
 CAS_CRK_complex_complex -> Migration_phenotype
@@ -551,6 +571,7 @@ G_alpha___q_complex_complex -> JAK2_phosphorylated_phosphorylated_phosphorylated
 #position:IRS1_phosphorylated_CELL:6767.6875,798.0
 $IRS1_phosphorylated_CELL:cat_IRS1_phosphorylated_CELL_152(SRC_br__G_alpha_q_phosphorylated_phosphorylated)
 SRC_br__G_alpha_q_phosphorylated_phosphorylated -> IRS1_phosphorylated_CELL
+#position:PTEN:7130.9375,1113.25
 #position:PI3_4_5_P3_simple_molecule:7230.9375,1178.75
 $PI3_4_5_P3_simple_molecule:(PI4_5_P2_simple_molecule & cat_PI3_4_5_P3_simple_molecule_153(IRS1___PI3K_association_complex))
 PI4_5_P2_simple_molecule -> PI3_4_5_P3_simple_molecule
@@ -566,6 +587,7 @@ PI3_4_5_P3_simple_molecule -> PDPK1_phosphorylated_CELL
 #position:PDPK1_phosphorylated_CELL_1:7002.6875,1281.968532047227
 $PDPK1_phosphorylated_CELL_1:((PDPK1 & cat_PDPK1_phosphorylated_CELL_1_157(PDPK1)) | (PDPK1 & cat_PDPK1_phosphorylated_CELL_1_156(PDPK1)))
 PDPK1 -> PDPK1_phosphorylated_CELL_1
+#position:PDPK1:6722.6875,1280.968532047227
 #position:Protein_synthesis_phenotype:6513.4375,2437.4730149432644
 $Protein_synthesis_phenotype:cat_Protein_synthesis_phenotype_158(EIF4E, RPS6_phosphorylated)
 EIF4E -> Protein_synthesis_phenotype
@@ -584,6 +606,7 @@ p70S6K1_phosphorylated -> RPS6_phosphorylated
 #position:p70S6K1_phosphorylated:6659.6875,2054.4730149432644
 $p70S6K1_phosphorylated:cat_p70S6K1_phosphorylated_162(mTORC1_complex_complex_CELL)
 mTORC1_complex_complex_CELL -> p70S6K1_phosphorylated
+#position:Rapamycin_drug:6536.4375,1552.9730149432642
 #position:PRAS40:6991.1875,1817.9730149432642
 $PRAS40:PRAS40_phosphorylated_phosphorylated_phosphorylated_phosphorylated
 PRAS40_phosphorylated_phosphorylated_phosphorylated_phosphorylated -> PRAS40
@@ -600,6 +623,7 @@ mTORC2_complex_complex -> PRAS40_phosphorylated_phosphorylated_phosphorylated_ph
 #position:RHEB_GDP:6863.9375,1534.9730149432642
 $RHEB_GDP:RHEB_GTP
 RHEB_GTP -> RHEB_GDP
+#position:Wortmannin_drug:7067.71875,1056.5
 #position:STAT3_phosphorylated_phosphorylated_CELL:6456.1875,1085.590909090909
 $STAT3_phosphorylated_phosphorylated_CELL:cat_STAT3_phosphorylated_phosphorylated_CELL_167(JAK2_phosphorylated_phosphorylated_phosphorylated)
 JAK2_phosphorylated_phosphorylated_phosphorylated -> STAT3_phosphorylated_phosphorylated_CELL
@@ -615,6 +639,7 @@ PAK1_phosphorylated -> _beta__catenin_CELL
 #position:_beta__catenin_CELL_1:6985.333333333333,2382.729166666667
 $_beta__catenin_CELL_1:(_beta__catenin_CELL | _beta__catenin_CELL)
 _beta__catenin_CELL -> _beta__catenin_CELL_1
+#position:SNAI1:6809.833333333333,2924.229166666667
 #position:E_cadherin_CELL_1:7163.208333333333,2923.854166666667
 $E_cadherin_CELL_1:E_cadherin_rna
 E_cadherin_rna -> E_cadherin_CELL_1
@@ -630,6 +655,7 @@ PAK1_phosphorylated -> SNAI1_phosphorylated
 $GSK3_beta__phosphorylated:(GSK3_beta_ & cat_GSK3_beta__phosphorylated_177(PAK1_phosphorylated))
 GSK3_beta_ -> GSK3_beta__phosphorylated
 PAK1_phosphorylated -> GSK3_beta__phosphorylated
+#position:GSK3_beta_:6840.0,2587.0
 #position:MAPK1_phosphorylated_phosphorylated:4005.354166666667,2625.1666666666665
 $MAPK1_phosphorylated_phosphorylated:cat_MAPK1_phosphorylated_phosphorylated_178(MAP2K2_phosphorylated_phosphorylated, MAP2K1_phosphorylated_phosphorylated)
 MAP2K2_phosphorylated_phosphorylated -> MAPK1_phosphorylated_phosphorylated
@@ -694,6 +720,7 @@ MAPK1_3_phosphorylated_phosphorylated_CELL -> FOS_phosphorylated_phosphorylated_
 #position:JUN:2259.3125,2977.637245906272
 $JUN:JUN_rna
 JUN_rna -> JUN
+#position:RAF:2642.9654720279714,1807.423076923077
 #position:c_RAF___RAF1:2806.9654720279714,1923.423076923077
 $c_RAF___RAF1:((c_RAF___RAF1 & cat_c_RAF___RAF1_197(PKC, HRAS_GTP_complex)) | RAF)
 RAF -> c_RAF___RAF1
@@ -749,6 +776,7 @@ FOS_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_p
 $JUN_phosphorylated_phosphorylated:(JUN & cat_JUN_phosphorylated_phosphorylated_212(MAPK8_10_phosphorylated_phosphorylated))
 JUN -> JUN_phosphorylated_phosphorylated
 MAPK8_10_phosphorylated_phosphorylated -> JUN_phosphorylated_phosphorylated
+#position:TCF7L2:6658.0,3483.0
 #position:SP3:2214.0,3408.0
 $SP3:(SP3 & cat_SP3_213(MAPK1_3_phosphorylated_phosphorylated_NUCLEUS))
 SP3 -> SP3
@@ -764,6 +792,9 @@ MEF2B -> MEF2
 MEF2 -> MEF2
 MAPK7_phosphorylated_phosphorylated_NUCLEUS -> MEF2
 p38MAPK_phosphorylated_phosphorylated -> MEF2
+#position:MEF2D:5433.0,3488.0
+#position:MEF2C:5433.0,3541.0
+#position:MEF2B:5433.5,3594.5
 #position:PAI2_rna:5402.684210526316,4534.789473684211
 $PAI2_rna:(!MEN1 & cat_PAI2_rna_219(CREB1_phosphorylated, AP1__FOS_JUN__complex))
 CREB1_phosphorylated -> PAI2_rna
@@ -805,16 +836,22 @@ $cAMP_simple_molecule:(cAMP_simple_molecule | (cAMP_simple_molecule | (ATP_simpl
 ATP_simple_molecule -> cAMP_simple_molecule
 Adenylate_br__cyclase -> cAMP_simple_molecule
 cAMP_simple_molecule -> cAMP_simple_molecule
+#position:ATP_simple_molecule:6307.5,907.6875
+#position:PDE:6100.0,968.0
 #position:G_beta_gamma_:5850.0,838.0
 $G_beta_gamma_:(((G_alpha_13_beta_gamma__complex & GTP_simple_molecule) & cat_G_beta_gamma__234(CCK1R)) | ((G_alpha_s_beta_gamma__complex & GTP_simple_molecule) & cat_G_beta_gamma__233(CCK1R)))
 G_alpha_s_beta_gamma__complex -> G_beta_gamma_
 GTP_simple_molecule -> G_beta_gamma_
 CCK1R -> G_beta_gamma_
 G_alpha_13_beta_gamma__complex -> G_beta_gamma_
+#position:AKAP:5739.0,1026.0
+#position:Signal_pre_pro_CCK:3630.0,98.0
+#position:Signalase:3759.0,44.5
 #position:Pre_pro_CCK___ER:3850.0,98.0
 $Pre_pro_CCK___ER:(Signal_pre_pro_CCK & cat_Pre_pro_CCK___ER_235(Signalase))
 Signal_pre_pro_CCK -> Pre_pro_CCK___ER
 Signalase -> Pre_pro_CCK___ER
+#position:Protein_tyrosine_br__sulfotransferase:3923.75,44.875
 #position:Pro_CCK___TGN_sulfated_sulfated_sulfated:4037.0,98.0
 $Pro_CCK___TGN_sulfated_sulfated_sulfated:(Pre_pro_CCK___ER & cat_Pro_CCK___TGN_sulfated_sulfated_sulfated_236(Protein_tyrosine_br__sulfotransferase))
 Pre_pro_CCK___ER -> Pro_CCK___TGN_sulfated_sulfated_sulfated
@@ -831,6 +868,7 @@ Prohormone_br__convertase -> CCK_GRR_sulfated_sulfated_sulfated
 $CCK_G_sulfated_sulfated_sulfated:(CCK_GRR_sulfated_sulfated_sulfated & cat_CCK_G_sulfated_sulfated_sulfated_239(Carboxypeptidase_E))
 CCK_GRR_sulfated_sulfated_sulfated -> CCK_G_sulfated_sulfated_sulfated
 Carboxypeptidase_E -> CCK_G_sulfated_sulfated_sulfated
+#position:Amidating_enzyme:3913.25,155.375
 #position:CCK_83:4065.0,339.0
 $CCK_83:CCK_sulfated_sulfated_sulfated_default_compartment
 CCK_sulfated_sulfated_sulfated_default_compartment -> CCK_83
@@ -852,11 +890,14 @@ FAK2_SRC_complex_complex_CELL -> Survival_phenotype
 #position:Proliferation_phenotype:1622.0,2354.0
 $Proliferation_phenotype:cat_Proliferation_phenotype_246(FAK2_SRC_complex_complex_CELL)
 FAK2_SRC_complex_complex_CELL -> Proliferation_phenotype
+#position:FAK2:1737.0,1790.0
 #position:FAK2_phosphorylated:1738.0,1957.0
 $FAK2_phosphorylated:((FAK2 & cat_FAK2_phosphorylated_249(FAK2)) | ((FAK2 & cat_FAK2_phosphorylated_248(Ca__2__endsuper__ion)) | (FAK2 & cat_FAK2_phosphorylated_247(PKC_theta__phosphorylated))))
 FAK2 -> FAK2_phosphorylated
 PKC_theta__phosphorylated -> FAK2_phosphorylated
 Ca__2__endsuper__ion ->? FAK2_phosphorylated
+#position:Dynamin:2493.75,889.0
+#position:AP2M1:2688.75,883.0
 #position:Beta_arrestin_1_2:2350.25,807.5
 #position:G17_sulfated_Late_endosome:2180.75,1017.0
 $G17_sulfated_Late_endosome:active_CCK2R_Beta_arrestin_complex_complex
@@ -875,10 +916,14 @@ NAADP_simple_molecule -> TPC1_2
 $NAADP_simple_molecule:(NADP_simple_molecule & cat_NAADP_simple_molecule_255(CD38_Lysosome))
 NADP_simple_molecule -> NAADP_simple_molecule
 CD38_Lysosome -> NAADP_simple_molecule
+#position:Glucose_simple_molecule:4716.0,2003.5
+#position:NADP_simple_molecule:4708.0,2091.5
+#position:NAD___simple_molecule:4821.0,1893.5
 #position:CD38_CELL:4794.0,1800.0
 $CD38_CELL:(CD38_CELL & cat_CD38_CELL_256(cGMP_simple_molecule))
 CD38_CELL -> CD38_CELL
 cGMP_simple_molecule -> CD38_CELL
+#position:GMP_simple_molecule:5165.0,1750.5
 #position:cGMP_simple_molecule:5005.0,1750.5
 $cGMP_simple_molecule:(GMP_simple_molecule & cat_cGMP_simple_molecule_257(Guanylate_br__cyclase))
 GMP_simple_molecule -> cGMP_simple_molecule
@@ -907,11 +952,13 @@ $SHP_2_phosphorylated:((SHP_2 & cat_SHP_2_phosphorylated_264(CCK2R_phosphorylate
 SHP_2 -> SHP_2_phosphorylated
 CCK1R -> SHP_2_phosphorylated
 CCK2R_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated -> SHP_2_phosphorylated
+#position:L_Arg_simple_molecule:5190.0,1482.5
 #position:cADPR_simple_molecule:4612.0,1894.5
 $cADPR_simple_molecule:((!Glucose_simple_molecule & NAD___simple_molecule) & cat_cADPR_simple_molecule_265(CD38_CELL))
 NAD___simple_molecule -> cADPR_simple_molecule
 CD38_CELL -> cADPR_simple_molecule
 Glucose_simple_molecule -| cADPR_simple_molecule
+#position:SHP_2:4638.0,1455.0
 #position:_beta__catenin_phosphorylated_CELL:6984.333333333333,2514.3333333333335
 $_beta__catenin_phosphorylated_CELL:(_beta__catenin_CELL_1 & cat__beta__catenin_phosphorylated_CELL_266(CK1))
 _beta__catenin_CELL_1 -> _beta__catenin_phosphorylated_CELL
@@ -931,6 +978,8 @@ Novel_br__PKC -> PKC_theta_
 $PKC_theta__phosphorylated:(!PKC_alpha__phosphorylated & PKC_theta_)
 PKC_theta_ -> PKC_theta__phosphorylated
 PKC_alpha__phosphorylated -| PKC_theta__phosphorylated
+#position:SRC_phosphorylated_phosphorylated:3150.825320781242,1946.9255072979709
+#position:PAK:2996.214835499767,1975.5744927020291
 #position:RAF1_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated:3396.325320781242,1997.9255072979709
 $RAF1_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated:((RAF1_phosphorylated_phosphorylated_phosphorylated & cat_RAF1_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_272(PAK)) | (RAF1_phosphorylated_phosphorylated_phosphorylated & cat_RAF1_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_271(SRC_phosphorylated_phosphorylated)))
 RAF1_phosphorylated_phosphorylated_phosphorylated -> RAF1_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated
@@ -940,6 +989,8 @@ PAK -> RAF1_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphor
 $RAF1_phosphorylated_phosphorylated_phosphorylated:(RAF1_phosphorylated_phosphorylated & cat_RAF1_phosphorylated_phosphorylated_phosphorylated_273(CNKSR1))
 RAF1_phosphorylated_phosphorylated -> RAF1_phosphorylated_phosphorylated_phosphorylated
 CNKSR1 -> RAF1_phosphorylated_phosphorylated_phosphorylated
+#position:S_T_kinase_s__unknown:3611.0,1952.0
+#position:CNKSR1:3196.214835499767,2165.574492702029
 #position:RAF1_phosphorylated:3231.714835499767,2346.074492702029
 $RAF1_phosphorylated:(c_RAF_14_3_3_complex_complex & cat_RAF1_phosphorylated_274(HRAS_GTP_complex))
 c_RAF_14_3_3_complex_complex -> RAF1_phosphorylated
@@ -1021,6 +1072,8 @@ PKC_epsilon_ -> PRKD2_phosphorylated_phosphorylated_phosphorylated
 $PRKD2_phosphorylated_phosphorylated_phosphorylated_phosphorylated:(PRKD2_phosphorylated_phosphorylated_phosphorylated & cat_PRKD2_phosphorylated_phosphorylated_phosphorylated_phosphorylated_294(CK1_delta___epsilon_))
 PRKD2_phosphorylated_phosphorylated_phosphorylated -> PRKD2_phosphorylated_phosphorylated_phosphorylated_phosphorylated
 CK1_delta___epsilon_ -> PRKD2_phosphorylated_phosphorylated_phosphorylated_phosphorylated
+#position:CK1_delta___epsilon_:5702.0,3526.5
+#position:HDAC7:5893.583333333333,3963.166666666666
 #position:HDAC7_phosphorylated:5907.083333333333,4526.666666666666
 $HDAC7_phosphorylated:(HDAC7 & cat_HDAC7_phosphorylated_295(PRKD2_phosphorylated_phosphorylated_phosphorylated_phosphorylated))
 HDAC7 -> HDAC7_phosphorylated
@@ -1064,9 +1117,11 @@ COX2 -> Inflammatory_br__response_phenotype
 $Progastrin_br__Golgi_sulfated:(Progastrin_br__ER___Golgi & cat_Progastrin_br__Golgi_sulfated_306(Carboxypeptidase_E))
 Progastrin_br__ER___Golgi -> Progastrin_br__Golgi_sulfated
 Carboxypeptidase_E -> Progastrin_br__Golgi_sulfated
+#position:RGS2:3293.0,921.0
 #position:PPAR_gamma__phosphorylated:4403.5,2908.5
 $PPAR_gamma__phosphorylated:cat_PPAR_gamma__phosphorylated_307(MAPK1_3_phosphorylated_phosphorylated_CELL)
 MAPK1_3_phosphorylated_phosphorylated_CELL -> PPAR_gamma__phosphorylated
+#position:p190RhoGEF:1150.5,2212.5
 #position:ODC1:6888.777777777777,2292.222222222222
 $ODC1:cat_ODC1_308(EIF4E)
 EIF4E -> ODC1
@@ -1106,12 +1161,14 @@ AA_simple_molecule -| RYR1_2_3
 Ca__2__endsuper__ion -> RYR1_2_3
 Caffeine_drug -> RYR1_2_3
 FK506_drug -> RYR1_2_3
+#position:SHC:1146.0,866.0
 #position:IRS1_phosphorylated_CELL_1:1471.8333333333335,1323.5000000000002
 $IRS1_phosphorylated_CELL_1:IRS1_phosphorylated_CELL
 IRS1_phosphorylated_CELL -> IRS1_phosphorylated_CELL_1
 #position:TRAF6:2581.0,1446.0
 $TRAF6:CCK2R_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated
 CCK2R_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated_phosphorylated ->? TRAF6
+#position:MEN1:5425.272727272727,4096.90909090909
 #position:FOS_rna:2509.5,3117.5
 $FOS_rna:(!ICER & cat_FOS_rna_324(SRF_phosphorylated_NUCLEUS_1, CREB1_phosphorylated, ELK1_phosphorylated, RHOA_GTP, SAP1))
 SRF_phosphorylated_NUCLEUS_1 -> FOS_rna
@@ -1143,6 +1200,9 @@ PKA_Holoenzyme_II_complex -> PKA_C_alpha___beta___gamma__CELL
 #position:PKA_C_alpha___beta___gamma__NUCLEUS:6197.0,3368.0
 $PKA_C_alpha___beta___gamma__NUCLEUS:PKA_C_alpha___beta___gamma__CELL
 PKA_C_alpha___beta___gamma__CELL -> PKA_C_alpha___beta___gamma__NUCLEUS
+#position:Caffeine_drug:3858.0,882.0
+#position:FK506_drug:3881.0,1400.0
+#position:ARHGAP4:5652.0,1821.0
 #position:BCL2L1_Mitochondria:5304.5,2402.5
 $BCL2L1_Mitochondria:(BCL2L1_CELL | ROCK1_phosphorylated_phosphorylated)
 ROCK1_phosphorylated_phosphorylated -> BCL2L1_Mitochondria
@@ -1182,6 +1242,7 @@ Conventional_br__PKC -> LYN
 #position:BCL2L1_CELL:5421.333333333333,2861.0
 $BCL2L1_CELL:BAD_BCL2L1_br_heterodimer_complex_Mitochondria_1
 BAD_BCL2L1_br_heterodimer_complex_Mitochondria_1 -> BCL2L1_CELL
+#position:CSK:1620.0,994.0
 #position:ITGB1_rna:6019.0,1217.5
 $ITGB1_rna:cat_ITGB1_rna_343(PI3K_Class_I_complex)
 PI3K_Class_I_complex -> ITGB1_rna
@@ -1207,6 +1268,7 @@ AP1__FOS_JUN__complex -> GAS_REBP2
 #position:GAS_REBP3:3055.5,4290.5
 $GAS_REBP3:cat_GAS_REBP3_350(AP1__FOS_JUN__complex)
 AP1__FOS_JUN__complex -> GAS_REBP3
+#position:KLF4:2809.0,4130.0
 #position:SAP1:5020.0,3561.0
 $SAP1:(SAP1 & cat_SAP1_351(MAPK1_3_phosphorylated_phosphorylated_NUCLEUS))
 SAP1 -> SAP1
@@ -1251,6 +1313,10 @@ NFKB1_RELA_heterodimer_complex -> BIRC3_gene
 $MAPK1_3:(MAPK1_3_phosphorylated_phosphorylated_NUCLEUS & cat_MAPK1_3_363(MKP))
 MAPK1_3_phosphorylated_phosphorylated_NUCLEUS -> MAPK1_3
 MKP -> MAPK1_3
+#position:MKP:4326.0,3315.0
+#position:PP2A:2813.0,3203.0
+#position:PP2B_NUCLEUS:2953.0,3202.0
+#position:PP2B_NUCLEUS_1:4421.0,3623.0
 #position:uPA_rna:477.5,4529.5
 $uPA_rna:cat_uPA_rna_364(p38MAPK_phosphorylated_phosphorylated)
 p38MAPK_phosphorylated_phosphorylated -> uPA_rna
@@ -1301,13 +1367,18 @@ AKT1_PIP3_complex_CELL -> FOXO1_phosphorylated_phosphorylated_phosphorylated
 #position:FOXO3_phosphorylated_phosphorylated_phosphorylated:5895.0,3162.625
 $FOXO3_phosphorylated_phosphorylated_phosphorylated:cat_FOXO3_phosphorylated_phosphorylated_phosphorylated_378(AKT1_PIP3_complex_CELL)
 AKT1_PIP3_complex_CELL -> FOXO3_phosphorylated_phosphorylated_phosphorylated
+#position:CK1:6885.0,2454.0
+#position:Phospholipid_simple_molecule:3772.5,801.75
 #position:Regeneration_br_hypoplasia_phenotype:4639.0,1580.0
 $Regeneration_br_hypoplasia_phenotype:cat_Regeneration_br_hypoplasia_phenotype_379(NO_simple_molecule)
 NO_simple_molecule -> Regeneration_br_hypoplasia_phenotype
+#position:CaM:4214.0,1077.0
+#position:CaMKK:4407.0,1081.0
 #position:CaMKIV_phosphorylated:4907.0,1221.0
 $CaMKIV_phosphorylated:cat_CaMKIV_phosphorylated_380(Ca_CaM_complex_CELL, CaMKK)
 Ca_CaM_complex_CELL -> CaMKIV_phosphorylated
 CaMKK -> CaMKIV_phosphorylated
+#position:CaN:4312.0,1085.0
 #position:NFAT1_phosphorylated:4392.0,3102.0
 $NFAT1_phosphorylated:NFAT1_CELL
 NFAT1_CELL -> NFAT1_phosphorylated

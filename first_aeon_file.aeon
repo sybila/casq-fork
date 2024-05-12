@@ -1,5 +1,5 @@
-#name:
-#description:
+#name: example
+#description: example model
 #position:s2:343.0,150.0
 $s2:(s1 & cat_s2_0(s3))
 s1 ->(STATE_TRANSITION) s2

@@ -37,9 +37,9 @@ class BooleanFormulaBuilder:
         modifier reflects the state of the modifiers
         previous is a function for other transitions
         """
-        self.modifier = "_"
-        self.reactant = "_"
-        self.previous = "_"
+        self.modifier = ""
+        self.reactant = ""
+        self.previous = ""
 
     def function(self):
         """Return self.previous."""
@@ -50,7 +50,7 @@ class BooleanFormulaBuilder:
 
         A reaction may only take place if all reactants/activators are present.
         """
-        if self.reactant == "_":
+        if self.reactant == "":
             self.reactant = clean_name(vid)
         else:
             self.reactant = "({current} & {vid})".format(
@@ -59,7 +59,7 @@ class BooleanFormulaBuilder:
 
     def add_inhibitor(self, vid):
         """If any inhibitor is active, the reaction is stopped."""
-        if self.reactant == "_":
+        if self.reactant == "":
             self.reactant = "!" + clean_name(vid)
         else:
             self.reactant = "(!{vid} & {current})".format(
@@ -68,7 +68,7 @@ class BooleanFormulaBuilder:
 
     def add_transition(self):
         """AddTransition."""
-        self.reactant = "_"
+        self.reactant = ""
 
     def add_catalysis(self, cat_list):
         """All non-reactants, non-inhibitors in casq are treated as catalysts.
@@ -79,13 +79,13 @@ class BooleanFormulaBuilder:
         if len(cat_list) == 0:
             raise RuntimeError("Empty list of catalyzers.")
 
-        base = "_"
+        base = ""
         for vid in cat_list:
-            if base == "_":
+            if base == "":
                 base = clean_name(vid)
             else:
                 base = "({vid} | {base})".format(vid=clean_name(vid), base=base)
-        if self.modifier == "_":
+        if self.modifier == "":
             self.modifier = base
         else:
             self.modifier = "({base} & {current})".format(
@@ -99,9 +99,9 @@ class BooleanFormulaBuilder:
 
         clean_cat_list = [clean_name(cat) for cat in cat_list]
 
-        cat_list_str = "_"
+        cat_list_str = ""
         for cat in clean_cat_list:
-            if cat_list_str == "_":
+            if cat_list_str == "":
                 cat_list_str = cat
             else:
                 cat_list_str = "{cat_list_str}, {cat}".format(cat=cat, cat_list_str=cat_list_str)
@@ -109,7 +109,7 @@ class BooleanFormulaBuilder:
         fun_name = "cat_{target}_{tran_id}".format(target=clean_name(target), tran_id=tran_id)
         unknown_fun_str = "{fun_name}({cat_list_str})".format(fun_name=fun_name, cat_list_str=cat_list_str)
 
-        if self.modifier == "_":
+        if self.modifier == "":
             self.modifier = unknown_fun_str
         else:
             self.modifier = "({current} & {unknown_fun_str})".format(
@@ -121,13 +121,13 @@ class BooleanFormulaBuilder:
         if len(cat_list) == 0:
             raise RuntimeError("Empty list of required elements.")
 
-        base = "_"
+        base = ""
         for vid in cat_list:
-            if base == "_":
+            if base == "":
                 base = clean_name(vid)
             else:
                 base = "({vid} & {base})".format(vid=clean_name(vid), base=base)
-        if self.modifier == "_":
+        if self.modifier == "":
             self.modifier = base
         else:
             self.modifier = "({base} & {current})".format(
@@ -141,24 +141,24 @@ class BooleanFormulaBuilder:
         The catalyst-modifiers default to 1, the transition defaults to 1
         Resets the transition formula to 1.
         """
-        if self.modifier == "_" and self.reactant == "_":
+        if self.modifier == "" and self.reactant == "":
             # TODO: This should probably be a warning/error?
             function = "true"
-        if self.modifier == "_":
+        if self.modifier == "":
             function = self.reactant
-        elif self.reactant == "_":
+        elif self.reactant == "":
             function = self.modifier
         else:
             function = "({transition} & {current})".format(
                 transition=self.reactant, current=self.modifier
         )
 
-        if self.previous == "_":
+        if self.previous == "":
             self.previous = function
         else:
             self.previous = "({f} | {old})".format(f=function, old=self.previous)
-        self.reactant = "_"
-        self.modifier = "_"
+        self.reactant = ""
+        self.modifier = ""
 
 
 class MultiStateFormulaBuilder:
@@ -227,7 +227,7 @@ def aeon_relationship(source, target, idMap, count, relationship_type):
     if relationship_type in ["INHIBITION", "NEGATIVE_INFLUENCE"]:
         relationship['type'] = "inhibition"
 
-    print(relationship)
+    #print(relationship)
     return relationship
 
 
@@ -263,7 +263,7 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
     """Return all AEON relationships."""
 
     transition_id = itertools.count()
-    relationships = []
+    #relationships = []
     allFormulae = {}
     variables = {}
     for item_vid in info.keys():
@@ -272,9 +272,13 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
             item + ", varid = " + str(idMap[item]) + ", name = " + info[item]["name"]
         )"""
         # skip if there are no transitions
+        # problem!
+        """
         if len(info[item_vid]["transitions"]) == 0:
             logger.debug(item_vid + "-No transitions")
+            print("here")
             continue
+        """
         product_name = info[item_vid]['clean_name']
         """
         if granularity == 1:
@@ -282,6 +286,7 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
         else:
             formula = multiStateFormulaBuilder()
         """
+        relationships = []
         formula = BooleanFormulaBuilder()
 
         # variables may be missing from the "simplified" model.
@@ -294,6 +299,7 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
             # reactant
             for reactant_vid in transition[1]:
                 if ignoreSelfLoops and reactant_vid == item_vid:
+                    print("here")
                     continue
                 if reactant_vid in idMap:
                     reactant_name = info[reactant_vid]["clean_name"]
@@ -315,6 +321,7 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
             # now modifiers
             if len(transition[2]) == 0:
                 formula.finish_transition()
+                print("here")
                 continue
             modifiers = transition[2]
             # catalysts are a special case
@@ -330,6 +337,7 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
 
             for impact, modifier_vid in modifiers:
                 if ignoreSelfLoops and modifier_vid == item_vid:
+                    print("here")
                     continue
                 """
                 if impact == "BOOLEAN_LOGIC_GATE_AND":
@@ -380,7 +388,7 @@ def get_relationships(info, idMap, count, granularity, ignoreSelfLoops):
         formula_prev = formula.function()
 
         variables[item_vid] = {'Formula': formula_prev, 'Relationships': relationships}
-        relationships = []
+        #relationships = []
 
     return variables
 
@@ -414,19 +422,19 @@ def clean_name(name):
 def aeon_model_variable(var, var_d, info):
     """Return AEON model variable as a string."""
 
-    position = "#position:{name}:{position_x},{position_y}\n".format(name=(info[var]['clean_name']),
+    position_line = "#position:{name}:{position_x},{position_y}\n".format(name=(info[var]['clean_name']),
                                                                      position_x=float(info[var]["x"]),
                                                                      position_y=float(info[var]["y"]))
     
     # If there are no transitions or the function is empty, this variable is an "input"
     # and has an empty update function.
     formula = var_d['Formula']
-    if formula != "_" and formula != "":
-        formula = "${name}:{formula}\n".format(name=info[var]['clean_name'], formula=formula)
+    if formula != "":
+        formula_line = "${name}:{formula}\n".format(name=info[var]['clean_name'], formula=formula)
     else:
-        formula = ""
+        formula_line = ""
 
-    relationships = ""
+    relationships_lines = ""
 
     for relationship in var_d['Relationships']:
         rec_type = "-"
@@ -446,9 +454,9 @@ def aeon_model_variable(var, var_d, info):
             type=rec_type,
             to_v=clean_name(relationship['to_variable']))
 
-        relationships += relationship_str
+        relationships_lines += relationship_str
 
-    return position + formula + relationships
+    return position_line + formula_line + relationships_lines
 
 
 def bma_layout_variable(vid, info_variable, fill=None, description=""):
@@ -524,14 +532,16 @@ def write_aeon(
     id_generator = itertools.count(1)
 
     id_map = {k: next(id_generator) for k in info.keys()}
+    print(id_map)
 
     # add clean variables' names into info object
     clean_names(info)
-
-    relationships_dic = get_relationships(
+    print(info)
+    relationships_dic= get_relationships(
         info, id_map, id_generator, granularity, ignoreSelfLoops
     )
-
+    print(relationships_dic)
+    #print(relationships_dic['relationships'])
     """logger.debug(formula)"""
 
     variables_model_str = [
@@ -548,6 +558,7 @@ def write_aeon(
         for v in info.keys()
     ]
 
+
     name = "#name:\n"
     description = "#description:\n"
 
@@ -557,7 +568,7 @@ def write_aeon(
         for var in variables_model_str:
             outfile.write(var)
 
-    print(info)
+    #print(info)
 
 
     """
