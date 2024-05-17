@@ -23,7 +23,7 @@ from typing import List
 
 from loguru import logger  # type: ignore
 
-from casq import bmaExport, aeonExportAEON, version
+from casq import bmaExport, aeonExport, version
 from casq.readCD import read_celldesigner
 from casq.simplify import simplify_model
 from casq.write import write_csv, write_qual
@@ -194,8 +194,8 @@ def main(argv: List[str] = None):
             args.outfile, info, args.granularity, args.input, False, args.colourConstant
         )
     if args.aeon:
-        aeonExportAEON.write_aeon(
-            args.outfile, info, args.granularity, args.input, False, args.colourConstant
+        aeonExport.write_aeon(
+            args.outfile, info, False
         )
     else:
         write_qual(

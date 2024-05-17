@@ -1,4 +1,4 @@
-"""Convert CellDesigner models to .aeon format.
+"""Convert CellDesigner models to Boolean models in .aeon format.
 
 Copyright (C) 2024 xfrak@fi.muni.cz
 
@@ -150,8 +150,7 @@ class BooleanFormulaBuilder:
             function = self.modifier
         else:
             function = "({transition} & {current})".format(
-                transition=self.reactant, current=self.modifier
-        )
+                transition=self.reactant, current=self.modifier)
 
         if self.previous == "":
             self.previous = function
