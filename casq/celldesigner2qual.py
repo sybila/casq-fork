@@ -44,7 +44,11 @@ def map_to_model(map_filename: str, model_filename: str, bma=False):
 def main(argv: List[str] = None):
     """Run conversion using the CLI given first argument."""
     parser = argparse.ArgumentParser(
-        description=" ".join(__doc__.splitlines()[:3]) + " GPLv3"
+        description="""Convert CellDesigner models to SBML-qual with a rather strict semantics.
+   Copyright (C) 2019, Sylvain.Soliman@inria.fr GPLv3.\n 
+   
+   Convert CellDesigner models to partially specified Boolean networks in .aeon format.
+   Copyright (C) 2024, xfrak@fi.muni.cz GPLv3."""
     )
     parser.add_argument(
         "-v",
@@ -166,7 +170,7 @@ def main(argv: List[str] = None):
         help="When exporting to BMA, colour all variables pink (defaults to colour by compartment)",
     )
     parser.add_argument(
-        "outfile", nargs="?", default=sys.stdout, help="SBML-Qual/BMA json File"
+        "outfile", nargs="?", default=sys.stdout, help="SBML-Qual/BMA json File/.aeon File"
     )
     if argv:
         args = parser.parse_args(argv)
