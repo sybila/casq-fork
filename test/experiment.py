@@ -5,7 +5,7 @@ from casq.celldesigner2qual import write_qual
 from casq.readCD import read_celldesigner
 from casq.simplify import simplify_model
 
-
+"""
 # generate models
 for filename in os.listdir(os.getcwd() + "/../cd_maps/"):
     with open(os.path.join(os.getcwd() + "/../cd_maps/", filename), 'r', encoding="utf-8") as f:
@@ -19,7 +19,7 @@ for filename in os.listdir(os.getcwd() + "/../cd_maps/"):
         file = file_suf[0]
         write_aeon_2("./../aeon_models/model_{fn}.aeon".format(fn=file), info)
         write_qual("./../aeon_models/model_{fn}.sbml".format(fn=file), info, "1000", "1000")
-
+"""
 
 
 """
