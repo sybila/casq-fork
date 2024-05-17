@@ -137,7 +137,7 @@ def main(argv: List[str] = None):
         "-a",
         "--aeon",
         action="store_true",
-        help="Output to AEON format",
+        help="Output to partially specified Boolean networks in .aeon format",
     )
     parser.add_argument(
         "-b",

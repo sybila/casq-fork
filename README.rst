@@ -54,8 +54,9 @@
 `SBML-Qual`_ with a rather strict semantics defined in a
 `published article`_.
 
-This extension allows generating partially specified Boolean networks in .aeon format.
-Possible use in the `AEON`_ tool for further analyses.
+This extension allows also generating partially specified Boolean networks in .aeon
+format from `CellDesigner`_ models. Possible use in `AEON`_ tool for further
+analyses.
 
 .. _`CellDesigner`: http://celldesigner.org
 .. _`SBML-Qual`: http://sbml.org
@@ -113,3 +114,4 @@ Just follow the instructions::
                            set to this value
      -C, --colourConstant  When exporting to BMA, colour all variables pink
                            (defaults to colour by compartment)
+
