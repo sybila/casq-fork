@@ -224,10 +224,6 @@ def get_relationships(info, id_map, count, ignore_self_loops):
     variables = {}
 
     for item_vid in info.keys():
-        # skip if there are no transitions
-        if len(info[item_vid]["transitions"]) == 0:
-            logger.debug(item_vid + "-No transitions")
-            continue
 
         product_name = info[item_vid]['clean_name']
         relationships = []

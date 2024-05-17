@@ -47,10 +47,13 @@ SHIP_1_phosphorylated -> IgG_complex
 $LAT1_Gads_SLP_76_Vav1_Btk_slash_PLCG1_Grb2_Shc_SOS_H_RAS_RAF_1_complex:(LAT1_Gads_SLP_76_Vav1_Btk_slash_PLCG1_Grb2_Shc_SOS_H_RAS_complex & RAF1_Cytosol)
 LAT1_Gads_SLP_76_Vav1_Btk_slash_PLCG1_Grb2_Shc_SOS_H_RAS_complex -> LAT1_Gads_SLP_76_Vav1_Btk_slash_PLCG1_Grb2_Shc_SOS_H_RAS_RAF_1_complex
 RAF1_Cytosol -> LAT1_Gads_SLP_76_Vav1_Btk_slash_PLCG1_Grb2_Shc_SOS_H_RAS_RAF_1_complex
+#position:Shc_Grb2_complex:4966.0,1099.0
 #position:LAT1_Gads_SLP_76_Grb2_Shc_SOS_complex:1275.5,559.5
 $LAT1_Gads_SLP_76_Grb2_Shc_SOS_complex:(LAT1_Gads_Grb2_Shc_SOS_complex & SLP_76_phosphorylated)
 LAT1_Gads_Grb2_Shc_SOS_complex -> LAT1_Gads_SLP_76_Grb2_Shc_SOS_complex
 SLP_76_phosphorylated -> LAT1_Gads_SLP_76_Grb2_Shc_SOS_complex
+#position:LAT2_Grb2_complex:4404.586538461538,557.5
+#position:Dok1_RasGAP_complex:4764.0,1085.0
 #position:LAT1_Gads_SLP_76_Vav1_Btk_slash_PLCG1_Grb2_Shc_SOS_H_RAS_complex:2811.5,560.5
 $LAT1_Gads_SLP_76_Vav1_Btk_slash_PLCG1_Grb2_Shc_SOS_H_RAS_complex:(!FcGRIIB_SHIP_1_Shc_Grb2_space_and_space_Dok1_RasGAP_complex & (H_RAS_Plasma_space_Membrane & LAT1_Gads_SLP_76_Vav1_Btk_slash_PLCG1_Grb2_Shc_SOS_complex))
 H_RAS_Plasma_space_Membrane -> LAT1_Gads_SLP_76_Vav1_Btk_slash_PLCG1_Grb2_Shc_SOS_H_RAS_complex
@@ -130,10 +133,13 @@ IKK_Beta_phosphorylated -> I_kappa_Beta___F_kappa_B_complex
 $PKC_space_Theta_space_DAG_complex:(DAG_simple_molecule & PKC_space_Theta)
 DAG_simple_molecule -> PKC_space_Theta_space_DAG_complex
 PKC_space_Theta -> PKC_space_Theta_space_DAG_complex
+#position:PIP2_simple_molecule:247.5,639.0
+#position:IP3R:561.0,1106.0
 #position:Ca2__ion:43.0,713.0
 $Ca2__ion:(cat_Ca2__ion_35(Ca2_space_channel) | cat_Ca2__ion_34(CRAC))
 CRAC -> Ca2__ion
 Ca2_space_channel -> Ca2__ion
+#position:Syk:1931.5,652.5
 #position:Ca2_space_channel:517.375,1281.875
 $Ca2_space_channel:(Ca2_space_channel & cat_Ca2_space_channel_36(IP3_simple_molecule))
 Ca2_space_channel -> Ca2_space_channel
@@ -142,12 +148,17 @@ IP3_simple_molecule -> Ca2_space_channel
 #position:c_JUN_phosphorylated_nucleus:2963.0,1929.0
 $c_JUN_phosphorylated_nucleus:c_JUN_phosphorylated_nucleus_1
 c_JUN_phosphorylated_nucleus_1 -> c_JUN_phosphorylated_nucleus
+#position:IgG:5171.5,38.0
+#position:IgE:2068.5,15.0
+#position:PLCG1:174.0,762.0
+#position:Csk:3558.375,739.5
 #position:IKK_Beta_phosphorylated:706.25,881.0
 $IKK_Beta_phosphorylated:cat_IKK_Beta_phosphorylated_39(PKC_space_Theta_space_DAG_complex)
 PKC_space_Theta_space_DAG_complex -> IKK_Beta_phosphorylated
 #position:SLP_76_phosphorylated:1697.5,927.5
 $SLP_76_phosphorylated:cat_SLP_76_phosphorylated_40(FceRI_Syk_complex_Cytosol_1)
 FceRI_Syk_complex_Cytosol_1 -> SLP_76_phosphorylated
+#position:RASGRP1:20.0,378.5
 #position:MEK2_MAP2K2__phosphorylated:3397.5,1217.5
 $MEK2_MAP2K2__phosphorylated:cat_MEK2_MAP2K2__phosphorylated_41(LAT1_Gads_SLP_76_Vav1_Btk_slash_PLCG1_Grb2_Shc_SOS_H_RAS_RAF_1_complex)
 LAT1_Gads_SLP_76_Vav1_Btk_slash_PLCG1_Grb2_Shc_SOS_H_RAS_RAF_1_complex -> MEK2_MAP2K2__phosphorylated
@@ -156,6 +167,8 @@ $Btk_phosphorylated_Cytosol:((Btk & cat_Btk_phosphorylated_Cytosol_43(FceRI_Syk_
 Btk -> Btk_phosphorylated_Cytosol
 Fyn_phosphorylated_palmytoylated -> Btk_phosphorylated_Cytosol
 FceRI_Syk_complex_Cytosol_1 -> Btk_phosphorylated_Cytosol
+#position:PAK2:2498.0,920.0
+#position:Vav1:1437.5,902.5
 #position:Lyn_phosphorylated_palmytoylated:2191.5,629.0
 $Lyn_phosphorylated_palmytoylated:!cCbl
 cCbl -| Lyn_phosphorylated_palmytoylated
@@ -165,6 +178,7 @@ I_kappa_Beta___F_kappa_B_complex -> I_kB_phosphorylated
 #position:FceRI_phosphorylated_phosphorylated:2012.0,30.5
 $FceRI_phosphorylated_phosphorylated:cat_FceRI_phosphorylated_phosphorylated_46(Lyn_phosphorylated_palmytoylated)
 Lyn_phosphorylated_palmytoylated -> FceRI_phosphorylated_phosphorylated
+#position:Rac1:564.0,345.0
 #position:LAT2_phosphorylated_palmytoylated:3454.0,597.5
 $LAT2_phosphorylated_palmytoylated:cat_LAT2_phosphorylated_palmytoylated_47(FceRI_Syk_complex_Cytosol_1, Lyn_phosphorylated_palmytoylated)
 FceRI_Syk_complex_Cytosol_1 -> LAT2_phosphorylated_palmytoylated
@@ -185,11 +199,16 @@ Fyn_phosphorylated_palmytoylated -> Gab2_phosphorylated
 #position:SHIP_1_phosphorylated:2459.0,1455.0
 $SHIP_1_phosphorylated:cat_SHIP_1_phosphorylated_52(Lyn_phosphorylated_palmytoylated)
 Lyn_phosphorylated_palmytoylated -> SHIP_1_phosphorylated
+#position:CRAC:42.0,633.0
 #position:Elk1_phosphorylated:3909.5,1894.5
 $Elk1_phosphorylated:cat_Elk1_phosphorylated_53(Erk_MAPK1_3__phosphorylated, c_JUN_phosphorylated_nucleus_1, JNK_phosphorylated)
 Erk_MAPK1_3__phosphorylated -> Elk1_phosphorylated
 c_JUN_phosphorylated_nucleus_1 -> Elk1_phosphorylated
 JNK_phosphorylated -> Elk1_phosphorylated
+#position:cCbl:2153.5714285714284,827.0
+#position:Btk_phosphorylated_Plasma_space_Membrane:2456.5,584.5
+#position:RAF1_Cytosol:3483.5,1015.5
+#position:Btk:905.0,924.0
 #position:LAT1_phosphorylated_phosphorylated_phosphorylated_phosphorylated_palmytoylated:1698.0,588.5
 $LAT1_phosphorylated_phosphorylated_phosphorylated_phosphorylated_palmytoylated:cat_LAT1_phosphorylated_phosphorylated_phosphorylated_phosphorylated_palmytoylated_54(FceRI_Syk_complex_Cytosol_1)
 FceRI_Syk_complex_Cytosol_1 -> LAT1_phosphorylated_phosphorylated_phosphorylated_phosphorylated_palmytoylated
@@ -202,6 +221,9 @@ FcGRIIB_SHIP_1_Shc_Grb2_space_and_space_Dok1_RasGAP_complex -| PIP3_simple_molec
 $Shc_phosphorylated:cat_Shc_phosphorylated_56(Lyn_phosphorylated_palmytoylated, FceRI_Syk_complex_Cytosol_1)
 Lyn_phosphorylated_palmytoylated -> Shc_phosphorylated
 FceRI_Syk_complex_Cytosol_1 -> Shc_phosphorylated
+#position:Bcr:1635.0,1045.0
+#position:Akt:124.0,360.5
+#position:H_RAS_Plasma_space_Membrane:764.5,242.5
 #position:IP3_simple_molecule:477.0,857.5
 $IP3_simple_molecule:(IP3_simple_molecule | (PIP2_simple_molecule & cat_IP3_simple_molecule_57(PLCG1_phosphorylated, LAT1_Gads_SLP_76_Vav1_Btk_slash_PLCG1_Grb2_Shc_SOS_complex)))
 PIP2_simple_molecule -> IP3_simple_molecule
@@ -249,6 +271,8 @@ Lyn_phosphorylated_palmytoylated -> Cbp_PAG_phosphorylated_palmytoylated
 $JNK_phosphorylated:cat_JNK_phosphorylated_70(MKK7_MAP2K7__phosphorylated, MEK4_MAP2K4__phosphorylated)
 MKK7_MAP2K7__phosphorylated -> JNK_phosphorylated
 MEK4_MAP2K4__phosphorylated -> JNK_phosphorylated
+#position:PKC_space_Theta:427.0,777.0
+#position:GRAP2:1656.5,813.5
 #position:RAF1_Golgi_space_Apparatus:1161.0,1548.5
 $RAF1_Golgi_space_Apparatus:RAF1_Cytosol
 RAF1_Cytosol -> RAF1_Golgi_space_Apparatus
@@ -258,6 +282,7 @@ NFAT_Cytosol -> NFAT_nucleus
 #position:NFAT_Cytosol:398.0,1455.0
 $NFAT_Cytosol:cat_NFAT_Cytosol_73(Calmodulin_Calcineurin_complex)
 Calmodulin_Calcineurin_complex -> NFAT_Cytosol
+#position:PI_3K:4550.0,959.5
 #position:MEKK1_MAP3K1__phosphorylated:2747.5,1036.5
 $MEKK1_MAP3K1__phosphorylated:cat_MEKK1_MAP3K1__phosphorylated_74(LAT1_Gads_SLP_76_Vav1_Btk_slash_PLCG1_Grb2_Shc_SOS_Rac1_PAK2_complex)
 LAT1_Gads_SLP_76_Vav1_Btk_slash_PLCG1_Grb2_Shc_SOS_Rac1_PAK2_complex -> MEKK1_MAP3K1__phosphorylated
