@@ -29,8 +29,6 @@ MAP4K4_phosphorylated -> IKK_complex
 MAP3K7_phosphorylated -> IKK_complex
 TRAF3IP2_phosphorylated -| IKK_complex
 PRRT2 -> IKK_complex
-#position:MAPK3_complex:1412.5,1780.0
-#position:NFKB1_MAP3K8_complex:2970.0,2552.5
 #position:NFKB_complex:4205.0,3150.0
 $NFKB_complex:((!COMMD1 & IKBA_NFKB1_RELA_complex) & cat_NFKB_complex_6(IKK_complex))
 IKBA_NFKB1_RELA_complex -> NFKB_complex
@@ -109,7 +107,6 @@ CXCL16 -> CXCR6_ARRB1_complex
 $IL1A_IL1R1_complex:(IL1A & IL1R1)
 IL1A -> IL1A_IL1R1_complex
 IL1R1 -> IL1A_IL1R1_complex
-#position:PVRL1_3_PTPRC_complex:7080.0,735.0
 #position:DOCK2_CRKL_complex:560.0,1480.0
 $DOCK2_CRKL_complex:(DOCK2 & CRKL_phosphorylated)
 DOCK2 -> DOCK2_CRKL_complex
@@ -134,16 +131,13 @@ IL18 -> IL18R_IL18_complex
 $IL1B_IL1R1_complex:(IL1B_Extracellular_Space & IL1R1)
 IL1B_Extracellular_Space -> IL1B_IL1R1_complex
 IL1R1 -> IL1B_IL1R1_complex
-#position:FAS_FASL_complex:5165.0,730.0
 #position:WNT_FRIZZLED_complex:3292.5,735.5
 $WNT_FRIZZLED_complex:WNT5A
 WNT5A -> WNT_FRIZZLED_complex
 #position:ITGAL_ITGB2_ICAM2_3_complex:3608.0,734.0
-#position:CTNNB_CK1A_AXIN_GSK3B_APC_complex:4350.0,1478.5
 #position:IL17_IL17R_complex:5305.0,730.0
 $IL17_IL17R_complex:IL17A_Extracellular_Space
 IL17A_Extracellular_Space -> IL17_IL17R_complex
-#position:IKBA_NFKB1_RELA_complex:3850.0,3143.5
 #position:NFKB_N_complex:4150.0,4005.0
 $NFKB_N_complex:NFKB_complex
 NFKB_complex -> NFKB_N_complex
@@ -201,7 +195,6 @@ IRF9 -> ISGF3_complex
 $IRAK4:(IRAK4 & cat_IRAK4_54(MYD88))
 IRAK4 -> IRAK4
 MYD88 -> IRAK4
-#position:TIRAP:3230.0,1130.0
 #position:MYD88:3011.5,1003.5
 $MYD88:(MYD88 & cat_MYD88_55(TLR5, IL1A_IL1R1_complex, IL1B_IL1R1_complex))
 MYD88 -> MYD88
@@ -213,8 +206,6 @@ $TICAM1:((!SARM1 & TICAM1) & cat_TICAM1_56(TICAM2))
 TICAM1 -> TICAM1
 SARM1 -| TICAM1
 TICAM2 -> TICAM1
-#position:RIPK1:5384.5,1360.5
-#position:TRAF6:5453.0,1221.5
 #position:TRAF3:2940.5,2877.0
 $TRAF3:(TRAF3 & cat_TRAF3_57(TICAM1))
 TRAF3 -> TRAF3
@@ -296,7 +287,6 @@ NFKB_N_complex -> TNFAIP3_rna
 #position:ADM_rna:1840.0,5153.5
 #position:JUNB_rna:2535.0,4610.0
 #position:NRF1:3150.0,4040.0
-#position:SARM1:2910.0,1235.0
 #position:MAP3K14_phosphorylated:3910.0,2195.0
 $MAP3K14_phosphorylated:cat_MAP3K14_phosphorylated_81(TAB1_TAB2_TAK1_complex, MAP3K7_phosphorylated)
 TAB1_TAB2_TAK1_complex -> MAP3K14_phosphorylated
@@ -311,7 +301,6 @@ MIR155_rna -| MMP3_rna
 $MMP1_rna:(!MIR155_rna & cat_MMP1_rna_84(ETS1_phosphorylated))
 MIR155_rna -| MMP1_rna
 ETS1_phosphorylated -> MMP1_rna
-#position:CDKN1A:1960.0,2930.0
 #position:CCNA2:1810.0,3065.0
 $CCNA2:(!CDKN1A & CCNA2)
 CCNA2 -> CCNA2
@@ -376,7 +365,6 @@ MIR146A_rna -| TRAF6_rna
 #position:IRAK1_rna:5095.0,4505.0
 $IRAK1_rna:!MIR146A_rna
 MIR146A_rna -| IRAK1_rna
-#position:TNF_Extracellular_Space:6090.0,605.0
 #position:TRAF2:5858.0,968.0
 $TRAF2:(TRAF2 & cat_TRAF2_100(IL1A_IL1R1_complex))
 TRAF2 -> TRAF2
@@ -402,7 +390,6 @@ FYN_CD3E_complex -> GRB2
 KLRK1_HCST_MICB_complex -> GRB2
 CD28 -> GRB2
 IGF1_IGF1R_complex -> GRB2
-#position:GAB1:1050.0,1490.0
 #position:PIK3R5_phosphorylated:388.0,1148.5
 $PIK3R5_phosphorylated:(!LCK & cat_PIK3R5_phosphorylated_104(GAB1, CSK, EGF_EGFR_complex, FGF1_FGFR1_complex, GNB1, KLRK1_HCST_MICB_complex, ZAP70_phosphorylated, CD19, CD28, PDGFA_PDGFRA_complex, GAB2_phosphorylated, JAK3, RAC1_2, NRAS, GNAI3, TRAF2, JAK1))
 GAB1 -> PIK3R5_phosphorylated
@@ -433,8 +420,6 @@ PP2A -| AKT2_phosphorylated
 ILK -> AKT2_phosphorylated
 cGAS -> AKT2_phosphorylated
 PI3_4_5_P_3_simple_molecule -> AKT2_phosphorylated
-#position:PP2A:516.5,2161.0
-#position:CASP8AP2:4490.0,1055.0
 #position:SOS1:432.0,1248.0
 $SOS1:(SOS1 & cat_SOS1_107(EGF_EGFR_complex, FGF1_FGFR1_complex, SHP2_GRB2_complex))
 SOS1 -> SOS1
@@ -484,7 +469,6 @@ RAF1_phosphorylated -> MAP2K2_phosphorylated
 MAP3K8_phosphorylated -> MAP2K2_phosphorylated
 PRKCD -> MAP2K2_phosphorylated
 BRAF_phosphorylated -> MAP2K2_phosphorylated
-#position:YWHAQ:411.0,1859.0
 #position:ARHGEF2:3120.0,1235.0
 $ARHGEF2:ARHGEF2
 ARHGEF2 -> ARHGEF2
@@ -504,7 +488,6 @@ ARHGEF2 -> RHOA
 $PLA2G2A_phosphorylated:cat_PLA2G2A_phosphorylated_118(MAPK1_phosphorylated, GNAI3)
 MAPK1_phosphorylated -> PLA2G2A_phosphorylated
 GNAI3 -> PLA2G2A_phosphorylated
-#position:DUSP4:3370.0,1805.0
 #position:RPS6KB1_phosphorylated:680.0,2341.75
 $RPS6KB1_phosphorylated:cat_RPS6KB1_phosphorylated_119(AKT2_phosphorylated, MTORC1_complex)
 AKT2_phosphorylated -> RPS6KB1_phosphorylated
@@ -538,8 +521,6 @@ TP53_phosphorylated_Nucleus -> TNFRSF10A_rna
 #position:TNFRSF10B_rna:335.0,4970.0
 $TNFRSF10B_rna:cat_TNFRSF10B_rna_128(TP53_phosphorylated_Nucleus)
 TP53_phosphorylated_Nucleus -> TNFRSF10B_rna
-#position:ARHGDIB:2425.0,2852.0
-#position:ARHGEF1:4355.0,2630.0
 #position:BCL2_phosphorylated:2518.5,2929.75
 $BCL2_phosphorylated:(!BAD_phosphorylated & cat_BCL2_phosphorylated_129(MAPK1_phosphorylated))
 MAPK1_phosphorylated -> BCL2_phosphorylated
@@ -559,12 +540,9 @@ TXK -> VAV1_2
 $LCP2_phosphorylated:(LCP2 & cat_LCP2_phosphorylated_132(ZAP70_phosphorylated))
 LCP2 -> LCP2_phosphorylated
 ZAP70_phosphorylated -> LCP2_phosphorylated
-#position:CD19:2115.0,744.25
-#position:UQCRC1:6729.5,2223.0
 #position:TYROBP_phosphorylated:7102.5,1567.0
 $TYROBP_phosphorylated:cat_TYROBP_phosphorylated_133(LCK_phosphorylated)
 LCK_phosphorylated -> TYROBP_phosphorylated
-#position:LCK_phosphorylated:6882.0,1310.0
 #position:ZAP70_phosphorylated:1910.0,1235.0
 $ZAP70_phosphorylated:(ZAP70 & cat_ZAP70_phosphorylated_134(TYROBP_phosphorylated))
 ZAP70 -> ZAP70_phosphorylated
@@ -576,13 +554,11 @@ CD72_PTPN6_complex -| ZAP70
 #position:TSC2_phosphorylated:502.0,2683.5
 $TSC2_phosphorylated:!AKT2_phosphorylated
 AKT2_phosphorylated -| TSC2_phosphorylated
-#position:TLR5:2660.0,783.0
 #position:TGFB1:1050.0,402.0
 $TGFB1:(!LEFTY2 & (!LTBP1 & TGFB1))
 TGFB1 -> TGFB1
 LTBP1 -| TGFB1
 LEFTY2 -| TGFB1
-#position:TAP1_2:6719.5,2893.5
 #position:JAK3:6810.0,1233.0
 $JAK3:((!PVRL1_3_PTPRC_complex & JAK3) & cat_JAK3_138(CXCR6_ARRB1_complex, CXCR4_CXCL12_complex))
 JAK3 -> JAK3
@@ -594,7 +570,6 @@ $STAT1_phosphorylated_Cytoplasm:(!PTPN11_phosphorylated & cat_STAT1_phosphorylat
 PTPN11_phosphorylated -| STAT1_phosphorylated_Cytoplasm
 JAK2_phosphorylated -> STAT1_phosphorylated_Cytoplasm
 JAK3 -> STAT1_phosphorylated_Cytoplasm
-#position:SRF:6050.0,3785.0
 #position:SMAD7:1230.0,2045.0
 $SMAD7:(SMAD7 & cat_SMAD7_140(TGFB1_TGFBR1_complex))
 SMAD7 -> SMAD7
@@ -604,8 +579,6 @@ $RDX:(RDX & cat_RDX_141(SLC9A1, RHOA))
 RDX -> RDX
 SLC9A1 -> RDX
 RHOA -> RDX
-#position:SLC9A1:250.0,3395.0
-#position:SLC25A5:6704.0,2303.5
 #position:SHC2_phosphorylated:970.0,1235.0
 $SHC2_phosphorylated:cat_SHC2_phosphorylated_142(PDGFA_PDGFRA_complex, EGF_EGFR_complex, ZAP70_phosphorylated, CSK, FYN_CD3E_complex)
 PDGFA_PDGFRA_complex -> SHC2_phosphorylated
@@ -613,7 +586,6 @@ EGF_EGFR_complex -> SHC2_phosphorylated
 ZAP70_phosphorylated -> SHC2_phosphorylated
 CSK -> SHC2_phosphorylated
 FYN_CD3E_complex -> SHC2_phosphorylated
-#position:SH2D1A:2930.0,1115.0
 #position:FYN:3845.5,873.5
 $FYN:(FYN_CD3E_complex & cat_FYN_143(PVRL1_3_PTPRC_complex))
 FYN_CD3E_complex -> FYN
@@ -626,7 +598,6 @@ MAPK7 -> RPS6KA1_phosphorylated
 $CRKL_phosphorylated:cat_CRKL_phosphorylated_145(EGF_EGFR_complex, GAB1)
 EGF_EGFR_complex -> CRKL_phosphorylated
 GAB1 -> CRKL_phosphorylated
-#position:CALM1_3_phosphorylated:6165.0,2300.0
 #position:PHKA2:4350.0,2765.0
 $PHKA2:(!PP1R3B & PHKA2_phosphorylated)
 PHKA2_phosphorylated -> PHKA2
@@ -643,13 +614,10 @@ CALM1_3_phosphorylated -> PPP3CB
 $CALM1_3:(!PP1R3B & CALM1_3_phosphorylated)
 CALM1_3_phosphorylated -> CALM1_3
 PP1R3B -| CALM1_3
-#position:PP1R3B:5900.0,2135.0
 #position:PYGB_phosphorylated:5490.0,2420.0
 $PYGB_phosphorylated:cat_PYGB_phosphorylated_150(CALM1_3_phosphorylated, PHKA2_phosphorylated)
 CALM1_3_phosphorylated -> PYGB_phosphorylated
 PHKA2_phosphorylated -> PYGB_phosphorylated
-#position:CDC25B_C:4250.0,1670.0
-#position:COX5A:7009.5,2208.0
 #position:ABL1:3324.0,994.0
 $ABL1:(ABL1 & cat_ABL1_151(CRKL_phosphorylated, EPHA4))
 ABL1 -> ABL1
@@ -675,12 +643,9 @@ MAPK14_phosphorylated -> DDIT3_phosphorylated
 $ELK1_phosphorylated:cat_ELK1_phosphorylated_156(MAPK8_phosphorylated, MAPK1_phosphorylated)
 MAPK8_phosphorylated -> ELK1_phosphorylated
 MAPK1_phosphorylated -> ELK1_phosphorylated
-#position:EPHA4:2780.0,780.0
-#position:EPHB3:2720.0,780.0
 #position:ETS1_phosphorylated:3570.0,3725.0
 $ETS1_phosphorylated:cat_ETS1_phosphorylated_157(MAPK1_phosphorylated)
 MAPK1_phosphorylated -> ETS1_phosphorylated
-#position:GNB1:87.0,1759.5
 #position:ILK:1770.0,1550.0
 $ILK:(ILK & cat_ILK_158(PI3_4_5_P_3_simple_molecule))
 ILK -> ILK
@@ -704,12 +669,10 @@ PVRL1_3_PTPRC_complex -| LCK
 $LCP2:(!PTPN11_phosphorylated & LCP2_phosphorylated)
 LCP2_phosphorylated -> LCP2
 PTPN11_phosphorylated -| LCP2
-#position:LEFTY2:1510.0,522.0
 #position:PIP4K2B:2090.0,1445.0
 $PIP4K2B:(PIP4K2B & cat_PIP4K2B_164(RAC1_2))
 PIP4K2B -> PIP4K2B
 RAC1_2 -> PIP4K2B
-#position:PRKCH:578.5,1864.5
 #position:PARD3:6850.0,1665.0
 $PARD3:(PARD3 & cat_PARD3_165(PVRL1_3_PTPRC_complex))
 PARD3 -> PARD3
@@ -731,7 +694,6 @@ $PLCB2:(PLCB2 & cat_PLCB2_169(GNB1, GNAI3))
 PLCB2 -> PLCB2
 GNB1 -> PLCB2
 GNAI3 -> PLCB2
-#position:PLXNB1:2024.0,742.5
 #position:MYL6_9:330.0,3185.0
 $MYL6_9:cat_MYL6_9_170(ca2__CALM_complex)
 ca2__CALM_complex -> MYL6_9
@@ -747,15 +709,10 @@ GNAI3 -| ADCY7
 $active_cAMP_simple_molecule:(!PDE3A_phosphorylated & cAMP_simple_molecule)
 cAMP_simple_molecule -> active_cAMP_simple_molecule
 PDE3A_phosphorylated -| active_cAMP_simple_molecule
-#position:PRKCD:2530.0,1550.0
-#position:MAP3K2_3_4:2470.0,1760.0
-#position:MAPK7:3680.0,2586.75
-#position:CD28:2178.75,741.5
 #position:PXN:790.0,1811.0
 $PXN:(PXN & cat_PXN_174(CRKL_phosphorylated))
 PXN -> PXN
 CRKL_phosphorylated -> PXN
-#position:CTNND1:1050.0,1145.0
 #position:CTNND1_phosphorylated:1310.0,1145.0
 $CTNND1_phosphorylated:(!VEGFC_MET_complex & CTNND1)
 CTNND1 -> CTNND1_phosphorylated
@@ -764,7 +721,6 @@ VEGFC_MET_complex -| CTNND1_phosphorylated
 $LTBP1:(!COMP & LTBP1)
 LTBP1 -> LTBP1
 COMP -| LTBP1
-#position:COMP:1310.0,297.0
 #position:GAB2_phosphorylated:3580.0,1058.5
 $GAB2_phosphorylated:cat_GAB2_phosphorylated_177(FYN_CD3E_complex, GRB2)
 FYN_CD3E_complex -> GAB2_phosphorylated
@@ -795,7 +751,6 @@ NFKB_N_complex -> Cell_growth_Survival_Proliferation_phenotype
 TNF_Secreted_Molecules -> Cell_growth_Survival_Proliferation_phenotype
 p38MAPK_phosphorylated -> Cell_growth_Survival_Proliferation_phenotype
 ADAMTS9_rna -> Cell_growth_Survival_Proliferation_phenotype
-#position:PI4_5_P_2_simple_molecule:765.0,1361.0
 #position:PI3_4_5_P_3_simple_molecule:1125.0,1361.0
 $PI3_4_5_P_3_simple_molecule:((!PTEN & PI4_5_P_2_simple_molecule) & cat_PI3_4_5_P_3_simple_molecule_181(PIK3R5_phosphorylated))
 PI4_5_P_2_simple_molecule -> PI3_4_5_P_3_simple_molecule
@@ -812,19 +767,6 @@ $Angiogenesis_phenotype:((!THBS1_rna & !SERPINE1_rna) & cat_Angiogenesis_phenoty
 SERPINE1_rna -| Angiogenesis_phenotype
 THBS1_rna -| Angiogenesis_phenotype
 VEGFA_rna -> Angiogenesis_phenotype
-#position:FGF1:230.0,612.0
-#position:MICB:1770.0,612.0
-#position:HCST:1657.25,877.5
-#position:PDGFA:650.0,612.0
-#position:LBP:2290.0,635.0
-#position:LY96:2490.0,635.0
-#position:IL1A:5710.0,605.0
-#position:IL1R1:5709.5,741.25
-#position:ICAM1_Extracellular_Space:3770.0,612.0
-#position:FN1_Extracellular_Space:3930.0,612.0
-#position:VEGFC:990.0,612.0
-#position:EGF:810.0,612.0
-#position:DOCK2:790.0,1460.0
 #position:ARHGAP35_phosphorylated:4868.0,1683.25
 $ARHGAP35_phosphorylated:cat_ARHGAP35_phosphorylated_185(CSK)
 CSK -> ARHGAP35_phosphorylated
@@ -842,7 +784,6 @@ MDM2_rna -> MDM2
 #position:PDE3A_phosphorylated:3970.0,1145.0
 $PDE3A_phosphorylated:cat_PDE3A_phosphorylated_189(AKT2_phosphorylated)
 AKT2_phosphorylated -> PDE3A_phosphorylated
-#position:cAMP_simple_molecule:3730.0,1460.0
 #position:RAPGEF1:3710.0,1310.0
 $RAPGEF1:(RAPGEF1 & cat_RAPGEF1_190(CRKL_phosphorylated))
 RAPGEF1 -> RAPGEF1
@@ -852,7 +793,6 @@ $GNAI3:(GNAI3 & cat_GNAI3_191(CXCR6_ARRB1_complex, CXCR4_CXCL12_complex))
 GNAI3 -> GNAI3
 CXCR6_ARRB1_complex -> GNAI3
 CXCR4_CXCL12_complex -> GNAI3
-#position:IGF1:430.0,612.0
 #position:TXK:1190.0,1535.0
 $TXK:TXK
 TXK -> TXK
@@ -864,7 +804,6 @@ JUN_phosphorylated -> CSF2_rna
 #position:STMN1_phosphorylated:3190.0,3440.0
 $STMN1_phosphorylated:cat_STMN1_phosphorylated_194(MAPK1_phosphorylated)
 MAPK1_phosphorylated -> STMN1_phosphorylated
-#position:H_2_O_2_simple_molecule:5800.0,3469.5
 #position:actived_H_2_O_2_simple_molecule:6170.0,3470.0
 $actived_H_2_O_2_simple_molecule:(H_2_O_2_simple_molecule & cat_actived_H_2_O_2_simple_molecule_195(NCF_CYBB_CYBA_complex))
 H_2_O_2_simple_molecule -> actived_H_2_O_2_simple_molecule
@@ -880,16 +819,10 @@ STAT1_phosphorylated_Nucleus -> VEGFA_rna
 $IFNB1_rna:(!NRF1 & cat_IFNB1_rna_199(IRF7_phosphorylated))
 IRF7_phosphorylated -> IFNB1_rna
 NRF1 -| IFNB1_rna
-#position:CXCL12:6650.0,590.0
-#position:PTPN6:1395.0,865.0
 #position:NOD2:4310.0,2090.0
 $NOD2:(NOD2 & cat_NOD2_200(MDP_simple_molecule))
 NOD2 -> NOD2
 MDP_simple_molecule ->? NOD2
-#position:MDP_simple_molecule:4450.0,2165.0
-#position:PARVG:1730.0,1460.0
-#position:PIK3AP1:410.0,935.0
-#position:BLNK:1970.0,1040.0
 #position:MIR451A_rna:2255.0,4231.0
 #position:p38MAPK_rna:1700.0,5065.0
 $p38MAPK_rna:!MIR451A_rna
@@ -973,7 +906,6 @@ MMP1_rna -> MMP1
 #position:IL35:6550.0,3260.0
 $IL35:IL35_rna
 IL35_rna -> IL35
-#position:IL6_Extracellular_Space:4590.0,605.0
 #position:JAK2_phosphorylated:4550.0,920.0
 $JAK2_phosphorylated:(!PTPN11_phosphorylated & cat_JAK2_phosphorylated_236(IL6_IL6ST_complex, IL6_IL6R_complex))
 IL6_IL6ST_complex -> JAK2_phosphorylated
@@ -1035,9 +967,6 @@ IL18_rna -> IL18
 $SRC_phosphorylated:cat_SRC_phosphorylated_250(IL18R_IL18_complex)
 IL18R_IL18_complex -> SRC_phosphorylated
 #position:MIR338_5P_rna:4035.0,4310.0
-#position:IL1B_Extracellular_Space:5570.0,590.0
-#position:IL17A_Extracellular_Space:5390.0,605.0
-#position:WNT5A:3390.0,612.0
 #position:CD40_rna:2835.0,4505.0
 $CD40_rna:cat_CD40_rna_252(IRF3_phosphorylated)
 IRF3_phosphorylated -> CD40_rna
@@ -1080,7 +1009,6 @@ CCNB1_CDC2_complex_Cytoplasm_1 -> RUNX1_Cytoplasm
 $TP53_phosphorylated_Nucleus:TP53_phosphorylated_Cytoplasm
 TP53_phosphorylated_Cytoplasm -> TP53_phosphorylated_Nucleus
 #position:TP73_phosphorylated:990.0,4085.0
-#position:DYNLRB1:1970.0,3845.0
 #position:JUN_phosphorylated:2310.0,4010.0
 $JUN_phosphorylated:cat_JUN_phosphorylated_264(MAPK8_phosphorylated, MAPK14_phosphorylated, MAPK1_phosphorylated)
 MAPK8_phosphorylated -> JUN_phosphorylated
@@ -1212,7 +1140,6 @@ MAPK14_phosphorylated -> MEF2C_phosphorylated
 #position:MAX_phosphorylated:3400.0,3528.5
 $MAX_phosphorylated:cat_MAX_phosphorylated_299(MAPK14_phosphorylated)
 MAPK14_phosphorylated -> MAX_phosphorylated
-#position:PTEN:1090.0,1235.0
 #position:CCND1_rna:2175.0,4475.0
 $CCND1_rna:cat_CCND1_rna_300(JUN_phosphorylated)
 JUN_phosphorylated -> CCND1_rna
@@ -1270,7 +1197,6 @@ STAT3_phosphorylated_Nucleus -> IL17A_Secreted_Molecules
 $IL1B_Secreted_Molecules:cat_IL1B_Secreted_Molecules_315(JUN_phosphorylated, NFKB_N_complex)
 JUN_phosphorylated -> IL1B_Secreted_Molecules
 NFKB_N_complex -> IL1B_Secreted_Molecules
-#position:CALM1:3970.0,2000.0
 #position:CALCINEURIN:3917.5,2528.25
 $CALCINEURIN:(CALCINEURIN & cat_CALCINEURIN_316(ca2__CALM_complex, CAMK2A))
 CALCINEURIN -> CALCINEURIN
@@ -1282,19 +1208,16 @@ AKT2_phosphorylated -| FOXO3
 #position:IRF5_Nucleus:5880.0,4045.0
 $IRF5_Nucleus:IRF5_Cytoplasm
 IRF5_Cytoplasm -> IRF5_Nucleus
-#position:CXCL16:6370.0,605.0
 #position:TRADD_phosphorylated:6080.0,910.0
 $TRADD_phosphorylated:cat_TRADD_phosphorylated_319(TNF_TNFRSF1A_B_complex)
 TNF_TNFRSF1A_B_complex -> TRADD_phosphorylated
 #position:FLIP_rna:3955.0,4955.0
 $FLIP_rna:cat_FLIP_rna_320(NFKB_N_complex)
 NFKB_N_complex -> FLIP_rna
-#position:BCL2L1_gene:4050.0,4550.0
 #position:BCL2L1_rna:4275.0,4550.0
 $BCL2L1_rna:(cat_BCL2L1_rna_322(NFKB_N_complex, BCL2L1_gene) | cat_BCL2L1_rna_321(NFKB_N_complex, BCL2L1_gene))
 NFKB_N_complex -> BCL2L1_rna
 BCL2L1_gene -> BCL2L1_rna
-#position:RANK:4130.0,612.0
 #position:IRF8_Cytoplasm:3117.0,3712.0
 $IRF8_Cytoplasm:IRF8_Cytoplasm
 IRF8_Cytoplasm -> IRF8_Cytoplasm
@@ -1315,7 +1238,6 @@ STAT3_phosphorylated_Nucleus -> SOCS3_rna
 #position:SOCS3:4670.0,1040.0
 $SOCS3:SOCS3_rna
 SOCS3_rna -> SOCS3
-#position:COMMD1:4006.5,3044.75
 #position:CTSK_rna:3175.0,4670.0
 $CTSK_rna:cat_CTSK_rna_328(JUN_phosphorylated, FOS_Nucleus, NFKB_N_complex)
 JUN_phosphorylated -> CTSK_rna
@@ -1346,7 +1268,6 @@ IFNB1_rna -> IFNA1_B1
 #position:TYK2_phosphorylated:6490.0,1060.0
 $TYK2_phosphorylated:cat_TYK2_phosphorylated_334(IFNA1_B1_IFNAR1_R2_complex)
 IFNA1_B1_IFNAR1_R2_complex -> TYK2_phosphorylated
-#position:SIN3A:5110.0,3612.0
 #position:HOMODIMER_STAT3:5220.0,4040.0
 $HOMODIMER_STAT3:(!SIN3A & STAT3_phosphorylated_Cytoplasm)
 STAT3_phosphorylated_Cytoplasm -> HOMODIMER_STAT3
@@ -1412,7 +1333,6 @@ STAT1_phosphorylated_Cytoplasm -> HOMODIMER_STAT1
 #position:IRF1:2550.0,5480.0
 $IRF1:cat_IRF1_349(HOMODIMER_STAT1)
 HOMODIMER_STAT1 -> IRF1
-#position:OSCAR:5060.0,735.0
 #position:ITAM:5050.0,1150.0
 $ITAM:(ITAM & cat_ITAM_350(OSCAR))
 ITAM -> ITAM
@@ -1428,7 +1348,6 @@ SYK -> PLCG1
 #position:JUP_rna:235.0,4219.5
 $JUP_rna:cat_JUP_rna_353(RUNX1_Nucleus)
 RUNX1_Nucleus -> JUP_rna
-#position:SFRP5:3270.0,567.0
 #position:RAB5A:2230.0,3400.0
 $RAB5A:RAB5A_rna
 RAB5A_rna -> RAB5A

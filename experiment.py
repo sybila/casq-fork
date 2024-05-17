@@ -2,7 +2,6 @@ import itertools
 import os
 import re
 from casq.bmaExport import write_bma
-from casq.aeonExportJSON import write_aeon as write_aeon_1
 from casq.aeonExportAEON import write_aeon as write_aeon_2
 from casq.celldesigner2qual import write_qual
 from casq.readCD import read_celldesigner

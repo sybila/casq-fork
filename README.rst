@@ -54,20 +54,20 @@
 `SBML-Qual`_ with a rather strict semantics defined in a
 `published article`_.
 
+This extension allows generating partially specified Boolean networks in .aeon format.
+Possible use in the `AEON`_ tool for further analyses.
+
 .. _`CellDesigner`: http://celldesigner.org
 .. _`SBML-Qual`: http://sbml.org
 .. _`published article`: https://academic.oup.com/bioinformatics/article/36/16/4473/5836892
+.. _`AEON`: https://biodivine.fi.muni.cz/aeon/
 
 Install
 =======
 
-CaSQ is provided as a Python3 package, you can install it from the `Python package index`_ with ``pip``, ``conda`` or your Python package manager of choice:
+CaSQ is provided as a Python3 package, you can install it from the
+https://github.com/sybila/casq-fork.git.
 
-.. _`Python package index`: https://pypi.org/project/casq/
-
-.. code:: bash
-
-   $ python3 -m pip install casq
 
 Command-line usage
 ==================
@@ -76,11 +76,14 @@ Just follow the instructions::
 
    $ casq --help
    usage: casq [-h] [-v] [-D] [-c] [-s] [-r S] [-u [UPSTREAM ...]]
-               [-d [DOWNSTREAM ...]] [-b] [-g GRANULARITY] [-i INPUT] [-C]
+               [-d [DOWNSTREAM ...]] [-a] [-b] [-g GRANULARITY] [-i INPUT] [-C]
                [infile] [outfile]
 
    Convert CellDesigner models to SBML-qual with a rather strict semantics.
    Copyright (C) 2019, Sylvain.Soliman@inria.fr GPLv3
+   Convert CellDesigner models to partially specified Boolean networks in .aeon format.
+   Copyright (C) 2024, xfrak@fi.muni.cz GPLv3
+
 
    positional arguments:
      infile                CellDesigner File
@@ -101,6 +104,7 @@ Just follow the instructions::
      -d [DOWNSTREAM ...], --downstream [DOWNSTREAM ...]
                            Only species downstream of this/these species will be
                            kept
+     -a, --aeon            Output to partially specified Boolean networks in .aeon format
      -b, --bma             Output to BMA json format
      -g GRANULARITY, --granularity GRANULARITY
                            When exporting to BMA, use this granularity

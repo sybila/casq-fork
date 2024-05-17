@@ -1,8 +1,6 @@
-#position:CSF2RA_CSF2RB_complex:8881.857142857145,1281.159522497503
 #position:FN1_ITGAV_complex:5002.5714285714275,1291.4452367832173
 $FN1_ITGAV_complex:FN1_Fibroblast___Extracellular_Space
 FN1_Fibroblast___Extracellular_Space -> FN1_ITGAV_complex
-#position:CCNB1_CDC2_complex_Fibroblast___Cytoplasm_active:4997.5714285714275,2340.9452367832173
 #position:NFKB_complex:4953.5714285714275,3685.4452367832173
 $NFKB_complex:(IKBA_NFKB1_RELA_complex & cat_NFKB_complex_1(IKK_complex, IKBKB_phosphorylated))
 IKBA_NFKB1_RELA_complex -> NFKB_complex
@@ -23,7 +21,6 @@ TICAM1_TICAM2_complex -> RIPK1_TRAF6_complex
 $STAT1_STAT2_complex:(STAT2 & STAT1_Fibroblast___Cytoplasm)
 STAT2 -> STAT1_STAT2_complex
 STAT1_Fibroblast___Cytoplasm -> STAT1_STAT2_complex
-#position:NECTIN3_PTPRC_NECTIN1_complex:8325.071428571428,1280.4452367832173
 #position:EGF_EGFR_complex:1489.5714285714275,1303.4452367832173
 $EGF_EGFR_complex:(EGF & EGFR)
 EGF -> EGF_EGFR_complex
@@ -49,7 +46,6 @@ AKT2_phosphorylated -> IKK_complex
 MAP4K4_phosphorylated -> IKK_complex
 MAP3K7_phosphorylated -> IKK_complex
 CSF2RA_CSF2RB_CSF2_complex -> IKK_complex
-#position:CTNNB_CK1A_AXIN_GSK3B_APC_complex:4897.5714285714275,2008.9452367832173
 #position:CCNB1_CDC2_complex_Fibroblast___Cytoplasm:4641.5714285714275,2345.4452367832173
 $CCNB1_CDC2_complex_Fibroblast___Cytoplasm:(CCNB1_CDC2_complex_Fibroblast___Cytoplasm_active & cat_CCNB1_CDC2_complex_Fibroblast___Cytoplasm_12(CDC25B_C))
 CCNB1_CDC2_complex_Fibroblast___Cytoplasm_active -> CCNB1_CDC2_complex_Fibroblast___Cytoplasm
@@ -75,8 +71,6 @@ $TAB1_TAB2_TAK1_complex:cat_TAB1_TAB2_TAK1_complex_17(RIPK1_TRAF6_complex, TRAF2
 RIPK1_TRAF6_complex -> TAB1_TAB2_TAK1_complex
 TRAF2_TRAF5_complex -> TAB1_TAB2_TAK1_complex
 TRAF6_phosphorylated -> TAB1_TAB2_TAK1_complex
-#position:ITGAL_ITGB2_ICAM2_3_complex:4645.5714285714275,1298.4452367832173
-#position:CD40LG_CD40_complex:3510.0,1296.0
 #position:TRAF2_TRAF5_complex:6796.0714285714275,1624.9452367832173
 $TRAF2_TRAF5_complex:cat_TRAF2_TRAF5_complex_18(TRADD)
 TRADD -> TRAF2_TRAF5_complex
@@ -115,8 +109,6 @@ TNF_Fibroblast___Extracellular_Space -> TNF_TNFRSF1A_B_complex
 #position:MIF_CXCR4_complex:7615.5714285714275,1288.4452367832173
 $MIF_CXCR4_complex:MIF_Fibroblast___Extracellular_Space
 MIF_Fibroblast___Extracellular_Space -> MIF_CXCR4_complex
-#position:IKBA_NFKB1_RELA_complex:4461.5714285714275,3662.4452367832173
-#position:NFKB1_MAP3K8_complex:3697.5714285714275,3115.9452367832173
 #position:TBK1_IKBKE_complex:4095.5714285714275,3726.4452367832173
 $TBK1_IKBKE_complex:cat_TBK1_IKBKE_complex_29(TRAF3)
 TRAF3 -> TBK1_IKBKE_complex
@@ -125,15 +117,11 @@ TRAF3 -> TBK1_IKBKE_complex
 $SHP2_GRB2_complex:(PTPN11_phosphorylated & GRB2)
 PTPN11_phosphorylated -> SHP2_GRB2_complex
 GRB2 -> SHP2_GRB2_complex
-#position:ICAM_ITGB2_ITGAL_complex:4776.0714285714275,1295.4452367832173
-#position:JAG1_NOTCH3_complex:4032.0,1297.0
-#position:MAPK3_complex:2141.0714285714275,2351.4452367832173
 #position:Apoptosome_complex:6221.8214285714275,2972.4452367832173
 $Apoptosome_complex:((APAF1 & CYCS) & CASP9)
 APAF1 -> Apoptosome_complex
 CYCS -> Apoptosome_complex
 CASP9 -> Apoptosome_complex
-#position:PDIA3_HLA_A_B2M_complex:7656.3214285714275,3590.6952367832173
 #position:IL1A_IL1R1_complex:6709.5714285714275,1299.4452367832173
 $IL1A_IL1R1_complex:(IL1A & IL1R1)
 IL1A -> IL1A_IL1R1_complex
@@ -156,7 +144,6 @@ vcl -> CDH11_CTNNB1_CTNNA_complex_Fibroblast___Cytoplasm_2
 CDH11_CTNNB1_CTNNA_complex_Fibroblast___Cytoplasm_1 -> CDH11_CTNNB1_CTNNA_complex_Fibroblast___Cytoplasm_2
 TJP1 -> CDH11_CTNNB1_CTNNA_complex_Fibroblast___Cytoplasm_2
 ACTN1 -> CDH11_CTNNB1_CTNNA_complex_Fibroblast___Cytoplasm_2
-#position:gamma_secretase_complex:4258.5714285714275,1969.4452367832173
 #position:ncid_rbpj_snw1_complex:3971.5714285714275,4699.445236783217
 $ncid_rbpj_snw1_complex:((NCID & snw1) & rbpj)
 NCID -> ncid_rbpj_snw1_complex
@@ -192,12 +179,10 @@ CHUK_phosphorylated -> NFKB2_RELB_complex
 $IKK1_IKK2_complex:(IKK1_phosphorylated & IKK2_phosphorylated)
 IKK1_phosphorylated -> IKK1_IKK2_complex
 IKK2_phosphorylated -> IKK1_IKK2_complex
-#position:RELA_NFKB1_NFKBIE_complex:8776.916666666668,2326.333333333333
 #position:ITGA1_ITGB1_col4a3_complex:1835.2857142857156,1307.0
 $ITGA1_ITGB1_col4a3_complex:(col4a3 & ITGA1_ITGB1_complex)
 col4a3 -> ITGA1_ITGB1_col4a3_complex
 ITGA1_ITGB1_complex -> ITGA1_ITGB1_col4a3_complex
-#position:ITGA1_ITGB1_complex:1966.0,1305.0
 #position:ITGA1_ITGB1_col4a3_ptk2_complex:1890.0000000000018,1574.0
 $ITGA1_ITGB1_col4a3_ptk2_complex:(ITGA1_ITGB1_col4a3_complex & PTK2)
 ITGA1_ITGB1_col4a3_complex -> ITGA1_ITGB1_col4a3_ptk2_complex
@@ -286,8 +271,6 @@ $HOMODIMER_space_STAT1:STAT1_Fibroblast___Cytoplasm
 STAT1_Fibroblast___Cytoplasm -> HOMODIMER_space_STAT1
 #position:IL7_rna:7473.5714285714275,5496.445236783217
 #position:MIR124A_rna:6508.5714285714275,4830.445236783217
-#position:TLR5:3851.5714285714275,1333.4452367832173
-#position:IGF1:1086.5714285714275,1108.4452367832173
 #position:RAF1:1105.0714285714275,2334.4452367832173
 $RAF1:(RAF1 & cat_RAF1_78(DOCK2_CRKL_complex, YWHAQ))
 RAF1 -> RAF1
@@ -372,8 +355,6 @@ FAS_FASL_complex -> FADD
 $IL6_Fibroblast___Cytoplasm:(!ZC3H12A & IL6_rna)
 IL6_rna -> IL6_Fibroblast___Cytoplasm
 ZC3H12A -| IL6_Fibroblast___Cytoplasm
-#position:DOCK2:1514.5714285714275,2015.4452367832173
-#position:IL1R1:6623.0714285714275,1331.6952367832173
 #position:CFLAR_rna:4734.5714285714275,5552.445236783217
 $CFLAR_rna:cat_CFLAR_rna_100(NFKB_N_complex)
 NFKB_N_complex -> CFLAR_rna
@@ -395,7 +376,6 @@ vegfc -> Angiogenesis_phenotype
 tgfb3 -> Angiogenesis_phenotype
 TGFb1 -> Angiogenesis_phenotype
 PRL -> Angiogenesis_phenotype
-#position:PI4_5_P__2_simple_molecule:1446.5714285714275,1935.4452367832173
 #position:HOMODIMER_space_STAT3:5942.5714285714275,4616.445236783217
 $HOMODIMER_space_STAT3:STAT3_Fibroblast___Cytoplasm
 STAT3_Fibroblast___Cytoplasm -> HOMODIMER_space_STAT3
@@ -417,7 +397,6 @@ JAK1 -> STAT3_Fibroblast___Cytoplasm
 TYK2 -> STAT3_Fibroblast___Cytoplasm
 AKT2_phosphorylated -> STAT3_Fibroblast___Cytoplasm
 IL10RA_IL10RB_IL10_jak1_tyk2_complex -> STAT3_Fibroblast___Cytoplasm
-#position:IL1A:6655.5714285714275,1123.4452367832173
 #position:IL18:5888.5714285714275,1164.4452367832173
 #position:YY1_rna:6549.0714285714275,5418.445236783217
 #position:MMP13:4664.5714285714275,6728.445236783217
@@ -455,7 +434,6 @@ MAPK9_phosphorylated -> JUN_phosphorylated
 #position:MMP3_rna:5363.5714285714275,5316.445236783217
 $MMP3_rna:!MIR155_rna
 MIR155_rna -| MMP3_rna
-#position:EGFR:1607.5714285714275,1332.4452367832173
 #position:TRAF2:6893.0714285714275,1542.4452367832173
 $TRAF2:cat_TRAF2_118(IL1A_IL1R1_complex)
 IL1A_IL1R1_complex -> TRAF2
@@ -475,7 +453,6 @@ IKK_complex -> MAP3K8_phosphorylated
 $PTK2B_phosphorylated:cat_PTK2B_phosphorylated_122(CSK, ICAM_ITGB2_ITGAL_complex)
 CSK -> PTK2B_phosphorylated
 ICAM_ITGB2_ITGAL_complex -> PTK2B_phosphorylated
-#position:SARM1:3736.5714285714275,1908.4452367832173
 #position:TRAF6_phosphorylated:6481.5714285714275,1869.4452367832173
 $TRAF6_phosphorylated:(TRAF6 & cat_TRAF6_phosphorylated_123(TRAF3IP2_phosphorylated, IRAK1_IRAK4_complex, RANK_RANKL_complex, CD40LG_CD40_complex))
 TRAF6 -> TRAF6_phosphorylated
@@ -490,9 +467,6 @@ AKT2_phosphorylated -| FOXO3
 $CXCL9:cat_CXCL9_125(IRF3_phosphorylated, HOMODIMER_space_STAT1)
 IRF3_phosphorylated -> CXCL9
 HOMODIMER_space_STAT1 -> CXCL9
-#position:IRAK4_Fibroblast___Cytoplasm:4450.5714285714275,1811.4452367832173
-#position:WNT5A:4428.5714285714275,989.4452367832173
-#position:PP2A:1245.0714285714275,2732.4452367832173
 #position:MMP3:4424.5714285714275,6728.445236783217
 $MMP3:MMP3_rna
 MMP3_rna -> MMP3
@@ -514,7 +488,6 @@ PTPN11_phosphorylated -| JAK2
 #position:IRAK1_rna:5823.5714285714275,5076.445236783217
 $IRAK1_rna:!MIR146A_rna
 MIR146A_rna -| IRAK1_rna
-#position:TXK:2001.5714285714275,2145.4452367832173
 #position:YY1:6278.5714285714275,4626.445236783217
 $YY1:YY1_rna
 YY1_rna -> YY1
@@ -551,7 +524,6 @@ IL34 -> Osteoclastogenesis_phenotype
 #position:TRAF3:3901.5714285714275,3448.4452367832173
 $TRAF3:cat_TRAF3_140(TICAM1)
 TICAM1 -> TRAF3
-#position:IRF9:6496.5714285714275,3436.4452367832173
 #position:SOS1:1141.5714285714275,1795.4452367832173
 $SOS1:cat_SOS1_141(EGF_EGFR_complex, FGF1_FGFR1_complex, SHP2_GRB2_complex, HBGEF_EGFR_complex)
 EGF_EGFR_complex -> SOS1
@@ -586,15 +558,12 @@ STAT1_Fibroblast___Cytoplasm -> STAT1_Fibroblast___nucleus
 #position:TRAF6_rna:5603.5714285714275,4986.445236783217
 $TRAF6_rna:!MIR146A_rna
 MIR146A_rna -| TRAF6_rna
-#position:CALCINEURIN:5042.0714285714275,3399.6952367832173
 #position:BSG:4530.5714285714275,4371.445236783217
 $BSG:BSG_rna
 BSG_rna -> BSG
-#position:LY96:3731.5714285714275,1014.4452367832173
 #position:TRAF3IP2_phosphorylated:6038.5714285714275,1521.4452367832173
 $TRAF3IP2_phosphorylated:cat_TRAF3IP2_phosphorylated_153(IL17A_IL17RA_complex)
 IL17A_IL17RA_complex -> TRAF3IP2_phosphorylated
-#position:TRAF6:6137.5714285714275,1863.9452367832173
 #position:HLA_DRB1_rna:6383.5714285714275,5883.945236783217
 #position:IL26_rna:7896.5714285714275,5760.945236783217
 #position:JUNB:2118.5714285714275,4401.445236783217
@@ -621,7 +590,6 @@ ITGA1_ITGB1_sema7a_ptk2_complex -> MAPK3_phosphorylated
 $CXCL10_Fibroblast___secreted_components:cat_CXCL10_Fibroblast___secreted_components_161(IRF3_phosphorylated, HOMODIMER_space_STAT1)
 IRF3_phosphorylated -> CXCL10_Fibroblast___secreted_components
 HOMODIMER_space_STAT1 -> CXCL10_Fibroblast___secreted_components
-#position:DUSP4:4203.5714285714275,2395.4452367832173
 #position:IL32_rna:7818.5714285714275,5192.445236783217
 #position:SHC2_phosphorylated:1682.5714285714275,1795.4452367832173
 $SHC2_phosphorylated:cat_SHC2_phosphorylated_163(PDGFC_PDGFRA_complex, EGF_EGFR_complex, CSK, HBGEF_EGFR_complex, LCK_phosphorylated)
@@ -669,7 +637,6 @@ CFLAR_rna -> CFLAR_Fibroblast___Cytoplasm
 #position:ETS1_phosphorylated:4317.5714285714275,4296.445236783217
 $ETS1_phosphorylated:cat_ETS1_phosphorylated_176(MAPK1_phosphorylated)
 MAPK1_phosphorylated -> ETS1_phosphorylated
-#position:EPHB3:4339.5714285714275,1333.4452367832173
 #position:CXCL1:5013.5714285714275,6677.445236783217
 $CXCL1:cat_CXCL1_177(NFKB_N_complex)
 NFKB_N_complex -> CXCL1
@@ -677,14 +644,12 @@ NFKB_N_complex -> CXCL1
 $MIR10a_rna:!YY1
 YY1 -| MIR10a_rna
 #position:IL1RN_rna:7267.0714285714275,5718.445236783217
-#position:DYNLRB1:2698.5714285714275,4416.445236783217
 #position:MDM2_rna:1194.5714285714275,5746.945236783217
 $MDM2_rna:cat_MDM2_rna_180(TP53_phosphorylated_Fibroblast___nucleus)
 TP53_phosphorylated_Fibroblast___nucleus -> MDM2_rna
 #position:MMP1:4544.5714285714275,6745.445236783217
 $MMP1:MMP1_rna
 MMP1_rna -> MMP1
-#position:MAP3K2_3_4:3198.5714285714275,2331.4452367832173
 #position:CASP3:5527.5714285714275,2385.9452367832173
 $CASP3:(CASP3 & cat_CASP3_182(CASP8, Apoptosome_complex))
 CASP3 -> CASP3
@@ -748,7 +713,6 @@ IL17A_Fibroblast___secreted_components -> IL17A_Fibroblast___Extracellular_Space
 $CSK:cat_CSK_197(ICAM_ITGB2_ITGAL_complex, FN1_ITGAV_complex)
 ICAM_ITGB2_ITGAL_complex -> CSK
 FN1_ITGAV_complex -> CSK
-#position:EGF:1501.5714285714275,1058.4452367832173
 #position:ZC3H12A_rna:6627.0714285714275,5673.445236783217
 #position:BCL2L11_rna:1758.0714285714275,5310.195236783217
 $BCL2L11_rna:cat_BCL2L11_rna_199(FOXO1, FOXO3)
@@ -758,7 +722,6 @@ FOXO3 -> BCL2L11_rna
 $TICAM1:(!SARM1 & cat_TICAM1_200(TICAM2))
 SARM1 -| TICAM1
 TICAM2 -> TICAM1
-#position:CDC25B_C:4740.5714285714275,2229.4452367832173
 #position:LTBP1:2954.5714285714275,961.4452367832173
 $LTBP1:!COMP
 COMP -| LTBP1
@@ -788,7 +751,6 @@ $CD40_rna:cat_CD40_rna_204(IRF3_phosphorylated)
 IRF3_phosphorylated -> CD40_rna
 #position:MIR203A_rna:6212.5714285714275,4821.445236783217
 #position:STAT2:6843.5714285714275,3750.4452367832173
-#position:IRAK1_Fibroblast___Cytoplasm:5347.5714285714275,1875.4452367832173
 #position:IL7_Fibroblast___Cytoplasm:7826.5714285714275,4023.4452367832173
 $IL7_Fibroblast___Cytoplasm:IL7_rna
 IL7_rna -> IL7_Fibroblast___Cytoplasm
@@ -823,7 +785,6 @@ DOCK2_CRKL_complex -> RAC1_2
 DVL1_phosphorylated -> RAC1_2
 PLXNB1_MET_sema4a_complex -| RAC1_2
 ngef -| RAC1_2
-#position:FGF1:988.5714285714275,1070.4452367832173
 #position:MAP2K3_phosphorylated:3654.0714285714275,2446.9452367832173
 $MAP2K3_phosphorylated:cat_MAP2K3_phosphorylated_215(MAP3K1_phosphorylated, MAP3K5_phosphorylated, RAC1_2, MAP3K2_3_4, TAB1_TAB2_TAK1_complex)
 MAP3K1_phosphorylated -> MAP2K3_phosphorylated
@@ -858,7 +819,6 @@ NFKB_N_complex -> BCL2L1_rna
 #position:BAX_Fibroblast___Mitochondrion:7138.5714285714275,2575.4452367832173
 $BAX_Fibroblast___Mitochondrion:BAX_rna
 BAX_rna -> BAX_Fibroblast___Mitochondrion
-#position:PTEN:1818.5714285714275,1806.4452367832173
 #position:Inflammation_phenotype:2891.5714285714275,7062.445236783217
 $Inflammation_phenotype:((!ARRB2 & (!GAS6 & (!IL11 & (!CTF1 & !sema3A)))) & cat_Inflammation_phenotype_224(CXCL10_Fibroblast___secreted_components, NFKB_N_complex, CXCL9, IFNa1_B1, CXCL8_Fibroblast___secreted_components, IFNb1, TNF_Fibroblast___secreted_components, IL1B_Fibroblast___secreted_components, IL17A_Fibroblast___secreted_components, IL6_Fibroblast___secreted_components, IRF5_rna, CCL21, IRF1_Fibroblast___Cytoplasm, IFNa1, IL12B, IL12A, CSF1, CSF2_Fibroblast___secreted_components, PRL, SEMA4D))
 sema3A -| Inflammation_phenotype
@@ -1018,7 +978,6 @@ TP53_phosphorylated_Fibroblast___nucleus -> THBS1_rna
 #position:CXCL2:5180.5714285714275,6720.445236783217
 $CXCL2:cat_CXCL2_255(NFKB_N_complex)
 NFKB_N_complex -> CXCL2
-#position:TIRAP:4012.5714285714275,1716.4452367832173
 #position:MAPK1_phosphorylated:4032.5714285714275,2746.4452367832173
 $MAPK1_phosphorylated:(MAPK1_empty & cat_MAPK1_phosphorylated_256(MAP2K1_phosphorylated, cGAS, TRAF2, ITGA1_ITGB1_sema7a_ptk2_complex))
 MAPK1_empty -> MAPK1_phosphorylated
@@ -1052,7 +1011,6 @@ Osteoclastogenesis_phenotype -> Bone_space_Erosion_phenotype
 $IRAK4_Fibroblast___Cytoplasm_active:(IRAK4_Fibroblast___Cytoplasm & cat_IRAK4_Fibroblast___Cytoplasm_active_262(MYD88))
 IRAK4_Fibroblast___Cytoplasm -> IRAK4_Fibroblast___Cytoplasm_active
 MYD88 -> IRAK4_Fibroblast___Cytoplasm_active
-#position:CDKN1A:2691.5714285714275,3505.4452367832173
 #position:GSK3B:5413.5714285714275,2129.4452367832173
 $GSK3B:(CTNNB_CK1A_AXIN_GSK3B_APC_complex & cat_GSK3B_263(DVL1_phosphorylated))
 CTNNB_CK1A_AXIN_GSK3B_APC_complex -> GSK3B
@@ -1064,7 +1022,6 @@ TNF_Fibroblast___secreted_components -> TNF_Fibroblast___Extracellular_Space
 #position:SRC_phosphorylated:5630.5714285714275,1497.9452367832173
 $SRC_phosphorylated:cat_SRC_phosphorylated_266(IL18_IL18R_complex)
 IL18_IL18R_complex -> SRC_phosphorylated
-#position:GAB1:1671.5714285714275,2028.4452367832173
 #position:MAPK14_phosphorylated:3530.0714285714275,3105.9452367832173
 $MAPK14_phosphorylated:(!MAPK1_phosphorylated & cat_MAPK14_phosphorylated_267(MAP2K6_phosphorylated, MAP2K3_phosphorylated))
 MAP2K6_phosphorylated -> MAPK14_phosphorylated
@@ -1090,7 +1047,6 @@ YWHAQ_rna -> YWHAQ
 #position:ICAM1_rna:5323.5714285714275,5661.445236783217
 $ICAM1_rna:cat_ICAM1_rna_273(NFKB_N_complex)
 NFKB_N_complex -> ICAM1_rna
-#position:RIPK1:6100.0714285714275,1935.9452367832173
 #position:IRF1_rna:4148.5714285714275,5751.445236783217
 $IRF1_rna:cat_IRF1_rna_274(HOMODIMER_space_STAT1)
 HOMODIMER_space_STAT1 -> IRF1_rna
@@ -1118,14 +1074,11 @@ MIR192_rna -| CAV1_rna
 $RDX:cat_RDX_280(RHOA)
 RHOA -> RDX
 #position:HSPA5_rna:2826.5714285714275,5373.445236783217
-#position:COMP:2735.0714285714275,809.9452367832173
 #position:CYCS:6802.0714285714275,2990.4452367832173
 $CYCS:cat_CYCS_282(BAX_Fibroblast___Mitochondrion_active, BAK1, PMAIP1)
 BAX_Fibroblast___Mitochondrion_active -> CYCS
 BAK1 -> CYCS
 PMAIP1 -> CYCS
-#position:APAF1:6209.8214285714275,2878.9452367832173
-#position:CASP9:6067.0714285714275,2880.9452367832173
 #position:PDE4B:7710.0714285714275,3390.9452367832173
 $PDE4B:PDE4B_rna
 PDE4B_rna -> PDE4B
@@ -1156,19 +1109,10 @@ IRF5 -> CCL5_Fibroblast___secreted_components
 #position:SERPINE1_rna:2024.2142857142844,5831.6595224975035
 $SERPINE1_rna:cat_SERPINE1_rna_291(TP53_phosphorylated_Fibroblast___nucleus)
 TP53_phosphorylated_Fibroblast___nucleus -> SERPINE1_rna
-#position:CDH11:2676.5714285714275,1341.4452367832173
-#position:CTNNA1_2_3:2111.5714285714275,1858.4452367832173
-#position:ACTG1:2132.8441558441555,2075.8088731468533
-#position:vcl:2078.5714285714275,2238.4452367832173
-#position:TJP1:1946.5714285714275,2234.4452367832173
-#position:ACTN1:1811.5714285714275,2234.4452367832173
-#position:notch3:3944.5714285714275,1347.4452367832173
 #position:NCID:3849.2987012986996,4593.08160041958
 $NCID:(JAG1_NOTCH3_complex & cat_NCID_292(gamma_secretase_complex))
 JAG1_NOTCH3_complex -> NCID
 gamma_secretase_complex -> NCID
-#position:snw1:3729.5714285714275,4723.445236783217
-#position:rbpj:3727.5714285714275,4796.445236783217
 #position:hes1_rna:3833.5714285714275,5047.945236783217
 $hes1_rna:cat_hes1_rna_293(ncid_rbpj_snw1_complex)
 ncid_rbpj_snw1_complex -> hes1_rna
@@ -1180,14 +1124,12 @@ EPHB3 -> rasa1
 $ngef:cat_ngef_295(EPHA4_EFNA4_complex, EPHB3)
 EPHA4_EFNA4_complex -> ngef
 EPHB3 -> ngef
-#position:sst:6089.5714285714275,1158.4452367832173
 #position:ADCY8:7840.5714285714275,2103.4452367832173
 $ADCY8:cat_ADCY8_296(GNAI3)
 GNAI3 -> ADCY8
 #position:PRKACA:7766.5714285714275,2301.4452367832173
 $PRKACA:cat_PRKACA_297(ADCY8)
 ADCY8 -> PRKACA
-#position:FASLG:8589.344155844155,1014.8088731468536
 #position:CXCL8_Fibroblast___Extracellular_Space:9016.904761904763,1026.4452367832173
 $CXCL8_Fibroblast___Extracellular_Space:CXCL8_Fibroblast___secreted_components
 CXCL8_Fibroblast___secreted_components -> CXCL8_Fibroblast___Extracellular_Space
@@ -1232,7 +1174,6 @@ STAT3_Fibroblast___nucleus -> IL17A_Fibroblast___secreted_components
 #position:IL6_Fibroblast___secreted_components:3440.6666666666715,6758.333333333334
 $IL6_Fibroblast___secreted_components:IL6_rna
 IL6_rna -> IL6_Fibroblast___secreted_components
-#position:ICAM1:2048.2222222222226,6285.888888888889
 #position:FN1_Fibroblast___secreted_components:5473.555555555555,6739.666666666666
 $FN1_Fibroblast___secreted_components:(TCF_LEF & CTNNB1_Fibroblast___nucleus)
 TCF_LEF -> FN1_Fibroblast___secreted_components
@@ -1241,7 +1182,6 @@ CTNNB1_Fibroblast___nucleus -> FN1_Fibroblast___secreted_components
 $TNFSF11_Fibroblast___secreted_components:cat_TNFSF11_Fibroblast___secreted_components_311(STAT3_Fibroblast___nucleus, NFKB_N_complex)
 STAT3_Fibroblast___nucleus -> TNFSF11_Fibroblast___secreted_components
 NFKB_N_complex -> TNFSF11_Fibroblast___secreted_components
-#position:HBGEF:1374.9999999999982,1062.0
 #position:CSF1:4268.0,6761.0
 $CSF1:cat_CSF1_312(NFKB_N_complex, CREB1_phosphorylated)
 NFKB_N_complex -> CSF1
@@ -1262,14 +1202,12 @@ IRF1_Fibroblast___Cytoplasm -> IRF1_Fibroblast___nucleus
 #position:CD84:7622.0,6328.0
 $CD84:cat_CD84_318(IRF1_Fibroblast___nucleus)
 IRF1_Fibroblast___nucleus -> CD84
-#position:SH2D1A:8864.833333333336,1574.5
 #position:PRKCQ:8747.666666666668,1729.5
 $PRKCQ:cat_PRKCQ_319(SH2D1A)
 SH2D1A -> PRKCQ
 #position:IKK2_phosphorylated:8757.5,1926.0
 $IKK2_phosphorylated:cat_IKK2_phosphorylated_320(PRKCQ)
 PRKCQ -> IKK2_phosphorylated
-#position:IKK1_phosphorylated:8541.333333333332,2061.6666666666665
 #position:NFKBIE:8658.25,2235.666666666667
 $NFKBIE:(!IKK1_IKK2_complex | (NFKB_complex & RELA_NFKB1_NFKBIE_complex))
 NFKB_complex -> NFKBIE
@@ -1280,8 +1218,6 @@ IKK1_IKK2_complex -| NFKBIE
 $vegfc:cat_vegfc_324(NFKB_N_complex)
 NFKB_N_complex -> vegfc
 #position:col4a4:8067.0,6605.0
-#position:col4a3:1859.0,1097.0
-#position:PTK2:1486.0,1635.0
 #position:tgfb3:7822.0,6682.0
 $tgfb3:cat_tgfb3_326(FOXO1)
 FOXO1 -> tgfb3
@@ -1300,7 +1236,6 @@ HOMODIMER_space_STAT3 -> IL17F
 #position:bmp6:2536.875,6739.0
 $bmp6:cat_bmp6_331(JUN_phosphorylated)
 JUN_phosphorylated -> bmp6
-#position:CCL18:9169.0,1052.0
 #position:pyk2_phosphorylated:8361.0,1792.0
 $pyk2_phosphorylated:cat_pyk2_phosphorylated_332(PITPNM3_CCL18_complex)
 PITPNM3_CCL18_complex -> pyk2_phosphorylated
@@ -1310,25 +1245,13 @@ pyk2_phosphorylated -> AMAP1
 #position:IKBKB_phosphorylated:8227.0,2132.0
 $IKBKB_phosphorylated:cat_IKBKB_phosphorylated_334(AMAP1)
 AMAP1 -> IKBKB_phosphorylated
-#position:CCL2_Fibroblast___Extracellular_Space:711.2857142857156,1100.2857142857147
-#position:EFNA4:4125.6923076923085,971.9230769230769
 #position:IFNa1:7542.090909090908,6724.090909090909
 $IFNa1:cat_IFNa1_335(STAT1_Fibroblast___nucleus)
 STAT1_Fibroblast___nucleus -> IFNa1
-#position:PTPN6:9426.923076923082,1587.6923076923076
-#position:LCK_phosphorylated:9057.923076923082,1717.9423076923076
 #position:LCK:9059.423076923082,1865.4423076923076
 $LCK:(!PTPN6 & LCK_phosphorylated)
 LCK_phosphorylated -> LCK
 PTPN6 -| LCK
-#position:sema7a:2022.0,1032.0
-#position:AREG:1625.0,1060.0
-#position:CD40:3423.0,1347.0
-#position:CXCL10_Fibroblast___Extracellular_Space:7431.0,1115.0
-#position:CXCR3:7280.0,1334.0
-#position:EDA:9340.0,1031.0
-#position:PDGFC:1258.1538461538457,1068.0
-#position:CCL5_Fibroblast___Extracellular_Space:158.0,1030.0
 #position:JAG1_rna:7034.125,5119.75
 $JAG1_rna:cat_JAG1_rna_337(NFKB_N_complex)
 NFKB_N_complex -> JAG1_rna
@@ -1371,7 +1294,6 @@ NFKB2_RELB_complex -> HLA_B
 #position:SEMA4D:3081.0,6738.0
 $SEMA4D:cat_SEMA4D_350(FOS)
 FOS -> SEMA4D
-#position:WNT5B_gene:1987.0,5267.5
 #position:WNT5B__rna:2095.0,5267.5
 $WNT5B__rna:WNT5B_gene
 WNT5B_gene -> WNT5B__rna
@@ -1387,8 +1309,6 @@ CREB1_phosphorylated -> MIF_Fibroblast___secreted_components
 #position:VCAM1:5953.0,6337.0
 $VCAM1:cat_VCAM1_355(NFKB_N_complex)
 NFKB_N_complex -> VCAM1
-#position:CXCL13:7572.666666666666,1100.666666666666
-#position:MIF_Fibroblast___Extracellular_Space:7820.25,1102.5
 #position:LTA:572.0,6760.0
 $LTA:cat_LTA_356(JUN_phosphorylated)
 JUN_phosphorylated -> LTA

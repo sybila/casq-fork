@@ -23,7 +23,6 @@ JAK3 -> IL9R_IL2RG_IL9_JAK1_JAK3_complex
 #position:STAT1_STAT1_complex:3751.5,2322.0
 $STAT1_STAT1_complex:(STAT1 & STAT1)
 STAT1 -> STAT1_STAT1_complex
-#position:IFNGR1_IFNGR2_complex:8988.0,667.0
 #position:IFNG_IFNGR1_IFNGR2_complex:9161.0,669.0
 $IFNG_IFNGR1_IFNGR2_complex:(IFNg_TH1___extracellular_space & IFNGR1_IFNGR2_complex)
 IFNg_TH1___extracellular_space -> IFNG_IFNGR1_IFNGR2_complex
@@ -38,7 +37,6 @@ $CCL4_5_CCR5_complex:((CCL5_TH1___extracellular_space & CCR5) | (CCL4_TH1___extr
 CCL4_TH1___extracellular_space -> CCL4_5_CCR5_complex
 CCR5 -> CCL4_5_CCR5_complex
 CCL5_TH1___extracellular_space -> CCL4_5_CCR5_complex
-#position:GNAI_GNB_GNG_complex:8527.0,975.0
 #position:GNB_GNG_complex:8770.0,1119.0
 $GNB_GNG_complex:(GNAI_GNB_GNG_complex & cat_GNB_GNG_complex_12(CCL4_5_CCR5_complex, CXCL10_CXCR3_complex, AGT_F2R_complex, CCL2_CCR2_complex))
 GNAI_GNB_GNG_complex -> GNB_GNG_complex
@@ -53,7 +51,6 @@ NIK_TH1___cytoplasm_active -> IKK_complex
 PRKCQ -> IKK_complex
 TRAF2_TRAF5_complex -> IKK_complex
 TRAF2_TRAF5_TRAF6_complex -> IKK_complex
-#position:NFKB1_RELA_NFKBIA_complex:5571.0,1785.0
 #position:NFKB1_RELA_complex:5690.000000000002,2301.142857142857
 $NFKB1_RELA_complex:(NFKB1_RELA_NFKBIA_complex & cat_NFKB1_RELA_complex_14(IKK_complex))
 NFKB1_RELA_NFKBIA_complex -> NFKB1_RELA_complex
@@ -70,7 +67,6 @@ IL27_IL27RA_complex -> IL27_IL27RA_JAK1_JAK2_TYK2_complex
 JAK1 -> IL27_IL27RA_JAK1_JAK2_TYK2_complex
 JAK2 -> IL27_IL27RA_JAK1_JAK2_TYK2_complex
 TYK2 -> IL27_IL27RA_JAK1_JAK2_TYK2_complex
-#position:IL18R1_IL18RAP_complex:6791.0,680.0
 #position:IL18_IL18R1_IL18RAP_complex:6983.142857142859,657.5714285714294
 $IL18_IL18R1_IL18RAP_complex:(IL18_TH1___extracellular_space & IL18R1_IL18RAP_complex)
 IL18_TH1___extracellular_space -> IL18_IL18R1_IL18RAP_complex
@@ -84,7 +80,6 @@ LGALS9 -> LGALS9_TIM3_complex
 #position:CXCL16_CXCR6_complex:5367.0,677.0
 $CXCL16_CXCR6_complex:CXCL16
 CXCL16 -> CXCL16_CXCR6_complex
-#position:HLA_DRB1_LAG3_complex:5070.0,671.0
 #position:CD32b_igG_complex:4566.0,683.0
 $CD32b_igG_complex:igG
 igG -> CD32b_igG_complex
@@ -100,7 +95,6 @@ AGT_F2R_complex -> GNA12_GNA13_complex
 #position:CCL2_CCR2_complex:3162.0,677.0
 $CCL2_CCR2_complex:CCL2
 CCL2 -> CCL2_CCR2_complex
-#position:CD84_CD84_complex:2598.0,690.0
 #position:gas6_mertk_complex:2217.0,689.0
 $gas6_mertk_complex:GAS6
 GAS6 -> gas6_mertk_complex
@@ -111,7 +105,6 @@ TRAF1 -> TRAF1_TRAF2_TRAF3_complex
 TRAF2 -> TRAF1_TRAF2_TRAF3_complex
 TRAF3 -> TRAF1_TRAF2_TRAF3_complex
 TNF_TNFRSF1B_complex -> TRAF1_TRAF2_TRAF3_complex
-#position:JAG1_NOTCH1_complex:1403.0,680.0
 #position:NICD_EP300_SKIP_CSL_MAML1_complex:4604.0,2545.0
 $NICD_EP300_SKIP_CSL_MAML1_complex:((((EP300 & NICD) & SKIP) & CSL) & MAML1)
 EP300 -> NICD_EP300_SKIP_CSL_MAML1_complex
@@ -138,10 +131,7 @@ $IL10_IL10RA_IL10RB_JAK1_TYK2_complex:((JAK1 & IL10_IL10RA_IL10RB_complex) & TYK
 JAK1 -> IL10_IL10RA_IL10RB_JAK1_TYK2_complex
 IL10_IL10RA_IL10RB_complex -> IL10_IL10RA_IL10RB_JAK1_TYK2_complex
 TYK2 -> IL10_IL10RA_IL10RB_JAK1_TYK2_complex
-#position:VCAM1_ITGA4_ITGB7_complex:6279.538461538461,679.9999999999991
 #position:COL4A3_ITGA4_ITGB7_complex:6404.923076923076,677.7692307692305
-#position:ITGAM_ITGB2_complex:607.0,686.0
-#position:CD40LG_ITGAM_ITGB2_complex:765.2307692307695,687.538461538461
 #position:LTA_TNFRSF14_complex:3805.0,666.0
 $LTA_TNFRSF14_complex:LTA_TH1___extracellular_space
 LTA_TH1___extracellular_space -> LTA_TNFRSF14_complex
@@ -153,10 +143,6 @@ LTA_TNFRSF14_complex -> TRAF2_TRAF5_complex
 #position:FASLG_FAS_complex:2965.0,660.0
 $FASLG_FAS_complex:FASLG_TH1___extracellular_space
 FASLG_TH1___extracellular_space -> FASLG_FAS_complex
-#position:icoslg_icos_complex:5997.0,681.0
-#position:TCR_CD3_complex:5604.0,674.0
-#position:HLA_DRB1_TCR_CD3_complex:5738.000000000002,675.857142857144
-#position:CD28_CD86_complex:4280.0,696.0
 #position:TNFSF4_TNFRSF4_complex:4910.0,676.0
 $TNFSF4_TNFRSF4_complex:TNFSF4
 TNFSF4 -> TNFSF4_TNFRSF4_complex
@@ -169,8 +155,6 @@ TNFSF4_TNFRSF4_complex -> TRAF2_TRAF5_TRAF6_complex
 #position:IL12_TH1___extracellular_space:9636.0,417.0
 $IL12_TH1___extracellular_space:IL12_TH1___secreted_components
 IL12_TH1___secreted_components -> IL12_TH1___extracellular_space
-#position:JAK2:9364.0,971.0
-#position:TYK2:9510.0,1017.0
 #position:STAT4:9667.0,1378.0
 $STAT4:cat_STAT4_44(IL12Rb1_IL12Rb2_IL12_complex_TH1___cytoplasm)
 IL12Rb1_IL12Rb2_IL12_complex_TH1___cytoplasm -> STAT4
@@ -223,8 +207,6 @@ STAT1_STAT1_complex -> tbx21
 #position:RUNX3:6006.5,2317.0
 $RUNX3:cat_RUNX3_54(tbx21_phosphorylated)
 tbx21_phosphorylated -> RUNX3
-#position:JAK1:8951.0,941.0
-#position:JAK3:8951.0,1075.0
 #position:gata3_rna:6117.0,2828.5
 $gata3_rna:((!tbx21_phosphorylated & !RUNX3) & cat_gata3_rna_55(NICD_EP300_SKIP_CSL_MAML1_complex))
 RUNX3 -| gata3_rna
@@ -257,8 +239,6 @@ NFKB1_RELA_complex -> IL12_TH1___secreted_components
 #position:IFNg_TH1___extracellular_space:8937.285714285714,443.8571428571431
 $IFNg_TH1___extracellular_space:IFNg_TH1___secreted_components
 IFNg_TH1___secreted_components -> IFNg_TH1___extracellular_space
-#position:CCL4_TH1___extracellular_space:8452.0,380.0
-#position:CCR5:8504.0,692.0
 #position:GNAI_TH1___cytoplasm:8750.142857142859,986.8571428571431
 $GNAI_TH1___cytoplasm:(GNAI_GNB_GNG_complex & cat_GNAI_TH1___cytoplasm_61(CCL4_5_CCR5_complex, CXCL10_CXCR3_complex, AGT_F2R_complex, CCL2_CCR2_complex))
 GNAI_GNB_GNG_complex -> GNAI_TH1___cytoplasm
@@ -334,26 +314,21 @@ NFKB1_RELA_complex -> TNFA
 #position:CXCL10_TH1___extracellular_space:8022.5,461.0
 $CXCL10_TH1___extracellular_space:CXCL10_TH1___secreted_components
 CXCL10_TH1___secreted_components -> CXCL10_TH1___extracellular_space
-#position:IL27:7204.0,453.0
 #position:IL18_TH1___extracellular_space:6801.142857142859,456.8571428571431
 $IL18_TH1___extracellular_space:IL18_TH1___secreted_components
 IL18_TH1___secreted_components -> IL18_TH1___extracellular_space
 #position:MYD88:7040.0,1020.0
 $MYD88:cat_MYD88_80(IL18_IL18R1_IL18RAP_complex)
 IL18_IL18R1_IL18RAP_complex -> MYD88
-#position:TRAF6:7200.0,1345.0
 #position:TRAF6_phosphorylated:7360.0,1345.0
 $TRAF6_phosphorylated:(TRAF6 & cat_TRAF6_phosphorylated_81(IRAK1_IRAK4_complex))
 TRAF6 -> TRAF6_phosphorylated
 IRAK1_IRAK4_complex -> TRAF6_phosphorylated
-#position:NIK_TH1___cytoplasm:7285.0,1521.0
 #position:NIK_TH1___cytoplasm_active:7445.0,1521.0
 $NIK_TH1___cytoplasm_active:((NIK_TH1___cytoplasm & cat_NIK_TH1___cytoplasm_active_83(TRAF1_TRAF2_TRAF3_complex)) | (NIK_TH1___cytoplasm & cat_NIK_TH1___cytoplasm_active_82(TRAF6_phosphorylated)))
 NIK_TH1___cytoplasm -> NIK_TH1___cytoplasm_active
 TRAF6_phosphorylated -> NIK_TH1___cytoplasm_active
 TRAF1_TRAF2_TRAF3_complex -> NIK_TH1___cytoplasm_active
-#position:LGALS9:6532.0,465.0
-#position:CXCL16:5296.0,388.0
 #position:GNAI_TH1___cytoplasm_active:5725.454545454544,924.2727272727261
 $GNAI_TH1___cytoplasm_active:(GNAI_TH1___cytoplasm & cat_GNAI_TH1___cytoplasm_active_84(CXCL16_CXCR6_complex))
 GNAI_TH1___cytoplasm -> GNAI_TH1___cytoplasm_active
@@ -373,19 +348,15 @@ NFKB1_RELA_complex -> CCL4_TH1___secreted_components
 #position:LAG3:5242.0,718.0
 $LAG3:cat_LAG3_89(NFAT)
 NFAT -> LAG3
-#position:igG:4252.0,414.0
 #position:SHIP1:4694.0,967.0
 $SHIP1:cat_SHIP1_90(CD32b_igG_complex)
 CD32b_igG_complex -> SHIP1
-#position:CD28:4176.0,734.0
-#position:MIF_TH1___extracellular_space:3886.0,458.0
 #position:lyn:4014.0,1007.0
 $lyn:cat_lyn_91(MIF_CD74_complex)
 MIF_CD74_complex -> lyn
 #position:FGR:4267.0,1181.0
 $FGR:cat_FGR_92(lyn)
 lyn -> FGR
-#position:AGT:3413.0,439.0
 #position:ARHGEF2:3641.0,1241.0
 $ARHGEF2:cat_ARHGEF2_93(GNA12_GNA13_complex)
 GNA12_GNA13_complex -> ARHGEF2
@@ -397,12 +368,9 @@ $Rac1:((!SEMA4_PLXNB1_complex & !RHOA) & cat_Rac1_95(VAV1))
 RHOA -| Rac1
 SEMA4_PLXNB1_complex -| Rac1
 VAV1 -> Rac1
-#position:EOMES:4206.0,2335.0
 #position:mtor:5331.0,2073.0
 $mtor:cat_mtor_96(AKT1)
 AKT1 -> mtor
-#position:CCL2:3127.0,410.0
-#position:CD84:2428.0,735.0
 #position:SH2D1A:2728.0,964.0
 $SH2D1A:cat_SH2D1A_97(CD84_CD84_complex)
 CD84_CD84_complex -> SH2D1A
@@ -410,28 +378,13 @@ CD84_CD84_complex -> SH2D1A
 $PRKCQ:cat_PRKCQ_98(SH2D1A, PLCG1)
 SH2D1A -> PRKCQ
 PLCG1 -> PRKCQ
-#position:GAS6:2209.0,482.0
-#position:NOTCH1:1278.2307692307695,738.3846153846143
 #position:NICD:4842.7692307692305,2420.7692307692305
 $NICD:JAG1_NOTCH1_complex
 JAG1_NOTCH1_complex -> NICD
-#position:EP300:4438.0,2420.0
-#position:SKIP:4537.0,2420.0
-#position:CSL:4631.0,2420.0
-#position:MAML1:4732.0,2422.0
-#position:PLXNB1:1175.0,732.0
-#position:SEMA4D:816.3076923076915,433.15384615384573
-#position:TNF:1861.1538461538457,418.4615384615381
-#position:TRAF1:1943.0,993.0
-#position:TRAF2:1935.0,1064.0
-#position:TRAF3:1943.0,1137.0
 #position:PTK2:6136.0,1040.0
 $PTK2:cat_PTK2_100(VCAM1_ITGA4_ITGB7_complex, COL4A3_ITGA4_ITGB7_complex)
 VCAM1_ITGA4_ITGB7_complex -> PTK2
 COL4A3_ITGA4_ITGB7_complex -> PTK2
-#position:LTA_TH1___extracellular_space:3535.8461538461543,437.38461538461524
-#position:TRAF5:1934.0,1290.0
-#position:SEMA4A_TH1___extracellular_space:955.9230769230762,436.538461538461
 #position:CD40LG:7336.0,4231.0
 $CD40LG:cat_CD40LG_101(STAT1_STAT1_complex)
 STAT1_STAT1_complex -> CD40LG
@@ -466,7 +419,6 @@ STAT1_STAT1_complex -> IRF7_TH1___cytoplasm
 $IRF7_TH1___cytoplasm_active:(IRF7_TH1___cytoplasm & cat_IRF7_TH1___cytoplasm_active_113(TBK1))
 IRF7_TH1___cytoplasm -> IRF7_TH1___cytoplasm_active
 TBK1 -> IRF7_TH1___cytoplasm_active
-#position:FASLG_TH1___extracellular_space:2759.0,366.0
 #position:DAXX:3102.0,941.0
 $DAXX:cat_DAXX_114(FASLG_FAS_complex)
 FASLG_FAS_complex -> DAXX
@@ -483,8 +435,6 @@ vegfa -> angiogenesis_phenotype
 #position:BCL2L11:7532.0,2124.0
 $BCL2L11:!MAPK1_phosphorylated
 MAPK1_phosphorylated -| BCL2L11
-#position:POU2F1:6600.0,2321.0
-#position:icos:5883.0,723.0
 #position:ZAP70:5174.0,1081.0
 $ZAP70:cat_ZAP70_120(HLA_DRB1_TCR_CD3_complex)
 HLA_DRB1_TCR_CD3_complex -> ZAP70
@@ -506,8 +456,6 @@ MAPK1_phosphorylated -> RPS6KA4
 #position:CREB1_phosphorylated:3260.0,2414.0
 $CREB1_phosphorylated:cat_CREB1_phosphorylated_126(RPS6KA4)
 RPS6KA4 -> CREB1_phosphorylated
-#position:TNFSF4:4684.0,414.0
-#position:CCL5_TH1___extracellular_space:8603.714285714286,376.8571428571431
 #position:Matrix_degradation_phenotype:5690.0,4985.0
 $Matrix_degradation_phenotype:!col4a5
 col4a5 -| Matrix_degradation_phenotype

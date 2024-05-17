@@ -46,7 +46,6 @@ $RTK_Grb2_Sos_Ras_p14_MP1_C_Raf_MEK_ERK_complex:(ERK & RTK_Grb2_Sos_Ras_p14_MP1_
 ERK -> RTK_Grb2_Sos_Ras_p14_MP1_C_Raf_MEK_ERK_complex
 RTK_Grb2_Sos_Ras_p14_MP1_C_Raf_MEK_complex -> RTK_Grb2_Sos_Ras_p14_MP1_C_Raf_MEK_ERK_complex
 #position:p14_MP1_complex:1161.0,970.0
-#position:KSR1_MEK_IMP_complex:2186.5,616.0
 #position:RTK_Grb2_Sos_Ras_complex:821.0,377.0
 $RTK_Grb2_Sos_Ras_complex:(RAS & RTK_Grb2_Sos_complex)
 RAS -> RTK_Grb2_Sos_Ras_complex
@@ -184,7 +183,6 @@ TRAF2 -> TNFRSF1B_TRAF2_complex
 $IL1R1_MYD88_IRAK1_complex:(IRAK1 & IL1R1_MYD88_complex)
 IRAK1 -> IL1R1_MYD88_IRAK1_complex
 IL1R1_MYD88_complex -> IL1R1_MYD88_IRAK1_complex
-#position:TGFBR1_TGFBR2_complex:3354.9964340090373,34.0
 #position:IL1R1_IRAK1_MYD88_TRAF6_complex:2975.9964340090373,378.0
 $IL1R1_IRAK1_MYD88_TRAF6_complex:(TRAF6 & IL1R1_MYD88_IRAK1_complex)
 TRAF6 -> IL1R1_IRAK1_MYD88_TRAF6_complex
@@ -236,7 +234,6 @@ MAP3K7 -> TNFRSF1B_TRAF2_MAP3K7_complex
 $GADD45_MAP3K4_complex:(GADD45 & MAP3K4)
 GADD45 -> GADD45_MAP3K4_complex
 MAP3K4 -> GADD45_MAP3K4_complex
-#position:TXN_MAP3K5_complex:3374.9964340090373,697.0
 #position:TNFRSF1A_TRADD_TRAF2_RIP1K_MAP3K1_complex:2991.9964340090382,834.0
 $TNFRSF1A_TRADD_TRAF2_RIP1K_MAP3K1_complex:(MAP3K1 & TNFRSF1A_TRADD_TRAF2_RIP1K_complex)
 MAP3K1 -> TNFRSF1A_TRADD_TRAF2_RIP1K_MAP3K1_complex
@@ -291,15 +288,11 @@ Ca2__ion -> Ca2__DAG_PKC_complex
 $GRB2_GAB1_complex_Cytoplasm:(GRB2 & GAB1)
 GRB2 -> GRB2_GAB1_complex_Cytoplasm
 GAB1 -> GRB2_GAB1_complex_Cytoplasm
-#position:BAD_BCL2_complex:1117.0,587.0
 #position:GRB2_GAB1_complex_Cytoplasm_1:646.5,717.0
 $GRB2_GAB1_complex_Cytoplasm_1:(GRB2_GAB1_complex_Cytoplasm & cat_GRB2_GAB1_complex_Cytoplasm_1_72(PI3K_phosphorylated, RTK))
 GRB2_GAB1_complex_Cytoplasm -> GRB2_GAB1_complex_Cytoplasm_1
 PI3K_phosphorylated -> GRB2_GAB1_complex_Cytoplasm_1
 RTK -> GRB2_GAB1_complex_Cytoplasm_1
-#position:RTK:605.0,37.5
-#position:RAS:665.0,454.0
-#position:BRAF:1252.5,529.5
 #position:ERK:2055.0,1312.0
 $ERK:((RTK_Grb2_Sos_Ras_p14_MP1_C_Raf_MEK_ERK_complex & cat_ERK_77(PPP2CA_unknown, p38_phosphorylated_phosphorylated_Cytoplasm, Jun_Fos_AP_1_complex, Jun_Jun_AP_1_complex, Jun_ATF_AP_1_complex)) | ((ARRB1_MEK_ERKmon_complex & cat_ERK_76(PPP2CA_unknown, p38_phosphorylated_phosphorylated_Cytoplasm, Jun_Fos_AP_1_complex, Jun_Jun_AP_1_complex, Jun_ATF_AP_1_complex)) | ((SEF_MEK_ERKmon_complex & cat_ERK_75(PPP2CA_unknown, p38_phosphorylated_phosphorylated_Cytoplasm, Jun_Fos_AP_1_complex, Jun_Jun_AP_1_complex, Jun_ATF_AP_1_complex)) | ((KSR1_MEK_ERKmon_complex & cat_ERK_74(PPP2CA_unknown, p38_phosphorylated_phosphorylated_Cytoplasm, Jun_Fos_AP_1_complex, Jun_Jun_AP_1_complex, Jun_ATF_AP_1_complex)) | (ERK_phosphorylated_phosphorylated_Cytoplasm & cat_ERK_73(JUN_phosphorylated, p38_phosphorylated_phosphorylated_Cytoplasm, Jun_Fos_AP_1_complex, Jun_Jun_AP_1_complex, Jun_ATF_AP_1_complex))))))
 ERK_phosphorylated_phosphorylated_Cytoplasm -> ERK
@@ -313,7 +306,6 @@ PPP2CA_unknown -> ERK
 SEF_MEK_ERKmon_complex -> ERK
 ARRB1_MEK_ERKmon_complex -> ERK
 RTK_Grb2_Sos_Ras_p14_MP1_C_Raf_MEK_ERK_complex -> ERK
-#position:CASP9:1644.0,1129.0
 #position:CASP9_phosphorylated:1642.0,1046.0
 $CASP9_phosphorylated:(CASP9 & cat_CASP9_phosphorylated_78(ERK_phosphorylated_phosphorylated_Cytoplasm))
 CASP9 -> CASP9_phosphorylated
@@ -322,20 +314,14 @@ ERK_phosphorylated_phosphorylated_Cytoplasm -> CASP9_phosphorylated
 $IMP:(KSR1_MEK_IMP_complex & cat_IMP_79(RTK_Grb2_Sos_Ras_complex))
 KSR1_MEK_IMP_complex -> IMP
 RTK_Grb2_Sos_Ras_complex ->? IMP
-#position:RASGRP1:267.0,572.0
-#position:PLCG1:195.0,553.0
-#position:PIP2_simple_molecule:152.0,434.5
 #position:IP3_simple_molecule:142.0,704.5
 $IP3_simple_molecule:(PIP2_simple_molecule & cat_IP3_simple_molecule_80(RTK_SRC_PLCG1_complex))
 PIP2_simple_molecule -> IP3_simple_molecule
 RTK_SRC_PLCG1_complex -> IP3_simple_molecule
-#position:SRC:151.0,608.0
 #position:DAG_simple_molecule:270.0,373.5
 $DAG_simple_molecule:(PIP2_simple_molecule & cat_DAG_simple_molecule_81(RTK_SRC_PLCG1_complex))
 PIP2_simple_molecule -> DAG_simple_molecule
 RTK_SRC_PLCG1_complex -> DAG_simple_molecule
-#position:SEF:412.0,1019.0
-#position:ARRB2:2455.0,638.0
 #position:RAF1:717.0,909.0
 $RAF1:((RTK_Grb2_Sos_Ras_p14_MP1_C_Raf_MEK_ERK_complex & cat_RAF1_83(PPP2CA_unknown, p38_phosphorylated_phosphorylated_Cytoplasm, Jun_Fos_AP_1_complex, Jun_Jun_AP_1_complex, Jun_ATF_AP_1_complex)) | GPCR_GRK_ARRB1_C_RAF_MEK_ERK_complex)
 GPCR_GRK_ARRB1_C_RAF_MEK_ERK_complex -> RAF1
@@ -345,8 +331,6 @@ p38_phosphorylated_phosphorylated_Cytoplasm -> RAF1
 Jun_Fos_AP_1_complex -> RAF1
 Jun_Jun_AP_1_complex -> RAF1
 Jun_ATF_AP_1_complex -> RAF1
-#position:DUSP6:2242.0,1197.0
-#position:DUSP5:858.5,1700.0
 #position:ELK1_phosphorylated:1315.5,1786.0
 $ELK1_phosphorylated:cat_ELK1_phosphorylated_84(ERK_phosphorylated_phosphorylated_Nucleus, p38_phosphorylated_phosphorylated_Nucleus, JNK_phosphorylated_phosphorylated_Nucleus)
 ERK_phosphorylated_phosphorylated_Nucleus -> ELK1_phosphorylated
@@ -371,11 +355,9 @@ IP3_simple_molecule ->? Ca2__ion
 $CASP3:(proCASP3 & cat_CASP3_91(CASP9))
 proCASP3 -> CASP3
 CASP9 -> CASP3
-#position:proCASP3:1837.0,1102.0
 #position:PLA2G4A_phosphorylated:2105.666666666667,1027.3333333333333
 $PLA2G4A_phosphorylated:cat_PLA2G4A_phosphorylated_92(KSR1_MEK_ERKdim_complex)
 KSR1_MEK_ERKdim_complex -> PLA2G4A_phosphorylated
-#position:GRK:2071.0,557.0
 #position:RSK_phosphorylated_Nucleus:1218.166666666667,1593.3333333333335
 $RSK_phosphorylated_Nucleus:RSK_phosphorylated_Cytoplasm
 RSK_phosphorylated_Cytoplasm -> RSK_phosphorylated_Nucleus
@@ -411,9 +393,6 @@ AKT_phosphorylated -> BAD
 $BAD_phosphorylated:(BAD & cat_BAD_phosphorylated_102(RAF1_phosphorylated_Mitochondria))
 BAD -> BAD_phosphorylated
 RAF1_phosphorylated_Mitochondria -> BAD_phosphorylated
-#position:TCF_LEF:131.0,1697.0
-#position:GSK3B_Cytoplasm:689.0,1407.0
-#position:CTNNB1_Cytoplasm:369.0,1465.0
 #position:CTNNB1_Nucleus:203.7692307692305,1591.9230769230767
 $CTNNB1_Nucleus:CTNNB1_Cytoplasm
 CTNNB1_Cytoplasm -> CTNNB1_Nucleus
@@ -434,20 +413,9 @@ ERK_phosphorylated_phosphorylated_Mitochondria -> GSK3B_phosphorylated_Mitochond
 $CTNNB1_phosphorylated:(CTNNB1_Cytoplasm & cat_CTNNB1_phosphorylated_108(GSK3B_Cytoplasm))
 CTNNB1_Cytoplasm -> CTNNB1_phosphorylated
 GSK3B_Cytoplasm -> CTNNB1_phosphorylated
-#position:TRAF2:2532.4964340090382,591.0
-#position:TRADD:2281.4964340090382,543.0
-#position:TRAF6:3154.9964340090373,560.0
-#position:RIPK1:2432.9964340090382,564.0
-#position:IRAK1:2939.9964340090373,732.0
-#position:MYD88:2858.9964340090373,686.0
-#position:MAP3K7:3524.9964340090373,622.0
-#position:TAB:3397.9964340090373,571.0
-#position:MAP3K1:3119.9964340090382,598.0
-#position:MAP3K2_3:3277.9964340090382,570.0
 #position:GADD45:3992.5,1297.5
 $GADD45:GADD45_gene
 GADD45_gene -> GADD45
-#position:MAP3K4:4049.5,977.5
 #position:MAP3K5:3948.5,547.5
 $MAP3K5:(TXN_MAP3K5_complex & cat_MAP3K5_110(ROS_simple_molecule))
 TXN_MAP3K5_complex -> MAP3K5
@@ -524,7 +492,6 @@ p38_phosphorylated_phosphorylated_Cytoplasm -> MAX_phosphorylated
 #position:MYC:3466.163100675705,1670.333333333333
 $MYC:MYC_gene
 MYC_gene -> MYC
-#position:NFAT_Cytoplasm:2406.9964340090382,1473.0
 #position:NFAT_phosphorylated:2551.163100675705,1474.166666666666
 $NFAT_phosphorylated:(NFAT_Cytoplasm & cat_NFAT_phosphorylated_125(JNK_phosphorylated_phosphorylated_Cytoplasm))
 NFAT_Cytoplasm -> NFAT_phosphorylated
@@ -638,10 +605,6 @@ MYC -> proliferation_unknown
 MAX_phosphorylated -> proliferation_unknown
 GSK3B_Cytoplasm -| proliferation_unknown
 p70_phosphorylated -> proliferation_unknown
-#position:Smad2:3965.0,1357.5
-#position:Smad3:4045.0,1357.5
-#position:Smad4:4095.0,1447.5
-#position:ATM:4105.0,1277.5
 #position:MDM2:3127.0,1741.5
 $MDM2:MDM2_gene
 MDM2_gene -> MDM2
@@ -661,7 +624,6 @@ JNK_phosphorylated_phosphorylated_Nucleus -> MST1_phosphorylated
 $FOXO3_phosphorylated:(!AKT_phosphorylated & cat_FOXO3_phosphorylated_168(MST1_phosphorylated))
 MST1_phosphorylated -> FOXO3_phosphorylated
 AKT_phosphorylated -| FOXO3_phosphorylated
-#position:PKC:535.0,527.5
 #position:p70_phosphorylated:595.0,1532.5
 $p70_phosphorylated:cat_p70_phosphorylated_169(ERK_phosphorylated_phosphorylated_Cytoplasm, PDK1_unknown)
 ERK_phosphorylated_phosphorylated_Cytoplasm -> p70_phosphorylated
@@ -688,7 +650,6 @@ CDKN1A_gene -> p21
 $GSK3B_phosphorylated_Cytoplasm:(GSK3B_Cytoplasm & cat_GSK3B_phosphorylated_Cytoplasm_175(AKT_phosphorylated))
 GSK3B_Cytoplasm -> GSK3B_phosphorylated_Cytoplasm
 AKT_phosphorylated -> GSK3B_phosphorylated_Cytoplasm
-#position:STAT1_unknown:95.0,1807.5
 #position:FRS2_phosphorylated:875.0,227.5
 $FRS2_phosphorylated:((!SPRY_phosphorylated & !RTK_Grb2_Sos_complex) & cat_FRS2_phosphorylated_176(RTK))
 RTK -> FRS2_phosphorylated
@@ -702,9 +663,6 @@ $RAF1_phosphorylated_Cytoplasm:((!AKT_phosphorylated & RAF1) & cat_RAF1_phosphor
 RAF1 -> RAF1_phosphorylated_Cytoplasm
 Ca2__DAG_PKC_complex -> RAF1_phosphorylated_Cytoplasm
 AKT_phosphorylated -| RAF1_phosphorylated_Cytoplasm
-#position:GRB2:431.5,704.0
-#position:SOS:429.5,744.0
-#position:GAB1:566.5,746.0
 #position:PTEN_gene:3766.0,2019.5
 $PTEN_gene:TP53_phosphorylated
 TP53_phosphorylated -> PTEN_gene

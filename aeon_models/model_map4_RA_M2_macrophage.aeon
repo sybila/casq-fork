@@ -7,7 +7,6 @@ $RELA_NFKB1_complex_M2_macrophage__cytoplasm:(NFKBIA_RELA_NFKB1_complex & cat_RE
 NFKBIA_RELA_NFKB1_complex -> RELA_NFKB1_complex_M2_macrophage__cytoplasm
 IKK_complex -> RELA_NFKB1_complex_M2_macrophage__cytoplasm
 Syk_phosphorylated -> RELA_NFKB1_complex_M2_macrophage__cytoplasm
-#position:GNB_GNG_GNAI1_complex:2553.639298695667,1097.737545965318
 #position:IKK_complex:3053.0178701242403,1255.7875459653183
 $IKK_complex:cat_IKK_complex_2(TAK1_phosphorylated, AKT1_M2_macrophage__cytoplasm)
 TAK1_phosphorylated -> IKK_complex
@@ -16,8 +15,6 @@ AKT1_M2_macrophage__cytoplasm -> IKK_complex
 $CTNNB1_TCF_LEF_complex_M2_macrophage_nucleus:(TCF_LEF_M2_macrophage_nucleus_active & CTNNB1_M2_macrophage_nucleus)
 TCF_LEF_M2_macrophage_nucleus_active -> CTNNB1_TCF_LEF_complex_M2_macrophage_nucleus
 CTNNB1_M2_macrophage_nucleus -> CTNNB1_TCF_LEF_complex_M2_macrophage_nucleus
-#position:NFKB1_TPL2_complex:2570.389298695667,1540.987545965318
-#position:NFKBIA_RELA_NFKB1_complex:2920.389298695667,1506.987545965318
 #position:CSF1R_CSF1_complex:4391.389298695667,571.9875459653181
 $CSF1R_CSF1_complex:(CSF1R & CSF1_M2_macrophage__extracellular_space)
 CSF1R -> CSF1R_CSF1_complex
@@ -40,8 +37,6 @@ c5a -> C5a_C5aR1_complex
 $RXRa_NUR77_complex_M2_macrophage__cytoplasm:(RXRa_NUR77_complex_M2_macrophage__cytoplasm_1 & cat_RXRa_NUR77_complex_M2_macrophage__cytoplasm_10(AKT1_M2_macrophage__cytoplasm))
 RXRa_NUR77_complex_M2_macrophage__cytoplasm_1 -> RXRa_NUR77_complex_M2_macrophage__cytoplasm
 AKT1_M2_macrophage__cytoplasm -> RXRa_NUR77_complex_M2_macrophage__cytoplasm
-#position:RXRa_NUR77_complex_M2_macrophage__cytoplasm_1:5533.389298695667,1596.987545965318
-#position:SMAD2_SARA_complex:5271.389298695667,896.9875459653181
 #position:PRL_PRLR_JAK2_complex:7905.454545454544,883.772727272727
 $PRL_PRLR_JAK2_complex:(PRL_PRLR_complex & JAK2)
 PRL_PRLR_complex -> PRL_PRLR_JAK2_complex
@@ -70,7 +65,6 @@ JAK1 -> IL10R1_IL10R2_IL10_JAK1_TYK2_complex
 $RBL1_E2F4_DP1_complex:cat_RBL1_E2F4_DP1_complex_17(SMAD2_SMAD4_complex)
 SMAD2_SMAD4_complex -> RBL1_E2F4_DP1_complex
 #position:NRP1_PLXNA1_sema3A_complex:6140.199999999997,572.5999999999999
-#position:IL23R_IL12RB1_complex:7460.389298695667,588.9875459653181
 #position:RELA_NFKB1_complex_M2_macrophage_nucleus:2515.097632028999,2305.8625459653176
 $RELA_NFKB1_complex_M2_macrophage_nucleus:(RELA_NFKB1_complex_M2_macrophage_nucleus_1 & cat_RELA_NFKB1_complex_M2_macrophage_nucleus_19(Sirt1))
 RELA_NFKB1_complex_M2_macrophage_nucleus_1 -> RELA_NFKB1_complex_M2_macrophage_nucleus
@@ -104,7 +98,6 @@ Vegfc_M2_macrophage__extracellular_space -> vegfc_vegfr3_complex
 $CCL21_CCR7_JAK1_complex:(CCL21_CCR7_complex & JAK2)
 CCL21_CCR7_complex -> CCL21_CCR7_JAK1_complex
 JAK2 -> CCL21_CCR7_JAK1_complex
-#position:GSK3b_APC_AXIN1_CTNNB1_CK1A_complex:2781.389298695667,1073.987545965318
 #position:RELA_NFKB1_complex_M2_macrophage_nucleus_1:2826.389298695667,2350.9875459653176
 $RELA_NFKB1_complex_M2_macrophage_nucleus_1:(RELA_NFKB1_complex_M2_macrophage__cytoplasm & cat_RELA_NFKB1_complex_M2_macrophage_nucleus_1_29(Prkcd))
 RELA_NFKB1_complex_M2_macrophage__cytoplasm -> RELA_NFKB1_complex_M2_macrophage_nucleus_1
@@ -133,7 +126,6 @@ CXCL13 -> CXCL13_ACKR4_complex
 $GSK3b_APC_AXIN1_CK1A_complex:(GSK3b_APC_AXIN1_CTNNB1_CK1A_complex & cat_GSK3b_APC_AXIN1_CK1A_complex_35(Dvl1))
 GSK3b_APC_AXIN1_CTNNB1_CK1A_complex -> GSK3b_APC_AXIN1_CK1A_complex
 Dvl1 -> GSK3b_APC_AXIN1_CK1A_complex
-#position:EFNB1_APHB1_complex:3725.389298695667,569.9875459653181
 #position:ARI_ARII_bmp6_complex:7342.125,584.75
 #position:RELA_NFKB1_NFKBIE_complex:7863.4285714285725,1608.2857142857147
 $RELA_NFKB1_NFKBIE_complex:(NFKBIE & RELA_NFKB1_complex_M2_macrophage__cytoplasm)
@@ -146,7 +138,6 @@ GAS6 -> GAS6_MERTK_complex
 $immune_complex_complex_M2_macrophage__cytoplasmic_membrane_up_1:(immune_complex_complex_M2_macrophage__extracellular_space & CD32b)
 immune_complex_complex_M2_macrophage__extracellular_space -> immune_complex_complex_M2_macrophage__cytoplasmic_membrane_up_1
 CD32b -> immune_complex_complex_M2_macrophage__cytoplasmic_membrane_up_1
-#position:IL10R1_IL10R2_complex:7005.389298695667,592.9875459653181
 #position:FASL_FAS_complex:5874.389298695667,578.9875459653181
 $FASL_FAS_complex:(FASL_M2_macrophage__extracellular_space & FAS)
 FASL_M2_macrophage__extracellular_space -> FASL_FAS_complex
@@ -155,7 +146,6 @@ FAS -> FASL_FAS_complex
 $ITGB1_ITGA1_col4a_PTK2_complex:(ITGB1_ITGA1_col4a_complex & PTK2)
 ITGB1_ITGA1_col4a_complex -> ITGB1_ITGA1_col4a_PTK2_complex
 PTK2 -> ITGB1_ITGA1_col4a_PTK2_complex
-#position:CD40LG_ITGB1_ITGA1_complex:6819.166666666668,596.8333333333335
 #position:IL23R_IL12RB1_IL23_complex:7575.555965362335,613.4875459653181
 $IL23R_IL12RB1_IL23_complex:(IL23R_IL12RB1_complex & IL23_M2_macrophage__extracellular_space)
 IL23R_IL12RB1_complex -> IL23R_IL12RB1_IL23_complex
@@ -170,7 +160,6 @@ $IL11Ra_IL6ST_IL11_jak1_complex:(IL11Ra_IL6ST_IL11_complex & JAK1)
 IL11Ra_IL6ST_IL11_complex -> IL11Ra_IL6ST_IL11_jak1_complex
 JAK1 -> IL11Ra_IL6ST_IL11_jak1_complex
 #position:IL17Ra_IL17Rc_IL17F_complex_M2_macrophage__cytoplasmic_membrane_up:4861.666666666668,573.6666666666665
-#position:TGFBR1_TGFBR2_complex_M2_macrophage__cytoplasmic_membrane_up:5255.389298695667,588.9875459653181
 #position:IL17Ra_IL17Rc_IL17F_complex_M2_macrophage__cytoplasm:4640.0,1035.3333333333335
 $IL17Ra_IL17Rc_IL17F_complex_M2_macrophage__cytoplasm:(IL17Ra_IL17Rc_IL17F_complex_M2_macrophage__cytoplasmic_membrane_up & TRAF3IP2)
 IL17Ra_IL17Rc_IL17F_complex_M2_macrophage__cytoplasmic_membrane_up -> IL17Ra_IL17Rc_IL17F_complex_M2_macrophage__cytoplasm
@@ -179,8 +168,6 @@ TRAF3IP2 -> IL17Ra_IL17Rc_IL17F_complex_M2_macrophage__cytoplasm
 $immune_complex_CD64_complex:(immune_complex_complex_M2_macrophage__extracellular_space & cat_immune_complex_CD64_complex_47(C5a_C5aR1_complex))
 immune_complex_complex_M2_macrophage__extracellular_space -> immune_complex_CD64_complex
 C5a_C5aR1_complex -> immune_complex_CD64_complex
-#position:HLA_B_LILRB1_complex:565.0,577.0
-#position:ITGB1_ITGA1_complex:6499.0,589.0
 #position:IL10R1_IL10R2_IL10_complex:7139.555965362335,608.4875459653181
 $IL10R1_IL10R2_IL10_complex:(IL10R1_IL10R2_complex & IL10_M2_macrophage__extracellular_space)
 IL10R1_IL10R2_complex -> IL10R1_IL10R2_IL10_complex
@@ -207,7 +194,6 @@ $immune_complex_complex_M2_macrophage__cytoplasmic_membrane_up_2:((immune_comple
 immune_complex_complex_M2_macrophage__extracellular_space -> immune_complex_complex_M2_macrophage__cytoplasmic_membrane_up_2
 CD32a -> immune_complex_complex_M2_macrophage__cytoplasmic_membrane_up_2
 C5a_C5aR1_complex -> immune_complex_complex_M2_macrophage__cytoplasmic_membrane_up_2
-#position:PLXNB2_MET_complex:2655.0,588.0
 #position:SEMA4_PLXNB2_MET_complex:2773.666666666668,586.3333333333335
 $SEMA4_PLXNB2_MET_complex:((SEMA4A_M2_macrophage__extracellular_space & PLXNB2_MET_complex) | (SEMA4D & PLXNB2_MET_complex))
 SEMA4D -> SEMA4_PLXNB2_MET_complex
@@ -215,7 +201,6 @@ PLXNB2_MET_complex -> SEMA4_PLXNB2_MET_complex
 SEMA4A_M2_macrophage__extracellular_space -> SEMA4_PLXNB2_MET_complex
 #position:FZD5_LRP5_complex:3247.1035844099533,597.7018316796039
 #position:WNT5B_FZD1_LRP5_complex:3980.0,586.0
-#position:CTNNB1_GSK3B_AXIN1_APC_CSNK1A1_complex:3484.0,1262.0
 #position:GSK3B_AXIN1_APC_CSNK1A1_complex:3709.0,1335.0
 $GSK3B_AXIN1_APC_CSNK1A1_complex:(CTNNB1_GSK3B_AXIN1_APC_CSNK1A1_complex & cat_GSK3B_AXIN1_APC_CSNK1A1_complex_59(DVL1))
 CTNNB1_GSK3B_AXIN1_APC_CSNK1A1_complex -> GSK3B_AXIN1_APC_CSNK1A1_complex
@@ -249,7 +234,6 @@ $IL15:cat_IL15_67(RELA_NFKB1_complex_M2_macrophage_nucleus_1, CREB1_phosphorylat
 RELA_NFKB1_complex_M2_macrophage_nucleus_1 -> IL15
 CREB1_phosphorylated -> IL15
 C_EBPb_phosphorylated -> IL15
-#position:c5a:699.3892986956671,366.9875459653181
 #position:NFKBIA_phosphorylated:3173.389298695667,1460.987545965318
 $NFKBIA_phosphorylated:(NFKBIA_RELA_NFKB1_complex & cat_NFKBIA_phosphorylated_68(IKK_complex, Syk_phosphorylated))
 NFKBIA_RELA_NFKB1_complex -> NFKBIA_phosphorylated
@@ -260,7 +244,6 @@ $p38_MAP_KINASE_phosphorylated_M2_macrophage__cytoplasm:cat_p38_MAP_KINASE_phosp
 MKK3_phosphorylated -> p38_MAP_KINASE_phosphorylated_M2_macrophage__cytoplasm
 MKK6_phosphorylated -> p38_MAP_KINASE_phosphorylated_M2_macrophage__cytoplasm
 C5a_C5aR1_complex -> p38_MAP_KINASE_phosphorylated_M2_macrophage__cytoplasm
-#position:MEKK1:3295.389298695667,1521.987545965318
 #position:TPL2:2774.389298695667,1623.987545965318
 $TPL2:(NFKB1_TPL2_complex & cat_TPL2_70(IKK_complex))
 NFKB1_TPL2_complex -> TPL2
@@ -359,7 +342,6 @@ AKT1_M2_macrophage__cytoplasm -| CASP9
 $BAD_phosphorylated:(!AKT1_M2_macrophage__cytoplasm & BAD_M2_macrophage__cytoplasm)
 BAD_M2_macrophage__cytoplasm -> BAD_phosphorylated
 AKT1_M2_macrophage__cytoplasm -| BAD_phosphorylated
-#position:BAD_M2_macrophage__cytoplasm:4687.639298695667,1182.987545965318
 #position:AKT1_M2_macrophage_nucleus:4064.139298695667,2303.9875459653176
 $AKT1_M2_macrophage_nucleus:AKT1_M2_macrophage__cytoplasm
 AKT1_M2_macrophage__cytoplasm -> AKT1_M2_macrophage_nucleus
@@ -377,7 +359,6 @@ OPN -> IRF7_M2_macrophage__cytoplasm
 #position:IRF7_M2_macrophage_nucleus:4932.6104525418195,2347.9875459653176
 $IRF7_M2_macrophage_nucleus:IRF7_M2_macrophage__cytoplasm
 IRF7_M2_macrophage__cytoplasm -> IRF7_M2_macrophage_nucleus
-#position:OPN:5064.389298695667,1211.987545965318
 #position:ERK1_phosphorylated_M2_macrophage_nucleus:2240.055965362335,2309.3208792986516
 $ERK1_phosphorylated_M2_macrophage_nucleus:ERK1_phosphorylated_M2_macrophage__cytoplasm
 ERK1_phosphorylated_M2_macrophage__cytoplasm -> ERK1_phosphorylated_M2_macrophage_nucleus
@@ -443,7 +424,6 @@ HCK -> Syk_phosphorylated
 immune_complex_complex_M2_macrophage__cytoplasmic_membrane_up -> Syk_phosphorylated
 immune_complex_complex_M2_macrophage__cytoplasmic_membrane_up_2 -> Syk_phosphorylated
 immune_complex_CD64_complex -> Syk_phosphorylated
-#position:HCK:1062.389298695667,971.9875459653181
 #position:GAB2_phosphorylated:1170.389298695667,1086.987545965318
 $GAB2_phosphorylated:cat_GAB2_phosphorylated_111(HCK)
 HCK -> GAB2_phosphorylated
@@ -454,7 +434,6 @@ PI3K -> PLCG1_phosphorylated
 VegfR1_Vegfa_complex -> PLCG1_phosphorylated
 VegfR1_vegfa_complex -> PLCG1_phosphorylated
 GNB_GNG_complex -> PLCG1_phosphorylated
-#position:PIP2_simple_molecule:1389.389298695667,1224.487545965318
 #position:DAG_simple_molecule:1631.389298695667,1228.487545965318
 $DAG_simple_molecule:(PIP2_simple_molecule & cat_DAG_simple_molecule_113(PLCG1_phosphorylated))
 PIP2_simple_molecule -> DAG_simple_molecule
@@ -598,8 +577,6 @@ VEGFa_M2_macrophage__secreted_components -> proliferation_survival_phenotype
 Vegfb_M2_macrophage__secreted_components -> proliferation_survival_phenotype
 PDGFC -> proliferation_survival_phenotype
 HBGEF -> proliferation_survival_phenotype
-#position:Tyk2:6673.389298695667,797.9875459653181
-#position:JAK1:6664.389298695667,915.9875459653181
 #position:MDM2_phosphorylated:5218.389298695667,1608.987545965318
 $MDM2_phosphorylated:cat_MDM2_phosphorylated_135(AKT1_M2_macrophage__cytoplasm)
 AKT1_M2_macrophage__cytoplasm -> MDM2_phosphorylated
@@ -615,7 +592,6 @@ Bim -| BCL2L1
 #position:Mcl1_rna:5717.389298695667,2795.4875459653176
 $Mcl1_rna:cat_Mcl1_rna_138(CREB1_phosphorylated)
 CREB1_phosphorylated -> Mcl1_rna
-#position:FOXO1_acetylated_M2_macrophage__cytoplasm:5211.389298695667,1782.987545965318
 #position:FOXO1_phosphorylated_acetylated:5388.389298695667,1783.987545965318
 $FOXO1_phosphorylated_acetylated:(FOXO1_acetylated_M2_macrophage__cytoplasm & cat_FOXO1_phosphorylated_acetylated_139(AKT1_M2_macrophage__cytoplasm))
 FOXO1_acetylated_M2_macrophage__cytoplasm -> FOXO1_phosphorylated_acetylated
@@ -636,7 +612,6 @@ STAT3_STAT3_complex -> c_Myc_rna
 RBL1_E2F4_DP1_complex -> c_Myc_rna
 CTNNB1_TCF_LEF_complex_M2_macrophage_nucleus -> c_Myc_rna
 CTNNB1_TCF_LEF_complex_M2_macrophage_nucleus_1 -> c_Myc_rna
-#position:TGFB1_M2_macrophage__extracellular_space:5274.389298695667,423.9875459653181
 #position:DAXX:5545.389298695667,842.9875459653181
 $DAXX:cat_DAXX_144(TGFBR1_TGFBR2_complex_M2_macrophage__cytoplasmic_membrane_up_1, FASL_FAS_complex)
 TGFBR1_TGFBR2_complex_M2_macrophage__cytoplasmic_membrane_up_1 -> DAXX
@@ -649,14 +624,12 @@ TGFBR1_TGFBR2_complex_M2_macrophage__cytoplasmic_membrane_up_1 -> SMAD2_phosphor
 $SARA:(SMAD2_SARA_complex & cat_SARA_146(TGFBR1_TGFBR2_complex_M2_macrophage__cytoplasmic_membrane_up_1))
 SMAD2_SARA_complex -> SARA
 TGFBR1_TGFBR2_complex_M2_macrophage__cytoplasmic_membrane_up_1 -> SARA
-#position:SMAD4:5647.1670764734445,963.4319904097624
 #position:p15_rna:5821.389298695667,2684.4875459653176
 $p15_rna:cat_p15_rna_147(p300_SP1_complex)
 p300_SP1_complex -> p15_rna
 #position:IL10_M2_macrophage__extracellular_space:7006.389298695667,396.9875459653181
 $IL10_M2_macrophage__extracellular_space:IL10_M2_macrophage__secreted_components
 IL10_M2_macrophage__secreted_components -> IL10_M2_macrophage__extracellular_space
-#position:STAT3_M2_macrophage__cytoplasm:7084.389298695667,1143.987545965318
 #position:STAT3_M2_macrophage__cytoplasm_active:7244.389298695667,1143.987545965318
 $STAT3_M2_macrophage__cytoplasm_active:(STAT3_M2_macrophage__cytoplasm & cat_STAT3_M2_macrophage__cytoplasm_active_149(IL10R1_IL10R2_IL10_JAK1_TYK2_complex, IL23R_IL12RB1_IL23_JAK1_TYK2_complex, CCL21_CCR7_JAK1_complex, LIFR_IL6ST_CTF1_jak1_complex, IL11Ra_IL6ST_IL11_jak1_complex))
 STAT3_M2_macrophage__cytoplasm -> STAT3_M2_macrophage__cytoplasm_active
@@ -668,7 +641,6 @@ IL11Ra_IL6ST_IL11_jak1_complex -> STAT3_M2_macrophage__cytoplasm_active
 #position:IL23_M2_macrophage__extracellular_space:7424.389298695667,384.9875459653181
 $IL23_M2_macrophage__extracellular_space:IL23_M2_macrophage__secreted_components
 IL23_M2_macrophage__secreted_components -> IL23_M2_macrophage__extracellular_space
-#position:Sirt1:2758.389298695667,2263.9875459653176
 #position:klf4_rna:6912.389298695667,2675.4875459653176
 $klf4_rna:cat_klf4_rna_151(STAT3_STAT3_complex)
 STAT3_STAT3_complex -> klf4_rna
@@ -689,7 +661,6 @@ AKT1_M2_macrophage__cytoplasm -| FOXO1_acetylated_M2_macrophage_nucleus
 $p53_ubiquitinated:(p53 & cat_p53_ubiquitinated_156(MDM2_phosphorylated))
 p53 -> p53_ubiquitinated
 MDM2_phosphorylated -> p53_ubiquitinated
-#position:p53:4893.389298695667,1740.6542126319846
 #position:cFLIP_ubiquitinated:4910.81787012424,1922.558974536747
 $cFLIP_ubiquitinated:(cFLIP & cat_cFLIP_ubiquitinated_157(ITCH_phosphorylated))
 cFLIP -> cFLIP_ubiquitinated
@@ -762,7 +733,6 @@ STAT3_STAT3_complex -> CD32a_rna
 #position:CD32b_rna:6501.389298695667,3112.4875459653176
 $CD32b_rna:cat_CD32b_rna_172(STAT3_STAT3_complex)
 STAT3_STAT3_complex -> CD32b_rna
-#position:CSF1R:4298.389298695667,605.9875459653181
 #position:cMyc:2550.389298695667,2121.9875459653176
 $cMyc:c_Myc_rna
 c_Myc_rna -> cMyc
@@ -773,7 +743,6 @@ ERK1_phosphorylated_M2_macrophage__cytoplasm -> cMyc_phosphorylated
 #position:p53_rna:2638.389298695667,3213.4875459653176
 $p53_rna:cat_p53_rna_175(cMyc_phosphorylated)
 cMyc_phosphorylated -> p53_rna
-#position:EPHB1:3635.389298695667,600.9875459653181
 #position:VEGFa_M2_macrophage__extracellular_space:2345.389298695667,388.9875459653181
 $VEGFa_M2_macrophage__extracellular_space:VEGFa_M2_macrophage__secreted_components
 VEGFa_M2_macrophage__secreted_components -> VEGFa_M2_macrophage__extracellular_space
@@ -787,7 +756,6 @@ RELA_NFKB1_complex_M2_macrophage_nucleus_1 -> Vegfa_rna
 C_EBPb_phosphorylated -> Vegfa_rna
 CREB1_phosphorylated -> Vegfa_rna
 STAT3_STAT3_complex -> Vegfa_rna
-#position:VegfR1:2138.389298695667,616.9875459653181
 #position:IL4R:6263.389298695667,616.9875459653181
 $IL4R:IL4R_rna
 IL4R_rna -> IL4R
@@ -836,8 +804,6 @@ RELA_NFKB1_complex_M2_macrophage_nucleus_1 -> NLRP3_rna
 #position:NLRP3:6491.81787012424,1600.7018316796039
 $NLRP3:NLRP3_rna
 NLRP3_rna -> NLRP3
-#position:Casp1:6618.389298695667,1601.987545965318
-#position:ASC:6721.389298695667,1597.987545965318
 #position:IL18_M2_macrophage__cytoplasm:6544.222632028999,1927.8208792986516
 $IL18_M2_macrophage__cytoplasm:IL18_rna
 IL18_rna -> IL18_M2_macrophage__cytoplasm
@@ -908,16 +874,12 @@ RELA_NFKB1_complex_M2_macrophage_nucleus_1 -> Vegfb_M2_macrophage__secreted_comp
 CREB1_phosphorylated -> Vegfb_M2_macrophage__secreted_components
 C_EBPb_phosphorylated -> Vegfb_M2_macrophage__secreted_components
 STAT3_STAT3_complex -> Vegfb_M2_macrophage__secreted_components
-#position:IL34:4526.384615384613,351.2564102564111
-#position:CCl21:5051.666666666668,331.6666666666665
-#position:JAK2:4445.0,894.0
 #position:ARRB2:4287.333333333336,859.5
 $ARRB2:cat_ARRB2_213(CXCL13_ACKR4_complex)
 CXCL13_ACKR4_complex -> ARRB2
 #position:CD84:3768.0,3895.0
 $CD84:cat_CD84_214(C_EBPb_phosphorylated)
 C_EBPb_phosphorylated -> CD84
-#position:NFKBIE:7599.011904761908,1547.7976190476193
 #position:IKK2_phosphorylated:7665.261904761908,1235.1309523809523
 $IKK2_phosphorylated:(IKK1_IKK2_complex & cat_IKK2_phosphorylated_215(PRKCQ))
 IKK1_IKK2_complex -> IKK2_phosphorylated
@@ -925,14 +887,9 @@ PRKCQ -> IKK2_phosphorylated
 #position:PRKCQ:7847.428571428576,1164.6309523809523
 $PRKCQ:cat_PRKCQ_216(SH2D1A)
 SH2D1A -> PRKCQ
-#position:SH2D1A:7738.595238095244,1070.6309523809523
-#position:IKK1_phosphorylated:7654.09523809524,1384.7976190476188
-#position:col4a4:6588.0,398.0
-#position:PTK2:6784.0,1050.3333333333335
 #position:col4a3:6048.0,4272.0
 $col4a3:cat_col4a3_217(SMAD2_SMAD4_complex)
 SMAD2_SMAD4_complex -> col4a3
-#position:TRAF3IP2:4248.0,1053.0
 #position:smad1_phosphorylated:7578.0,1148.0
 $smad1_phosphorylated:cat_smad1_phosphorylated_218(ARI_ARII_bmp6_complex)
 ARI_ARII_bmp6_complex -> smad1_phosphorylated
@@ -951,16 +908,11 @@ C_EBPb_phosphorylated -> PDGFC
 $SEMA4A_M2_macrophage__secreted_components:cat_SEMA4A_M2_macrophage__secreted_components_224(C_EBPb_phosphorylated)
 C_EBPb_phosphorylated -> SEMA4A_M2_macrophage__secreted_components
 #position:TGFB1_M2_macrophage__secreted_components:5552.0,4287.0
-#position:GAS6:5522.647058823532,396.23529411764684
-#position:PRL:7963.727272727268,362.181818181818
-#position:gal:2456.0495638721695,374.5454545454545
-#position:RHOA_M2_macrophage__cytoplasm:2612.8677456903497,903.0909090909086
 #position:RHOA_M2_macrophage__cytoplasm_active:2836.8677456903497,912.0909090909086
 $RHOA_M2_macrophage__cytoplasm_active:((RHOA_M2_macrophage__cytoplasm & cat_RHOA_M2_macrophage__cytoplasm_active_227(ARHGEF12)) | (RHOA_M2_macrophage__cytoplasm & cat_RHOA_M2_macrophage__cytoplasm_active_226(GNA12_GNA13_complex)))
 RHOA_M2_macrophage__cytoplasm -> RHOA_M2_macrophage__cytoplasm_active
 GNA12_GNA13_complex -> RHOA_M2_macrophage__cytoplasm_active
 ARHGEF12 -> RHOA_M2_macrophage__cytoplasm_active
-#position:LILRB1:479.0,617.0
 #position:PTPN6:760.0,882.0
 $PTPN6:cat_PTPN6_228(HLA_B_LILRB1_complex)
 HLA_B_LILRB1_complex -> PTPN6
@@ -970,7 +922,6 @@ PTPN6 -| SYK
 #position:PIK3AP1_phosphorylated:912.0,1252.0
 $PIK3AP1_phosphorylated:cat_PIK3AP1_phosphorylated_230(SYK)
 SYK -> PIK3AP1_phosphorylated
-#position:SEMA4D:2732.3333333333358,385.33333333333394
 #position:ARHGEF12:2370.0,944.0
 $ARHGEF12:cat_ARHGEF12_231(SEMA4_PLXNB2_MET_complex)
 SEMA4_PLXNB2_MET_complex -> ARHGEF12
@@ -978,7 +929,6 @@ SEMA4_PLXNB2_MET_complex -> ARHGEF12
 $DVL1:(DVL1 & cat_DVL1_232(WNT5B_FZD1_LRP5_complex))
 DVL1 -> DVL1
 WNT5B_FZD1_LRP5_complex -> DVL1
-#position:TCF_LEF_M2_macrophage_nucleus:4352.0,2292.0
 #position:CXCL16:6380.0,4387.0
 $CXCL16:cat_CXCL16_233(RELA_NFKB1_complex_M2_macrophage_nucleus_1)
 RELA_NFKB1_complex_M2_macrophage_nucleus_1 -> CXCL16
@@ -986,9 +936,6 @@ RELA_NFKB1_complex_M2_macrophage_nucleus_1 -> CXCL16
 #position:MIF:2387.0,4372.0
 $MIF:cat_MIF_235(CREB1_phosphorylated)
 CREB1_phosphorylated -> MIF
-#position:col4a5:6760.909090909088,383.9090909090901
-#position:CXCL13:4166.999999999996,378.818181818182
-#position:SEMA4A_M2_macrophage__extracellular_space:2631.153846153844,383.84615384615427
 #position:ICOSLG:3937.0,3874.0
 $ICOSLG:cat_ICOSLG_236(CREB1_phosphorylated)
 CREB1_phosphorylated -> ICOSLG
@@ -996,7 +943,6 @@ CREB1_phosphorylated -> ICOSLG
 $CD86_rna:cat_CD86_rna_237(STAT3_STAT3_complex, CD86_gene)
 STAT3_STAT3_complex -> CD86_rna
 CD86_gene -> CD86_rna
-#position:CD86_gene:6900.0,3174.059698831278
 #position:CD86:6848.0,3860.0
 $CD86:CD86_gene
 CD86_gene -> CD86
