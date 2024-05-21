@@ -163,7 +163,7 @@ class BooleanFormulaBuilder:
 def aeon_relationship(source, target, relationship_type_str):
     """Return new AEON relationship."""
 
-    #  default parameters are activation, known=False
+    #  default parameters are type='activation', unknown=False
     relationship = {
         "from_variable": source,
         "to_variable": target,
@@ -230,7 +230,7 @@ def get_relationships(info, id_map, count, ignore_self_loops):
         formula = BooleanFormulaBuilder()
 
         # variables may be missing from the "simplified" model.
-        # Test for variable in the ID map before appending
+        # test for variable in the ID map before appending
         for transition in info[item_vid]["transitions"]:
             tran_id = next(transition_id)
 
@@ -308,7 +308,7 @@ def translate_greek(name):
 
 
 def clean_name(name):
-    """Remove unsupported aeon symbols from variables names."""
+    """Remove unsupported symbols (in AEON) from variables names."""
 
     result = translate_greek(name)
     # non-alphanumeric characters (and "\_")
@@ -359,7 +359,7 @@ def aeon_model_variable(var, var_dic, info):
 def clean_names(info):
     """Clean all names of variables in info.
 
-    all aeon unsupported symbols are replaced by \"_\""""
+    all unsupported symbols (in AEON) are replaced by \"_\""""
 
     clean_names_dic = {}
 
